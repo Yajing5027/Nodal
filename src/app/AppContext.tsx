@@ -15,6 +15,7 @@ import { getAllNodes } from '../repositories/nodeRepository';
 import { getAllMaps } from '../repositories/mapRepository';
 import { getAllTags } from '../repositories/tagRepository';
 import { ensureCourseTagsExist } from '../repositories/tagMigration';
+import { ensureStarterNotes } from '../repositories/starterNotes';
 import { AppStateContext, type AppState, type AppView } from './AppState';
 
 export function AppProvider({ children }: { children: ReactNode }) {
@@ -77,6 +78,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         if (typeof process === 'undefined' || process.env.NODE_ENV !== 'test') {
           try {
             await ensureCourseTagsExist();
+            await ensureStarterNotes();
           } catch (e) {
             console.error('Initialization check error:', e);
           }
