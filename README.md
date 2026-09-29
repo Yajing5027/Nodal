@@ -1,62 +1,81 @@
 # Nodal
 
-Nodal is a local-first workspace for learning from your own notes. Write a
-note once, break it into addressable sections, connect ideas on visual maps,
-and revisit them through recall cards and review plans. Notes remain yours in
-the browser; there is no account, server-side notebook, or cloud sync.
+**把知识写下来、连接起来，再练到真正能想起来。**
 
-## What you can do
+Nodal 把笔记、知识地图和主动回忆放在同一个学习空间。你可以先按自己顺手的方式记录一整篇内容，之后再把其中重要的部分整理成小节、放进不同地图、做成练习题，并安排复习。知识只需要写一次；地图、标签和练习都围绕这份原始内容展开。
 
-- **Write and organize notes.** Use Markdown, math, images, sections, and
-  section references. A note can appear in multiple maps without making
-  duplicate copies of its content.
-- **Classify at two levels.** Whole-note tags apply to every section. A
-  section can also carry its own tags without assigning them to the rest of
-  the note. Hierarchical tags help browse and search your knowledge.
-- **Build knowledge maps.** Arrange notes in visual maps, group them in
-  frames, and draw relationships. Removing a note from a map does not delete
-  the underlying note.
-- **Practice recall.** Turn material into questions and cloze cards, review
-  them with a spaced-repetition schedule, and use plans to choose what to
-  study. Section mastery and card review are separate measures.
-- **Move your data.** Export a full versioned ZIP backup, restore one, and
-  export readable note or map content. The app can also archive current
-  workspace content locally for a fresh start.
-- **Prepare an AI handoff.** Copy selected note content and guidance as a
-  prompt for an AI tool you choose. Nodal itself does not send it to an AI
-  service.
+它适合那些已经有不少课程笔记，却常遇到这些问题的人：笔记记了但复习时想不起来；为了制作卡片被迫重复抄写；同一知识点在不同课程或主题里有关联，却被分散在不同文件里；临近考试才发现自己只能认出答案，不能主动解释或应用。
 
-## Try it
+## 一篇笔记，就是一份独立的知识
 
-Open **[Nodal on GitHub Pages](https://yajing5027.github.io/Nodal/)**, then
-create a note or map. The public site starts without your private study
-content. Use **Data & backup → Export full backup** regularly.
+Nodal 把每篇笔记称为 **Node**。Node 可以是一节课的总结、一道题的复盘、一个概念，也可以是一篇较长的专题笔记。你不必在写之前就决定“这个知识到底该拆成几张小卡”。先以合适的大小记下来，后续需要更细地阅读和练习时，再整理它的内部结构。
 
-Browser storage belongs to the exact website address. Data saved at a local
-development address such as `localhost:5173` does **not** automatically appear
-on GitHub Pages. To move it, export a backup locally and import it on the
-published site. Clearing site data or using a different browser can remove or
-hide the working copy, so keep downloaded backups somewhere you control.
+- 没有地图也能创建、阅读、搜索和编辑笔记。笔记不属于某张地图，也不因为离开地图而消失。
+- 一篇笔记可以同时放进多张地图。地图展示的是同一篇笔记的不同位置，不会复制出几份互不相干的正文；改动笔记后，各处看到的都是更新后的内容。
+- 从地图移除一个笔记，只移除它在那张地图上的展示。真正删除笔记是另一项操作，会要求确认，并提示相关内容和复习资料会受到影响。
+- 编辑区支持 Markdown、标题、列表、表格、代码、数学公式和图片；阅读与编辑分开，便于先看内容、需要时再修改。日常修改会保存到工作区，笔记还可以写一个简短的 Overview，帮助自己快速回到主题。
 
-## Run locally
+左侧的全局搜索会查找笔记标题、正文和关联标签；在笔记库中还可以按标签浏览、搜索、排序和手动调整顺序。地图之外始终有一个可以回到的完整笔记库。
 
-Requires a current Node.js LTS release and npm.
+## 长笔记也能逐段使用
 
-```bash
-npm ci
-npm run dev
-```
+一篇 Node 里面可以有多个 **Section（小节）**。你可以在小节视图中给它们命名、调整顺序、增加下级小节，也可以切换到连续的 Full note 视图，像编辑一篇完整文档一样写作。粘贴带有三个及以上连续空行的内容时，编辑器还能识别分段并拆成小节。
 
-Use `npm run build` to create the static site in `dist/`. The Pages deployment
-workflow builds that same output on every push to `main`.
+小节不是另一篇独立笔记：正文仍保存在原来的 Node 里。但它有自己的位置，能单独添加标签、Guidance、复习安排和练习，也能单独导出。这样一篇较长的课程笔记不必为了复习而被复制成许多内容重复的文件。
 
-## How it works
+如果另一篇笔记需要用到某个小节，可以插入 **Reference section**。引用会显示源小节的最新内容；修改原文，引用处随之更新。引用处会指向来源，避免把同一段知识维护两遍。源内容被移走时，页面会显示无法解析的提示，而不是悄悄用一份过期副本代替。
 
-Nodal uses React, TypeScript, Vite, Dexie/IndexedDB, and React Flow. A note's
-Markdown is the canonical content. Maps hold placements and links to notes,
-not copies of their text. Review history and scheduling state are stored
-locally and included in the portable backup. There is no server database,
-login, collaboration, or automatic synchronization.
+## 用地图连接知识，而不是把知识锁进地图
 
-This repository contains only the publishable app source and deployment
-configuration. Personal notes and local browser data are not part of the site.
+当线性笔记不足以表达关系时，可以新建 Map，把已有笔记放到画布上，按自己的理解摆放、分组到 Frame，并画出它们之间的 Relation。你也可以在地图中创建新笔记；它仍会进入全局笔记库。
+
+地图提供的是一个观察角度：同一个 Node 可以在不同地图里承担不同角色。Map、Frame 和 Relation 不改变笔记本身的身份。连线可以表达当前地图里的关系，也可以保留为全局关系；需要重新组织时，移动或移除地图上的位置即可，不必重写知识。地图列表还支持搜索、标签筛选和排序。
+
+## 标签是分类，不是所有权
+
+标签可以组成层级，用来浏览和查找笔记。它不会像文件夹一样“装住”一篇笔记，也不会决定笔记只能出现在哪里。Nodal 支持两种范围：
+
+- **整篇标签**标在 Node 上，这篇笔记的所有小节都会继承它。适合课程、主题等贯穿全文的分类。
+- **小节标签**只标在特定 Section 上。例如一篇算法课笔记里，只有讲到 Java 实现的小节需要 Java 标签；整篇笔记和其他小节不会因此都变成 Java 内容。
+
+在笔记列表里仍能通过小节标签找到含有相关内容的笔记，同时保留“整篇都属于这个标签”与“只有部分小节涉及这个标签”的区别。地图也可以用标签整理。
+
+## 把“看过”变成“能回忆”
+
+Nodal 不要求一写完笔记就把全文变成卡片。你可以先读、先整理，再挑出值得主动回忆的内容：写一个问题，或从笔记内容中制作回忆提示。练习内容与来源笔记相连，回到原文时仍能看到上下文，而不是只剩一张孤立的卡。
+
+Practice 可以集中浏览一篇笔记及其小节的题目，选择题目开始复习；也支持导入符合格式的练习题。Recall cards 则按逾期、今天、将来和未安排等时间查看题目。Today 帮你从当天该做的事情开始，Plan 可以按日、周、月回看已经完成的复习和接下来的安排。
+
+复习时可以用 **Forgot、Partial、Recalled** 表达这次实际记起了多少。查看答案本身不等于完成一次成功复习；确认后的评分才会留下记录，并影响题目的下次复习时间。小节与整篇笔记的掌握度由已评分的题目汇总，尚未评过的内容会显示为未评分，不会被伪装成 0 分。这里的掌握度是帮助你看学习进展的概览，不代表一篇笔记只能有一个统一的“记忆状态”；不同题目仍分别安排复习。
+
+你还可以创建 **Review plan**，选择适应性、固定间隔或自定义间隔等节奏，并把计划安排给整篇笔记、某个小节或某道题。计划可以暂停或调整；它只决定怎样安排复习，不会拥有或复制学习内容。
+
+## 把笔记交给外部 AI 时，保留你的要求
+
+有些知识需要多出题，有些概念容易混淆，有些地方必须和另一主题对照。Nodal 的 **Guidance** 可以把这些长期提醒分别写在整篇笔记或某个小节上。小节的 Guidance 不会自动套到无关的小节。
+
+导出时，你可以选择整篇、单个小节，或勾选几个小节；决定是否附上已保存的 Guidance，再补一句只用于本次的要求。随后可以复制带格式的文本、下载 Markdown、下载包含图片的 ZIP，或打开打印视图保存为 PDF。这样交给外部 AI 或发给别人时，可以只带需要的内容和说明。**Nodal 目前不会自行调用 AI，也不会自动把笔记发送给模型。**
+
+## 开始使用与保管数据
+
+打开 **[Nodal](https://yajing5027.github.io/Nodal/)**，从一篇笔记开始；需要看到结构时再建地图，需要记住内容时再添练习。公开网站不附带私人笔记或示例课程内容。
+
+目前的版本把工作数据保存在你使用的浏览器中。这是现阶段的实现方式，不是 Nodal 对未来同步方式的产品定位。它还没有账号或云同步：本地开发地址 localhost:5173 和 GitHub Pages 是两个不同的网站地址，数据不会自动互通。想把本地工作内容带到公开站点，请先在 **Data & backup** 下载完整备份，再在另一地址导入；导入会替换那边现有的知识库。定期把备份 ZIP 存到自己控制的位置。清除浏览器站点数据或换浏览器，都可能让原来的工作区无法访问。
+
+Data & backup 还提供可阅读的地图导出，以及一个可恢复的本地 Fresh start：先把当前笔记、地图和相关复习数据归档，再清空工作区。这个本地恢复记录不能代替下载到电脑上的完整备份。
+
+## 当前范围
+
+Nodal 已提供笔记、小节、引用、层级标签、知识地图、回忆练习、复习计划和导出/备份。它还不是在线 AI 家教，也没有账号同步或多人协作。我们的长期方向，是让你不仅能保存和整理知识，还能在不同情境下主动想起、解释并重新建立知识之间的联系；后续设计会根据真实使用中遇到的问题继续调整。
+
+<details>
+<summary>在自己的电脑上运行</summary>
+
+需要当前的 Node.js LTS 和 npm：
+
+    npm ci
+    npm run dev
+
+npm run build 会生成静态网站。GitHub Pages 会在 main 更新后自动构建并发布。
+
+</details>
