@@ -1,0 +1,76 @@
+/* ============================================================
+   Design Tokens — Knowledge Map V0
+   clean, quiet, knowledge-dense, low distraction
+   No blue-purple gradients, no glassmorphism, no excessive shadows.
+   ============================================================ */
+
+:root {
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  /* Font sizes */
+  --font-xs: 11px;
+  --font-sm: 12px;
+  --font-md: 13px;
+  --font-lg: 15px;
+  --font-xl: 18px;
+  --font-2xl: 22px;
+
+  /* Surfaces — low contrast neutral */
+  --surface: #fbfbfa;
+  --surface-raised: #ffffff;
+  --surface-secondary: #f5f4f1;
+  --surface-tertiary: #eeede8;
+  --surface-hover: #f0efeb;
+  --surface-active: #e8e7e1;
+
+  /* Borders — light weight */
+  --border: #e4e4e2;
+  --border-strong: #d4d4d2;
+  --border-focus: #55786f;
+
+  /* Text */
+  --text: #1c1c1a;
+  --text-secondary: #575754;
+  --text-muted: #8a8a87;
+  --text-faint: #b0b0ad;
+
+  /* Accent — muted warm neutral, not blue/purple */
+  --accent: #466d63;
+  --accent-strong: #31584f;
+  --accent-bg: #e9f0ed;
+
+  /* Selection */
+  --selection: #e5eeea;
+  --selection-border: #73948b;
+
+  /* States */
+  --danger: #b45353;
+  --danger-bg: #fdf2f2;
+  --success: #5a8a5a;
+  --warning: #b8860b;
+
+  /* Shadows — minimal */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --inspector-width: 400px;
+  --header-height: 56px;
+
+  /* Transitions */
+  --transition-fast: 120ms ease;
+  --transition-normal: 200ms ease;
+}

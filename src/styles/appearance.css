@@ -1,0 +1,157 @@
+/* Shared semantic colors for the app, document rendering and editor portals. */
+:root {
+  color-scheme: light;
+  --surface: #ffffff;
+  --surface-secondary: #f7f7f9;
+  --surface-tertiary: #edeef1;
+  --surface-hover: #f0f1f4;
+  --surface-active: #e5e7ed;
+  --sidebar-bg: #f1f2f5;
+  --border: #e3e5ea;
+  --border-strong: #ccd0d9;
+  --border-focus: #6779b1;
+  --text: #292d36;
+  --text-secondary: #606572;
+  --text-muted: #777d8a;
+  --text-faint: #969ba6;
+  --accent: #5268a5;
+  --accent-strong: #455a94;
+  --accent-bg: #edf0fa;
+  --on-accent: #ffffff;
+  --selection: #e4e8f4;
+  --selection-border: #9aa9d3;
+  --danger: #ac514f;
+  --danger-bg: #fbefef;
+  --success: #4d8073;
+  --warning: #9b762f;
+  --warning-bg: #f8f2e7;
+  --overlay: #1419255c;
+  --code-bg: #f3f4f7;
+  --syntax-keyword: #955179;
+  --syntax-function: #426fa5;
+  --syntax-string: #497f64;
+  --syntax-number: #98672d;
+  --shadow-sm: 0 1px 3px #1f26300a;
+  --shadow-md: 0 6px 18px #1f26300c;
+  --shadow-lg: 0 22px 65px #1f263024;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface: #22252b;
+  --surface-secondary: #191b20;
+  --surface-tertiary: #2b2e36;
+  --surface-hover: #30343e;
+  --surface-active: #3b4050;
+  --sidebar-bg: #1e2026;
+  --border: #333740;
+  --border-strong: #4d5362;
+  --border-focus: #a2b2ec;
+  --text: #e5e7ee;
+  --text-secondary: #b6bbc7;
+  --text-muted: #999fad;
+  --text-faint: #818896;
+  --accent: #abbcf5;
+  --accent-strong: #afbef1;
+  --accent-bg: #30394f;
+  --on-accent: #1c253d;
+  --selection: #333b50;
+  --selection-border: #697cac;
+  --danger: #edaaa4;
+  --danger-bg: #432e32;
+  --success: #97c5b5;
+  --warning: #dfbd7e;
+  --warning-bg: #3a3327;
+  --overlay: #080b12a6;
+  --code-bg: #1b1e24;
+  --syntax-keyword: #d9a2c4;
+  --syntax-function: #9ebff0;
+  --syntax-string: #a4caae;
+  --syntax-number: #e2bc85;
+  --shadow-sm: 0 1px 3px #00000030;
+  --shadow-md: 0 6px 18px #00000026;
+  --shadow-lg: 0 22px 65px #00000066;
+}
+::selection { background: var(--selection); color: var(--text); }
+:root .quiet-capture { background: var(--surface); border-color: var(--border); color: var(--text); }
+:root .quiet-capture:hover { background: var(--surface-hover); }
+:root .batch-workspace { background: var(--surface-secondary); }
+:root .batch-source { background: var(--surface); }
+:root .batch-heading, :root .batch-tray, :root .batch-draft, :root .review-history, :root .review-history li { border-color: var(--border); }
+:root .batch-heading p, :root .batch-tray > p, :root .batch-tray > div > small, :root .batch-context, :root .review-history p, :root .review-history small { color: var(--text-secondary); }
+:root .review-history summary { color: var(--text-secondary); }
+:root .review-saved > strong { color: var(--success); }
+:root .batch-draft input[type=checkbox] { accent-color: var(--accent); }
+:root .block-selection-document .document-block:hover { background: var(--surface-hover); }
+:root .block-selection-document .document-block.selected { background: var(--selection); border-color: var(--selection-border); }
+:root .recall-blank { background: var(--accent-bg); border-color: var(--selection-border); color: var(--accent); }
+:root button.primary, :root .start-review { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
+:root button.primary:hover, :root .start-review:hover { background: var(--accent); border-color: var(--accent); }
+:root button:focus-visible { outline-color: var(--border-focus); }
+:root .today-page, :root .cards-page, :root .review-shell, :root .resource-page, :root .plan-page { background: var(--surface-secondary); }
+:root .review-invitation, :root .review-invitation.has-work, :root .knowledge-card-row, :root .knowledge-card-surface, :root .review-stage, :root .review-stage.review-document-stage, :root .review-assessment, :root .plan-timeline, :root .card-preview, :root .memory-card, :root .recall-composer { background: var(--surface); border-color: var(--border); box-shadow: none; }
+:root .knowledge-card-row:hover { background: var(--surface); border-color: var(--selection-border); box-shadow: var(--shadow-md); }
+:root .knowledge-card-modal > .knowledge-card-surface { box-shadow: var(--shadow-lg); }
+:root .knowledge-card-overlay, :root .card-overlay, :root .formula-overlay { background: var(--overlay); }
+:root .knowledge-card-header, :root .knowledge-card-footer, :root .note-disclosure, :root .card-answer, :root .reading-table-scroll, :root .recall-panel, :root .cards-tools, :root .review-answer { border-color: var(--border); }
+:root .knowledge-card-footer { background: var(--surface); }
+:root .card-row-symbol, :root .card-mode-tabs, :root .card-close, :root .mode-toggle, :root .word-picker-guide, :root .inline-card-answer, :root .block-hide-control { background: var(--surface-tertiary); color: var(--text-secondary); }
+:root .card-mode-tabs button { color: var(--text-secondary); }
+:root .card-mode-tabs button[aria-pressed=true], :root .mode-toggle button.selected { background: var(--surface); color: var(--text); box-shadow: var(--shadow-sm); }
+:root .card-row-excerpt, :root .reading-prose blockquote, :root .review-section-path, :root .assessment-help, :root .preview-memory-note { color: var(--text-secondary); }
+:root .card-row-tags, :root .card-row-meta, :root .knowledge-card-header > span, :root .knowledge-card-footer > span, :root .card-tag-line, :root .review-source, :root .card-source, :root .card-open-hint, :root .overline, :root .today-title-row p, :root .recall-open span, :root .inline-card-answer > p, :root .note-disclosure > summary::after { color: var(--text-muted); }
+:root .reading-prose, :root .node-inspector .inspector-editor-content, :root .reading-prose h1, :root .reading-prose h2, :root .reading-prose h3, :root .review-document-title, :root .review-prompt .reading-prose, :root .assessment-heading, :root .word-picker-guide strong, :root .cards-empty h2 { color: var(--text); }
+:root .reading-prose a, :root .recall-review, :root .recall-open:hover, :root .memory-card footer button { color: var(--accent); }
+:root .reading-prose blockquote { border-color: var(--border-strong); }
+:root .reading-prose th, :root .reading-tags span, :root .feedback-bar button, :root .word-selection-line button:hover, :root .recall-unit { background: var(--surface-secondary); color: var(--text-secondary); }
+:root .reading-prose td, :root .reading-prose th { border-color: var(--border); }
+:root .reading-prose pre, :root .reading-prose :not(pre) > code { background: var(--code-bg); border-color: var(--border); color: var(--text); }
+:root .reading-prose .hljs-keyword, :root .reading-prose .hljs-selector-tag { color: var(--syntax-keyword); }
+:root .reading-prose .hljs-title, :root .reading-prose .hljs-built_in { color: var(--syntax-function); }
+:root .reading-prose .hljs-string, :root .reading-prose .hljs-attr { color: var(--syntax-string); }
+:root .reading-prose .hljs-number, :root .reading-prose .hljs-literal { color: var(--syntax-number); }
+:root .reading-prose .hljs-comment { color: var(--text-muted); }
+:root .reading-prose .recall-mark, :root .reading-prose .recall-token.is-revealed, :root .review-anchor-line mark, :root .anchored-recall mark { background: var(--selection); color: var(--text); }
+:root .reading-prose .recall-token { background: var(--accent-bg); color: var(--accent); border-color: var(--selection-border); }
+:root .reading-prose .recall-token:hover, :root .selection-preview-tabs button[aria-pressed=true], :root .block-mode-switch button[aria-pressed=true] { background: var(--selection); color: var(--text); border-color: var(--selection-border); }
+:root .reading-prose .recall-block-mark { border-color: var(--selection-border); }
+:root .word-selection-line button[aria-pressed=true] { background: var(--accent-strong); color: var(--on-accent); box-shadow: none; }
+:root .word-picker-dock, :root .selection-toolbar { background: var(--surface); color: var(--text-secondary); border: 1px solid var(--border); box-shadow: var(--shadow-md); backdrop-filter: none; }
+:root .word-picker-dock > span strong { color: var(--text); }
+:root .word-picker-dock button, :root .selection-toolbar button { background: var(--surface-tertiary); color: var(--text); border-color: transparent; }
+:root .selection-toolbar button:hover, :root .feedback-bar button:hover { background: var(--surface-hover); }
+:root .feedback-bar button[data-result="missed"] { color: var(--danger); }
+:root .feedback-bar button[data-result="partial"] { color: var(--warning); }
+:root .feedback-bar button[data-result="recalled"] { color: var(--success); }
+:root .review-assessment { box-shadow: var(--shadow-lg); }
+:root .review-progress { background: var(--border); }
+:root .review-error { color: var(--danger); background: var(--danger-bg); }
+:root .cards-empty, :root .cards-empty > span { color: var(--text-muted); }
+:root .plan-bar-column:hover, :root .plan-bar-column.is-selected { background: var(--selection); outline-color: var(--selection-border); }
+:root .plan-bars { background: repeating-linear-gradient(to top, transparent 0, transparent 49px, var(--border) 50px, transparent 51px); }
+/* Rich editor and its menus inherit the same palette in either theme. */
+:root .mdxeditor, :root .mdxeditor-popup-container {
+  --basePageBg: var(--surface); --baseSolidHover: var(--text-secondary);
+  --baseBase: var(--surface); --baseBgSubtle: var(--surface-secondary); --baseBg: var(--surface-secondary);
+  --baseBgHover: var(--surface-hover); --baseBgActive: var(--surface-active); --baseLine: var(--border);
+  --baseBorder: var(--border); --baseBorderHover: var(--border-strong); --baseSolid: var(--text-muted);
+  --baseText: var(--text-secondary); --baseTextContrast: var(--text);
+  --accentBase: var(--surface); --accentBgSubtle: var(--accent-bg); --accentBg: var(--accent-bg);
+  --accentBgHover: var(--selection); --accentBgActive: var(--selection); --accentLine: var(--selection-border);
+  --accentBorder: var(--selection-border); --accentBorderHover: var(--accent); --accentSolid: var(--accent-strong);
+  --accentSolidHover: var(--accent); --accentText: var(--accent); --accentTextContrast: var(--text);
+  color: var(--text);
+}
+:root .note-rich-editor .mdxeditor-toolbar { background: var(--surface-secondary) !important; }
+:root .mdxeditor [role=combobox][data-placeholder] > span:first-child { color: var(--text-secondary); }
+:root .note-rich-editor .cm-editor, :root .note-rich-editor .cm-gutters { background: var(--code-bg); color: var(--text-secondary); }
+:root .note-rich-editor .cm-content { color: var(--text); caret-color: var(--text); }
+:root .note-rich-editor .cm-cursor { border-left-color: var(--text); }
+:root .note-rich-editor .cm-activeLine, :root .note-rich-editor .cm-activeLineGutter { background: var(--surface-hover); }
+:root .note-rich-editor .cm-selectionBackground { background: var(--selection) !important; }
+:root .react-flow { --xy-background-color-default: var(--surface); --xy-controls-button-background-color-default: var(--surface); --xy-controls-button-background-color-hover-default: var(--surface-hover); --xy-controls-button-color-default: var(--text); --xy-controls-button-border-color-default: var(--border); --xy-minimap-background-color-default: var(--surface-secondary); --xy-minimap-mask-background-color-default: var(--overlay); }
+:root .react-flow__controls-button { background: var(--surface); color: var(--text); border-color: var(--border); }
+:root .react-flow__controls-button svg { fill: currentColor; }
+:root .note-rich-editor .mdxeditor-toolbar button:disabled,
+:root .note-rich-editor .mdxeditor-toolbar button[data-disabled] { opacity: .28; cursor: not-allowed; }
+/* Editor portals must sit above independent cards and their overlay. */
+:root .mdxeditor-popup-container { position: relative; z-index: 1200; }

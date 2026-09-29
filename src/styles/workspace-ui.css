@@ -1,0 +1,248 @@
+/* UI-only workspace layer. Keep last in App.tsx; no content/scheduling semantics. */
+:root {
+  --surface: #fdfdfb;
+  --surface-secondary: #f4f5f2;
+  --surface-tertiary: #e9ece7;
+  --surface-hover: #edf0eb;
+  --sidebar-bg: #eef0eb;
+  --border: #e0e5dd;
+  --border-strong: #cbd3c8;
+  --text: #25312c;
+  --text-secondary: #59675f;
+  --text-muted: #728077;
+  --accent: #387260;
+  --accent-strong: #2d6553;
+  --accent-bg: #e8f0e9;
+  --selection: #dce9df;
+  --selection-border: #8aac9a;
+  --border-focus: #548675;
+  --on-accent: #ffffff;
+  --ui-ease: cubic-bezier(.2,.8,.2,1);
+}
+:root[data-theme="dark"] {
+  --surface: #222825;
+  --surface-raised: #28302c;
+  --surface-secondary: #1a201d;
+  --surface-tertiary: #303933;
+  --surface-hover: #2d3731;
+  --sidebar-bg: #171d1a;
+  --border: #343e37;
+  --border-strong: #4b5a50;
+  --text: #e6ece6;
+  --text-secondary: #b4c0b7;
+  --text-muted: #94a298;
+  --text-faint: #7e8b82;
+  --accent: #9ac6ae;
+  --accent-strong: #b4d4bd;
+  --accent-bg: #293e32;
+  --selection: #31473a;
+  --selection-border: #5b856b;
+  --border-focus: #99c5ad;
+  --on-accent: #1e3427;
+  --overlay: #0b120db3;
+  --code-bg: #1b221e;
+}
+html { -webkit-font-smoothing: antialiased; }
+button, input, textarea { font-family: inherit; }
+button { transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms var(--ui-ease); }
+button:not(:disabled):active { transform: translateY(1px); }
+button:disabled { cursor: not-allowed; }
+button.primary { min-height: 34px; border-radius: 9px; font-weight: 550; padding: 8px 16px; }
+button.ghost { border-color: transparent; }
+input:not([type=checkbox]):not([type=range]), textarea { border-radius: 9px; }
+:where(button,input,textarea,summary):focus-visible { outline: 2px solid var(--border-focus); outline-offset: 3px; }
+:where(.app-content,.knowledge-card-body,.note-editor-scroll,.sidebar-scroll,.choice-list) { scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent; overscroll-behavior: contain; }
+
+/* A quiet rail and an uninterrupted working surface. */
+.app-frame { --navigation-width: 212px; background: var(--sidebar-bg); }
+.app-sidebar { padding: 24px 12px 12px; border: 0; transition: width 220ms var(--ui-ease), flex-basis 220ms var(--ui-ease), padding 220ms var(--ui-ease), opacity 150ms ease; }
+.sidebar-brand { margin: 0 8px 28px; padding-right: 30px; }
+.sidebar-brand strong { font-size: 18px; letter-spacing: -.6px; }
+.sidebar-logo { height: 28px; width: 28px; border-radius: 8px; font-size: 24px; }
+.sidebar-search { margin: 0 0 20px; border: 1px solid var(--border); background: var(--surface); border-radius: 8px; }
+.sidebar-link.is-active { background: var(--selection); color: var(--text); font-weight: 550; }
+.sidebar-link:hover { transform: translateX(2px); }
+.sidebar-section { margin-bottom: 22px; }
+.sidebar-section > summary { padding: 8px 11px; font-size: 11px; letter-spacing: .04em; }
+.sidebar-section .disclosure-chevron, .sidebar-tools > summary > span:last-child { display: none; }
+.sidebar-section > summary::after, .sidebar-tools > summary::after { content: '+'; font-size: 15px; font-weight: 400; margin-left: 8px; }
+.sidebar-section[open] > summary::after, .sidebar-tools[open] > summary::after { content: '−'; }
+.sidebar-bottom { border-top-color: transparent; }
+.sidebar-tools > summary { border-radius: 8px; }
+.sidebar-tools > summary:hover { background: var(--surface-hover); }
+.appearance-switch { border: 0; padding: 3px; border-radius: 8px; }
+.appearance-switch button { min-height: 29px; border-radius: 6px; }
+.app-content { height: calc(100% - 16px); margin: 8px 8px 8px 0; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); position: relative; }
+.app-content > main { animation: workspace-enter 240ms var(--ui-ease); }
+.desktop-navigation-toggle { position: fixed; z-index: 46; top: 23px; left: 170px; width: 30px; height: 30px; display: grid; place-items: center; padding: 0; color: var(--text-muted); border: 0; background: transparent; border-radius: 7px; }
+.desktop-navigation-toggle:hover { background: var(--surface-hover); color: var(--text); }
+.navigation-hidden { --navigation-width: 0px; }
+.navigation-hidden .app-sidebar { width: 0; flex-basis: 0; padding-inline: 0; visibility: hidden; opacity: 0; overflow: hidden; }
+.navigation-hidden .app-content { margin-left: 8px; }
+.navigation-hidden .desktop-navigation-toggle { left: 20px; top: 20px; background: var(--surface-tertiary); }
+.navigation-hidden .app-content > main:not(.map-shell) { padding-top: 70px; }
+.navigation-hidden .map-context-bar { padding-left: 56px; }
+:root .today-page, :root .cards-page, :root .resource-page, :root .plan-page, .plans-page { background: var(--surface); }
+.today-page, .cards-page, .resource-page { padding: 36px clamp(24px, 3.5vw, 64px) 56px; }
+.cards-heading, .resource-heading, .page-heading { align-items: center; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--border); }
+.cards-heading h1, .resource-heading h1, .page-heading h1, .plans-page h1 { font-size: 28px; letter-spacing: -.9px; font-weight: 600; }
+:root .knowledge-card-row { border: 1px solid var(--border); border-radius: 12px; padding: 22px 20px; transition: transform 180ms var(--ui-ease), background 180ms ease, border-color 180ms ease; }
+:root .knowledge-card-row:hover { transform: translateY(-2px); background: var(--surface-hover); box-shadow: 0 7px 20px #00000008; }
+.card-row-symbol { width: 42px; height: 48px; border-radius: 9px; background: var(--accent-bg)!important; color: var(--accent)!important; }
+.card-row-title { font-size: 16px; }
+.card-row-excerpt { margin-top: 7px; line-height: 1.65; }
+.table-list:has(.map-row) { display: grid; gap: 12px; }
+.table-row.map-row { border: 1px solid var(--border); border-radius: 12px; padding: 22px; background: var(--surface-secondary); }
+:root .review-invitation { border-radius: 16px; background: var(--surface-secondary); }
+
+/* Full working window. Readable prose has a measure; the editor uses the space. */
+.knowledge-card-overlay { padding: 12px; animation: overlay-enter 160ms ease; }
+.knowledge-card-modal { width: min(1600px, 100%); height: 100%; max-height: none; }
+.knowledge-card-modal > .knowledge-card-surface { height: 100%; min-height: 0; max-height: none; border-radius: 14px; }
+.knowledge-card-header { min-height: 62px; padding: 10px 24px; background: var(--surface-secondary); }
+.card-mode-tabs { padding: 4px; border-radius: 9px; gap: 4px; }
+.card-mode-tabs button { min-width: 86px; padding: 8px 20px; border-radius: 6px; font-weight: 500; }
+.card-close { width: 32px; height: 32px; border-radius: 8px; background: transparent!important; }
+.card-close:hover { background: var(--surface-tertiary)!important; }
+.knowledge-card-body { padding: 32px clamp(24px, 5vw, 90px) 48px; }
+.knowledge-card-body.mode-edit { padding: 18px clamp(20px, 3vw, 48px) 40px; animation: editor-enter 200ms var(--ui-ease); }
+.card-document-container { max-width: min(1120px, 100%); width: 100%; margin-inline: auto; }
+.card-document-container > h1, .card-document-container > .card-tag-line, .card-document-container > .card-plan-line { max-width: 100%; margin-inline: 0; }
+.knowledge-card-body.mode-edit .node-inspector > div.note-editor-heading { padding: 12px 0 20px!important; border-bottom: 0!important; }
+.knowledge-card-modal .node-inspector.is-library .note-editor-scroll > *, .knowledge-card-modal .node-inspector.is-library > div:nth-of-type(2) > * { max-width: none; }
+.knowledge-card-modal .note-editor-heading input { font-size: 32px!important; letter-spacing: -.8px; }
+.note-header-actions { flex-wrap: wrap; }
+.note-header-actions > button, .note-header-actions .note-export > button { font-size: 12px; padding: 8px 10px; }
+.knowledge-card-modal .note-editor-scroll { padding: 0; }
+.note-guidance-disclosure { margin: 0 0 20px; border: 0; padding: 12px 0; border-bottom: 1px solid var(--border); border-radius: 0; }
+.note-guidance-disclosure summary { list-style: none; width: fit-content; border-radius: 7px; padding: 6px 10px; background: var(--surface-secondary); }
+.note-guidance-disclosure summary::-webkit-details-marker, .note-disclosure summary::-webkit-details-marker { display: none; }
+.note-guidance-disclosure summary::before { content: '+'; margin-right: 8px; color: var(--accent); }
+.note-guidance-disclosure[open] summary::before { content: '−'; }
+.note-edit-panel { border: 0; border-radius: 0; margin-bottom: 36px; padding: 0 0 24px; border-bottom: 1px solid var(--border); }
+.note-edit-panel.is-active { border-color: var(--border); }
+.note-panel-controls { padding: 8px 0 12px; gap: 8px; }
+.note-panel-controls > span { font-size: 12px; font-weight: 550; color: var(--text-secondary); }
+.note-panel-controls > button:hover { background: var(--surface-hover); }
+.note-panel-controls > span { max-width: min(45%, 520px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.note-rich-editor .mdxeditor-toolbar { position: sticky; top: 0; z-index: 8; border: 1px solid var(--border); border-radius: 9px; padding: 7px 8px; background: var(--surface-secondary)!important; gap: 3px; }
+.note-rich-editor .mdxeditor-toolbar button { min-width: 30px; min-height: 30px; }
+.knowledge-card-modal .node-inspector.is-library .mdxeditor-root-content { min-height: clamp(400px, calc(100dvh - 360px), 900px); padding: 28px 20px; }
+.knowledge-card-modal .note-edit-panel .inspector-editor-content { min-height: clamp(360px, calc(100dvh - 420px), 840px)!important; font-size: 17px; line-height: 1.85; }
+.knowledge-card-modal .note-edit-panel:has(+ .note-edit-panel) .mdxeditor-root-content { min-height: 260px; }
+.inspector-editor-content:focus { outline: none; }
+.text-style-buttons { display: inline-flex; gap: 2px; align-items: center; padding-right: 7px; margin-right: 3px; border-right: 1px solid var(--border); }
+.text-style-buttons button { background: transparent; color: var(--text-secondary); font-size: 11px; border: 0; padding: 4px; border-radius: 5px; }
+.text-style-buttons button[aria-pressed=true] { background: var(--selection); color: var(--accent); }
+.knowledge-card-footer { min-height: 56px; padding: 10px 24px; }
+.knowledge-card-footer button { border-radius: 8px; }
+.note-panel-actions { gap: 10px; }
+.note-panel-actions button { min-height: 40px; }
+.note-reading { max-width: 900px; margin-inline: auto; }
+.card-document-container .reading-prose { max-width: 100%; }
+.reading-prose { max-width: 82ch; }
+.section-back, .note-panel-back { animation: panel-enter 230ms var(--ui-ease); }
+
+/* Map is the workspace; the inspector is a bounded companion. */
+.map-context-bar { min-height: 62px; height: auto; padding: 10px 22px; background: var(--surface); gap: 10px; }
+.map-title-input { width: clamp(120px, 20vw, 320px); font-size: 17px; letter-spacing: -.3px; }
+.map-context-title span { display: none; }
+.map-context-bar button { min-height: 33px; border-radius: 8px; white-space: nowrap; }
+.map-workspace-grid { position: relative; padding: 10px; gap: 10px; background: var(--surface-secondary); }
+.map-canvas { border: 1px solid var(--border); border-radius: 10px; background: var(--surface-secondary); }
+.map-inspector { width: clamp(300px, 31vw, 430px); max-width: 45%; border: 1px solid var(--border); border-radius: 10px; animation: panel-enter 220ms var(--ui-ease); }
+.map-inspector .note-editor-heading > div:first-child { flex-wrap: wrap; }
+.map-inspector .note-header-actions { width: 100%; margin-top: 10px; }
+.map-inspector .note-rich-editor .mdxeditor-root-content { min-height: 360px; }
+.map-inspector .note-panel-controls > span { max-width: 100%; }
+.map-canvas .react-flow__controls { display: flex; flex-direction: row; border: 1px solid var(--border); border-radius: 9px; overflow: hidden; box-shadow: var(--shadow-md); margin: 18px; }
+.map-canvas .react-flow__controls-button { width: 34px; height: 34px; background: var(--surface); border-bottom: 0; border-right: 1px solid var(--border); color: var(--text-secondary); }
+.map-canvas .react-flow__minimap { border-radius: 10px; overflow: hidden; width: 150px; height: 105px; opacity: .85; margin: 18px; }
+.map-canvas .react-flow__node { transition: box-shadow 160ms ease, border-color 160ms ease; }
+.map-canvas > div > div:has(> button + button):not(.react-flow) { border-radius: 9px; }
+.map-focus-button[aria-pressed=true] { background: var(--selection); color: var(--accent); }
+.app-frame:has(.map-shell.is-focused) { --navigation-width: 0px; }
+.app-frame:has(.map-shell.is-focused) .app-sidebar { width: 0; flex-basis: 0; padding-inline: 0; visibility: hidden; opacity: 0; overflow: hidden; }
+.app-frame:has(.map-shell.is-focused) .app-content { margin-left: 8px; }
+.app-frame:has(.map-shell.is-focused) .desktop-navigation-toggle { display: none; }
+
+/* Choices are exposed as buttons or a searchable sheet, never a native dropdown. */
+.choice-segments { display: inline-flex; flex-wrap: wrap; align-items: stretch; gap: 3px; max-width: 100%; padding: 4px; border: 1px solid var(--border); border-radius: 9px; background: var(--surface-secondary); vertical-align: middle; }
+.choice-segments button { flex: 1 1 auto; min-height: 30px; padding: 6px 11px; border: 0; border-radius: 6px; background: transparent; font-size: 12px; color: var(--text-secondary); white-space: normal; }
+.choice-segments button[aria-pressed=true] { background: var(--surface); color: var(--accent); box-shadow: var(--shadow-sm); }
+.choice-trigger { display: inline-flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 38px; max-width: 100%; padding: 9px 12px; text-align: left; background: var(--surface-secondary); border: 1px solid var(--border); border-radius: 9px; font-size: 13px; }
+.choice-trigger > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.choice-trigger-symbol { color: var(--accent); }
+.choice-overlay { position: fixed; inset: 0; z-index: 1500; background: var(--overlay); display: grid; place-items: center; padding: 24px; animation: overlay-enter 160ms ease; }
+.choice-sheet { width: min(540px, 100%); max-height: min(680px, 85dvh); display: flex; flex-direction: column; overflow: hidden; padding: 20px; gap: 14px; border: 1px solid var(--border); background: var(--surface); border-radius: 18px; box-shadow: var(--shadow-lg); animation: workspace-enter 220ms var(--ui-ease); }
+.choice-sheet header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.choice-sheet h2 { margin: 0; font-size: 17px; font-weight: 600; }
+.choice-sheet header button { padding: 0; width: 32px; height: 32px; background: transparent; border: 0; font-size: 23px; }
+.choice-sheet input { width: 100%; padding: 12px; background: var(--surface-secondary); }
+.choice-list { display: grid; gap: 5px; overflow-y: auto; }
+.choice-list button { display: flex; justify-content: space-between; gap: 20px; text-align: left; min-height: 48px; padding: 12px; border: 0; border-radius: 9px; background: transparent; color: var(--text-secondary); }
+.choice-list button[aria-pressed=true] { background: var(--selection); color: var(--text); }
+.choice-list button:hover { background: var(--surface-hover); }
+.choice-list p { padding: 24px; color: var(--text-muted); text-align: center; }
+.plan-field > .choice-trigger, .section-reference-picker .choice-trigger { display: flex; width: 100%; margin-top: 8px; }
+.practice-prompt-navigation > .choice-trigger { flex: 1 1 auto; min-width: 0; font-size: 13px; }
+.practice-prompt-navigation > .choice-segments { flex: 1; }
+.seq-compact-unit { flex-wrap: wrap; }
+.seq-compact-unit .choice-segments.seq-unit { width: auto; }
+.recall-composer > .choice-segments { margin-bottom: 12px; }
+
+@keyframes editor-enter { from { opacity: .4; } to { opacity: 1; } }
+@keyframes reader-enter { from { opacity: .4; } to { opacity: 1; } }
+@keyframes workspace-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes panel-enter { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes overlay-enter { from { opacity: 0; } to { opacity: 1; } }
+details[open] > :not(summary) { animation: workspace-enter 180ms var(--ui-ease); }
+@media (max-width: 1000px) {
+  .map-context-bar { flex-wrap: wrap; }
+  .map-inspector { position: absolute; right: 10px; top: 10px; bottom: 10px; width: min(420px, calc(100% - 20px)); max-width: none; z-index: 15; box-shadow: var(--shadow-lg); }
+  .knowledge-card-modal .note-editor-heading > div:first-child { flex-wrap: wrap; }
+  .knowledge-card-modal .note-header-actions { width: 100%; margin-top: 10px; }
+}
+@media (max-width: 800px) {
+  .app-frame { --navigation-width: 0px; }
+  .app-content { margin: 0; height: 100%; border: 0; border-radius: 0; }
+  .app-sidebar { padding-top: 24px; width: 264px; }
+  .desktop-navigation-toggle { display: none; }
+  .navigation-hidden .app-sidebar { width: 264px; flex-basis: 264px; padding: 24px 12px 12px; visibility: visible; opacity: 1; }
+  .navigation-hidden .app-content { margin-left: 0; }
+  .app-frame:has(.map-shell.is-focused) .mobile-navigation-toggle { display: none; }
+  .map-shell.is-focused { padding-top: 0; }
+  .sidebar-brand { padding-right: 0; }
+  .app-content > main:not(.map-shell) { padding-top: 74px; }
+  .map-shell { padding-top: 58px; }
+  .map-workspace-grid { padding: 6px; }
+  .map-context-bar { padding: 10px 12px; gap: 6px; }
+  .map-context-title { flex-basis: 100%; }
+  .map-context-bar > .topbar-spacer { display: none; }
+  .knowledge-card-overlay { padding: 0; }
+  .knowledge-card-modal > .knowledge-card-surface { border-radius: 0; border: 0; max-height: none; }
+  .knowledge-card-header { min-height: 58px; padding: 8px 14px; }
+  .card-mode-tabs button { min-width: 0; padding: 8px 14px; }
+  .knowledge-card-body, .knowledge-card-body.mode-edit { padding: 20px 18px 32px; }
+  .knowledge-card-modal .note-editor-heading input { font-size: 26px!important; }
+  .knowledge-card-modal .node-inspector.is-library .mdxeditor-root-content { padding: 22px 4px; min-height: 400px; }
+  .knowledge-card-modal .note-edit-panel .inspector-editor-content { min-height: 360px!important; font-size: 16px; }
+  .knowledge-card-footer { padding: 10px 14px; gap: 8px; }
+  .knowledge-card-footer > div { flex-wrap: wrap; justify-content: flex-end; }
+  .note-panel-controls > span { max-width: 100%; flex-basis: 100%; }
+  .map-canvas .react-flow__minimap { display: none; }
+  .choice-overlay { padding: 12px; align-items: end; }
+  .choice-sheet { max-height: 85dvh; width: 100%; border-radius: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none!important; transition: none!important; scroll-behavior: auto!important; }
+}
+
+/* Keep native editor toolbar popovers usable while compacting the writing chrome. */
+@media (max-width: 600px) {
+  .note-rich-editor .mdxeditor-toolbar { flex-wrap: nowrap; overflow-x: auto; }
+  .note-rich-editor .mdxeditor-toolbar > div { flex-shrink: 0; }
+  .text-style-buttons { flex-shrink: 0; }
+  .note-guidance-disclosure { margin-bottom: 10px; padding-block: 6px; }
+  .knowledge-card-modal .node-inspector > div.note-editor-heading { padding-bottom: 10px!important; }
+}
