@@ -42,7 +42,7 @@ If you want an external AI to draft practice questions, Nodal can provide a prom
 
 [Open Nodal](https://yajing5027.github.io/Nodal/) and begin with a note. The current website saves your workspace in the browser you use. It has no account or automatic sync, and data at the public site and a local development address do not transfer automatically. Download a **full backup** from **Data & backup** regularly, especially before clearing browser data or moving to another browser or device. Importing a backup replaces the workspace at the destination.
 
-On a new workspace, the public site includes two study examples: Q3 · Trees & Heaps and Q1 · Computer Architecture & Number Representation. You can edit or delete them. What you write stays in that browser unless you choose to export it. Browser storage is how this version works today; it is not a promise that Nodal will always be limited to one device.
+A new workspace opens with notes on mathematics, trees and heaps, and computer architecture, plus a small map and questions at different stages of review. You can edit or delete any of this material. What you write stays in that browser unless you choose to export it. Browser storage is how this version works today; it is not a promise that Nodal will always be limited to one device.
 
 <details>
 <summary>Run the website on your own computer</summary>

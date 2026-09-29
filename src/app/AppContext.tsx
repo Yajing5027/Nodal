@@ -16,6 +16,7 @@ import { getAllMaps } from '../repositories/mapRepository';
 import { getAllTags } from '../repositories/tagRepository';
 import { ensureCourseTagsExist } from '../repositories/tagMigration';
 import { ensureStarterNotes } from '../repositories/starterNotes';
+import { ensureStudyWorkspace } from '../repositories/showcaseContent';
 import { AppStateContext, type AppState, type AppView } from './AppState';
 
 export function AppProvider({ children }: { children: ReactNode }) {
@@ -79,6 +80,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
           try {
             await ensureCourseTagsExist();
             await ensureStarterNotes();
+            await ensureStudyWorkspace();
           } catch (e) {
             console.error('Initialization check error:', e);
           }

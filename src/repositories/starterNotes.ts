@@ -6,7 +6,14 @@ const STARTER_NOTES_KEY = 'starter-notes-v2';
 export const ARCHITECTURE_NOTE_ID = 'node-computer-architecture-study-notes';
 export const ARCHITECTURE_NOTE_TITLE = 'Q1 · Computer Architecture & Number Representation';
 
-export const ARCHITECTURE_MARKDOWN = [
+/** Keep display equations as standalone Markdown blocks, including old saved notes. */
+export function formatDisplayMath(markdown: string): string {
+  return markdown
+    .replace(/(\$\$[^\n]*\$\$)\n(?=\$\$)/g, '$1\n\n')
+    .replace(/^\$\$(.+)\$\$$/gm, (_match, expression: string) => `$$\n${expression}\n$$`);
+}
+
+export const ARCHITECTURE_MARKDOWN = formatDisplayMath([
   '<!-- nodal-panel:sec-system-architecture:visible -->',
   '## System Architecture',
   '### Von Neumann',
@@ -28,7 +35,9 @@ export const ARCHITECTURE_MARKDOWN = [
   '- Register < L1 cache < main memory in access time; a cache miss can increase CPI.',
   '',
   '$$\\text{Total Cycles}=\\text{Instruction Count}\\times\\text{CPI}$$',
+  '',
   '$$\\text{CPU Time}=\\frac{\\text{Total Cycles}}{\\text{Clock Rate}}=\\text{Instruction Count}\\times\\text{CPI}\\times\\text{Clock Period}$$',
+  '',
   '$$\\text{Clock Period}=\\frac{1}{\\text{Clock Rate}}$$',
   '',
   '- 1 GHz = 10⁹ cycles/second.',
@@ -54,6 +63,7 @@ export const ARCHITECTURE_MARKDOWN = [
   '',
   "### Signed / Two's Complement",
   '$$-2^{N-1} \\leq x \\leq 2^{N-1}-1$$',
+  '',
   '- The most significant bit has weight $-2^{N-1}$.',
   '- Example: 1101 = −8 + 4 + 1 = −3.',
   '- Negation: flip all bits, then add 1.',
@@ -78,8 +88,9 @@ export const ARCHITECTURE_MARKDOWN = [
   '- Move the binary point left: exponent increases; move it right: exponent decreases.',
   '- Stored exponent = real exponent + bias; for half precision, $E=e+15$.',
   '- Binary fractional places have weights $2^{-1}, 2^{-2}, 2^{-3}, \\ldots$.',
+  '',
   '$$.11_2=\\frac{1}{2}+\\frac{1}{4}=\\frac{3}{4}=0.75$$',
-].join('\n');
+].join('\n'));
 
 /**
  * Add the two user-approved study examples to a new workspace. The previously
