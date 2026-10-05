@@ -1,0 +1,1 @@
+import{st as e}from"./index-CJ1KBnhM.js";function t(t,n){return e(t,n,220)}export{t};

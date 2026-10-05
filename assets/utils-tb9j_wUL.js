@@ -1,0 +1,1 @@
+function e(e){let t=Date.now()-e,n=Math.floor(t/1e3);if(n<60)return`just now`;let r=Math.floor(n/60);if(r<60)return`${r}m ago`;let i=Math.floor(r/60);if(i<24)return`${i}h ago`;let a=Math.floor(i/24);if(a<7)return`${a}d ago`;let o=Math.floor(a/7);if(o<5)return`${o}w ago`;let s=Math.floor(a/30);return s<12?`${s}mo ago`:`${Math.floor(a/365)}y ago`}export{e as t};
