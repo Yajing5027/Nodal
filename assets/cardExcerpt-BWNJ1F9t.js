@@ -1,1 +1,0 @@
-import{st as e}from"./index-DK9l1Y5B.js";function t(t,n){return e(t,n,220)}export{t};
