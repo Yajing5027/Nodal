@@ -1,1 +1,0 @@
-import{st as e}from"./index-CF2jpoCL.js";function t(t,n){return e(t,n,220)}export{t};
