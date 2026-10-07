@@ -1,0 +1,1 @@
+import{st as e}from"./index-jo0m8_ek.js";function t(t,n){return e(t,n,220)}export{t};
