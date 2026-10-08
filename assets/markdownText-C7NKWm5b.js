@@ -1,0 +1,2 @@
+function e(e){return e.replace(/^#{1,6}\s+.*$/gm,``)}function t(t,n=130){let r=e(t).replace(/<!--[\s\S]*?-->/g,``).replace(/<[^>]+>/g,``).trim().split(`
+`).map(e=>e.trim()).filter(Boolean)[0]||`No content preview`;return r.length>n?r.slice(0,n)+`…`:r}function n(e,t=80){return e.replace(/^#+\s+[^\n]+\n*/,``).slice(0,t).trim()}export{n,t};
