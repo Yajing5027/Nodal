@@ -1,1 +1,0 @@
-import{ct as e}from"./index-wFIefU8j.js";function t(t,n){return e(t,n,220)}export{t};
