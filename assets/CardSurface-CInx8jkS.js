@@ -1,0 +1,1 @@
+import{Nt as e}from"./index-2lr8nkH_.js";var t=e();function n({children:e,className:n=``}){return(0,t.jsx)(`section`,{className:`knowledge-card-surface ${n}`,children:e})}export{n as t};
