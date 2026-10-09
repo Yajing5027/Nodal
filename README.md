@@ -36,6 +36,8 @@ When you review, reveal the answer and mark what actually happened: **Forgot**, 
 
 You can also create **Review plans** with adaptive, fixed, or custom intervals, optionally with an end date. Assign a plan to a note, a section, or an individual question, and use **Plan** to look back over completed reviews and see what is coming up. These tools help you keep a routine; they do not claim to know your exam result or guarantee that you have mastered a topic.
 
+Before starting learning or review, confirm each question's effective plan or apply a plan to the selected questions. **Card settings** shows the inherited or individual plan, its parameters, review history, and upcoming dates. Later dates are estimates assuming successful Recalled answers; your actual answers can change them. **Manage cards** in Review plans adds or removes individual assignments. Removing one restores the inherited plan or default Adaptive (FSRS), preserving the question and its review history. Editing a plan's parameters affects every question using that plan.
+
 Every linked note shows the same question under **All**, including questions already in review. **Pending** includes only questions whose learning has not started. Shared review history contributes to mastery in every linked Note and Section.
 
 For the Heuer contest, linked competition questions receive **Heuer Contest Prep · Math**, using the contest date in Events. Ratings schedule the next review no earlier than the next local calendar day. Remembered questions gradually get longer intervals, with a final check before the contest; the preparation queue stops after the Event. Assigning the plan preserves history and does not start unstarted questions.
