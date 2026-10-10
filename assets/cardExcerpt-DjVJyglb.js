@@ -1,1 +1,0 @@
-import{et as e}from"./index-al9r8QQk.js";function t(t,n){return e(t,n,220)}export{t};
