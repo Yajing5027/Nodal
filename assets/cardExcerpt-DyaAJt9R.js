@@ -1,0 +1,1 @@
+import{et as e}from"./index-D02eVJaC.js";function t(t,n){return e(t,n,220)}export{t};
