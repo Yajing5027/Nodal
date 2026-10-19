@@ -1,0 +1,1 @@
+import{xt as e}from"./index-CP4C3kQu.js";function t(t,n){return e(t,n,220)}export{t};
