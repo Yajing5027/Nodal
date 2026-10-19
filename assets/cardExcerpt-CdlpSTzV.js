@@ -1,1 +1,0 @@
-import{nt as e}from"./index-7S_gCgbn.js";function t(t,n){return e(t,n,220)}export{t};

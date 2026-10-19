@@ -1,0 +1,1 @@
+import{pt as e}from"./index-DVWaJEiP.js";function t(t,n){return e(t,n,220)}export{t};
