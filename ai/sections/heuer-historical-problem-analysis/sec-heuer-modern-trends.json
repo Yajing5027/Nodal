@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-historical-problem-analysis",
+  "noteTitle": "Jerry Heuer Historical Problem Analysis",
+  "id": "sec-heuer-modern-trends",
+  "title": "4. Evolutionary Shifts in Modern Contests (2022–2025)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 4. Evolutionary Shifts in Modern Contests (2022–2025)\n\nThe contest was renamed the *Heuer Memorial Team Contest* in 2022. Several pedagogical and curricular trends distinguish the recent four years (2022–2025) from the earlier 2010–2019 era:\n\n- **Introduction of Linear Algebra:** Pre-2022 contests virtually never featured matrix algebra. Contests in 2022 (P4: matrix involutions $M^2 = I$) and 2025 (P6: rank 1, trace 1 implies $A^2 = A$) formally introduced linear algebra into the problem rotation.\n- **Formal Functional Equations & Continuous Dynamics:** While older contests favored computational calculus, recent contests emphasize functional inequalities and topological dynamics:\n  - 2023 P10: $f(x) + f(y) = f(f(x)f(y)) \\implies f \\equiv 0$.\n  - 2024 P9: $f(x+y) + f(x+z) + f(y+z) \\ge 3f(x+2y+3z) \\implies f \\equiv c$.\n  - 2025 P7: $f(x^n) = f(x)$ for continuous $f \\implies f \\equiv c$.\n- **Shift toward Elegant Olympiad-style Lemmas:** Recent contests feature classical named inequalities and lemmas: Titu's Lemma / Sedrakyan's inequality (2024 P2), Dirichlet's Approximation Theorem (2024 P7), Abel's Theorem for power series integration (2024 P10), Menelaus / similarity cevial ratios (2025 P8).\n\n---",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-historical-problem-analysis.md",
+  "noteContentSha256": "b84098f0673a3f66d97f9d779e6354cca958d4a4a7ee3e93c58f58ccb771af7f",
+  "contentSha256": "c536a06a875fe50543853fea3ea4c07140a77c07c63568f6e28643732e063bd0",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-modern-trends"
+}

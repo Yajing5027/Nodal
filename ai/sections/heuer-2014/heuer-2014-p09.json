@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2014",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2014",
+  "id": "heuer-2014-p09",
+  "title": "A set containing 2014, 0 and -2",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A set containing 2014, 0 and -2\n\n### Problem\nLet $S$ be a set of integers containing the numbers 0 and 2014. Assume further that if $r$ is an integer root of a polynomial with coefficients in $S$, then $r \\in S$. Prove that $-2 \\in S$.\n\n### Solution (adapted from the official solution)\nWe use the given closure property sequentially to show that $-1, 1, -2 \\in S$:\n\n1. Consider the linear polynomial $P_1(x) = 2014x + 2014$.\nIts coefficients are $2014, 2014 \\in S$. Its root is $x = -1$ (since $2014(-1) + 2014 = 0$).\nBy the given hypothesis, $-1 \\in S$.\n\n2. Now consider the polynomial:\n$$P_2(x) = 2014 - x - x^2 - \\dots - x^{2014}.$$\nEvery coefficient of $P_2(x)$ is either $2014$ or $-1$ (or $0$), all of which belong to $S$.\nEvaluating at $x = 1$:\n$$P_2(1) = 2014 - \\underbrace{(1 + 1 + \\dots + 1)}_{2014 \\text{ times}} = 2014 - 2014 = 0.$$\nThus $1$ is an integer root of $P_2(x)$, which implies $1 \\in S$.\n\n3. Now consider the polynomial:\n$$P_3(x) = x^{11} - x^5 - x + 2014.$$\nIts coefficients are $1, 0, -1, 2014$, all of which belong to $S$.\nEvaluating at $x = -2$:\n$$(-2)^{11} - (-2)^5 - (-2) + 2014 = -2048 - (-32) + 2 + 2014 = -2048 + 32 + 2 + 2014 = -2048 + 2048 = 0.$$\nThus $-2$ is an integer root of $P_3(x)$.\n\nTherefore $-2 \\in S$.\n\n### Conceptual Explanation\nStep 1: $2014x + 2014 = 0 \\implies -1 \\in S$. Step 2: $2014 - \\sum_{k=1}^{2014} x^k = 0$ at $x = 1 \\implies 1 \\in S$. Step 3: $x^{11} - x^5 - x + 2014 = 0$ at $x = -2$ because $(-2)^{11} = -2048$ and $-32 - 2 + 2014 = 1980$ cancel directly to give $0$, ensuring $-2 \\in S$.\n\n### Key Technique\nSuccessive bootstrap construction of polynomials with known integer roots.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2014 Problems PDF](https://www.northcentral.maa.org/s/probs14.pdf)\n- Solutions: [Jerry Heuer 2014 Solutions PDF](https://www.northcentral.maa.org/s/solns14.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2014.md",
+  "noteContentSha256": "5ae4235a0ce08265450928eaaae43f3d881d3395120de54bf6e93ef0d6da9a02",
+  "contentSha256": "c039b1c15d37026212e2811926d6cd1b5393909d757d82eab24311d058446d92",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p09"
+}

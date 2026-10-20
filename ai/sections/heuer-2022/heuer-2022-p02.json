@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2022",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2022",
+  "id": "heuer-2022-p02",
+  "title": "Square with Perpendicular to a Diagonal",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Square with Perpendicular to a Diagonal\n\n### Problem\nIn the square $ABCD$, the line from a point $E$ on side $CD$ to a point $G$ on side $BC$ is perpendicular to the diagonal $AC$ and intersects it at $F$. If $|AF| = |EG| = 20$, determine $|DE|$.\n\n### Solution (adapted from the official solution)\nThe length $|DE|$ is $5\\sqrt{2}$.\n\n![Figure for Jerry Heuer heuer-2022-p02-solution](study/assets/asset-heuer-2022-p02-solution-heuer-2022-p02-solution.png)\n\nIn square $ABCD$, the diagonal $AC$ makes a $45^\\circ$ angle with each side: $\\angle ACD = \\angle ACB = 45^\\circ$.\n\nSince line $EG$ is perpendicular to diagonal $AC$ at $F$, $\\angle EFC = \\angle GFC = 90^\\circ$.\n\nTherefore, in right triangles $\\triangle EFC$ and $\\triangle GFC$:\n- $\\angle FCE = 45^\\circ \\implies \\angle FEC = 45^\\circ$, so $\\triangle EFC$ is an isosceles right triangle with $|EF| = |FC|$.\n- $\\angle FCG = 45^\\circ \\implies \\angle FGC = 45^\\circ$, so $\\triangle GFC$ is also an isosceles right triangle with $|GF| = |FC|$.\n\nThus $F$ is the midpoint of $EG$, so:\n\n$$|EF| = |GF| = |FC| = \\frac{|EG|}{2} = \\frac{20}{2} = 10.$$\n\nIn the isosceles right triangle $\\triangle EFC$, the hypotenuse is:\n\n$$|EC| = \\sqrt{|EF|^2 + |FC|^2} = \\sqrt{10^2 + 10^2} = 10\\sqrt{2}.$$\n\nThe total length of the diagonal $AC$ is:\n\n$$|AC| = |AF| + |FC| = 20 + 10 = 30.$$\n\nThe side length of the square $CD$ is:\n\n$$|CD| = \\frac{|AC|}{\\sqrt{2}} = \\frac{30}{\\sqrt{2}} = 15\\sqrt{2}.$$\n\nTherefore:\n\n$$|DE| = |CD| - |EC| = 15\\sqrt{2} - 10\\sqrt{2} = 5\\sqrt{2}.$$\n\n### Conceptual Explanation\nSince $EG \\perp AC$ and $AC$ bisects $\\angle C$, $\\triangle EFC$ is a $45^\\circ-45^\\circ-90^\\circ$ triangle with leg $FC = EF = 10$ and hypotenuse $EC = 10\\sqrt{2}$. Diagonal $AC = 20 + 10 = 30$ gives side $CD = 30/\\sqrt{2} = 15\\sqrt{2}$, leaving $DE = 15\\sqrt{2} - 10\\sqrt{2} = 5\\sqrt{2}$.\n\n### Key Technique\nIsosceles right triangle geometry along the diagonal of a square.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2022 Problems PDF](https://www.northcentral.maa.org/s/probs22.pdf)\n- Solutions: [Jerry Heuer 2022 Solutions PDF](https://www.northcentral.maa.org/s/solns22.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2022.md",
+  "noteContentSha256": "99814494576415df0f6eeb0e0b3c47228acbddd91da790a407aa78f0be9f434c",
+  "contentSha256": "1fd3a1703c6700cd4eda6d53fb21d75cb5f56f68dc47e1ab5ef0bf18f2e726b1",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p02"
+}

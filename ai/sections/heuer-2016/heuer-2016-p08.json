@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2016",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2016",
+  "id": "heuer-2016-p08",
+  "title": "Divisible by 2²⁰¹⁶",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Divisible by 2²⁰¹⁶\n\n### Problem\nDoes there exist an integer of 2016 decimal digits, each digit of which is 6 or 7, which is divisible by $2^{2016}$?\n\n### Solution (adapted from the official solution)\nYes, such an integer exists.\n\nWe prove by induction that for every positive integer $k$, there exists a $k$-digit integer $N_k$ consisting entirely of the digits 6 and 7 such that $N_k$ is divisible by $2^k$.\n\n**Base Case ($k = 1$):**\n$N_1 = 6 = 2^1 \\times 3$, which is divisible by $2^1$.\n\n**Inductive Step:**\nAssume $N_k$ is a $k$-digit integer made of digits 6 and 7 such that $N_k = 2^k \\cdot m$ for some integer $m$.\n\nTo construct a $(k+1)$-digit integer, we prepend either a 6 or a 7 to $N_k$:\n$$N_{k+1}(d) = d \\cdot 10^k + N_k = d \\cdot 2^k \\cdot 5^k + 2^k \\cdot m = 2^k (d \\cdot 5^k + m),$$\nfor $d \\in \\{6, 7\\}$.\n\nDividing by $2^k$, we need $d \\cdot 5^k + m$ to be even (divisible by 2), so that $N_{k+1}$ is divisible by $2^{k+1}$:\n- Since $5^k$ is odd, $d \\cdot 5^k \\equiv d \\pmod 2$.\n- Thus $d \\cdot 5^k + m \\equiv d + m \\pmod 2$.\n\n- If $m$ is even, choose $d = 6$ (even): then $6 + m \\equiv 0 \\pmod 2$, so $N_{k+1}(6)$ is divisible by $2^{k+1}$.\n- If $m$ is odd, choose $d = 7$ (odd): then $7 + m \\equiv 0 \\pmod 2$, so $N_{k+1}(7)$ is divisible by $2^{k+1}$.\n\nIn either case, exactly one of the two choices produces a $(k+1)$-digit integer divisible by $2^{k+1}$.\n\nBy mathematical induction, this holds for all $k$, and in particular for $k = 2016$.\n\n### Conceptual Explanation\nPrepending $d \\in \\{6, 7\\}$ to $N_k = 2^k m$ adds $d \\cdot 10^k = 2^k(d \\cdot 5^k)$. Modulo 2, $d \\cdot 5^k + m \\equiv d + m$. Because 6 and 7 have opposite parity, one of the two choices is guaranteed to be even, lifting divisibility from $2^k$ to $2^{k+1}$.\n\n### Key Technique\nHensel's lemma / 2-adic lifting via digits of opposite parity.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2016 Problems PDF](https://www.northcentral.maa.org/s/probs16.pdf)\n- Solutions: [Jerry Heuer 2016 Solutions PDF](https://www.northcentral.maa.org/s/solns16.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2016.md",
+  "noteContentSha256": "cae2534f9cf89dc5a4acdd3e1e26cbbc5e9c3ca85ce42ed8925f12d754196cb1",
+  "contentSha256": "28eb6a59fd532e29f15cd555b6c3eb72596440c71776c10af7e741dacc86787f",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p08"
+}

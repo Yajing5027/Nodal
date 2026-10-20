@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2012",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2012",
+  "id": "heuer-2012-p01",
+  "title": "A rational function of the medians",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A rational function of the medians\n\n### Problem\nLet $ABC$ be any right triangle and let $r$, $s$, and $t$ be the lengths of the medians, with $r \\ge s \\ge t$. Show that\n\n$$\\frac{r^2 + s^2}{t^2} = 5.$$\n\n### Solution (adapted from the official solution)\nLet $a$, $b$, and $c$ be the sides of the triangle, with $c$ the hypotenuse and $a$ the side which the median of length $r$ bisects. (The median to the hypotenuse is the shortest, so $t = c/2$.)\n\nThen by the Pythagorean Theorem,\n\n$$r^2 = \\left(\\frac{a}{2}\\right)^2 + b^2 = \\frac{a^2}{4} + b^2,$$\n\n$$s^2 = a^2 + \\left(\\frac{b}{2}\\right)^2 = a^2 + \\frac{b^2}{4},$$\n\nand $t^2 = (c/2)^2 = \\frac{c^2}{4}$.\n\nThus\n\n$$\\frac{r^2 + s^2}{t^2} = \\frac{\\frac{5}{4}(a^2 + b^2)}{\\frac{1}{4}c^2} = 5\\frac{a^2 + b^2}{c^2} = 5,$$ \n\nsince $a^2 + b^2 = c^2$.\n\n### Conceptual Explanation\nIn any right triangle with legs $a, b$ and hypotenuse $c$, medians to the legs have lengths given by $r^2 = a^2/4 + b^2$ and $s^2 = a^2 + b^2/4$. Their sum is $\\frac{5}{4}(a^2 + b^2) = \\frac{5}{4}c^2$. The median to the hypotenuse has length $t = c/2$, so $t^2 = c^2/4$. Dividing gives exactly 5.\n\n### Key Technique\nPythagorean theorem on right triangles formed by medians and right triangle median-to-hypotenuse length $c/2$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2012 Problems PDF](https://www.northcentral.maa.org/s/probs12.pdf)\n- Solutions: [Jerry Heuer 2012 Solutions PDF](https://www.northcentral.maa.org/s/solns12.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2012.md",
+  "noteContentSha256": "a71b693b5136bb0517d5426bd82c4cf6bf1bb0079f60d0bf5f39e00c6a657c50",
+  "contentSha256": "6c719499618c73ea2cdaf65e181e1d99ef189197497057df068a5efec4f189fb",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p01"
+}

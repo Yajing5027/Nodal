@@ -1,0 +1,1622 @@
+{
+  "schemaVersion": "nodal.ai.index.v1",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "notes": [
+    {
+      "id": "heuer-2010",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2010",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010",
+      "resource": "ai/notes/heuer-2010.json",
+      "contentSha256": "6a9920985561f05adf9100d4bf015a051f9574b68471e6ec73a611effaf33940",
+      "sections": [
+        {
+          "id": "heuer-2010-p01",
+          "title": "⌊log₃ n⌋ is a multiple of 3",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p01",
+          "resource": "ai/sections/heuer-2010/heuer-2010-p01.json"
+        },
+        {
+          "id": "heuer-2010-p02",
+          "title": "Find vertices given midpoints",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p02",
+          "resource": "ai/sections/heuer-2010/heuer-2010-p02.json"
+        },
+        {
+          "id": "heuer-2010-p03",
+          "title": "Real part of 1/(1 − z)",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p03",
+          "resource": "ai/sections/heuer-2010/heuer-2010-p03.json"
+        },
+        {
+          "id": "heuer-2010-p04",
+          "title": "Length of a segment",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p04",
+          "resource": "ai/sections/heuer-2010/heuer-2010-p04.json"
+        },
+        {
+          "id": "heuer-2010-p05",
+          "title": "Sum is 1/2010",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p05",
+          "resource": "ai/sections/heuer-2010/heuer-2010-p05.json"
+        },
+        {
+          "id": "heuer-2010-p06",
+          "title": "Both have value 7",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p06",
+          "resource": "ai/sections/heuer-2010/heuer-2010-p06.json"
+        },
+        {
+          "id": "heuer-2010-p07",
+          "title": "Limit of a sequence",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p07",
+          "resource": "ai/sections/heuer-2010/heuer-2010-p07.json"
+        },
+        {
+          "id": "heuer-2010-p08",
+          "title": "An unbounded sequence",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p08",
+          "resource": "ai/sections/heuer-2010/heuer-2010-p08.json"
+        },
+        {
+          "id": "heuer-2010-p09",
+          "title": "Divisible by 2010",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p09",
+          "resource": "ai/sections/heuer-2010/heuer-2010-p09.json"
+        },
+        {
+          "id": "heuer-2010-p10",
+          "title": "Three real roots",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p10",
+          "resource": "ai/sections/heuer-2010/heuer-2010-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2011",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2011",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011",
+      "resource": "ai/notes/heuer-2011.json",
+      "contentSha256": "768de4a528f6e191963aaccebe07d35aaa1821d2e8dfdfa95aab6841b759618f",
+      "sections": [
+        {
+          "id": "heuer-2011-p01",
+          "title": "Units digit of S₂₀₁₁",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p01",
+          "resource": "ai/sections/heuer-2011/heuer-2011-p01.json"
+        },
+        {
+          "id": "heuer-2011-p02",
+          "title": "Area of a square",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p02",
+          "resource": "ai/sections/heuer-2011/heuer-2011-p02.json"
+        },
+        {
+          "id": "heuer-2011-p03",
+          "title": "Speshul integers",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p03",
+          "resource": "ai/sections/heuer-2011/heuer-2011-p03.json"
+        },
+        {
+          "id": "heuer-2011-p04",
+          "title": "Divisor and remainder",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p04",
+          "resource": "ai/sections/heuer-2011/heuer-2011-p04.json"
+        },
+        {
+          "id": "heuer-2011-p05",
+          "title": "Bigger than 2011²?",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p05",
+          "resource": "ai/sections/heuer-2011/heuer-2011-p05.json"
+        },
+        {
+          "id": "heuer-2011-p06",
+          "title": "From 11 to 2011",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p06",
+          "resource": "ai/sections/heuer-2011/heuer-2011-p06.json"
+        },
+        {
+          "id": "heuer-2011-p07",
+          "title": "Not a perfect square",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p07",
+          "resource": "ai/sections/heuer-2011/heuer-2011-p07.json"
+        },
+        {
+          "id": "heuer-2011-p08",
+          "title": "P(11) = 2011",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p08",
+          "resource": "ai/sections/heuer-2011/heuer-2011-p08.json"
+        },
+        {
+          "id": "heuer-2011-p09",
+          "title": "Fractional part of √n",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p09",
+          "resource": "ai/sections/heuer-2011/heuer-2011-p09.json"
+        },
+        {
+          "id": "heuer-2011-p10",
+          "title": "Numerator divisible by 2011",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p10",
+          "resource": "ai/sections/heuer-2011/heuer-2011-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2012",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2012",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012",
+      "resource": "ai/notes/heuer-2012.json",
+      "contentSha256": "a71b693b5136bb0517d5426bd82c4cf6bf1bb0079f60d0bf5f39e00c6a657c50",
+      "sections": [
+        {
+          "id": "heuer-2012-p01",
+          "title": "A rational function of the medians",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p01",
+          "resource": "ai/sections/heuer-2012/heuer-2012-p01.json"
+        },
+        {
+          "id": "heuer-2012-p02",
+          "title": "A base 7 expansion",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p02",
+          "resource": "ai/sections/heuer-2012/heuer-2012-p02.json"
+        },
+        {
+          "id": "heuer-2012-p03",
+          "title": "Solve for x",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p03",
+          "resource": "ai/sections/heuer-2012/heuer-2012-p03.json"
+        },
+        {
+          "id": "heuer-2012-p04",
+          "title": "A 2012 trigonometric identity",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p04",
+          "resource": "ai/sections/heuer-2012/heuer-2012-p04.json"
+        },
+        {
+          "id": "heuer-2012-p05",
+          "title": "A polynomial extrapolation",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p05",
+          "resource": "ai/sections/heuer-2012/heuer-2012-p05.json"
+        },
+        {
+          "id": "heuer-2012-p06",
+          "title": "A 2012 stones game",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p06",
+          "resource": "ai/sections/heuer-2012/heuer-2012-p06.json"
+        },
+        {
+          "id": "heuer-2012-p07",
+          "title": "Probability that they meet",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p07",
+          "resource": "ai/sections/heuer-2012/heuer-2012-p07.json"
+        },
+        {
+          "id": "heuer-2012-p08",
+          "title": "Trading denominators to make the sum 2012",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p08",
+          "resource": "ai/sections/heuer-2012/heuer-2012-p08.json"
+        },
+        {
+          "id": "heuer-2012-p09",
+          "title": "Divisors of (n + 1)!",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p09",
+          "resource": "ai/sections/heuer-2012/heuer-2012-p09.json"
+        },
+        {
+          "id": "heuer-2012-p10",
+          "title": "A sequence dense in (0,1)",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p10",
+          "resource": "ai/sections/heuer-2012/heuer-2012-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2013",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2013",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013",
+      "resource": "ai/notes/heuer-2013.json",
+      "contentSha256": "e4d6d7b17c93764ea0bc65b9c85fb4c8602fc259cbb61257b32cf3c0c46c0df8",
+      "sections": [
+        {
+          "id": "heuer-2013-p01",
+          "title": "Measure of an angle",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p01",
+          "resource": "ai/sections/heuer-2013/heuer-2013-p01.json"
+        },
+        {
+          "id": "heuer-2013-p02",
+          "title": "The 2013th term",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p02",
+          "resource": "ai/sections/heuer-2013/heuer-2013-p02.json"
+        },
+        {
+          "id": "heuer-2013-p03",
+          "title": "Probability of real roots",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p03",
+          "resource": "ai/sections/heuer-2013/heuer-2013-p03.json"
+        },
+        {
+          "id": "heuer-2013-p04",
+          "title": "Sum is 2013",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p04",
+          "resource": "ai/sections/heuer-2013/heuer-2013-p04.json"
+        },
+        {
+          "id": "heuer-2013-p05",
+          "title": "20th derivative at 0",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p05",
+          "resource": "ai/sections/heuer-2013/heuer-2013-p05.json"
+        },
+        {
+          "id": "heuer-2013-p06",
+          "title": "Predicted time remaining is one hour",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p06",
+          "resource": "ai/sections/heuer-2013/heuer-2013-p06.json"
+        },
+        {
+          "id": "heuer-2013-p07",
+          "title": "A periodic sequence",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p07",
+          "resource": "ai/sections/heuer-2013/heuer-2013-p07.json"
+        },
+        {
+          "id": "heuer-2013-p08",
+          "title": "A commutative operation",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p08",
+          "resource": "ai/sections/heuer-2013/heuer-2013-p08.json"
+        },
+        {
+          "id": "heuer-2013-p09",
+          "title": "Sum of interval lengths",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p09",
+          "resource": "ai/sections/heuer-2013/heuer-2013-p09.json"
+        },
+        {
+          "id": "heuer-2013-p10",
+          "title": "Sum of cubes greater than 40",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p10",
+          "resource": "ai/sections/heuer-2013/heuer-2013-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2014",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2014",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014",
+      "resource": "ai/notes/heuer-2014.json",
+      "contentSha256": "5ae4235a0ce08265450928eaaae43f3d881d3395120de54bf6e93ef0d6da9a02",
+      "sections": [
+        {
+          "id": "heuer-2014-p01",
+          "title": "Equation of a circle",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p01",
+          "resource": "ai/sections/heuer-2014/heuer-2014-p01.json"
+        },
+        {
+          "id": "heuer-2014-p02",
+          "title": "Simultaneous equations",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p02",
+          "resource": "ai/sections/heuer-2014/heuer-2014-p02.json"
+        },
+        {
+          "id": "heuer-2014-p03",
+          "title": "2014 concentric circles",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p03",
+          "resource": "ai/sections/heuer-2014/heuer-2014-p03.json"
+        },
+        {
+          "id": "heuer-2014-p04",
+          "title": "Cubic polynomial game",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p04",
+          "resource": "ai/sections/heuer-2014/heuer-2014-p04.json"
+        },
+        {
+          "id": "heuer-2014-p05",
+          "title": "Digit sum of the cube",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p05",
+          "resource": "ai/sections/heuer-2014/heuer-2014-p05.json"
+        },
+        {
+          "id": "heuer-2014-p06",
+          "title": "No real zeros",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p06",
+          "resource": "ai/sections/heuer-2014/heuer-2014-p06.json"
+        },
+        {
+          "id": "heuer-2014-p07",
+          "title": "Not both rational",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p07",
+          "resource": "ai/sections/heuer-2014/heuer-2014-p07.json"
+        },
+        {
+          "id": "heuer-2014-p08",
+          "title": "A global maximum",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p08",
+          "resource": "ai/sections/heuer-2014/heuer-2014-p08.json"
+        },
+        {
+          "id": "heuer-2014-p09",
+          "title": "A set containing 2014, 0 and -2",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p09",
+          "resource": "ai/sections/heuer-2014/heuer-2014-p09.json"
+        },
+        {
+          "id": "heuer-2014-p10",
+          "title": "An inequality",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p10",
+          "resource": "ai/sections/heuer-2014/heuer-2014-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2015",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2015",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015",
+      "resource": "ai/notes/heuer-2015.json",
+      "contentSha256": "7ac59e1166d45bd51ed4b603c7d75ce8b99c3df34fae5358050075fb223b64a0",
+      "sections": [
+        {
+          "id": "heuer-2015-p01",
+          "title": "Surface area of a box",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p01",
+          "resource": "ai/sections/heuer-2015/heuer-2015-p01.json"
+        },
+        {
+          "id": "heuer-2015-p02",
+          "title": "Minimum value of a sequence",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p02",
+          "resource": "ai/sections/heuer-2015/heuer-2015-p02.json"
+        },
+        {
+          "id": "heuer-2015-p03",
+          "title": "Counting rational numbers",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p03",
+          "resource": "ai/sections/heuer-2015/heuer-2015-p03.json"
+        },
+        {
+          "id": "heuer-2015-p04",
+          "title": "Sets with sum 2015",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p04",
+          "resource": "ai/sections/heuer-2015/heuer-2015-p04.json"
+        },
+        {
+          "id": "heuer-2015-p05",
+          "title": "Divisibility",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p05",
+          "resource": "ai/sections/heuer-2015/heuer-2015-p05.json"
+        },
+        {
+          "id": "heuer-2015-p06",
+          "title": "Limit of a sequence",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p06",
+          "resource": "ai/sections/heuer-2015/heuer-2015-p06.json"
+        },
+        {
+          "id": "heuer-2015-p07",
+          "title": "n²⁰¹⁵ as a sum of squares",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p07",
+          "resource": "ai/sections/heuer-2015/heuer-2015-p07.json"
+        },
+        {
+          "id": "heuer-2015-p08",
+          "title": "Equal areas",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p08",
+          "resource": "ai/sections/heuer-2015/heuer-2015-p08.json"
+        },
+        {
+          "id": "heuer-2015-p09",
+          "title": "A bound on the zeros of a polynomial",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p09",
+          "resource": "ai/sections/heuer-2015/heuer-2015-p09.json"
+        },
+        {
+          "id": "heuer-2015-p10",
+          "title": "Sum of squares less than 2015",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p10",
+          "resource": "ai/sections/heuer-2015/heuer-2015-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2016",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2016",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016",
+      "resource": "ai/notes/heuer-2016.json",
+      "contentSha256": "cae2534f9cf89dc5a4acdd3e1e26cbbc5e9c3ca85ce42ed8925f12d754196cb1",
+      "sections": [
+        {
+          "id": "heuer-2016-p01",
+          "title": "A geometric progression",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p01",
+          "resource": "ai/sections/heuer-2016/heuer-2016-p01.json"
+        },
+        {
+          "id": "heuer-2016-p02",
+          "title": "A 2016 evaluation",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p02",
+          "resource": "ai/sections/heuer-2016/heuer-2016-p02.json"
+        },
+        {
+          "id": "heuer-2016-p03",
+          "title": "Some cubic polynomials",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p03",
+          "resource": "ai/sections/heuer-2016/heuer-2016-p03.json"
+        },
+        {
+          "id": "heuer-2016-p04",
+          "title": "A sum of squared sines",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p04",
+          "resource": "ai/sections/heuer-2016/heuer-2016-p04.json"
+        },
+        {
+          "id": "heuer-2016-p05",
+          "title": "Lots of powers of 2",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p05",
+          "resource": "ai/sections/heuer-2016/heuer-2016-p05.json"
+        },
+        {
+          "id": "heuer-2016-p06",
+          "title": "Sides of a triangle",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p06",
+          "resource": "ai/sections/heuer-2016/heuer-2016-p06.json"
+        },
+        {
+          "id": "heuer-2016-p07",
+          "title": "Five triangles of equal area",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p07",
+          "resource": "ai/sections/heuer-2016/heuer-2016-p07.json"
+        },
+        {
+          "id": "heuer-2016-p08",
+          "title": "Divisible by 2²⁰¹⁶",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p08",
+          "resource": "ai/sections/heuer-2016/heuer-2016-p08.json"
+        },
+        {
+          "id": "heuer-2016-p09",
+          "title": "All terms integers?",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p09",
+          "resource": "ai/sections/heuer-2016/heuer-2016-p09.json"
+        },
+        {
+          "id": "heuer-2016-p10",
+          "title": "An inequality",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p10",
+          "resource": "ai/sections/heuer-2016/heuer-2016-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2017",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2017",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017",
+      "resource": "ai/notes/heuer-2017.json",
+      "contentSha256": "19b08ac613eb3d71bef37392f343566f6abdbcce98a94a25fb15ca5d35c237c2",
+      "sections": [
+        {
+          "id": "heuer-2017-p01",
+          "title": "An averaging operation",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p01",
+          "resource": "ai/sections/heuer-2017/heuer-2017-p01.json"
+        },
+        {
+          "id": "heuer-2017-p02",
+          "title": "An inequality",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p02",
+          "resource": "ai/sections/heuer-2017/heuer-2017-p02.json"
+        },
+        {
+          "id": "heuer-2017-p03",
+          "title": "Probability the sum is odd",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p03",
+          "resource": "ai/sections/heuer-2017/heuer-2017-p03.json"
+        },
+        {
+          "id": "heuer-2017-p04",
+          "title": "A sum of reciprocals",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p04",
+          "resource": "ai/sections/heuer-2017/heuer-2017-p04.json"
+        },
+        {
+          "id": "heuer-2017-p05",
+          "title": "Floor-function integral",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p05",
+          "resource": "ai/sections/heuer-2017/heuer-2017-p05.json"
+        },
+        {
+          "id": "heuer-2017-p06",
+          "title": "A sum of 2017 terms",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p06",
+          "resource": "ai/sections/heuer-2017/heuer-2017-p06.json"
+        },
+        {
+          "id": "heuer-2017-p07",
+          "title": "Counting permutations",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p07",
+          "resource": "ai/sections/heuer-2017/heuer-2017-p07.json"
+        },
+        {
+          "id": "heuer-2017-p08",
+          "title": "A limit",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p08",
+          "resource": "ai/sections/heuer-2017/heuer-2017-p08.json"
+        },
+        {
+          "id": "heuer-2017-p09",
+          "title": "Equal products of side lengths",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p09",
+          "resource": "ai/sections/heuer-2017/heuer-2017-p09.json"
+        },
+        {
+          "id": "heuer-2017-p10",
+          "title": "Infinitely many terms divisible by 2017",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p10",
+          "resource": "ai/sections/heuer-2017/heuer-2017-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2018",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2018",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018",
+      "resource": "ai/notes/heuer-2018.json",
+      "contentSha256": "52117a8f6f7cc785475940fb239e395e61db403802c2b7d0880aac666cc3521b",
+      "sections": [
+        {
+          "id": "heuer-2018-p01",
+          "title": "Multiples of 23",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p01",
+          "resource": "ai/sections/heuer-2018/heuer-2018-p01.json"
+        },
+        {
+          "id": "heuer-2018-p02",
+          "title": "The 2018th term",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p02",
+          "resource": "ai/sections/heuer-2018/heuer-2018-p02.json"
+        },
+        {
+          "id": "heuer-2018-p03",
+          "title": "Sums of fourth powers",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p03",
+          "resource": "ai/sections/heuer-2018/heuer-2018-p03.json"
+        },
+        {
+          "id": "heuer-2018-p04",
+          "title": "Each face occurs twice",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p04",
+          "resource": "ai/sections/heuer-2018/heuer-2018-p04.json"
+        },
+        {
+          "id": "heuer-2018-p05",
+          "title": "A subset of the first 2018 positive integers",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p05",
+          "resource": "ai/sections/heuer-2018/heuer-2018-p05.json"
+        },
+        {
+          "id": "heuer-2018-p06",
+          "title": "Area of a quadrilateral",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p06",
+          "resource": "ai/sections/heuer-2018/heuer-2018-p06.json"
+        },
+        {
+          "id": "heuer-2018-p07",
+          "title": "A quadratic equation with integral roots",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p07",
+          "resource": "ai/sections/heuer-2018/heuer-2018-p07.json"
+        },
+        {
+          "id": "heuer-2018-p08",
+          "title": "2018 + xy is a perfect square",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p08",
+          "resource": "ai/sections/heuer-2018/heuer-2018-p08.json"
+        },
+        {
+          "id": "heuer-2018-p09",
+          "title": "A max/min problem",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p09",
+          "resource": "ai/sections/heuer-2018/heuer-2018-p09.json"
+        },
+        {
+          "id": "heuer-2018-p10",
+          "title": "A logarithmic inequality",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p10",
+          "resource": "ai/sections/heuer-2018/heuer-2018-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2019",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2019",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019",
+      "resource": "ai/notes/heuer-2019.json",
+      "contentSha256": "abb5d59d9f3d5bc683336a26f30df7cf179ff8d4a5237f49b7239fb5c195af59",
+      "sections": [
+        {
+          "id": "heuer-2019-p01",
+          "title": "Divisible by 19",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p01",
+          "resource": "ai/sections/heuer-2019/heuer-2019-p01.json"
+        },
+        {
+          "id": "heuer-2019-p02",
+          "title": "Intersections of quadratics",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p02",
+          "resource": "ai/sections/heuer-2019/heuer-2019-p02.json"
+        },
+        {
+          "id": "heuer-2019-p03",
+          "title": "No solutions in integers",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p03",
+          "resource": "ai/sections/heuer-2019/heuer-2019-p03.json"
+        },
+        {
+          "id": "heuer-2019-p04",
+          "title": "Square populations",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p04",
+          "resource": "ai/sections/heuer-2019/heuer-2019-p04.json"
+        },
+        {
+          "id": "heuer-2019-p05",
+          "title": "An integer-valued function",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p05",
+          "resource": "ai/sections/heuer-2019/heuer-2019-p05.json"
+        },
+        {
+          "id": "heuer-2019-p06",
+          "title": "A convergent series",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p06",
+          "resource": "ai/sections/heuer-2019/heuer-2019-p06.json"
+        },
+        {
+          "id": "heuer-2019-p07",
+          "title": "Multiplying two arithmetic sequences",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p07",
+          "resource": "ai/sections/heuer-2019/heuer-2019-p07.json"
+        },
+        {
+          "id": "heuer-2019-p08",
+          "title": "Probability that it is divisible by 11",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p08",
+          "resource": "ai/sections/heuer-2019/heuer-2019-p08.json"
+        },
+        {
+          "id": "heuer-2019-p09",
+          "title": "Length of a segment",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p09",
+          "resource": "ai/sections/heuer-2019/heuer-2019-p09.json"
+        },
+        {
+          "id": "heuer-2019-p10",
+          "title": "2019 sums of consecutive integers",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p10",
+          "resource": "ai/sections/heuer-2019/heuer-2019-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2022",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2022",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022",
+      "resource": "ai/notes/heuer-2022.json",
+      "contentSha256": "99814494576415df0f6eeb0e0b3c47228acbddd91da790a407aa78f0be9f434c",
+      "sections": [
+        {
+          "id": "heuer-2022-p01",
+          "title": "Necklace with 21 Diamonds",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p01",
+          "resource": "ai/sections/heuer-2022/heuer-2022-p01.json"
+        },
+        {
+          "id": "heuer-2022-p02",
+          "title": "Square with Perpendicular to a Diagonal",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p02",
+          "resource": "ai/sections/heuer-2022/heuer-2022-p02.json"
+        },
+        {
+          "id": "heuer-2022-p03",
+          "title": "Area of a Region",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p03",
+          "resource": "ai/sections/heuer-2022/heuer-2022-p03.json"
+        },
+        {
+          "id": "heuer-2022-p04",
+          "title": "Matrix Involution",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p04",
+          "resource": "ai/sections/heuer-2022/heuer-2022-p04.json"
+        },
+        {
+          "id": "heuer-2022-p05",
+          "title": "Evaluating Polynomials",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p05",
+          "resource": "ai/sections/heuer-2022/heuer-2022-p05.json"
+        },
+        {
+          "id": "heuer-2022-p06",
+          "title": "Sums of Reciprocals",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p06",
+          "resource": "ai/sections/heuer-2022/heuer-2022-p06.json"
+        },
+        {
+          "id": "heuer-2022-p07",
+          "title": "Integer Triangles",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p07",
+          "resource": "ai/sections/heuer-2022/heuer-2022-p07.json"
+        },
+        {
+          "id": "heuer-2022-p08",
+          "title": "A Bound on Partial Sums",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p08",
+          "resource": "ai/sections/heuer-2022/heuer-2022-p08.json"
+        },
+        {
+          "id": "heuer-2022-p09",
+          "title": "Same Difference",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p09",
+          "resource": "ai/sections/heuer-2022/heuer-2022-p09.json"
+        },
+        {
+          "id": "heuer-2022-p10",
+          "title": "Integral Solutions",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p10",
+          "resource": "ai/sections/heuer-2022/heuer-2022-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2023",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2023",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023",
+      "resource": "ai/notes/heuer-2023.json",
+      "contentSha256": "5b79ad2df928427c231809c12043ac80d017d64c03d9076363e13fd022275ff9",
+      "sections": [
+        {
+          "id": "heuer-2023-p01",
+          "title": "Area between two Curves",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p01",
+          "resource": "ai/sections/heuer-2023/heuer-2023-p01.json"
+        },
+        {
+          "id": "heuer-2023-p02",
+          "title": "Sum of Legs in a Right Triangle",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p02",
+          "resource": "ai/sections/heuer-2023/heuer-2023-p02.json"
+        },
+        {
+          "id": "heuer-2023-p03",
+          "title": "Log Equation",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p03",
+          "resource": "ai/sections/heuer-2023/heuer-2023-p03.json"
+        },
+        {
+          "id": "heuer-2023-p04",
+          "title": "Sum of Squares of Rational Numbers",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p04",
+          "resource": "ai/sections/heuer-2023/heuer-2023-p04.json"
+        },
+        {
+          "id": "heuer-2023-p05",
+          "title": "A Tale of Two Squares",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p05",
+          "resource": "ai/sections/heuer-2023/heuer-2023-p05.json"
+        },
+        {
+          "id": "heuer-2023-p06",
+          "title": "Integral Equality",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p06",
+          "resource": "ai/sections/heuer-2023/heuer-2023-p06.json"
+        },
+        {
+          "id": "heuer-2023-p07",
+          "title": "SUV in a Parking Lot",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p07",
+          "resource": "ai/sections/heuer-2023/heuer-2023-p07.json"
+        },
+        {
+          "id": "heuer-2023-p08",
+          "title": "Convergent Series",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p08",
+          "resource": "ai/sections/heuer-2023/heuer-2023-p08.json"
+        },
+        {
+          "id": "heuer-2023-p09",
+          "title": "Difference of Cubes",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p09",
+          "resource": "ai/sections/heuer-2023/heuer-2023-p09.json"
+        },
+        {
+          "id": "heuer-2023-p10",
+          "title": "Simple Function",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p10",
+          "resource": "ai/sections/heuer-2023/heuer-2023-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2024",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2024",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024",
+      "resource": "ai/notes/heuer-2024.json",
+      "contentSha256": "f155367e1f7d80b4457fd8e742ebd20ceb828f4e9023c5f8b6efaadd8ff216bd",
+      "sections": [
+        {
+          "id": "heuer-2024-p01",
+          "title": "Decimal Number",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p01",
+          "resource": "ai/sections/heuer-2024/heuer-2024-p01.json"
+        },
+        {
+          "id": "heuer-2024-p02",
+          "title": "Inequality of Real Numbers",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p02",
+          "resource": "ai/sections/heuer-2024/heuer-2024-p02.json"
+        },
+        {
+          "id": "heuer-2024-p03",
+          "title": "Looking for Primes",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p03",
+          "resource": "ai/sections/heuer-2024/heuer-2024-p03.json"
+        },
+        {
+          "id": "heuer-2024-p04",
+          "title": "An Integral Formula",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p04",
+          "resource": "ai/sections/heuer-2024/heuer-2024-p04.json"
+        },
+        {
+          "id": "heuer-2024-p05",
+          "title": "Parallel Chords",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p05",
+          "resource": "ai/sections/heuer-2024/heuer-2024-p05.json"
+        },
+        {
+          "id": "heuer-2024-p06",
+          "title": "Nine Positive Integers",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p06",
+          "resource": "ai/sections/heuer-2024/heuer-2024-p06.json"
+        },
+        {
+          "id": "heuer-2024-p07",
+          "title": "Approximate to 1",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p07",
+          "resource": "ai/sections/heuer-2024/heuer-2024-p07.json"
+        },
+        {
+          "id": "heuer-2024-p08",
+          "title": "Flipping Coins",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p08",
+          "resource": "ai/sections/heuer-2024/heuer-2024-p08.json"
+        },
+        {
+          "id": "heuer-2024-p09",
+          "title": "Real Function",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p09",
+          "resource": "ai/sections/heuer-2024/heuer-2024-p09.json"
+        },
+        {
+          "id": "heuer-2024-p10",
+          "title": "Infinite Series",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p10",
+          "resource": "ai/sections/heuer-2024/heuer-2024-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-2025",
+      "title": "Jerry Heuer MAA-NCS Team Contest 2025",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025",
+      "resource": "ai/notes/heuer-2025.json",
+      "contentSha256": "9b25499a5e7c660860c1e50cc65aa33498b301e548ed3b488fa1f8a13ca175f5",
+      "sections": [
+        {
+          "id": "heuer-2025-p01",
+          "title": "A Square and a Triangle",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p01",
+          "resource": "ai/sections/heuer-2025/heuer-2025-p01.json"
+        },
+        {
+          "id": "heuer-2025-p02",
+          "title": "Divisibility by 48",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p02",
+          "resource": "ai/sections/heuer-2025/heuer-2025-p02.json"
+        },
+        {
+          "id": "heuer-2025-p03",
+          "title": "Inequality",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p03",
+          "resource": "ai/sections/heuer-2025/heuer-2025-p03.json"
+        },
+        {
+          "id": "heuer-2025-p04",
+          "title": "A Positive Function",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p04",
+          "resource": "ai/sections/heuer-2025/heuer-2025-p04.json"
+        },
+        {
+          "id": "heuer-2025-p05",
+          "title": "The Second Largest",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p05",
+          "resource": "ai/sections/heuer-2025/heuer-2025-p05.json"
+        },
+        {
+          "id": "heuer-2025-p06",
+          "title": "A Matrix Identity",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p06",
+          "resource": "ai/sections/heuer-2025/heuer-2025-p06.json"
+        },
+        {
+          "id": "heuer-2025-p07",
+          "title": "A Continuous Function",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p07",
+          "resource": "ai/sections/heuer-2025/heuer-2025-p07.json"
+        },
+        {
+          "id": "heuer-2025-p08",
+          "title": "Area of a Triangle",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p08",
+          "resource": "ai/sections/heuer-2025/heuer-2025-p08.json"
+        },
+        {
+          "id": "heuer-2025-p09",
+          "title": "A Recursive Sequence",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p09",
+          "resource": "ai/sections/heuer-2025/heuer-2025-p09.json"
+        },
+        {
+          "id": "heuer-2025-p10",
+          "title": "Double Numbers",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p10",
+          "resource": "ai/sections/heuer-2025/heuer-2025-p10.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-historical-problem-analysis",
+      "title": "Jerry Heuer Historical Problem Analysis",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis",
+      "resource": "ai/notes/heuer-historical-problem-analysis.json",
+      "contentSha256": "b84098f0673a3f66d97f9d779e6354cca958d4a4a7ee3e93c58f58ccb771af7f",
+      "sections": [
+        {
+          "id": "sec-heuer-corpus-overview",
+          "title": "1. Corpus Overview & Architecture",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-corpus-overview",
+          "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-corpus-overview.json"
+        },
+        {
+          "id": "sec-heuer-domain-frequencies",
+          "title": "2. Historical Domain Frequencies (140 Problems)",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-domain-frequencies",
+          "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-domain-frequencies.json"
+        },
+        {
+          "id": "sec-heuer-recurring-structures",
+          "title": "3. Recurring Mathematical Structures & Motifs",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-recurring-structures",
+          "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-recurring-structures.json"
+        },
+        {
+          "id": "sec-heuer-modern-trends",
+          "title": "4. Evolutionary Shifts in Modern Contests (2022–2025)",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-modern-trends",
+          "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-modern-trends.json"
+        },
+        {
+          "id": "sec-heuer-technique-clusters",
+          "title": "5. High-Yield Technique Clusters",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-technique-clusters",
+          "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-technique-clusters.json"
+        },
+        {
+          "id": "sec-heuer-difficulty-context",
+          "title": "6. Difficulty and Progress",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-difficulty-context",
+          "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-difficulty-context.json"
+        }
+      ]
+    },
+    {
+      "id": "heuer-prerequisite-gaps",
+      "title": "Jerry Heuer Prerequisite Gaps",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-prerequisite-gaps",
+      "resource": "ai/notes/heuer-prerequisite-gaps.json",
+      "contentSha256": "77aa1d81fcfd43f764ee888cc3c8f620dc59d216afd1ce56cd6d041595746df6",
+      "sections": [
+        {
+          "id": "sec-gaps-learner-profile",
+          "title": "1. Learner Background & Gap Analysis Profile",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-prerequisite-gaps&section=sec-gaps-learner-profile",
+          "resource": "ai/sections/heuer-prerequisite-gaps/sec-gaps-learner-profile.json"
+        },
+        {
+          "id": "sec-gaps-high-priority",
+          "title": "2. High-Priority Gaps (Critical & Frequently Tested)",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-prerequisite-gaps&section=sec-gaps-high-priority",
+          "resource": "ai/sections/heuer-prerequisite-gaps/sec-gaps-high-priority.json"
+        },
+        {
+          "id": "sec-gaps-medium-priority",
+          "title": "3. Medium-Priority Gaps (Targeted Skill Extensions)",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-prerequisite-gaps&section=sec-gaps-medium-priority",
+          "resource": "ai/sections/heuer-prerequisite-gaps/sec-gaps-medium-priority.json"
+        },
+        {
+          "id": "sec-gaps-low-priority",
+          "title": "4. Low-Priority / Curriculum-Covered Gaps",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-prerequisite-gaps&section=sec-gaps-low-priority",
+          "resource": "ai/sections/heuer-prerequisite-gaps/sec-gaps-low-priority.json"
+        },
+        {
+          "id": "sec-gaps-study-roadmap",
+          "title": "5. Recommended Practice Sequencing",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-prerequisite-gaps&section=sec-gaps-study-roadmap",
+          "resource": "ai/sections/heuer-prerequisite-gaps/sec-gaps-study-roadmap.json"
+        }
+      ]
+    },
+    {
+      "id": "node-computer-architecture-study-notes",
+      "title": "Q1 · Computer Architecture & Number Representation",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes",
+      "resource": "ai/notes/node-computer-architecture-study-notes.json",
+      "contentSha256": "22eb09a2c05fdcaeb0232cd13e7ae902bac98344b42c8b730258fe3daa83884e",
+      "sections": [
+        {
+          "id": "sec-system-architecture",
+          "title": "System Architecture",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-system-architecture",
+          "resource": "ai/sections/node-computer-architecture-study-notes/sec-system-architecture.json"
+        },
+        {
+          "id": "sec-performance",
+          "title": "Performance",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-performance",
+          "resource": "ai/sections/node-computer-architecture-study-notes/sec-performance.json"
+        },
+        {
+          "id": "sec-binary-hex",
+          "title": "Binary & Hex",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-binary-hex",
+          "resource": "ai/sections/node-computer-architecture-study-notes/sec-binary-hex.json"
+        },
+        {
+          "id": "sec-integer-representation",
+          "title": "Integer Representation",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-integer-representation",
+          "resource": "ai/sections/node-computer-architecture-study-notes/sec-integer-representation.json"
+        },
+        {
+          "id": "sec-ieee-754",
+          "title": "IEEE 754 Floating Point",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-ieee-754",
+          "resource": "ai/sections/node-computer-architecture-study-notes/sec-ieee-754.json"
+        }
+      ]
+    },
+    {
+      "id": "node-exponents-and-logs",
+      "title": "Exponents & Logs",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-exponents-and-logs",
+      "resource": "ai/notes/node-exponents-and-logs.json",
+      "contentSha256": "547bdbd4a651418d35d8e1897b9c587d23234e5944e7822bf551b9f7d8bcba37",
+      "sections": [
+        {
+          "id": "sec-exponents-and-logs-core",
+          "title": "Exponents & Logs",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-exponents-and-logs&section=sec-exponents-and-logs-core",
+          "resource": "ai/sections/node-exponents-and-logs/sec-exponents-and-logs-core.json"
+        }
+      ]
+    },
+    {
+      "id": "node-limits-foundation",
+      "title": "Limits",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-limits-foundation",
+      "resource": "ai/notes/node-limits-foundation.json",
+      "contentSha256": "079ebd77887526c148bbb13fc622de2f3552578876fe1d3a9a37b73da7c00b76",
+      "sections": [
+        {
+          "id": "sec-limits-core",
+          "title": "Limits",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-limits-foundation&section=sec-limits-core",
+          "resource": "ai/sections/node-limits-foundation/sec-limits-core.json"
+        }
+      ]
+    },
+    {
+      "id": "node-telescoping-technique",
+      "title": "Telescoping — factor ↔ split ↔ cancel → boundary",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-telescoping-technique",
+      "resource": "ai/notes/node-telescoping-technique.json",
+      "contentSha256": "ddd18062bedd14791fac6be3d8100908c0760142de404b43f4547010eeb131f6",
+      "sections": [
+        {
+          "id": "sec-telescoping-core",
+          "title": "Telescoping — factor ↔ split ↔ cancel → boundary",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-telescoping-technique&section=sec-telescoping-core",
+          "resource": "ai/sections/node-telescoping-technique/sec-telescoping-core.json"
+        }
+      ]
+    },
+    {
+      "id": "node-trees-heaps-q3",
+      "title": "Q3 · Trees & Heaps",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3",
+      "resource": "ai/notes/node-trees-heaps-q3.json",
+      "contentSha256": "1181d6350d734724d4adda58118772c6e7f226861a2eaa55f9a99ed83049bfb0",
+      "sections": [
+        {
+          "id": "sec-q3-vocab",
+          "title": "Q3 词汇",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-q3-vocab",
+          "resource": "ai/sections/node-trees-heaps-q3/sec-q3-vocab.json"
+        },
+        {
+          "id": "sec-tree-subtree",
+          "title": "Tree 与 subtree",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-tree-subtree",
+          "resource": "ai/sections/node-trees-heaps-q3/sec-tree-subtree.json"
+        },
+        {
+          "id": "sec-heap-props",
+          "title": "Heap 性质与数组表示",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-heap-props",
+          "resource": "ai/sections/node-trees-heaps-q3/sec-heap-props.json"
+        },
+        {
+          "id": "sec-height-index",
+          "title": "高度与索引",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-height-index",
+          "resource": "ai/sections/node-trees-heaps-q3/sec-height-index.json"
+        },
+        {
+          "id": "sec-heap-ops",
+          "title": "Heap 基本操作",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-heap-ops",
+          "resource": "ai/sections/node-trees-heaps-q3/sec-heap-ops.json"
+        },
+        {
+          "id": "sec-java-impl",
+          "title": "Java 实现",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-java-impl",
+          "resource": "ai/sections/node-trees-heaps-q3/sec-java-impl.json"
+        },
+        {
+          "id": "sec-mistakes",
+          "title": "错题点",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-mistakes",
+          "resource": "ai/sections/node-trees-heaps-q3/sec-mistakes.json"
+        }
+      ]
+    },
+    {
+      "id": "node-modular-arithmetic",
+      "title": "Modular Arithmetic（模运算）",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-modular-arithmetic",
+      "resource": "ai/notes/node-modular-arithmetic.json",
+      "contentSha256": "f5b999c02550c5f39c03cbdd78a52bc05b9be5f21ab4b0f8952dcdb0b3e3929e",
+      "sections": [
+        {
+          "id": "sec-modular-arithmetic-core",
+          "title": "Modular Arithmetic（模运算）",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-modular-arithmetic&section=sec-modular-arithmetic-core",
+          "resource": "ai/sections/node-modular-arithmetic/sec-modular-arithmetic-core.json"
+        }
+      ]
+    },
+    {
+      "id": "node-algebraic-factorization",
+      "title": "Algebraic Factorization（代数因式分解）",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-algebraic-factorization",
+      "resource": "ai/notes/node-algebraic-factorization.json",
+      "contentSha256": "0fb9b685e96effe609ad30582d807720f447efee2bf350386c348f6844b50458",
+      "sections": [
+        {
+          "id": "sec-algebraic-factorization-core",
+          "title": "Algebraic Factorization（代数因式分解）",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-algebraic-factorization&section=sec-algebraic-factorization-core",
+          "resource": "ai/sections/node-algebraic-factorization/sec-algebraic-factorization-core.json"
+        }
+      ]
+    },
+    {
+      "id": "quiz6-linked-list",
+      "title": "Quiz 6 · Linked List",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list",
+      "resource": "ai/notes/quiz6-linked-list.json",
+      "contentSha256": "d332bc8214ca8c108392fe6c335b68ee0bcaacfa583d38ba980900d4f8fa45cc",
+      "sections": [
+        {
+          "id": "sec-structure",
+          "title": "1. Structure",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-structure",
+          "resource": "ai/sections/quiz6-linked-list/sec-structure.json"
+        },
+        {
+          "id": "sec-memory-layout",
+          "title": "2. Memory Layout — 核心区别",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-memory-layout",
+          "resource": "ai/sections/quiz6-linked-list/sec-memory-layout.json"
+        },
+        {
+          "id": "sec-complexity",
+          "title": "3. Access / Insert / Delete — Big-O",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-complexity",
+          "resource": "ai/sections/quiz6-linked-list/sec-complexity.json"
+        },
+        {
+          "id": "sec-common-mistakes",
+          "title": "4. 易错题",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-common-mistakes",
+          "resource": "ai/sections/quiz6-linked-list/sec-common-mistakes.json"
+        },
+        {
+          "id": "sec-common-mistakes-answer",
+          "title": "sec-common-mistakes-answer",
+          "parentId": "sec-common-mistakes",
+          "hidden": true,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-common-mistakes-answer",
+          "resource": "ai/sections/quiz6-linked-list/sec-common-mistakes-answer.json"
+        }
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "id": "5efc4341-2f26-49bd-83b0-51e0602031af",
+      "title": "Shortest Path Comparison",
+      "url": "https://yajing5027.github.io/Nodal/?view=map&id=5efc4341-2f26-49bd-83b0-51e0602031af",
+      "resource": "ai/maps/5efc4341-2f26-49bd-83b0-51e0602031af.json"
+    },
+    {
+      "id": "bc5bfd0f-2b8c-435a-86aa-f15b60d64cde",
+      "title": "Algorithms",
+      "url": "https://yajing5027.github.io/Nodal/?view=map&id=bc5bfd0f-2b8c-435a-86aa-f15b60d64cde",
+      "resource": "ai/maps/bc5bfd0f-2b8c-435a-86aa-f15b60d64cde.json"
+    }
+  ],
+  "questions": [],
+  "notFound": "An ID absent from this index is not published; do not substitute similar content."
+}

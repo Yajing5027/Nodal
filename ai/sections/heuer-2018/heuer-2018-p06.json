@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2018",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2018",
+  "id": "heuer-2018-p06",
+  "title": "Area of a quadrilateral",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Area of a quadrilateral\n\n### Problem\nThe quadrilateral $ABCD$ is partitioned into four triangles by means of the diagonals $AC$ and $BD$. The areas of three of the triangles are indicated in the diagram: $\\text{Area}(APD) = 80, \\text{Area}(ABP) = 150, \\text{Area}(CBP) = 180$, where $P$ is the intersection of the diagonals. What is the area of the quadrilateral?\n\n![Figure for Jerry Heuer heuer-2018-p06](study/assets/asset-heuer-2018-p06-heuer-2018-p06.png)\n\n### Solution (adapted from the official solution)\nThe area of $ABCD$ is 506.\n\n![Figure for Jerry Heuer heuer-2018-p06-solution](study/assets/asset-heuer-2018-p06-solution-heuer-2018-p06-solution.png)\n\nLet $P$ be the intersection of the diagonals $AC$ and $BD$.\n\nTriangles $\\triangle APD$ and $\\triangle CPD$ share the common altitude from $D$ to diagonal $AC$, so their areas are proportional to the segments of $AC$:\n\n$$\\frac{\\text{Area}(\\triangle APD)}{\\text{Area}(\\triangle CPD)} = \\frac{AP}{CP}.$$\n\nSimilarly, triangles $\\triangle ABP$ and $\\triangle CBP$ share the common altitude from $B$ to diagonal $AC$, so:\n\n$$\\frac{\\text{Area}(\\triangle ABP)}{\\text{Area}(\\triangle CBP)} = \\frac{AP}{CP}.$$\n\nEquating these two expressions:\n\n$$\\frac{\\text{Area}(\\triangle APD)}{\\text{Area}(\\triangle CPD)} = \\frac{\\text{Area}(\\triangle ABP)}{\\text{Area}(\\triangle CBP)}.$$\n\nSubstituting the given values $\\text{Area}(\\triangle APD) = 80$, $\\text{Area}(\\triangle ABP) = 150$, $\\text{Area}(\\triangle CBP) = 180$:\n\n$$\\frac{80}{\\text{Area}(\\triangle CPD)} = \\frac{150}{180} = \\frac{5}{6}.$$\n\nSolving for $\\text{Area}(\\triangle CPD)$:\n\n$$\\text{Area}(\\triangle CPD) = 80 \\times \\frac{6}{5} = 96.$$\n\nThe total area of quadrilateral $ABCD$ is the sum of the four triangular areas:\n\n$$\\text{Area}(ABCD) = 150 + 180 + 80 + 96 = 506.$$\n\n### Conceptual Explanation\nIn any convex quadrilateral with diagonals intersecting at $P$, opposite triangular products are equal: $\\text{Area}(ABP) \\times \\text{Area}(CDP) = \\text{Area}(ADP) \\times \\text{Area}(BCP)$. Thus $150 \\times \\text{Area}(CDP) = 80 \\times 180 \\implies \\text{Area}(CDP) = 96$. Total area = $150 + 180 + 80 + 96 = 506$.\n\n### Key Technique\nOpposite diagonal area product identity $A_1 A_3 = A_2 A_4$ in convex quadrilaterals.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2018 Problems PDF](https://www.northcentral.maa.org/s/probs18.pdf)\n- Solutions: [Jerry Heuer 2018 Solutions PDF](https://www.northcentral.maa.org/s/solns18.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2018.md",
+  "noteContentSha256": "52117a8f6f7cc785475940fb239e395e61db403802c2b7d0880aac666cc3521b",
+  "contentSha256": "52fcb613eea583d42abb9ab76f82b85788c51365d56416a6e315be7bf9f54c5f",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p06"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-historical-problem-analysis",
+  "noteTitle": "Jerry Heuer Historical Problem Analysis",
+  "id": "sec-heuer-recurring-structures",
+  "title": "3. Recurring Mathematical Structures & Motifs",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 3. Recurring Mathematical Structures & Motifs\n\nOver the 14-year corpus, several distinct mathematical archetypes appear with remarkable regularity:\n\n1. **The Contest-Year Parameter ($N = \\text{YYYY}$):**\n   Almost every contest features 1 or 2 problems explicitly parameterized by the year (e.g., $S_{2011} \\pmod{10}$, trading denominators summing to $2012$, runs summing to $2013$ and $2015$, digits divisible by $2^{2016}$, sequences divisible by $2017$, $2018 + xy = \\square$, partition into $2019$ sums, $f(2022)$ extrapolation, $2023^{\\log_7 2}$, $a_{2024}$ decimal, $\\sum_{n=1}^{2025} \\frac{1}{a_n a_{n+2}}$).\n   *Strategic Insight:* The contest year is almost never an arbitrary large number—its arithmetic properties (e.g., $2011$ prime, $2013 = 3 \\cdot 11 \\cdot 61$, $2014 = 2 \\cdot 19 \\cdot 53$, $2015 = 5 \\cdot 13 \\cdot 31$, $2017$ prime, $2018 \\equiv 2 \\pmod 4$, $2023 = 7 \\cdot 17^2$) govern the factorization, residue classes, or parity bounds of the solution.\n\n2. **Symmetric Algebraic Factoring & Completing Squares:**\n   A dominant theme is algebraic reduction via Sophie Germain, difference of squares, Candido's identity ($a^4 + b^4 + (a+b)^4 = 2(a^2+ab+b^2)^2$), and Simon's Favorite Factoring Trick ($(x-d)(y-d) = d^2$).\n   *Examples:* 2014 P7, 2017 P4, 2018 P3, 2018 P7, 2023 P4, 2024 P2.\n\n3. **Parity Obstructions & Modulo Invariants:**\n   Games, Diophantine equations, and subset partitions frequently hinge on parity ($x \\equiv y \\pmod 2$) or quadratic residues mod 3 and mod 4 ($x^2 \\equiv 0, 1 \\pmod 4$).\n   *Examples:* 2012 P6 (stones game), 2018 P8 ($2018+xy$ square), 2023 P9 (difference of cubes), 2024 P3 ($14^n-9$).\n\n4. **Telescoping Series & Fractional Decompositions:**\n   Partial fraction decompositions and clever difference representations that collapse large finite sums into boundary evaluations.\n   *Examples:* 2011 P10, 2012 P4, 2017 P5, 2017 P6, 2019 P6, 2022 P8, 2024 P10, 2025 P9.\n\n5. **Sandwiching / Bounding Strict Enclosures:**\n   Trapping an integer strictly between consecutive integers or squares ($m^2 < (n+1)^2 < (m+1)^2$ or $n-1 < Q < n$) to prove the non-existence of non-trivial integer solutions.\n   *Examples:* 2012 P9, 2019 P3, 2025 P3.\n\n---",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-historical-problem-analysis.md",
+  "noteContentSha256": "b84098f0673a3f66d97f9d779e6354cca958d4a4a7ee3e93c58f58ccb771af7f",
+  "contentSha256": "29a424ab7b4f294172b6bc60263a40a73379c297d897ef9cea1f761a09ee0050",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-recurring-structures"
+}

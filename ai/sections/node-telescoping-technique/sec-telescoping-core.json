@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-telescoping-technique",
+  "noteTitle": "Telescoping — factor ↔ split ↔ cancel → boundary",
+  "id": "sec-telescoping-core",
+  "title": "Telescoping — factor ↔ split ↔ cancel → boundary",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n# Telescoping — factor ↔ split ↔ cancel → boundary\n\nSignal: same form + shifted index\n\n$$\nA=f(k),\\qquad B=f(k+r)\n$$\n\n$$\n\\frac{B-A}{AB}\\ \\leftrightarrow\\ \\frac1A-\\frac1B\n$$\n\nFactor denominator ↔ split fractions; make numerator $=B-A$\n\n$$\n+X-X=0,\\qquad c\\cdot\\frac1c=1\n$$\n\nSum: first few + last few → cancel → boundary terms\n\nExample:\n\n$$\n(1-\\tfrac14)+(\\tfrac14-\\tfrac19)+\\cdots+\n\\left(\\tfrac1{n^2}-\\tfrac1{(n+1)^2}\\right)\n=1-\\frac1{(n+1)^2}\n$$\n\n### Related problems\n\n- [2017 P6 · A sum of 2017 terms](#node/heuer-2017/heuer-2017-p06) — partial fraction decomposition into telescoping differences\n- [2019 P6 · A convergent series](#node/heuer-2019/heuer-2019-p06) — logarithmic telescoping cancellation\n- [2025 P9 · A Recursive Sequence](#node/heuer-2025/heuer-2025-p09) — constructing recurrence bounds to telescope\n\n### Prerequisite foundations\n\n- [Exponents & Logs](#node/node-exponents-and-logs/sec-exponents-and-logs-core) — power laws, useful factoring forms, and logarithm properties\n- [Limits](#node/node-limits-foundation/sec-limits-core) — sequence convergence, partial sums, and series limit definitions",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-telescoping-technique.md",
+  "noteContentSha256": "ddd18062bedd14791fac6be3d8100908c0760142de404b43f4547010eeb131f6",
+  "contentSha256": "09ea2b9f6045327abc2c326de3b97e471ccd4308f5db7e5eeb121d28e1884f40",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-telescoping-technique&section=sec-telescoping-core"
+}

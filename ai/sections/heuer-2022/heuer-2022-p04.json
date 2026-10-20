@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2022",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2022",
+  "id": "heuer-2022-p04",
+  "title": "Matrix Involution",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Matrix Involution\n\n### Problem\nShow that there are infinitely many $3 \\times 3$ matrices $M$ with integer entries such that $M^2 = I$, where $I$ is the $3 \\times 3$ identity matrix.\n\n### Solution (adapted from the official solution)\nFor any integer $k$, define the matrix:\n\n$$M_k = \\begin{pmatrix} 1 & 0 & 0 \\\\ k & -1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}.$$\n\nEvery entry of $M_k$ is an integer.\n\nNow compute $M_k^2$:\n\n$$M_k^2 = \\begin{pmatrix} 1 & 0 & 0 \\\\ k & -1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} \\begin{pmatrix} 1 & 0 & 0 \\\\ k & -1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} = \\begin{pmatrix} 1 \\cdot 1 + 0 + 0 & 0 & 0 \\\\ k(1) + (-1)(k) + 0 & 0 + (-1)(-1) + 0 & 0 \\\\ 0 & 0 & 1 \\cdot 1 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} = I.$$\n\nSince $k$ can be any integer, this gives infinitely many distinct $3 \\times 3$ integer matrices satisfying $M^2 = I$.\n\n### Conceptual Explanation\nConstructing lower-triangular matrices with diagonal $(1, -1, 1)$ and an arbitrary integer $k$ at position $(2, 1)$ ensures that $(M^2)_{2,1} = k(1) + (-1)k = 0$, while diagonal entries square to 1. This produces an infinite family parameterized by $k \\in \\mathbb{Z}$.\n\n### Key Technique\nParametric construction of triangular matrix involutions.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2022 Problems PDF](https://www.northcentral.maa.org/s/probs22.pdf)\n- Solutions: [Jerry Heuer 2022 Solutions PDF](https://www.northcentral.maa.org/s/solns22.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2022.md",
+  "noteContentSha256": "99814494576415df0f6eeb0e0b3c47228acbddd91da790a407aa78f0be9f434c",
+  "contentSha256": "1d75f40825d888f667f8e95038533d8464d613883d4e17d0fbc44021b1e4e5fb",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p04"
+}

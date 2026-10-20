@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-computer-architecture-study-notes",
+  "noteTitle": "Q1 · Computer Architecture & Number Representation",
+  "id": "sec-integer-representation",
+  "title": "Integer Representation",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## Integer Representation\nN bits provide $2^N$ patterns.\n\n### Unsigned\n$$\n0 \\leq x \\leq 2^N-1\n$$\n\n### Signed / Two's Complement\n$$\n-2^{N-1} \\leq x \\leq 2^{N-1}-1\n$$\n\n- The most significant bit has weight $-2^{N-1}$.\n- Example: 1101 = −8 + 4 + 1 = −3.\n- Negation: flip all bits, then add 1.\n- To reverse from a negative representation: subtract 1, then flip all bits.\n\n### Overflow\n- Unsigned overflow is indicated by a carry out.\n- Signed overflow occurs when the carry into the sign bit differs from the carry out.\n- Adding two positive numbers and getting a negative, or two negative numbers and getting a positive, indicates signed overflow.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-computer-architecture-study-notes.md",
+  "noteContentSha256": "22eb09a2c05fdcaeb0232cd13e7ae902bac98344b42c8b730258fe3daa83884e",
+  "contentSha256": "ea9ae5a8732f3c0b367e1d53320656625dcb4424b9d29aa1b3ac2889abde1421",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-integer-representation"
+}

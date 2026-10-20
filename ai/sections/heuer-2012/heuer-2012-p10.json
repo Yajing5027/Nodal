@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2012",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2012",
+  "id": "heuer-2012-p10",
+  "title": "A sequence dense in (0,1)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A sequence dense in (0,1)\n\n### Problem\nLet $S$ be the set of rational numbers in the interval $(0,1)$. Show that it is possible to arrange the elements of $S$ in a sequence $a_1, a_2, a_3, \\dots$ such that (i) each element of $S$ appears exactly once in the sequence, and (ii) the corresponding \"exponentialized\" sequence $a_1, a_2^2, a_3^3, \\dots$ is also dense in $(0, 1)$.\n\n### Solution (adapted from the official solution)\nLet $r_1, r_2, r_3, \\dots$ be an enumeration of $S$ with no duplicates.\n\nWe construct the sequence $a_n$ by alternating between two goals:\n1. Even-indexed terms $a_{2k}$ guarantee that every element of $S$ is eventually included (bijectivity).\n2. Odd-indexed terms $a_{2k-1}$ guarantee density of $a_n^n$ by targeting dyadic/rational subintervals.\n\nLet $I_1, I_2, I_3, \\dots$ be an enumeration of all open intervals with rational endpoints in $(0, 1)$, e.g., $(0, 1/2), (1/2, 1), (0, 1/3), (1/3, 2/3), \\dots$.\n\nInductively:\n- At step $k$, to choose $a_{2k-1}$: since the power map $x \\mapsto x^{2k-1}$ is continuous and maps $(0, 1)$ onto $(0, 1)$, the preimage of interval $I_k$ under $x^{2k-1}$ is a non-empty open subinterval of $(0, 1)$. This interval contains infinitely many rationals in $S$. Choose the first unused rational $r_j$ in this preimage. Then $a_{2k-1}^{2k-1} \\in I_k$.\n- To choose $a_{2k}$: choose the first rational in the list $r_1, r_2, \\dots$ that has not yet been selected in $\\{a_1, \\dots, a_{2k-1}\\}$.\n\nThis interleaving ensures that:\n- Every rational $r_m$ is eventually chosen (at or before step $2m$).\n- No rational is used more than once.\n- For every subinterval $I_k \\subset (0, 1)$, some $a_{2k-1}^{2k-1} \\in I_k$, proving that $\\{a_n^n\\}$ is dense in $(0, 1)$.\n\n### Conceptual Explanation\nInterleaving book-keeping steps (to maintain bijectivity with $\\mathbb{Q} \\cap (0, 1)$) with targeted density steps (exploiting that $x^k$ maps subintervals to subintervals) simultaneously satisfies surjectivity and topological density.\n\n### Key Technique\nInterleaving construction to satisfy a global coverage condition and a density property.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2012 Problems PDF](https://www.northcentral.maa.org/s/probs12.pdf)\n- Solutions: [Jerry Heuer 2012 Solutions PDF](https://www.northcentral.maa.org/s/solns12.pdf)\n\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2012.md",
+  "noteContentSha256": "a71b693b5136bb0517d5426bd82c4cf6bf1bb0079f60d0bf5f39e00c6a657c50",
+  "contentSha256": "b49a76f05fd2260fc4ee79856ef42c433a85a4943cc8210fff0f4d66d26f5086",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p10"
+}

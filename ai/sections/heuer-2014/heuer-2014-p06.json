@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2014",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2014",
+  "id": "heuer-2014-p06",
+  "title": "No real zeros",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## No real zeros\n\n### Problem\nLet\n\n$$P(x) = x^{50} - 2x^{49} + 3x^{48} - 4x^{47} + \\dots - 50x + 51.$$\n\nProve that the equation $P(x) = 0$ has no real roots.\n\n### Solution (adapted from the official solution)\nMultiply $P(x)$ by $x$ and add to $P(x)$:\n\n$$\\begin{aligned} P(x) &= x^{50} - 2x^{49} + 3x^{48} - \\dots - 50x + 51 \\\\ xP(x) &= x^{51} - 2x^{50} + 3x^{49} - \\dots - 50x^2 + 51x \\end{aligned}$$\n\nAdding these two lines:\n\n$$(1 + x)P(x) = x^{51} - x^{50} + x^{49} - x^{48} + \\dots - x^2 + x + 51.$$\n\nNotice that the alternating terms form a geometric progression with first term $x$ and ratio $-x$:\n\n$$x - x^2 + x^3 - \\dots + x^{51} = x(1 - x + x^2 - \\dots + x^{50}) = x\\frac{x^{51} + 1}{x + 1}.$$\n\nThus for $x \\ne -1$:\n\n$$(1 + x)P(x) = x\\frac{x^{51} + 1}{x + 1} + 51 \\implies (1 + x)^2 P(x) = x(x^{51} + 1) + 51(x + 1).$$\n\nNow test cases on the real line:\n1. If $x \\ge 0$: In $P(x) = (x^{50} - 2x^{49} + x^{48}) + (2x^{48} - 4x^{47} + 2x^{46}) + \\dots$, or simply from $(1+x)P(x) = x\\frac{x^{51}+1}{x+1} + 51 > 0$ (since both terms are strictly positive for $x \\ge 0$), we have $P(x) > 0$.\n2. If $x < 0$: Let $x = -y$ with $y > 0$. Then every single term of $P(x)$ becomes:\n$$P(-y) = (-y)^{50} - 2(-y)^{49} + 3(-y)^{48} - \\dots - 50(-y) + 51 = y^{50} + 2y^{49} + 3y^{48} + \\dots + 50y + 51.$$\nEvery coefficient is strictly positive, and $y > 0$, so $P(-y) \\ge 51 > 0$.\n\nThus $P(x) > 0$ for all real $x$, and $P(x) = 0$ has no real roots.\n\n### Conceptual Explanation\nFor negative $x$, substitute $x = -y$ with $y > 0$: all signs become strictly positive, so $P(x) \\ge 51 > 0$. For non-negative $x$, the linear combination $(1+x)P(x) = x\\frac{x^{51}+1}{x+1} + 51 > 0$ shows $P(x) > 0$. Thus $P(x)$ never vanishes on $\\mathbb{R}$.\n\n### Key Technique\nSign analysis via substitution $x = -y$ and $(1+x)P(x)$ summation.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2014 Problems PDF](https://www.northcentral.maa.org/s/probs14.pdf)\n- Solutions: [Jerry Heuer 2014 Solutions PDF](https://www.northcentral.maa.org/s/solns14.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2014.md",
+  "noteContentSha256": "5ae4235a0ce08265450928eaaae43f3d881d3395120de54bf6e93ef0d6da9a02",
+  "contentSha256": "38eae23f293daf574a802ec80963ac17329603697d1b84deb653e81089a6d1c3",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p06"
+}

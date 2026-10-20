@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2015",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2015",
+  "id": "heuer-2015-p10",
+  "title": "Sum of squares less than 2015",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Sum of squares less than 2015\n\n### Problem\nThe real numbers $a_1, a_2, \\dots, a_{31}$ lie in the interval $[-5, 13]$, and $a_1 + a_2 + \\dots + a_{31} = 0$. Show that\n\n$$a_1^2 + a_2^2 + \\dots + a_{31}^2 \\le 2015.$$\n\n### Solution (adapted from the official solution)\nLet $m = -5$ and $M = 13$, with $N = 31$.\nNotice that $-NmM = -31(-5)(13) = 2015$.\n\nFor any real number $x \\in [m, M]$, the quadratic $(x - m)(M - x) \\ge 0$, because $x - m \\ge 0$ and $M - x \\ge 0$.\n\nExpanding this product:\n\n$$-x^2 + (m + M)x - mM \\ge 0 \\iff x^2 \\le (m + M)x - mM.$$\n\nApplying this inequality to each $a_j \\in [-5, 13]$:\n\n$$a_j^2 \\le (m + M)a_j - mM.$$\n\nSumming over all $j = 1, 2, \\dots, 31$:\n\n$$\\sum_{j=1}^{31} a_j^2 \\le (m + M)\\sum_{j=1}^{31} a_j - 31mM.$$\n\nSince we are given that $\\sum_{j=1}^{31} a_j = 0$, the linear term vanishes completely:\n\n$$\\sum_{j=1}^{31} a_j^2 \\le 0 - 31(-5)(13) = 31 \\times 65 = 2015.$$\n\n### Conceptual Explanation\nFor any $x \\in [m, M]$, the inequality $(x - m)(M - x) \\ge 0$ expands to $x^2 \\le (m + M)x - mM$. Summing over all 31 variables causes the linear term to drop out since $\\sum a_j = 0$, leaving $\\sum a_j^2 \\le -31mM = 2015$.\n\n### Key Technique\nBoundary quadratic inequality $(x - m)(M - x) \\ge 0$ annihilating linear sums.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2015 Problems PDF](https://www.northcentral.maa.org/s/probs15.pdf)\n- Solutions: [Jerry Heuer 2015 Solutions PDF](https://www.northcentral.maa.org/s/solns15.pdf)\n\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2015.md",
+  "noteContentSha256": "7ac59e1166d45bd51ed4b603c7d75ce8b99c3df34fae5358050075fb223b64a0",
+  "contentSha256": "3c3a2249bc304b2e86dbad908d1676eab96ecb6cb9dc5ca3abf44f738c231e12",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p10"
+}

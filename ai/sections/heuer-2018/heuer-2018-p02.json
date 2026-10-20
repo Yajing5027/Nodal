@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2018",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2018",
+  "id": "heuer-2018-p02",
+  "title": "The 2018th term",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## The 2018th term\n\n### Problem\nLet $\\{x_n\\}$ and $\\{y_n\\}$ be sequences of real numbers satisfying the recursions $x_{n+1} = x_n^3 - 3x_n$ and $y_{n+1} = y_n^3 - 3y_n$. If $x_0^2 - y_0 = 2$, find (with proof) the value of $x_{2018}^2 - y_{2018}$.\n\n### Solution (adapted from the official solution)\nThe value of $x_{2018}^2 - y_{2018}$ is 2.\n\nWe prove by induction that $y_n = x_n^2 - 2$ (i.e. $x_n^2 - y_n = 2$) for all $n \\ge 0$.\n\n**Base Case ($n = 0$):**\nWe are given $x_0^2 - y_0 = 2 \\implies y_0 = x_0^2 - 2$.\n\n**Inductive Step:**\nAssume $y_k = x_k^2 - 2$ for some $k \\ge 0$.\nThen:\n$$\\begin{aligned} y_{k+1} &= y_k^3 - 3y_k \\\\ &= (x_k^2 - 2)^3 - 3(x_k^2 - 2) \\\\ &= (x_k^6 - 6x_k^4 + 12x_k^2 - 8) - (3x_k^2 - 6) \\\\ &= x_k^6 - 6x_k^4 + 9x_k^2 - 2. \\end{aligned}$$\n\nOn the other hand:\n$$x_{k+1}^2 - 2 = (x_k^3 - 3x_k)^2 - 2 = (x_k^6 - 6x_k^4 + 9x_k^2) - 2.$$\n\nNotice that the two expressions are identical! Therefore:\n$$y_{k+1} = x_{k+1}^2 - 2 \\implies x_{k+1}^2 - y_{k+1} = 2.$$\n\nBy mathematical induction, $x_n^2 - y_n = 2$ for all $n \\ge 0$, and in particular $x_{2018}^2 - y_{2018} = 2$.\n\n### Conceptual Explanation\nExpanding $P(y) = y^3 - 3y$ with $y = x^2 - 2$ gives $(x^2 - 2)^3 - 3(x^2 - 2) = x^6 - 6x^4 + 9x^2 - 2 = (x^3 - 3x)^2 - 2 = P(x)^2 - 2$. Thus $y_n = x_n^2 - 2$ is an invariant preserved under the cubic map.\n\n### Key Technique\nInvariant preservation under Chebyshev-like cubic polynomial maps $T_3(x) = x^3 - 3x$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2018 Problems PDF](https://www.northcentral.maa.org/s/probs18.pdf)\n- Solutions: [Jerry Heuer 2018 Solutions PDF](https://www.northcentral.maa.org/s/solns18.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2018.md",
+  "noteContentSha256": "52117a8f6f7cc785475940fb239e395e61db403802c2b7d0880aac666cc3521b",
+  "contentSha256": "1f1fc488f4d2a337b5cd5aaceca783611ccb289f2169fee7e058cbc54039a3af",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p02"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2013",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2013",
+  "id": "heuer-2013-p06",
+  "title": "Predicted time remaining is one hour",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Predicted time remaining is one hour\n\n### Problem\nAn automobile on a 100 mile journey is equipped with a computer which at each instant predicts how much time remains until arriving at its destination. This prediction is made on the assumption that the average speed for the remainder of the trip will be the same as that for the part already completed. (Average speed over any segment is the number of miles traveled divided by the number of hours it took to travel that segment.) Thirty minutes after starting the journey the computer predicts that the remaining time will be one hour. Is it possible that for the next four hours this predicted remaining time will always be one hour? If so, (a) how many miles did the auto travel during these four hours? (b) What was the auto's speed one hour after departure?\n\n### Solution (adapted from the official solution)\nYes, it is possible.\n\n(a) The distance travelled during the four hours is $\\frac{1600}{33}$ miles.\n(b) The speed one hour after departure was $25$ mph.\n\nLet $S(t)$ be the distance travelled in miles after $t$ hours. The average speed so far is $S(t)/t$, and the remaining distance is $100 - S(t)$. The predicted remaining time is 1 hour if and only if:\n\n$$\\frac{100 - S(t)}{S(t)/t} = 1 \\iff 100 - S(t) = \\frac{S(t)}{t}.$$\n\nSolving for $S(t)$:\n\n$$100t = S(t)(t + 1) \\implies S(t) = \\frac{100t}{t + 1} = 100\\left(1 - \\frac{1}{t + 1}\\right).$$\n\nAt $t = 1/2$, $S(1/2) = 100(1/2)/(3/2) = 100/3$ miles, and average speed is $(100/3)/(1/2) = 200/3$ mph, with remaining distance $200/3$ miles, correctly predicting 1 hour.\n\nSince $S'(t) = \\frac{100}{(t+1)^2} > 0$, $S(t)$ is strictly increasing, so the vehicle continuously moves forward.\n\n(a) For the next four hours (from $t = 0.5$ to $t = 4.5 = 9/2$ hours):\n\n$$S(9/2) - S(1/2) = \\frac{100(9/2)}{11/2} - \\frac{100(1/2)}{3/2} = \\frac{900}{11} - \\frac{100}{3} = \\frac{2700 - 1100}{33} = \\frac{1600}{33} \\text{ miles}.$$\n\n(b) Speed at $t = 1$ is $S'(1) = \\frac{100}{(1 + 1)^2} = \\frac{100}{4} = 25$ mph.\n\n### Conceptual Explanation\nEquating predicted time to 1 hour gives the algebraic relation $100 - S(t) = S(t)/t$, solving directly to $S(t) = \\frac{100t}{t+1}$. Differentiation gives instantaneous speed $S'(t) = \\frac{100}{(t+1)^2}$.\n\n### Key Technique\nModeling prediction constraints as algebraic/differential relations on distance.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2013 Problems PDF](https://www.northcentral.maa.org/s/probs13.pdf)\n- Solutions: [Jerry Heuer 2013 Solutions PDF](https://www.northcentral.maa.org/s/solns13.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2013.md",
+  "noteContentSha256": "e4d6d7b17c93764ea0bc65b9c85fb4c8602fc259cbb61257b32cf3c0c46c0df8",
+  "contentSha256": "79fe149edde73f281d5700be9d71e5ff7057d7e58e75ff59f23050fd60cc2cfb",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p06"
+}

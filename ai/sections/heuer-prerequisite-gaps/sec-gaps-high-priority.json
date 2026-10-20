@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-prerequisite-gaps",
+  "noteTitle": "Jerry Heuer Prerequisite Gaps",
+  "id": "sec-gaps-high-priority",
+  "title": "2. High-Priority Gaps (Critical & Frequently Tested)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 2. High-Priority Gaps (Critical & Frequently Tested)\n\nThese are useful topics to review when they appear in the problems you find difficult:\n\n### Gap 1: Modular Congruences & Divisibility Techniques\n- **Relevance:** Number theory accounts for 25% of the corpus. Questions routinely ask for units digits, prime divisibility, and integer solutions.\n- **Contest References:** 2010 P1, 2011 P1, 2011 P4, 2011 P10, 2013 P2, 2014 P3, 2015 P5, 2016 P5, 2016 P8, 2017 P10, 2018 P1, 2019 P1, 2019 P5, 2024 P1, 2024 P3, 2025 P2, 2025 P10.\n- **Minimal Scope to Master:**\n  1. Arithmetic modulo $m$ ($a \\equiv b \\pmod m$).\n  2. Fermat's Little Theorem: $a^p \\equiv a \\pmod p$ for prime $p$.\n  3. Quadratic residues mod 3 and mod 4 ($x^2 \\equiv 0, 1 \\pmod 4$; $x^2 \\equiv 0, 1 \\pmod 3$).\n  4. Prime factorization divisor count formula: $d(n) = \\prod (e_i + 1)$.\n\n### Gap 2: Classical Inequalities & Power Bounding\n- **Relevance:** Contest proofs frequently hinge on establishing that an algebraic expression is strictly bounded or strictly positive.\n- **Contest References:** 2011 P9, 2013 P10, 2014 P8, 2014 P10, 2015 P10, 2016 P10, 2017 P2, 2018 P9, 2018 P10, 2022 P6, 2022 P8, 2023 P2, 2024 P2, 2025 P3.\n- **Minimal Scope to Master:**\n  1. AM-GM Inequality: $\\frac{a + b}{2} \\ge \\sqrt{ab}$ and $\\frac{a+b+c}{3} \\ge \\sqrt[3]{abc}$, with equality condition $a = b = c$.\n  2. Cauchy-Schwarz Inequality: $(\\sum a_i^2)(\\sum b_i^2) \\ge (\\sum a_i b_i)^2$.\n  3. Titu's Lemma (Engel form): $\\sum \\frac{a_i^2}{x_i} \\ge \\frac{(\\sum a_i)^2}{\\sum x_i}$.\n  4. Completing the square to demonstrate positive definiteness: $\\sum (x_i - c)^2 \\ge 0$.\n\n### Gap 3: Synthetic Geometry & Trigonometric Dissections\n- **Relevance:** While high school geometry is assumed, contest geometry emphasizes area-ratio dissection, similarity, and circle theorems that are rarely practiced in Calculus I/II.\n- **Contest References:** 2010 P4, 2011 P2, 2012 P1, 2013 P1, 2014 P1, 2015 P1, 2015 P8, 2016 P6, 2016 P7, 2017 P9, 2018 P6, 2019 P9, 2022 P2, 2023 P5, 2024 P5, 2025 P1, 2025 P8.\n- **Minimal Scope to Master:**\n  1. Area ratio principle: triangles sharing the same vertex have areas proportional to their bases on a common line.\n  2. Circle chord geometry: $R^2 = d^2 + (L/2)^2$, and Thales' theorem (angle subtended by a diameter is $90^\\circ$).\n  3. Law of Sines and Law of Cosines combined with trigonometric identities.\n\n---",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-prerequisite-gaps.md",
+  "noteContentSha256": "77aa1d81fcfd43f764ee888cc3c8f620dc59d216afd1ce56cd6d041595746df6",
+  "contentSha256": "c5ede28252e962ebc37e080f53148ed694bdd47d4f71224426961a42c4f09e50",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-prerequisite-gaps&section=sec-gaps-high-priority"
+}

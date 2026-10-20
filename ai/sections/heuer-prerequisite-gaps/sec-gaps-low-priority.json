@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-prerequisite-gaps",
+  "noteTitle": "Jerry Heuer Prerequisite Gaps",
+  "id": "sec-gaps-low-priority",
+  "title": "4. Low-Priority / Curriculum-Covered Gaps",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 4. Low-Priority / Curriculum-Covered Gaps\n\n### Gap 6: Elementary Matrix Properties (Linear Algebra I)\n- **Relevance:** Tested in 2022 P4 and 2025 P6.\n- **Alignment:** Currently covered in user's Linear Algebra I coursework.\n- **Minimal Scope to Master:**\n  1. Matrix multiplication definition and associativity.\n  2. Rank 1 matrices as outer products $A = u v^T$.\n  3. Trace definition and property $\\text{tr}(u v^T) = v^T u$.\n\n---",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-prerequisite-gaps.md",
+  "noteContentSha256": "77aa1d81fcfd43f764ee888cc3c8f620dc59d216afd1ce56cd6d041595746df6",
+  "contentSha256": "a1adb977f20d701c23e9564fd46f9221be23c7649de1366999cc9d058b485196",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-prerequisite-gaps&section=sec-gaps-low-priority"
+}

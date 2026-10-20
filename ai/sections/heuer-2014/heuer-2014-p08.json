@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2014",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2014",
+  "id": "heuer-2014-p08",
+  "title": "A global maximum",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A global maximum\n\n### Problem\nFor positive real numbers $x$ and $y$, let\n\n$$f(x, y) = \\min\\left(x, \\frac{y}{x^2 + y^2}\\right).$$\n\nShow that there exist positive numbers $x_0, y_0$ such that $f(x, y) \\le f(x_0, y_0)$ for all $x > 0, y > 0$, and find this maximum value $f(x_0, y_0)$.\n\n### Solution (adapted from the official solution)\nThe maximum value is $f(x_0, y_0) = \\frac{1}{\\sqrt{2}}$, attained at $x_0 = y_0 = \\frac{1}{\\sqrt{2}}$.\n\n**Method using AM-GM:**\nFor all positive $x$ and $y$, $x^2 + y^2 \\ge 2xy$, so:\n\n$$\\frac{y}{x^2 + y^2} \\le \\frac{y}{2xy} = \\frac{1}{2x}.$$\n\nTherefore:\n$$f(x, y) = \\min\\left(x, \\frac{y}{x^2 + y^2}\\right) \\le \\min\\left(x, \\frac{1}{2x}\\right).$$\n\nConsider the single-variable function $g(x) = \\min(x, \\frac{1}{2x})$ for $x > 0$:\n- $x$ is strictly increasing.\n- $\\frac{1}{2x}$ is strictly decreasing.\n\nThey intersect when $x = \\frac{1}{2x} \\implies x^2 = 1/2 \\implies x = \\frac{1}{\\sqrt{2}}$.\nThus $\\min(x, \\frac{1}{2x}) \\le \\frac{1}{\\sqrt{2}}$ for all $x > 0$.\n\nMoreover, at $x_0 = 1/\\sqrt{2}$ and $y_0 = 1/\\sqrt{2}$:\n$$x_0 = \\frac{1}{\\sqrt{2}}, \\quad \\frac{y_0}{x_0^2 + y_0^2} = \\frac{1/\\sqrt{2}}{1/2 + 1/2} = \\frac{1}{\\sqrt{2}}.$$\nSo $f(x_0, y_0) = \\frac{1}{\\sqrt{2}}$ achieves this upper bound.\n\nHence the maximum value is $\\frac{1}{\\sqrt{2}}$.\n\n### Conceptual Explanation\nBy the AM-GM inequality $x^2 + y^2 \\ge 2xy$, the second argument is bounded by $\\frac{1}{2x}$. The minimum of $x$ and $\\frac{1}{2x}$ achieves its peak precisely at their intersection point $x = 1/\\sqrt{2}$, where equality holds for $y = x = 1/\\sqrt{2}$.\n\n### Key Technique\nBounding $\\frac{y}{x^2+y^2} \\le \\frac{1}{2x}$ via AM-GM and finding the minimax intersection.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2014 Problems PDF](https://www.northcentral.maa.org/s/probs14.pdf)\n- Solutions: [Jerry Heuer 2014 Solutions PDF](https://www.northcentral.maa.org/s/solns14.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2014.md",
+  "noteContentSha256": "5ae4235a0ce08265450928eaaae43f3d881d3395120de54bf6e93ef0d6da9a02",
+  "contentSha256": "31f16f6181669ed81f2202160ac14ddf36793f0187f945415cabae511cf1c203",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p08"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2010",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2010",
+  "id": "heuer-2010-p01",
+  "title": "⌊log₃ n⌋ is a multiple of 3",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## ⌊log₃ n⌋ is a multiple of 3\n\n### Problem\nAn integer $n$ is drawn at random from the first 2010 positive integers. What is the probability that $\\lfloor \\log_3 n \\rfloor$ is a multiple of 3? (For real numbers $x$, $\\lfloor x \\rfloor$ denotes the greatest integer less than or equal to $x$.)\n\n### Solution (adapted from the official solution)\nThe answer is $1338/2010 = 223/335$.\n\nFrom the definitions of greatest integer function and of logarithm, we have\n\n$$\\lfloor \\log_3 n \\rfloor = 3k \\iff 3k \\le \\log_3 n < 3k + 1 \\iff 3^{3k} \\le n < 3^{3k+1}.$$\n\nFor $k = 0$ we get the integers $\\{1, 2\\}$, and for $k = 1$ we get $\\{n : 27 \\le n < 81\\}$. With $k = 2$ and the restriction that $n$ be no greater than 2010, we obtain $\\{n : 729 \\le n \\le 2010\\}$.\n\nThus there are $2 + (80 - 26) + (2010 - 728) = 1338$ integers satisfying the condition, giving a probability of\n\n$$\\frac{1338}{2010} = \\frac{223}{335}.$$\n\n### Conceptual Explanation\nThe condition $\\lfloor \\log_3 n \\rfloor = 3k$ means $3^{3k} \\le n < 3^{3k+1}$. Since $n \\le 2010$, we only need to test $k = 0, 1, 2$. Sum the counts of integers in each interval $[3^{3k}, \\min(2010, 3^{3k+1}-1)]$ and divide by 2010.\n\n### Key Technique\nConvert floor function logarithmic inequalities $\\lfloor \\log_b n \\rfloor = m$ into power intervals $b^m \\le n < b^{m+1}$ and sum over allowable values of $m$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2010 Problems PDF](https://www.northcentral.maa.org/s/probs10.pdf)\n- Solutions: [Jerry Heuer 2010 Solutions PDF](https://www.northcentral.maa.org/s/solns10.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2010.md",
+  "noteContentSha256": "6a9920985561f05adf9100d4bf015a051f9574b68471e6ec73a611effaf33940",
+  "contentSha256": "be2043dad1493e17dbcfb3802d789a77fe13ae6ea8dc255ef504ce45b57398c0",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p01"
+}

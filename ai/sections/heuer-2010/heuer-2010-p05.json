@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2010",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2010",
+  "id": "heuer-2010-p05",
+  "title": "Sum is 1/2010",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Sum is 1/2010\n\n### Problem\nFind two distinct pairs $(m, n)$ of positive integers satisfying\n\n$$\\sum_{k=m}^n \\frac{1}{k(k+1)} = \\frac{1}{2010}.$$\n\n### Solution (adapted from the official solution)\nTwo of the several solutions are $(m, n) = (1005, 2009)$ and $(1340, 4019)$.\n\nWe use the identity $\\frac{1}{k(k+1)} = \\frac{1}{k} - \\frac{1}{k+1}$ to telescope the desired sum:\n\n$$\\sum_{k=m}^n \\frac{1}{k(k+1)} = \\sum_{k=m}^n \\left(\\frac{1}{k} - \\frac{1}{k+1}\\right) = \\frac{1}{m} - \\frac{1}{n+1}.$$\n\nThus we seek integers $m, n$ satisfying\n\n$$\\frac{1}{m} - \\frac{1}{n+1} = \\frac{1}{2010}.$$\n\nClearing of fractions, collecting terms and rearranging yields the equivalent equation\n\n$$mn + 2011m - 2010n = 2010,$$\n\nand thus\n\n$$(m - 2010)(n + 2011) = 2010 - 2010 \\cdot 2011 = -2010^2,$$\n\nso each factorization of $-2010^2$ into a product of two integers yields a solution for $(m, n)$ in integers. The solutions given above come from $m - 2010 = -1005$ and $-670$, respectively.\n\nAny of the negative factors of $2010^2$ from $-1$ to $-1675$ are suitable choices for $m - 2010$.\n\n### Conceptual Explanation\nThe telescoping sum simplifies to $\\frac{1}{m} - \\frac{1}{n+1} = \\frac{1}{2010}$. Multiplying out yields $(m - 2010)(n + 2011) = -2010^2$. Choosing negative divisors $-d$ of $2010^2$ with $d < 2010$ ensures $m > 0$ and $n > 0$.\n\n### Key Technique\nTelescoping partial fractions $\\frac{1}{k(k+1)} = \\frac{1}{k} - \\frac{1}{k+1}$ transformed into a hyperbolic Diophantine equation $(m - N)(n + N + 1) = -N^2$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2010 Problems PDF](https://www.northcentral.maa.org/s/probs10.pdf)\n- Solutions: [Jerry Heuer 2010 Solutions PDF](https://www.northcentral.maa.org/s/solns10.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2010.md",
+  "noteContentSha256": "6a9920985561f05adf9100d4bf015a051f9574b68471e6ec73a611effaf33940",
+  "contentSha256": "3071b41aba43ac9dc8f905496bc0e9e61b2c891eff8628e6f1743947d6225aab",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p05"
+}

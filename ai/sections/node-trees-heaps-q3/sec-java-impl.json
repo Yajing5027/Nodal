@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-trees-heaps-q3",
+  "noteTitle": "Q3 · Trees & Heaps",
+  "id": "sec-java-impl",
+  "title": "Java 实现",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n### Java 实现\n\n```java\npublic void add(int key) {\n    int i = count;\n    keys[i] = key;\n    count++;\n\n    while (i > 0 && keys[(i - 1) / 2] > keys[i]) {\n        int parent = (i - 1) / 2;\n        int temp = keys[parent];\n        keys[parent] = keys[i];\n        keys[i] = temp;\n        i = parent;\n    }\n}\n\npublic int removeMin() {\n    int result = keys[0];\n    keys[0] = keys[count - 1];\n    count--;\n    int i = 0;\n\n    while (2 * i + 1 < count) {\n        int left = 2 * i + 1;\n        int right = 2 * i + 2;\n        int child = left;\n        if (right < count && keys[right] < keys[left]) {\n            child = right;\n        }\n        if (keys[i] <= keys[child]) break;\n\n        int temp = keys[i];\n        keys[i] = keys[child];\n        keys[child] = temp;\n        i = child;\n    }\n    return result;\n}\n```\n\n保留代码注释所表达的要点：ADD 的新元素先放 `count`，交换后 `i` 必须更新为 parent；REMOVE 用末尾元素补 root，比较左右孩子，向下交换直到 heap-order 恢复。不要改动算法行为。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-trees-heaps-q3.md",
+  "noteContentSha256": "1181d6350d734724d4adda58118772c6e7f226861a2eaa55f9a99ed83049bfb0",
+  "contentSha256": "ff62e681dae515ad3fe288e21885157eb87906a2ff023bf115bc22f1bf1e8d71",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-java-impl"
+}

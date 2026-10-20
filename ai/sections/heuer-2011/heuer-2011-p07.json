@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2011",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2011",
+  "id": "heuer-2011-p07",
+  "title": "Not a perfect square",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Not a perfect square\n\n### Problem\nFor each positive integer $n$, let $a_n = \\lfloor (n + \\sqrt{19})^2 + 2n + \\sqrt{99} \\rfloor$. (As usual, $\\lfloor x \\rfloor$ denotes the greatest integer less than or equal to $x$.) Show that $a_n$ is never the square of an integer.\n\n### Solution (adapted from the official solution)\nWe show that $(n + 5)^2 < a_n < (n + 6)^2$ for all $n$, and the claim follows.\n\nExpanding the expression inside the floor function:\n\n$$(n + \\sqrt{19})^2 + 2n + \\sqrt{99} = n^2 + 2\\sqrt{19}n + 19 + 2n + \\sqrt{99} = n^2 + (2\\sqrt{19} + 2)n + 19 + \\sqrt{99}.$$\n\nUsing the bounds $4 < \\sqrt{19} < 5$ and $9 < \\sqrt{99} < 10$:\n\n**Upper bound:**\nSince $\\sqrt{19} < 5$ and $\\sqrt{99} < 10$,\n\n$$n^2 + (2\\sqrt{19} + 2)n + 19 + \\sqrt{99} < n^2 + 12n + 29 = (n + 6)^2 - 7.$$\n\nThus $a_n \\le \\lfloor (n + 6)^2 - 7 \\rfloor = (n + 6)^2 - 7 < (n + 6)^2$.\n\n**Lower bound:**\nSince $\\sqrt{19} > 4$ and $\\sqrt{99} > 9$,\n\n$$n^2 + (2\\sqrt{19} + 2)n + 19 + \\sqrt{99} > n^2 + 10n + 28 = (n + 5)^2 + 3.$$\n\nThus $a_n \\ge \\lfloor (n + 5)^2 + 3 \\rfloor = (n + 5)^2 + 3 > (n + 5)^2$.\n\nBecause $a_n$ lies strictly between the consecutive squares $(n + 5)^2$ and $(n + 6)^2$, it can never be a perfect square.\n\n### Conceptual Explanation\nExpanding and estimating radicals yields $(n+5)^2 + 3 < (n+\\sqrt{19})^2 + 2n + \\sqrt{99} < (n+6)^2 - 7$. The floor of any number strictly between two consecutive integers $(n+5)^2$ and $(n+6)^2$ can never equal an integer square.\n\n### Key Technique\nTrapping an integer expression strictly between consecutive squares $(k)^2 < a_n < (k+1)^2$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2011 Problems PDF](https://www.northcentral.maa.org/s/probs11.pdf)\n- Solutions: [Jerry Heuer 2011 Solutions PDF](https://www.northcentral.maa.org/s/solns11.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2011.md",
+  "noteContentSha256": "768de4a528f6e191963aaccebe07d35aaa1821d2e8dfdfa95aab6841b759618f",
+  "contentSha256": "ef60e14ef0f63912fd3691cb1a5a0d3489b8fd87159e0d9ae779f5c9d09c1aa4",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p07"
+}

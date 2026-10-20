@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2011",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2011",
+  "id": "heuer-2011-p08",
+  "title": "P(11) = 2011",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## P(11) = 2011\n\n### Problem\nThe coefficients $a_j$ in the polynomial $P(x) = a_0 + a_1x + \\dots + a_nx^n$ are integers satisfying $0 \\le a_j \\le 10$ and $a_n > 0$. If $P(1) = 21$ and $P(11) = 2011$, determine, with proof, the value of $P(6)$.\n\n### Solution (adapted from the official solution)\nWe show that $P(6) = 441$.\n\nBecause $0 \\le a_j \\le 10$, evaluating $P(11)$ is equivalent to writing 2011 in base 11:\n\n$$2011 = a_n \\cdot 11^n + \\dots + a_1 \\cdot 11 + a_0.$$\n\nSince base 11 representations are unique:\n- $2011 \\div 11 = 182$ remainder $9 \\implies a_0 = 9$\n- $182 \\div 11 = 16$ remainder $6 \\implies a_1 = 6$\n- $16 \\div 11 = 1$ remainder $5 \\implies a_2 = 5$\n- $1 \\div 11 = 0$ remainder $1 \\implies a_3 = 1$.\n\nThus $P(x) = x^3 + 5x^2 + 6x + 9$.\n\nNotice that $P(1) = 1 + 5 + 6 + 9 = 21$, which confirms consistency.\n\nFinally, evaluate at $x = 6$:\n\n$$P(6) = 6^3 + 5(6^2) + 6(6) + 9 = 216 + 180 + 36 + 9 = 441.$$\n\n### Conceptual Explanation\nThe condition $0 \\le a_j \\le 10$ means the polynomial coefficients are the unique base-11 digits of $P(11) = 2011$. Converting $2011_{10}$ to base 11 yields $(1569)_{11}$, giving $P(x) = x^3 + 5x^2 + 6x + 9$. Evaluating at $x = 6$ yields 441.\n\n### Key Technique\nPolynomial evaluation at an integer base matching coefficient bounds is identical to unique base-b positional expansion.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2011 Problems PDF](https://www.northcentral.maa.org/s/probs11.pdf)\n- Solutions: [Jerry Heuer 2011 Solutions PDF](https://www.northcentral.maa.org/s/solns11.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2011.md",
+  "noteContentSha256": "768de4a528f6e191963aaccebe07d35aaa1821d2e8dfdfa95aab6841b759618f",
+  "contentSha256": "1a7b20e3911d91b492efe5ed5db069790ef1573722bebe11b99b594d4f8d123b",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p08"
+}

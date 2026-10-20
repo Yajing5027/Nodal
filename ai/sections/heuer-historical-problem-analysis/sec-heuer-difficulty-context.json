@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-historical-problem-analysis",
+  "noteTitle": "Jerry Heuer Historical Problem Analysis",
+  "id": "sec-heuer-difficulty-context",
+  "title": "6. Difficulty and Progress",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 6. Difficulty and Progress\n\nProblem order is not a reliable measure of your personal difficulty. Use your own practice results to identify which problems need another review. For contest-level context, consult the official results for the relevant year; this imported note does not provide verified solve rates by problem.\n\n\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-historical-problem-analysis.md",
+  "noteContentSha256": "b84098f0673a3f66d97f9d779e6354cca958d4a4a7ee3e93c58f58ccb771af7f",
+  "contentSha256": "86d7ed87d6debc56f3a34933adaf664ac734a76d2197ff6848529f77f2a1138b",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-difficulty-context"
+}

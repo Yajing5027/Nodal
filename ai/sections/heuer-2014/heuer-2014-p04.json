@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2014",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2014",
+  "id": "heuer-2014-p04",
+  "title": "Cubic polynomial game",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Cubic polynomial game\n\n### Problem\nAdolf and Bertha jointly construct a cubic polynomial as follows: Adolf chooses an integer $a \\ne 0$, then Bertha chooses an integer $b$, then Adolf chooses an integer $c$, and finally Bertha chooses an integer $d$, and they form the polynomial $f(x) = ax^3 + bx^2 + cx + d$. Bertha wins if the polynomial has at least two distinct real zeros; otherwise Adolf wins. Which player has a winning strategy?\n\n### Solution (adapted from the official solution)\nAdolf has a winning strategy.\n\nAdolf can win regardless of Bertha's choices as follows:\n1. On Adolf's first move, he chooses $a = 1$.\n2. Bertha then chooses an integer $b$.\n3. On Adolf's second move, he chooses an integer $c > \\frac{b^2}{3}$.\n\nNow consider the derivative of $f(x) = x^3 + bx^2 + cx + d$:\n\n$$f'(x) = 3x^2 + 2bx + c = 3\\left(x + \\frac{b}{3}\\right)^2 + \\left(c - \\frac{b^2}{3}\\right).$$\n\nSince Adolf selected $c > b^2/3$, the quantity $c - b^2/3 > 0$.\nTherefore $f'(x) > 0$ for all real $x$.\n\nThis means that $f(x)$ is strictly increasing on $(-\\infty, \\infty)$. A strictly increasing continuous function can cross the $x$-axis at most once. Hence $f(x)$ has exactly one real zero, for any integer $d$ that Bertha might pick.\n\nThus the polynomial can never have two distinct real zeros, and Adolf wins.\n\n### Conceptual Explanation\nBy picking $a = 1$, Adolf leaves only $b$ for Bertha. When Bertha picks $b$, Adolf picks $c > b^2/3$, ensuring the discriminant of the derivative $f'(x) = 3x^2 + 2bx + c$ is strictly negative ($4b^2 - 12c < 0$). Thus $f'(x) > 0$ everywhere, guaranteeing a strictly monotonic function with exactly one real root.\n\n### Key Technique\nEnsuring strict monotonicity by forcing the derivative's discriminant to be strictly negative.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2014 Problems PDF](https://www.northcentral.maa.org/s/probs14.pdf)\n- Solutions: [Jerry Heuer 2014 Solutions PDF](https://www.northcentral.maa.org/s/solns14.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2014.md",
+  "noteContentSha256": "5ae4235a0ce08265450928eaaae43f3d881d3395120de54bf6e93ef0d6da9a02",
+  "contentSha256": "fbb0346fa993fdde4e7569dd3919038bc85b89794225770873a7cb8fe75884b0",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014&section=heuer-2014-p04"
+}

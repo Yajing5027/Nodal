@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2023",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2023",
+  "id": "heuer-2023-p03",
+  "title": "Log Equation",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Log Equation\n\n### Problem\nDetermine all possible real values of $x$ that satisfy the following equation:\n\n$$289^x = 289^{\\log_7(2)} + 2^{\\log_7(289)} - 2023^{\\log_7(2)} + 1.$$\n\n### Solution (adapted from the official solution)\nThe unique solution is $x = 0$.\n\nRecall the standard logarithmic power identity $u^{\\log_b v} = v^{\\log_b u}$, which holds because $u^{\\log_b v} = (b^{\\log_b u})^{\\log_b v} = b^{(\\log_b u)(\\log_b v)} = v^{\\log_b u}$.\n\nApplying this identity:\n\n$$2^{\\log_7(289)} = 289^{\\log_7(2)}.$$\n\nNext, notice that $2023 = 7 \\times 289$ (since $7 \\times 289 = 2023$):\n\n$$2023^{\\log_7(2)} = (7 \\cdot 289)^{\\log_7(2)} = 7^{\\log_7(2)} \\cdot 289^{\\log_7(2)} = 2 \\cdot 289^{\\log_7(2)}.$$\n\nNow substitute these into the right-hand side of the given equation:\n\n$$\\begin{aligned} \\text{RHS} &= 289^{\\log_7(2)} + 289^{\\log_7(2)} - 2 \\cdot 289^{\\log_7(2)} + 1 \\\\ &= 2 \\cdot 289^{\\log_7(2)} - 2 \\cdot 289^{\\log_7(2)} + 1 \\\\ &= 1. \\end{aligned}$$\n\nThus the equation simplifies to:\n\n$$289^x = 1.$$\n\nSince $289 > 1$, the only real solution is $x = 0$.\n\n### Conceptual Explanation\nThe logarithmic identity $a^{\\log_b c} = c^{\\log_b a}$ shows $2^{\\log_7 289} = 289^{\\log_7 2}$. Factoring $2023 = 7 \\times 289$ yields $2023^{\\log_7 2} = 7^{\\log_7 2} \\times 289^{\\log_7 2} = 2 \\times 289^{\\log_7 2}$. The terms cancel completely, leaving $289^x = 1 \\implies x = 0$.\n\n### Key Technique\nLogarithmic identity $u^{\\log_b v} = v^{\\log_b u}$ and factoring $2023 = 7 \\times 289$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2023 Problems PDF](https://www.northcentral.maa.org/s/probs23.pdf)\n- Solutions: [Jerry Heuer 2023 Solutions PDF](https://www.northcentral.maa.org/s/solns23.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2023.md",
+  "noteContentSha256": "5b79ad2df928427c231809c12043ac80d017d64c03d9076363e13fd022275ff9",
+  "contentSha256": "1bb74c507b1e1cbd54809a18a2060ff10791f59e0470890e2a9c5f9cce87dd9b",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p03"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz6-linked-list",
+  "noteTitle": "Quiz 6 · Linked List",
+  "id": "sec-common-mistakes",
+  "title": "4. 易错题",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### 4. 易错题\n\n**判断：Linked List 通过 Reference 连接，因此比 Array 更适合查找目标 Value**\n\n**查看答案 ↓**",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz6-linked-list.md",
+  "noteContentSha256": "d332bc8214ca8c108392fe6c335b68ee0bcaacfa583d38ba980900d4f8fa45cc",
+  "contentSha256": "1a1a979776cf104b210edc09f252c96a5f989d72b01dbb2c7ca654e380008c37",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-common-mistakes"
+}

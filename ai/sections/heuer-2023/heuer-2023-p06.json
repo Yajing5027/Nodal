@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2023",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2023",
+  "id": "heuer-2023-p06",
+  "title": "Integral Equality",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Integral Equality\n\n### Problem\nLet $f$ be a function continuous on $[0, \\pi]$. Show that\n\n$$\\int_0^\\pi x f(\\sin x) \\, dx = \\frac{\\pi}{2} \\int_0^\\pi f(\\sin x) \\, dx.$$\n\n### Solution (adapted from the official solution)\nLet $I = \\int_0^\\pi x f(\\sin x) \\, dx$.\n\nApply the substitution $u = \\pi - x$, so $dx = -du$.\nWhen $x = 0$, $u = \\pi$; when $x = \\pi$, $u = 0$.\nSince $\\sin(\\pi - u) = \\sin u$, we have:\n\n$$\\begin{aligned} I &= \\int_\\pi^0 (\\pi - u) f(\\sin(\\pi - u)) (-du) \\\\ &= \\int_0^\\pi (\\pi - u) f(\\sin u) \\, du \\\\ &= \\pi \\int_0^\\pi f(\\sin u) \\, du - \\int_0^\\pi u f(\\sin u) \\, du \\\\ &= \\pi \\int_0^\\pi f(\\sin x) \\, dx - I. \\end{aligned}$$\n\nAdding $I$ to both sides:\n\n$$2I = \\pi \\int_0^\\pi f(\\sin x) \\, dx.$$\n\nDividing by 2:\n\n$$I = \\frac{\\pi}{2} \\int_0^\\pi f(\\sin x) \\, dx.$$\n\n### Conceptual Explanation\nApplying King's property / reflection substitution $u = \\pi - x$ exploits the symmetry $\\sin(\\pi - x) = \\sin x$, giving $I = \\pi \\int_0^\\pi f(\\sin x) dx - I$, whence $2I = \\pi \\int_0^\\pi f(\\sin x) dx$.\n\n### Key Technique\nKing's property $\\int_a^b g(x) dx = \\int_a^b g(a+b-x) dx$ with trigonometric reflection $\\sin(\\pi - x) = \\sin x$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2023 Problems PDF](https://www.northcentral.maa.org/s/probs23.pdf)\n- Solutions: [Jerry Heuer 2023 Solutions PDF](https://www.northcentral.maa.org/s/solns23.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2023.md",
+  "noteContentSha256": "5b79ad2df928427c231809c12043ac80d017d64c03d9076363e13fd022275ff9",
+  "contentSha256": "d5070a5104557f54cb2be744f1ddd67cd3483f8a6d70fcdc6aa1dabe04f48706",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p06"
+}

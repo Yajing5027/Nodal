@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "heuer-historical-problem-analysis",
+  "title": "Jerry Heuer Historical Problem Analysis",
+  "markdown": "<!-- nodal-panel:sec-heuer-corpus-overview:visible -->\n\n## 1. Corpus Overview & Architecture\n\nThe **Jerry Heuer MAA-NCS Team Contest** is an undergraduate team mathematics competition. The imported PDFs describe a November contest with a three-hour time limit.\n\n- **Corpus Span:** 14 imported contest years (2010–2019, 2022–2025). This collection does not include 2020 or 2021.\n- **Structure:** Exactly 10 problems per contest $\\implies$ **140 problems total**.\n- **Interaction Format:** 100% open-response / mathematical derivation / rigorous proof. There are no multiple-choice options or fill-in questions.\n- **Contest Instructions:** The imported problem PDFs specify a three-hour period and prohibit books, notes, calculators, and computers. Consult the PDF for the rules of a particular year.\n\n---\n\n<!-- nodal-panel:sec-heuer-domain-frequencies:visible -->\n\n## 2. Historical Domain Frequencies (140 Problems)\n\nThe counts below summarize the **primary-domain labels in this imported dataset**. They are an editorial classification, not an official contest statistic. Each problem has one primary label; mixed-topic problems may fit more than one subject.\n\n| Primary domain | Problems | Share |\n| :--- | ---: | ---: |\n| Algebra | 37 | 26.4% |\n| Number Theory | 35 | 25.0% |\n| Calculus & Analysis | 21 | 15.0% |\n| Geometry | 20 | 14.3% |\n| Sequences & Recurrences | 9 | 6.4% |\n| Probability | 8 | 5.7% |\n| Combinatorics | 7 | 5.0% |\n| Linear Algebra | 3 | 2.1% |\n\n---\n\n<!-- nodal-panel:sec-heuer-recurring-structures:visible -->\n\n## 3. Recurring Mathematical Structures & Motifs\n\nOver the 14-year corpus, several distinct mathematical archetypes appear with remarkable regularity:\n\n1. **The Contest-Year Parameter ($N = \\text{YYYY}$):**\n   Almost every contest features 1 or 2 problems explicitly parameterized by the year (e.g., $S_{2011} \\pmod{10}$, trading denominators summing to $2012$, runs summing to $2013$ and $2015$, digits divisible by $2^{2016}$, sequences divisible by $2017$, $2018 + xy = \\square$, partition into $2019$ sums, $f(2022)$ extrapolation, $2023^{\\log_7 2}$, $a_{2024}$ decimal, $\\sum_{n=1}^{2025} \\frac{1}{a_n a_{n+2}}$).\n   *Strategic Insight:* The contest year is almost never an arbitrary large number—its arithmetic properties (e.g., $2011$ prime, $2013 = 3 \\cdot 11 \\cdot 61$, $2014 = 2 \\cdot 19 \\cdot 53$, $2015 = 5 \\cdot 13 \\cdot 31$, $2017$ prime, $2018 \\equiv 2 \\pmod 4$, $2023 = 7 \\cdot 17^2$) govern the factorization, residue classes, or parity bounds of the solution.\n\n2. **Symmetric Algebraic Factoring & Completing Squares:**\n   A dominant theme is algebraic reduction via Sophie Germain, difference of squares, Candido's identity ($a^4 + b^4 + (a+b)^4 = 2(a^2+ab+b^2)^2$), and Simon's Favorite Factoring Trick ($(x-d)(y-d) = d^2$).\n   *Examples:* 2014 P7, 2017 P4, 2018 P3, 2018 P7, 2023 P4, 2024 P2.\n\n3. **Parity Obstructions & Modulo Invariants:**\n   Games, Diophantine equations, and subset partitions frequently hinge on parity ($x \\equiv y \\pmod 2$) or quadratic residues mod 3 and mod 4 ($x^2 \\equiv 0, 1 \\pmod 4$).\n   *Examples:* 2012 P6 (stones game), 2018 P8 ($2018+xy$ square), 2023 P9 (difference of cubes), 2024 P3 ($14^n-9$).\n\n4. **Telescoping Series & Fractional Decompositions:**\n   Partial fraction decompositions and clever difference representations that collapse large finite sums into boundary evaluations.\n   *Examples:* 2011 P10, 2012 P4, 2017 P5, 2017 P6, 2019 P6, 2022 P8, 2024 P10, 2025 P9.\n\n5. **Sandwiching / Bounding Strict Enclosures:**\n   Trapping an integer strictly between consecutive integers or squares ($m^2 < (n+1)^2 < (m+1)^2$ or $n-1 < Q < n$) to prove the non-existence of non-trivial integer solutions.\n   *Examples:* 2012 P9, 2019 P3, 2025 P3.\n\n---\n\n<!-- nodal-panel:sec-heuer-modern-trends:visible -->\n\n## 4. Evolutionary Shifts in Modern Contests (2022–2025)\n\nThe contest was renamed the *Heuer Memorial Team Contest* in 2022. Several pedagogical and curricular trends distinguish the recent four years (2022–2025) from the earlier 2010–2019 era:\n\n- **Introduction of Linear Algebra:** Pre-2022 contests virtually never featured matrix algebra. Contests in 2022 (P4: matrix involutions $M^2 = I$) and 2025 (P6: rank 1, trace 1 implies $A^2 = A$) formally introduced linear algebra into the problem rotation.\n- **Formal Functional Equations & Continuous Dynamics:** While older contests favored computational calculus, recent contests emphasize functional inequalities and topological dynamics:\n  - 2023 P10: $f(x) + f(y) = f(f(x)f(y)) \\implies f \\equiv 0$.\n  - 2024 P9: $f(x+y) + f(x+z) + f(y+z) \\ge 3f(x+2y+3z) \\implies f \\equiv c$.\n  - 2025 P7: $f(x^n) = f(x)$ for continuous $f \\implies f \\equiv c$.\n- **Shift toward Elegant Olympiad-style Lemmas:** Recent contests feature classical named inequalities and lemmas: Titu's Lemma / Sedrakyan's inequality (2024 P2), Dirichlet's Approximation Theorem (2024 P7), Abel's Theorem for power series integration (2024 P10), Menelaus / similarity cevial ratios (2025 P8).\n\n---\n\n<!-- nodal-panel:sec-heuer-technique-clusters:visible -->\n\n## 5. High-Yield Technique Clusters\n\nTo maximize preparation efficiency, practice should focus on these five core technique clusters:\n\n1. **Modular Arithmetic & Divisibility Machinery:**\n   - Fermat's Little Theorem ($a^p \\equiv a \\pmod p$).\n   - Divisibility by coprime factors (e.g., $15 = 3 \\times 5$, $48 = 16 \\times 3$).\n   - Base representation division algorithm (repeating blocks mod $p$).\n2. **Elementary Inequalities:**\n   - AM-GM inequality ($x^2 + y^2 \\ge 2xy$, $\\frac{x+y}{2} \\ge \\sqrt{xy}$).\n   - Cauchy-Schwarz inequality in algebraic and integral forms.\n   - Convexity bounds ($u \\ln u \\ge u - 1$).\n3. **Contest Geometry Dissections:**\n   - Similar right triangles ($45^\\circ-45^\\circ-90^\\circ$, $30^\\circ-60^\\circ-90^\\circ$).\n   - Common-altitude area proportions (triangles on the same base line).\n   - Circle chord perpendicular distances ($R^2 = d^2 + (c/2)^2$).\n4. **Polynomial Roots & Vieta's Theorem:**\n   - Constructing difference polynomials $g(x) = f(x) - x$ to factor monic polynomials with integer roots.\n   - Vieta relations on symmetric sums $\\sum r_i, \\sum r_i r_j, \\prod r_i$.\n5. **Elementary Counting & Probability:**\n   - Complementary counting (especially for non-adjacent runs).\n   - First-step conditioning / absorbing Markov states.\n   - Pigeonhole Principle with algebraic shifts.\n\n---\n\n<!-- nodal-panel:sec-heuer-difficulty-context:visible -->\n\n## 6. Difficulty and Progress\n\nProblem order is not a reliable measure of your personal difficulty. Use your own practice results to identify which problems need another review. For contest-level context, consult the official results for the relevant year; this imported note does not provide verified solve rates by problem.\n\n\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-heuer-corpus-overview",
+      "title": "1. Corpus Overview & Architecture",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-corpus-overview",
+      "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-corpus-overview.json"
+    },
+    {
+      "id": "sec-heuer-domain-frequencies",
+      "title": "2. Historical Domain Frequencies (140 Problems)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-domain-frequencies",
+      "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-domain-frequencies.json"
+    },
+    {
+      "id": "sec-heuer-recurring-structures",
+      "title": "3. Recurring Mathematical Structures & Motifs",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-recurring-structures",
+      "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-recurring-structures.json"
+    },
+    {
+      "id": "sec-heuer-modern-trends",
+      "title": "4. Evolutionary Shifts in Modern Contests (2022–2025)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-modern-trends",
+      "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-modern-trends.json"
+    },
+    {
+      "id": "sec-heuer-technique-clusters",
+      "title": "5. High-Yield Technique Clusters",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-technique-clusters",
+      "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-technique-clusters.json"
+    },
+    {
+      "id": "sec-heuer-difficulty-context",
+      "title": "6. Difficulty and Progress",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-difficulty-context",
+      "resource": "ai/sections/heuer-historical-problem-analysis/sec-heuer-difficulty-context.json"
+    }
+  ],
+  "sourcePath": "content/notes/heuer-historical-problem-analysis.md",
+  "contentSha256": "b84098f0673a3f66d97f9d779e6354cca958d4a4a7ee3e93c58f58ccb771af7f",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis"
+}

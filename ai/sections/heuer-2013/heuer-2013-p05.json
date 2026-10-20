@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2013",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2013",
+  "id": "heuer-2013-p05",
+  "title": "20th derivative at 0",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 20th derivative at 0\n\n### Problem\nLet $f(x) = (x + 2)^2 \\cos 3x$. Show that $f^{(20)}(0)$, the 20-th derivative at 0, is an integer, and express this integer as a product of prime powers.\n\n### Solution (adapted from the official solution)\nWe show that $f^{(20)}(0) = -2^3 \\cdot 3^{18} \\cdot 43$.\n\nUsing the Maclaurin series expansion:\n\n$$f(x) = \\sum_{k=0}^\\infty \\frac{f^{(k)}(0)}{k!} x^k = (x^2 + 4x + 4) \\cos 3x.$$\n\nSince $\\cos u = \\sum_{m=0}^\\infty \\frac{(-1)^m}{(2m)!} u^{2m}$, we have\n\n$$\\cos 3x = 1 - \\frac{(3x)^2}{2!} + \\frac{(3x)^4}{4!} - \\dots + \\frac{(3x)^{18}}{18!} - \\frac{(3x)^{20}}{20!} + \\dots$$\n\nThe coefficient of $x^{20}$ in $(x^2 + 4x + 4) \\cos 3x$ receives contributions only from even powers of $\\cos 3x$ (the $4x$ term gives odd powers of $x$):\n- From $x^2 \\cdot [\\text{term in } x^{18}]$: $x^2 \\left( -\\frac{3^{18} x^{18}}{18!} \\right) = -\\frac{3^{18}}{18!} x^{20}$.\n- From $4 \\cdot [\\text{term in } x^{20}]$: $4 \\left( \\frac{3^{20} x^{20}}{20!} \\right) = \\frac{4 \\cdot 3^{20}}{20!} x^{20}$.\n\nTherefore,\n\n$$\\frac{f^{(20)}(0)}{20!} = -\\frac{3^{18}}{18!} + \\frac{4 \\cdot 3^{20}}{20!} = \\frac{-3^{18} \\cdot 19 \\cdot 20 + 4 \\cdot 9 \\cdot 3^{18}}{20!} = \\frac{3^{18}(-380 + 36)}{20!} = \\frac{3^{18}(-344)}{20!}.$$\n\nMultiplying by $20!$ gives:\n\n$$f^{(20)}(0) = 3^{18}(-344) = -344 \\cdot 3^{18} = -8 \\cdot 43 \\cdot 3^{18} = -2^3 \\cdot 3^{18} \\cdot 43.$$\n\n### Conceptual Explanation\nExtracting the coefficient of $x^{20}$ in the series product $(x^2 + 4x + 4) \\cos 3x$ relates $f^{(20)}(0)/20!$ directly to the 18th and 20th order terms of $\\cos 3x$, eliminating tedious differentiation.\n\n### Key Technique\nMaclaurin series coefficient extraction instead of repeated Leibniz differentiation.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2013 Problems PDF](https://www.northcentral.maa.org/s/probs13.pdf)\n- Solutions: [Jerry Heuer 2013 Solutions PDF](https://www.northcentral.maa.org/s/solns13.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2013.md",
+  "noteContentSha256": "e4d6d7b17c93764ea0bc65b9c85fb4c8602fc259cbb61257b32cf3c0c46c0df8",
+  "contentSha256": "16d55c717903507f6b26a687cbd7e85d1cf10604dd7826686ac3a141a8059ba9",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p05"
+}

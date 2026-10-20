@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2022",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2022",
+  "id": "heuer-2022-p05",
+  "title": "Evaluating Polynomials",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Evaluating Polynomials\n\n### Problem\nThe monic polynomial $f(x)$ has degree 2021, and $f(n) = n$ for each integer $n$, $1 \\le n \\le 2021$. Find $f(2022)$, and justify your answer.\n\n### Solution (adapted from the official solution)\nThe value is $f(2022) = 2022 + 2021!$.\n\nConsider the polynomial $g(x) = f(x) - x$.\nSince $f(x)$ is monic of degree 2021, $g(x)$ is also monic of degree 2021.\n\nFor each integer $n \\in \\{1, 2, \\dots, 2021\\}$, we are given $f(n) = n$, so:\n\n$$g(n) = f(n) - n = 0.$$\n\nThus the 2021 distinct numbers $1, 2, \\dots, 2021$ are all roots of $g(x)$.\nBy the Fundamental Theorem of Algebra and the fact that $g(x)$ is monic of degree 2021:\n\n$$g(x) = \\prod_{i=1}^{2021} (x - i) = (x - 1)(x - 2) \\cdots (x - 2021).$$\n\nTherefore:\n\n$$f(x) = x + \\prod_{i=1}^{2021} (x - i).$$\n\nEvaluating at $x = 2022$:\n\n$$f(2022) = 2022 + \\prod_{i=1}^{2021} (2022 - i) = 2022 + (2021)(2020) \\cdots (1) = 2022 + 2021!.$$\n\n### Conceptual Explanation\nThe auxiliary polynomial $g(x) = f(x) - x$ is monic of degree 2021 and vanishes at $1, 2, \\dots, 2021$. Thus $f(x) = x + \\prod_{i=1}^{2021} (x - i)$. Evaluating at 2022 gives $2022 + 2021!$.\n\n### Key Technique\nDefining the difference polynomial $f(x) - x$ to factor monic polynomials with integer roots.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2022 Problems PDF](https://www.northcentral.maa.org/s/probs22.pdf)\n- Solutions: [Jerry Heuer 2022 Solutions PDF](https://www.northcentral.maa.org/s/solns22.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2022.md",
+  "noteContentSha256": "99814494576415df0f6eeb0e0b3c47228acbddd91da790a407aa78f0be9f434c",
+  "contentSha256": "dc449c474ed30072d2301adc3f7f3a369d1a126f6d21a37b95bb8c0ce20ee28b",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022&section=heuer-2022-p05"
+}

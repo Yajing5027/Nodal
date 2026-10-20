@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-exponents-and-logs",
+  "noteTitle": "Exponents & Logs",
+  "id": "sec-exponents-and-logs-core",
+  "title": "Exponents & Logs",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n# Exponents & Logs\n\n**Exponent laws**\n\n$$\na^{m+n}=a^ma^n \\qquad a^{m-n}=\\frac{a^m}{a^n} \\qquad (a^m)^n=a^{mn}\n$$\n\n**Useful forms**\n\n$$\na^{2n}=(a^n)^2 \\qquad a^{n+1}=a\\cdot a^n\n$$\n\n**Log laws**\n\n$$\n\\ln(ab)=\\ln a+\\ln b \\qquad \\ln\\frac ab=\\ln a-\\ln b \\qquad \\ln(a^r)=r\\ln a\n$$\n\n**Key value**\n\n$$\n\\ln 1=0\n$$\n\n**Warning**\n\n$$\n\\ln(a+b)\\ne\\ln a+\\ln b\n$$\n\n### Related problems\n\n- [2017 P6 · A sum of 2017 terms](#node/heuer-2017/heuer-2017-p06) — substituting $t=2^n$ using $2^{2n+1}=2(2^n)^2$ and $2^{n+1}=2\\cdot 2^n$\n- [2019 P6 · A convergent series](#node/heuer-2019/heuer-2019-p06) — logarithmic fraction expansion $\\ln\\frac{(k+1)^2}{k(k+2)}=2\\ln(k+1)-\\ln k-\\ln(k+2)$ and $\\ln 1=0$\n- [Telescoping — factor ↔ split ↔ cancel → boundary](#node/node-telescoping-technique/sec-telescoping-core) — core telescoping cancellation technique\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-exponents-and-logs.md",
+  "noteContentSha256": "547bdbd4a651418d35d8e1897b9c587d23234e5944e7822bf551b9f7d8bcba37",
+  "contentSha256": "5d4d979a135e1ff025b7ec63e48da209e86a41d4fdb32bce0e98836825fd96c0",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-exponents-and-logs&section=sec-exponents-and-logs-core"
+}

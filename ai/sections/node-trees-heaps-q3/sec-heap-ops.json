@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-trees-heaps-q3",
+  "noteTitle": "Q3 · Trees & Heaps",
+  "id": "sec-heap-ops",
+  "title": "Heap 基本操作",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n### Heap 基本操作\n- ADD：在 `size` 指向的 next free slot 放入新 key，`size++`，再 upheap 修复顺序。\n- REMOVE：用末尾元素补 root，删除末尾槽位，`size--`，再 downheap 修复顺序。\n- add/remove 的 worst case 为 O(log n)，best case 为 O(1)；search 为 O(n)。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-trees-heaps-q3.md",
+  "noteContentSha256": "1181d6350d734724d4adda58118772c6e7f226861a2eaa55f9a99ed83049bfb0",
+  "contentSha256": "58fd8cf902e5a1b552a102f9483874fc868ea0510b4cbf8fa3e3efac09446b41",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-heap-ops"
+}

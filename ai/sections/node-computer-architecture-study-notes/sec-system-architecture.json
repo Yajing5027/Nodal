@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-computer-architecture-study-notes",
+  "noteTitle": "Q1 · Computer Architecture & Number Representation",
+  "id": "sec-system-architecture",
+  "title": "System Architecture",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## System Architecture\n### Von Neumann\n- One address space for instructions and data.\n- One shared path creates the **Von Neumann bottleneck**.\n- Components: Memory, Control Unit, ALU, Input, Output.\n- Fetch → Decode → Execute → Advance → Repeat.\n\n### Harvard\n- Two address spaces: one for instructions and one for data.\n- Separate paths allow instruction fetch and data access at the same time.\n- **Modified Harvard:** L1 instruction and data caches are separate; L2, L3, and DRAM are shared.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-computer-architecture-study-notes.md",
+  "noteContentSha256": "22eb09a2c05fdcaeb0232cd13e7ae902bac98344b42c8b730258fe3daa83884e",
+  "contentSha256": "c0651f6cb62d91c985820ce344c7a34e3aefaf1aa300e0e819295d7a9989391e",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-system-architecture"
+}

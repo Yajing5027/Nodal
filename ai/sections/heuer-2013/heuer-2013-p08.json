@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2013",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2013",
+  "id": "heuer-2013-p08",
+  "title": "A commutative operation",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A commutative operation\n\n### Problem\nThe set $S$ is closed under an operation written multiplicatively: if $x, y \\in S$, then $xy \\in S$. The operation satisfies the following two axioms:\n- (A1) For all $x, y \\in S$, $x(xy) = y$.\n- (A2) For all $x, y \\in S$, $(xy)y = x$.\n\nProve that the operation is commutative: for all $x, y \\in S$, $xy = yx$. Justify each step carefully by referring to (A1) and (A2).\n\n### Solution (adapted from the official solution)\nLet $x, y \\in S$, and define $z = xy$.\nWe need to show that $yx = z$.\n\n1. By axiom (A2) applied to $x$ and $y$:\n$$zy = (xy)y = x.$$\n\n2. By axiom (A1) applied to $z$ and $(zy)$:\n$$z(z(zy)) = zy.$$\nMore simply, substituting $x = zy$ into axiom (A1) with elements $z$ and $y$:\n$$z(zy) = y.$$\nSince $zy = x$, this gives:\n$$zx = y.$$\n\n3. Now apply axiom (A2) to $z$ and $x$:\n$$(zx)x = z.$$\nSubstituting $zx = y$ from step 2 into this equality yields:\n$$yx = z.$$\n\nSince $z = xy$, we conclude that $yx = xy$, so the operation is commutative.\n\n### Conceptual Explanation\nSetting $z = xy$, axiom (A2) gives $zy = x$. Then axiom (A1) implies $zx = z(zy) = y$. Finally applying (A2) to $(zx)x$ gives $yx = z = xy$.\n\n### Key Technique\nAxiomatic substitution in non-associative magmas.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2013 Problems PDF](https://www.northcentral.maa.org/s/probs13.pdf)\n- Solutions: [Jerry Heuer 2013 Solutions PDF](https://www.northcentral.maa.org/s/solns13.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2013.md",
+  "noteContentSha256": "e4d6d7b17c93764ea0bc65b9c85fb4c8602fc259cbb61257b32cf3c0c46c0df8",
+  "contentSha256": "3f75df2690a56d59b6e8fb56035a5ff34c7437638a088e78a1f0e07a6d20e71b",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p08"
+}

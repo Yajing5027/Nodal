@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2025",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2025",
+  "id": "heuer-2025-p07",
+  "title": "A Continuous Function",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A Continuous Function\n\n### Problem\nLet $n > 1$ be an integer. Determine all continuous functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that $f(x^n) = f(x)$ for all $x \\in \\mathbb{R}$.\n\n### Solution (adapted from the official solution)\nThe only such functions are the constant functions $f(x) = c$ for all $x \\in \\mathbb{R}$.\n\nLet $c = f(0)$. By induction, $f(x) = f(x^{n^k})$ for all integers $k \\ge 1$.\n\n1. **For $|x| < 1$:**\nSince $n > 1$, as $k \\to \\infty$, $n^k \\to \\infty$, so $|x|^{n^k} \\to 0$, meaning $x^{n^k} \\to 0$.\nBy continuity of $f$:\n$$f(x) = \\lim_{k \\to \\infty} f(x^{n^k}) = f\\left(\\lim_{k \\to \\infty} x^{n^k}\\right) = f(0) = c.$$\nThus $f(x) = c$ for all $x \\in (-1, 1)$.\n\n2. **For $x = 1$ and $x = -1$:**\nBy continuity at endpoints:\n$$f(1) = \\lim_{x \\to 1^-} f(x) = c, \\quad f(-1) = \\lim_{x \\to -1^+} f(x) = c.$$\n\n3. **For $x > 1$:**\nRewrite the functional equation as $f(x) = f(x^{1/n}) = f(x^{1/n^k})$ for all $k \\ge 1$.\nAs $k \\to \\infty$, $1/n^k \\to 0$, so $x^{1/n^k} \\to x^0 = 1$.\nBy continuity of $f$ at 1:\n$$f(x) = \\lim_{k \\to \\infty} f(x^{1/n^k}) = f(1) = c.$$\nThus $f(x) = c$ for all $x > 1$.\n\n4. **For $x < -1$:**\n- If $n$ is even, then $x^n > 1$, so $f(x) = f(x^n) = c$ by case 3.\n- If $n$ is odd, then $x^{1/n^k} \\to -1$ as $k \\to \\infty$, so by continuity at $-1$, $f(x) = f(-1) = c$.\n\nTherefore $f(x) = c$ for all $x \\in \\mathbb{R}$. Any constant function obviously satisfies $f(x^n) = f(x)$.\n\n### Conceptual Explanation\nIterating $f(x) = f(x^{n^k})$ on $(-1, 1)$ drives $x \\to 0$, giving $f(x) = f(0)$. Iterating $f(x) = f(x^{1/n^k})$ on $(1, \\infty)$ drives $x \\to 1$, giving $f(x) = f(1)$. Continuity pastes all intervals together, proving $f(x)$ is constant.\n\n### Key Technique\nIterative power dynamics $x^{n^k} \\to 0$ and $x^{1/n^k} \\to 1$ combined with continuity.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2025 Problems PDF](https://www.northcentral.maa.org/s/probs25.pdf)\n- Solutions: [Jerry Heuer 2025 Solutions PDF](https://www.northcentral.maa.org/s/solns25.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2025.md",
+  "noteContentSha256": "9b25499a5e7c660860c1e50cc65aa33498b301e548ed3b488fa1f8a13ca175f5",
+  "contentSha256": "769f895eef4a1b2752ca8bfae41f3f0ac8ec00755009c892ff470f32f5374bab",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p07"
+}

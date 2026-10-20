@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "node-algebraic-factorization",
+  "title": "Algebraic Factorization（代数因式分解）",
+  "markdown": "<!-- nodal-panel:sec-algebraic-factorization-core:visible -->\n# Algebraic Factorization（代数因式分解）\n\n### 1. Exponent Rule\n\n$$\na^n b^n = (ab)^n\n$$\n\n### 2. Difference of Powers\n\n$$\na^n - b^n = (a - b)(a^{n-1} + a^{n-2}b + \\dots + b^{n-1})\n$$\n\n### 3. Special Case\n\n$$\nx^n - 1 = (x - 1)(x^{n-1} + \\dots + x + 1)\n$$\n\n### 4. Trigger\n\n$$\na^n - b^n \\text{ or } x^n - 1 \\implies \\text{Try factorization.}\n$$\n\n### Related problems\n\n- [2018 P1 · Multiples of 23](#node/heuer-2018/heuer-2018-p01) — exponent rule $3^n 2^{3n} = (3 \\cdot 8)^n = 24^n$ and special difference of powers $24^n - 1 = (24 - 1)(24^{n-1} + \\dots + 1)$\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-algebraic-factorization-core",
+      "title": "Algebraic Factorization（代数因式分解）",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-algebraic-factorization&section=sec-algebraic-factorization-core",
+      "resource": "ai/sections/node-algebraic-factorization/sec-algebraic-factorization-core.json"
+    }
+  ],
+  "sourcePath": "content/notes/node-algebraic-factorization.md",
+  "contentSha256": "0fb9b685e96effe609ad30582d807720f447efee2bf350386c348f6844b50458",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-algebraic-factorization"
+}

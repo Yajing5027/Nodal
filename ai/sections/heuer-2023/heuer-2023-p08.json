@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2023",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2023",
+  "id": "heuer-2023-p08",
+  "title": "Convergent Series",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Convergent Series\n\n### Problem\nProve that if $a$ is a real number, the series\n\n$$\\sum_{n=0}^\\infty \\sin\\left(\\pi \\sqrt{n^2 + a^2}\\right)$$\n\nconverges.\n\n### Solution (adapted from the official solution)\nRationalize the difference $\\sqrt{n^2 + a^2} - n$:\n\n$$\\sqrt{n^2 + a^2} - n = \\frac{a^2}{\\sqrt{n^2 + a^2} + n} \\implies \\sqrt{n^2 + a^2} = n + \\frac{a^2}{\\sqrt{n^2 + a^2} + n}.$$\n\nMultiply by $\\pi$ and take the sine:\n\n$$\\sin\\left(\\pi \\sqrt{n^2 + a^2}\\right) = \\sin\\left(n\\pi + \\frac{\\pi a^2}{\\sqrt{n^2 + a^2} + n}\\right).$$\n\nUsing the angle addition formula $\\sin(n\\pi + \\theta) = (-1)^n \\sin\\theta$:\n\n$$\\sin\\left(\\pi \\sqrt{n^2 + a^2}\\right) = (-1)^n \\sin\\left(\\frac{\\pi a^2}{\\sqrt{n^2 + a^2} + n}\\right).$$\n\nDefine $b_n = \\sin\\left(\\frac{\\pi a^2}{\\sqrt{n^2 + a^2} + n}\\right)$. For sufficiently large $n$:\n1. $\\frac{\\pi a^2}{\\sqrt{n^2 + a^2} + n} \\in (0, \\pi/2)$, so $b_n > 0$.\n2. As $n$ increases, the denominator $\\sqrt{n^2 + a^2} + n$ is strictly increasing, so the angle decreases monotonically to 0.\n3. Since $\\sin u$ is strictly increasing on $[0, \\pi/2]$, $b_n$ decreases monotonically to 0: $b_n \\to 0$ as $n \\to \\infty$.\n\nBy the Alternating Series Test (Leibniz's rule), the alternating series $\\sum_{n=0}^\\infty (-1)^n b_n$ converges.\n\n### Conceptual Explanation\nExtracting the integer multiple $n\\pi$ via $\\sqrt{n^2 + a^2} = n + \\frac{a^2}{\\sqrt{n^2+a^2}+n}$ reveals the alternating factor $(-1)^n$. The magnitude $\\sin\\left(\\frac{\\pi a^2}{\\sqrt{n^2+a^2}+n}\\right)$ decreases monotonically to 0, satisfying the Alternating Series Test.\n\n### Key Technique\nConjugate rationalization $\\sqrt{n^2+a^2} - n = \\frac{a^2}{\\sqrt{n^2+a^2}+n}$ to extract alternating signs $(-1)^n$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2023 Problems PDF](https://www.northcentral.maa.org/s/probs23.pdf)\n- Solutions: [Jerry Heuer 2023 Solutions PDF](https://www.northcentral.maa.org/s/solns23.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2023.md",
+  "noteContentSha256": "5b79ad2df928427c231809c12043ac80d017d64c03d9076363e13fd022275ff9",
+  "contentSha256": "acd2e6705d5e74fcd405ad1bd6b995ca7667f2e4e0b3a69e56b274763097582d",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p08"
+}

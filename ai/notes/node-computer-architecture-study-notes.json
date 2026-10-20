@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "node-computer-architecture-study-notes",
+  "title": "Q1 · Computer Architecture & Number Representation",
+  "markdown": "<!-- nodal-panel:sec-system-architecture:visible -->\n## System Architecture\n### Von Neumann\n- One address space for instructions and data.\n- One shared path creates the **Von Neumann bottleneck**.\n- Components: Memory, Control Unit, ALU, Input, Output.\n- Fetch → Decode → Execute → Advance → Repeat.\n\n### Harvard\n- Two address spaces: one for instructions and one for data.\n- Separate paths allow instruction fetch and data access at the same time.\n- **Modified Harvard:** L1 instruction and data caches are separate; L2, L3, and DRAM are shared.\n\n<!-- nodal-panel:sec-performance:visible -->\n## Performance\n- **Latency** = time per operation.\n- **Throughput** = completed operations per unit of time.\n- **Bandwidth** = bytes transferred per unit of time.\n- Register < L1 cache < main memory in access time; a cache miss can increase CPI.\n\n$$\n\\text{Total Cycles}=\\text{Instruction Count}\\times\\text{CPI}\n$$\n\n$$\n\\text{CPU Time}=\\frac{\\text{Total Cycles}}{\\text{Clock Rate}}=\\text{Instruction Count}\\times\\text{CPI}\\times\\text{Clock Period}\n$$\n\n$$\n\\text{Clock Period}=\\frac{1}{\\text{Clock Rate}}\n$$\n\n- 1 GHz = 10⁹ cycles/second.\n- Instruction Count depends on the algorithm and compiler.\n- CPI depends on the microarchitecture.\n- Clock Period depends on the fabrication process and physics.\n- A higher clock rate does not always mean a faster program.\n\n<!-- nodal-panel:sec-binary-hex:visible -->\n## Binary & Hex\n- 1 hexadecimal digit = 4 bits = 1 nibble.\n- 2 hexadecimal digits = 8 bits = 1 byte.\n- Convert binary and hexadecimal by grouping bits in fours.\n- Powers of two: 2⁰=1, 2¹=2, 2²=4, 2³=8, 2⁴=16, 2⁵=32, 2⁶=64, 2⁷=128, 2⁸=256, 2⁹=512, 2¹⁰=1024, 2¹¹=2048, 2¹²=4096.\n- Hexadecimal digits: 10=A, 11=B, 12=C, 13=D, 14=E, 15=F.\n\n<!-- nodal-panel:sec-integer-representation:visible -->\n## Integer Representation\nN bits provide $2^N$ patterns.\n\n### Unsigned\n$$\n0 \\leq x \\leq 2^N-1\n$$\n\n### Signed / Two's Complement\n$$\n-2^{N-1} \\leq x \\leq 2^{N-1}-1\n$$\n\n- The most significant bit has weight $-2^{N-1}$.\n- Example: 1101 = −8 + 4 + 1 = −3.\n- Negation: flip all bits, then add 1.\n- To reverse from a negative representation: subtract 1, then flip all bits.\n\n### Overflow\n- Unsigned overflow is indicated by a carry out.\n- Signed overflow occurs when the carry into the sign bit differs from the carry out.\n- Adding two positive numbers and getting a negative, or two negative numbers and getting a positive, indicates signed overflow.\n\n<!-- nodal-panel:sec-ieee-754:visible -->\n## IEEE 754 Floating Point\n### Half Precision\n- 16 bits = 1 sign bit + 5 exponent bits + 10 fraction bits.\n- Sign: 0 means positive; 1 means negative.\n- Exponent bias = 15.\n- For normalized values, the significand is the stored fraction after an implicit leading 1.\n\n$$\n\\text{Value}=(-1)^S\\times 1.F\\times 2^{E-15}\n$$\n\n- Normalization example: $1100.11_2 = 1.10011_2 \\times 2^3$.\n- Move the binary point left: exponent increases; move it right: exponent decreases.\n- Stored exponent = real exponent + bias; for half precision, $E=e+15$.\n- Binary fractional places have weights $2^{-1}, 2^{-2}, 2^{-3}, \\ldots$.\n\n$$\n.11_2=\\frac{1}{2}+\\frac{1}{4}=\\frac{3}{4}=0.75\n$$\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-system-architecture",
+      "title": "System Architecture",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-system-architecture",
+      "resource": "ai/sections/node-computer-architecture-study-notes/sec-system-architecture.json"
+    },
+    {
+      "id": "sec-performance",
+      "title": "Performance",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-performance",
+      "resource": "ai/sections/node-computer-architecture-study-notes/sec-performance.json"
+    },
+    {
+      "id": "sec-binary-hex",
+      "title": "Binary & Hex",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-binary-hex",
+      "resource": "ai/sections/node-computer-architecture-study-notes/sec-binary-hex.json"
+    },
+    {
+      "id": "sec-integer-representation",
+      "title": "Integer Representation",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-integer-representation",
+      "resource": "ai/sections/node-computer-architecture-study-notes/sec-integer-representation.json"
+    },
+    {
+      "id": "sec-ieee-754",
+      "title": "IEEE 754 Floating Point",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-ieee-754",
+      "resource": "ai/sections/node-computer-architecture-study-notes/sec-ieee-754.json"
+    }
+  ],
+  "sourcePath": "content/notes/node-computer-architecture-study-notes.md",
+  "contentSha256": "22eb09a2c05fdcaeb0232cd13e7ae902bac98344b42c8b730258fe3daa83884e",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes"
+}

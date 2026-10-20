@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2019",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2019",
+  "id": "heuer-2019-p06",
+  "title": "A convergent series",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A convergent series\n\n### Problem\nShow that the series\n\n31545\\sum_{k=1}^\\infty \\ln\\left(1 + \frac{1}{k^2 + 2k}\right)31545\n\nconverges, and find its sum.\n\n### Solution (adapted from the official solution)\n### 1. Factor\n\n31545\n1 + \frac{1}{k^2 + 2k} = \frac{k(k+2) + 1}{k(k+2)}\n31545\n\n31545\n= \frac{(k+1)^2}{k(k+2)}.\n31545\n\n### 2. Log\n\n31545\n\\ln\\left(\frac{(k+1)^2}{k(k+2)}\right) = 2\\ln(k+1) - \\ln k - \\ln(k+2).\n31545\n\n### 3. Telescoping\n\n31545\n\\sum_{k=1}^\\infty \\ln\\left(1 + \frac{1}{k^2 + 2k}\right)\n31545\n\n31545\n= \\lim_{n \to \\infty} \\sum_{k=1}^n [2\\ln(k+1) - \\ln k - \\ln(k+2)]\n31545\n\n31545\n= \\lim_{n \to \\infty} \\sum_{k=1}^n [(\\ln(k+1) - \\ln k) - (\\ln(k+2) - \\ln(k+1))]\n31545\n\n31545\n= \\lim_{n \to \\infty} [\\ln(n+1) - \\ln 1 - \\ln(n+2) + \\ln 2]\n31545\n\n31545\n= \\ln 2 + \\lim_{n \to \\infty} \\ln\\left(\frac{n+1}{n+2}\right).\n31545\n\n### 4. Limit\n\n31545\n= \\ln 2 + \\lim_{n \to \\infty} \\ln\\left(\frac{1 + \frac{1}{n}}{1 + \frac{2}{n}}\right)\n31545\n\n31545\n= \\ln 2 + \\ln\\left(\frac{1 + 0}{1 + 0}\right)\n31545\n\n31545\n= \\ln 2 + \\ln 1\n31545\n\n31545\n= \\ln 2.\n31545\n\n31545\n\therefore\\ \text{The series converges to } \\ln 2. \\quad \blacksquare\n31545\n\n### Conceptual Explanation\nFactoring the fractional argument into $\\frac{(k+1)^2}{k(k+2)}$ splits each logarithmic term into  - (\\ln(k+2) - \\ln(k+1))$ via [log laws](#node/node-exponents-and-logs/sec-exponents-and-logs-core). The partial sum telescopes to $\\ln 2 + \\ln\\frac{n+1}{n+2}$, which converges to $\\ln 2$ via [limits](#node/node-limits-foundation/sec-limits-core).\n\n### Key Technique\n[Telescoping logarithmic expansion](#node/node-telescoping-technique/sec-telescoping-core) $\\ln\\frac{(k+1)^2}{k(k+2)} = \\Delta(\\ln(k+1) - \\ln k)$ using [log laws](#node/node-exponents-and-logs/sec-exponents-and-logs-core) and [series limits](#node/node-limits-foundation/sec-limits-core).\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2019 Problems PDF](https://www.northcentral.maa.org/s/probs19.pdf)\n- Solutions: [Jerry Heuer 2019 Solutions PDF](https://www.northcentral.maa.org/s/solns19.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2019.md",
+  "noteContentSha256": "abb5d59d9f3d5bc683336a26f30df7cf179ff8d4a5237f49b7239fb5c195af59",
+  "contentSha256": "8e4cef473d79fc854118c92b85ed29df7d52af076cdcf628cc61b8ccb61e8e7a",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p06"
+}

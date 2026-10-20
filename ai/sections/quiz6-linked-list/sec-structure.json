@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz6-linked-list",
+  "noteTitle": "Quiz 6 · Linked List",
+  "id": "sec-structure",
+  "title": "1. Structure",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### 1. Structure\n\n$$\n\\boxed{\\text{Node}(\\text{Value}+\\text{Reference})\\ \\overset{\\text{Linked}}{+}\\ \\text{Node}+\\cdots=\\text{Linked List}}\n$$\n\n- **Singly**：单向 → next\n- **Doubly**：双向 ↔ prev / next\n- **Head / Tail**：首尾 Node，不随 Traversal 方向改变",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz6-linked-list.md",
+  "noteContentSha256": "d332bc8214ca8c108392fe6c335b68ee0bcaacfa583d38ba980900d4f8fa45cc",
+  "contentSha256": "1fe207536bc22b32232d1ab8e9faef14f40bad1f50d306eaa3cd515ac101e761",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-structure"
+}

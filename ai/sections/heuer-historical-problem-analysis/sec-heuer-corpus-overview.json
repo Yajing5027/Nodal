@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-historical-problem-analysis",
+  "noteTitle": "Jerry Heuer Historical Problem Analysis",
+  "id": "sec-heuer-corpus-overview",
+  "title": "1. Corpus Overview & Architecture",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 1. Corpus Overview & Architecture\n\nThe **Jerry Heuer MAA-NCS Team Contest** is an undergraduate team mathematics competition. The imported PDFs describe a November contest with a three-hour time limit.\n\n- **Corpus Span:** 14 imported contest years (2010–2019, 2022–2025). This collection does not include 2020 or 2021.\n- **Structure:** Exactly 10 problems per contest $\\implies$ **140 problems total**.\n- **Interaction Format:** 100% open-response / mathematical derivation / rigorous proof. There are no multiple-choice options or fill-in questions.\n- **Contest Instructions:** The imported problem PDFs specify a three-hour period and prohibit books, notes, calculators, and computers. Consult the PDF for the rules of a particular year.\n\n---",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-historical-problem-analysis.md",
+  "noteContentSha256": "b84098f0673a3f66d97f9d779e6354cca958d4a4a7ee3e93c58f58ccb771af7f",
+  "contentSha256": "aa74abf6f1db3fd2697b0017b50ec3c10d4a71c59ab31d58d19cae6dfb7828b0",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-corpus-overview"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2018",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2018",
+  "id": "heuer-2018-p10",
+  "title": "A logarithmic inequality",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A logarithmic inequality\n\n### Problem\nSuppose that $a, b, c, d$ are positive numbers such that $a + b = c + d$. Prove that\n\n$$a \\ln a + b \\ln b \\ge a \\ln c + b \\ln d.$$\n\n### Solution (adapted from the official solution)\nThe desired inequality is equivalent to:\n\n$$a(\\ln a - \\ln c) + b(\\ln b - \\ln d) \\ge 0.$$\n\nUsing $a + b = c + d$, we have $(a - c) + (b - d) = 0$. Subtracting this 0 gives:\n\n$$a \\ln(a/c) + b \\ln(b/d) \\ge (a - c) + (b - d).$$\n\nRearranging:\n\n$$\\left( a \\ln\\frac{a}{c} - (a - c) \\right) + \\left( b \\ln\\frac{b}{d} - (b - d) \\right) \\ge 0.$$\n\nDividing each term by the positive constants $c$ and $d$ respectively, this is equivalent to showing that for any positive $u$:\n\n$$u \\ln u \\ge u - 1.$$\n\nTo prove this lemma, define $g(u) = u \\ln u - u + 1$ for $u > 0$:\n- $g(1) = 1(0) - 1 + 1 = 0$.\n- Derivative: $g'(u) = \\ln u + u(1/u) - 1 = \\ln u$.\n- For $0 < u < 1$, $g'(u) < 0$, so $g(u)$ is strictly decreasing.\n- For $u > 1$, $g'(u) > 0$, so $g(u)$ is strictly increasing.\n\nThus $g(u)$ has a global minimum at $u = 1$, where $g(1) = 0$.\nTherefore $g(u) \\ge 0$ for all $u > 0$, which proves $u \\ln u \\ge u - 1$.\n\nApplying this lemma to $u = a/c$ and $u = b/d$:\n- $c(a/c \\ln(a/c) - (a/c - 1)) \\ge 0 \\implies a \\ln(a/c) \\ge a - c$\n- $d(b/d \\ln(b/d) - (b/d - 1)) \\ge 0 \\implies b \\ln(b/d) \\ge b - d$\n\nAdding these two inequalities:\n\n$$a \\ln\\frac{a}{c} + b \\ln\\frac{b}{d} \\ge (a - c) + (b - d) = (a + b) - (c + d) = 0.$$\n\nThus $a \\ln a - a \\ln c + b \\ln b - b \\ln d \\ge 0 \\implies a \\ln a + b \\ln b \\ge a \\ln c + b \\ln d$.\n\n### Conceptual Explanation\nThe inequality $u \\ln u \\ge u - 1$ follows from the convexity of $u \\ln u$ (with minimum at $u = 1$). Applying it to $u = a/c$ and $u = b/d$ gives $a \\ln(a/c) \\ge a - c$ and $b \\ln(b/d) \\ge b - d$. Adding them yields $\\ge (a+b) - (c+d) = 0$.\n\n### Key Technique\nConvexity bound $u \\ln u \\ge u - 1$ and relative entropy non-negativity (Gibbs' inequality).\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2018 Problems PDF](https://www.northcentral.maa.org/s/probs18.pdf)\n- Solutions: [Jerry Heuer 2018 Solutions PDF](https://www.northcentral.maa.org/s/solns18.pdf)\n\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2018.md",
+  "noteContentSha256": "52117a8f6f7cc785475940fb239e395e61db403802c2b7d0880aac666cc3521b",
+  "contentSha256": "43d9e6551bb73564e4d1e039775d6e52216b66f513f2e7c3d82ef1729ed19d34",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p10"
+}

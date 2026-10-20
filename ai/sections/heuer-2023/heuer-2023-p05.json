@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2023",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2023",
+  "id": "heuer-2023-p05",
+  "title": "A Tale of Two Squares",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A Tale of Two Squares\n\n### Problem\nThe vertices of a square all lie on a circle $C$. Two adjacent vertices of another square lie on circle $C$ while the other two lie on one of its diameters. Find the ratio of the area of the smaller square to the area of the larger square.\n\n### Solution (adapted from the official solution)\nThe ratio is $\\frac{2}{5}$.\n\n![Figure for Jerry Heuer heuer-2023-p05-solution](study/assets/asset-heuer-2023-p05-solution-heuer-2023-p05-solution.png)\n\nLet $R$ be the radius of circle $C$.\n\n1. **Larger Square:**\nThe larger square is inscribed in circle $C$. Its diagonal is a diameter of the circle, so diagonal $D = 2R$.\nIf $L$ is the side length of the larger square, $L\\sqrt{2} = 2R \\implies L^2 = 2R^2$.\nThus the area of the larger square is:\n$$\\text{Area}_{\\text{large}} = 2R^2.$$\n\n2. **Smaller Square:**\nLet $s$ be the side length of the smaller square.\nTwo adjacent vertices lie on a diameter, and the other two lie on the circle $C$.\nBy symmetry, the center of the circle bisects the side of the smaller square lying along the diameter.\nTherefore, the vertices on the diameter are at distance $s/2$ from the center $O$.\nThe distance from the center $O$ to one of the vertices on the circle is radius $R$.\nThis forms a right triangle with legs $s$ (vertical side) and $s/2$ (horizontal segment along the diameter), and hypotenuse $R$:\n\n$$R^2 = s^2 + \\left(\\frac{s}{2}\\right)^2 = s^2 + \\frac{s^2}{4} = \\frac{5}{4}s^2.$$\n\nSolving for the area of the smaller square $s^2$:\n\n$$s^2 = \\frac{4}{5}R^2.$$\n\n3. **Ratio of Areas:**\n$$\\frac{\\text{Area}_{\\text{small}}}{\\text{Area}_{\\text{large}}} = \\frac{\\frac{4}{5}R^2}{2R^2} = \\frac{4}{10} = \\frac{2}{5}.$$\n\n### Conceptual Explanation\nThe inscribed square has diagonal $2R$, so its area is $2R^2$. The semi-inscribed square centered symmetrically on a diameter satisfies $s^2 + (s/2)^2 = R^2 \\implies s^2 = \\frac{4}{5}R^2$. The ratio of their areas is $\\frac{(4/5)R^2}{2R^2} = \\frac{2}{5}$.\n\n### Key Technique\nPythagorean relation $s^2 + (s/2)^2 = R^2$ for a square erected on a diameter.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2023 Problems PDF](https://www.northcentral.maa.org/s/probs23.pdf)\n- Solutions: [Jerry Heuer 2023 Solutions PDF](https://www.northcentral.maa.org/s/solns23.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2023.md",
+  "noteContentSha256": "5b79ad2df928427c231809c12043ac80d017d64c03d9076363e13fd022275ff9",
+  "contentSha256": "c4776595bff7a7d4bb0242b4eaf48c7a85f29497681eedfcfa6bdca1e887d056",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p05"
+}

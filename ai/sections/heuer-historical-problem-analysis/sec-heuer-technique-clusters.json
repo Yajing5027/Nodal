@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-historical-problem-analysis",
+  "noteTitle": "Jerry Heuer Historical Problem Analysis",
+  "id": "sec-heuer-technique-clusters",
+  "title": "5. High-Yield Technique Clusters",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 5. High-Yield Technique Clusters\n\nTo maximize preparation efficiency, practice should focus on these five core technique clusters:\n\n1. **Modular Arithmetic & Divisibility Machinery:**\n   - Fermat's Little Theorem ($a^p \\equiv a \\pmod p$).\n   - Divisibility by coprime factors (e.g., $15 = 3 \\times 5$, $48 = 16 \\times 3$).\n   - Base representation division algorithm (repeating blocks mod $p$).\n2. **Elementary Inequalities:**\n   - AM-GM inequality ($x^2 + y^2 \\ge 2xy$, $\\frac{x+y}{2} \\ge \\sqrt{xy}$).\n   - Cauchy-Schwarz inequality in algebraic and integral forms.\n   - Convexity bounds ($u \\ln u \\ge u - 1$).\n3. **Contest Geometry Dissections:**\n   - Similar right triangles ($45^\\circ-45^\\circ-90^\\circ$, $30^\\circ-60^\\circ-90^\\circ$).\n   - Common-altitude area proportions (triangles on the same base line).\n   - Circle chord perpendicular distances ($R^2 = d^2 + (c/2)^2$).\n4. **Polynomial Roots & Vieta's Theorem:**\n   - Constructing difference polynomials $g(x) = f(x) - x$ to factor monic polynomials with integer roots.\n   - Vieta relations on symmetric sums $\\sum r_i, \\sum r_i r_j, \\prod r_i$.\n5. **Elementary Counting & Probability:**\n   - Complementary counting (especially for non-adjacent runs).\n   - First-step conditioning / absorbing Markov states.\n   - Pigeonhole Principle with algebraic shifts.\n\n---",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-historical-problem-analysis.md",
+  "noteContentSha256": "b84098f0673a3f66d97f9d779e6354cca958d4a4a7ee3e93c58f58ccb771af7f",
+  "contentSha256": "02593340bd51722fdc3ab71b67e5de0308b48e314c570896b01accc2d8119a25",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-technique-clusters"
+}

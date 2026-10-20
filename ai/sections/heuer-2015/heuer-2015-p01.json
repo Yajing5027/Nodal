@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2015",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2015",
+  "id": "heuer-2015-p01",
+  "title": "Surface area of a box",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Surface area of a box\n\n### Problem\nThe length of an interior diagonal of a rectangular box is 8 cm., and the sum of the lengths of all the edges of the box is 36 cm. Find the surface area of the box.\n\n### Solution (adapted from the official solution)\nThe surface area is $17\\text{ cm}^2$.\n\nLet the dimensions of the box be $x, y, z$ in cm.\n- The interior diagonal length gives $x^2 + y^2 + z^2 = 8^2 = 64$.\n- A rectangular box has 12 edges (4 of each dimension), so $4(x + y + z) = 36 \\implies x + y + z = 9$.\n\nUsing the algebraic identity for the square of a trinomial:\n\n$$(x + y + z)^2 = x^2 + y^2 + z^2 + 2(xy + yz + zx).$$\n\nSubstituting the known quantities:\n\n$$9^2 = 64 + 2(xy + yz + zx) \\implies 81 = 64 + \\text{Surface Area}.$$\n\nThus\n\n$$\\text{Surface Area} = 2(xy + yz + zx) = 81 - 64 = 17\\text{ cm}^2.$$\n\n### Conceptual Explanation\nSquaring the sum of side lengths $(x+y+z)^2 = 9^2 = 81$ equals the sum of squares $x^2+y^2+z^2 = 64$ plus the total surface area $2(xy+yz+zx)$. The difference is $81 - 64 = 17$.\n\n### Key Technique\nTrinomial expansion $(x+y+z)^2 = \\sum x^2 + 2\\sum xy$ relating diagonal, edge sum, and surface area.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2015 Problems PDF](https://www.northcentral.maa.org/s/probs15.pdf)\n- Solutions: [Jerry Heuer 2015 Solutions PDF](https://www.northcentral.maa.org/s/solns15.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2015.md",
+  "noteContentSha256": "7ac59e1166d45bd51ed4b603c7d75ce8b99c3df34fae5358050075fb223b64a0",
+  "contentSha256": "b31767824f5d82031915ce83e3ddb922942ac93dcee17b6abbef917594827feb",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p01"
+}

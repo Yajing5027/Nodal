@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2010",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2010",
+  "id": "heuer-2010-p03",
+  "title": "Real part of 1/(1 − z)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Real part of 1/(1 − z)\n\n### Problem\nShow that the real part of $1/(1 - z)$ is constant for all complex numbers $z$ with $|z| = 1$ and $z \\neq 1$.\n\n### Solution (adapted from the official solution)\nThe real part has constant value $1/2$.\n\nFor $z = x + yi$ with $x$ and $y$ real, let\n\n$$f(z) = \\frac{1}{1-z} = \\frac{1}{1-x-yi} = \\frac{1-x+yi}{(1-x-yi)(1-x+yi)} = \\frac{1-x+yi}{1-2x+x^2+y^2}.$$\n\nIf $|z| = 1$ then $x^2 + y^2 = 1$, and the real part of $f(z)$ is\n\n$$\\frac{1-x}{2-2x} = \\frac{1}{2}.$$\n\n### Conceptual Explanation\nSince $|z|=1$, $z\\bar{z}=1$. Alternatively, write $\\operatorname{Re}\\left(\\frac{1}{1-z}\\right) = \\frac{1}{2}\\left(\\frac{1}{1-z} + \\frac{1}{1-\\bar{z}}\\right) = \\frac{1}{2}\\frac{(1-\\bar{z}) + (1-z)}{(1-z)(1-\\bar{z})} = \\frac{1}{2}\\frac{2-(z+\\bar{z})}{1-(z+\\bar{z})+|z|^2} = \\frac{1}{2}\\frac{2-(z+\\bar{z})}{2-(z+\\bar{z})} = \\frac{1}{2}$.\n\n### Key Technique\nConjugate multiplication for complex fractions combined with the unit circle constraint $|z|^2 = x^2+y^2 = 1$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2010 Problems PDF](https://www.northcentral.maa.org/s/probs10.pdf)\n- Solutions: [Jerry Heuer 2010 Solutions PDF](https://www.northcentral.maa.org/s/solns10.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2010.md",
+  "noteContentSha256": "6a9920985561f05adf9100d4bf015a051f9574b68471e6ec73a611effaf33940",
+  "contentSha256": "1c064b35e84f9e3eb680788ec565ff7cc2a7e20cfa30a4a1726536b00da52678",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010&section=heuer-2010-p03"
+}

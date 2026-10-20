@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2019",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2019",
+  "id": "heuer-2019-p03",
+  "title": "No solutions in integers",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## No solutions in integers\n\n### Problem\nShow that there are no positive integers $m$ and $n$ such that $m(m + 1) = n(n + 2)$.\n\n### Solution (adapted from the official solution)\nSuppose for contradiction that positive integers $m, n$ satisfy $m(m + 1) = n(n + 2)$.\n\nAdd 1 to both sides:\n\n$$m^2 + m + 1 = n^2 + 2n + 1 = (n + 1)^2.$$\n\nNow compare $m^2 + m + 1$ with consecutive perfect squares of integers:\n- Since $m > 0$, $m^2 < m^2 + m + 1$.\n- On the other hand, $(m + 1)^2 = m^2 + 2m + 1 > m^2 + m + 1$ (since $2m > m$ for $m > 0$).\n\nTherefore:\n\n$$m^2 < m^2 + m + 1 < (m + 1)^2 \\implies m^2 < (n + 1)^2 < (m + 1)^2.$$\n\nTaking square roots of positive quantities:\n\n$$m < n + 1 < m + 1.$$\n\nThis asserts that the integer $n + 1$ lies strictly between two consecutive integers $m$ and $m + 1$, which is impossible!\n\nTherefore no positive integer solutions exist.\n\n### Conceptual Explanation\nAdding 1 yields $(n + 1)^2 = m^2 + m + 1$. For any positive integer $m$, $m^2 < m^2 + m + 1 < (m + 1)^2$, trapping $(n + 1)^2$ strictly between two consecutive perfect squares, which has no integer solutions.\n\n### Key Technique\nSandwiching an expression strictly between two consecutive perfect squares $m^2 < k^2 < (m+1)^2$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2019 Problems PDF](https://www.northcentral.maa.org/s/probs19.pdf)\n- Solutions: [Jerry Heuer 2019 Solutions PDF](https://www.northcentral.maa.org/s/solns19.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2019.md",
+  "noteContentSha256": "abb5d59d9f3d5bc683336a26f30df7cf179ff8d4a5237f49b7239fb5c195af59",
+  "contentSha256": "0c4a92437603515bafb08fba6ad5fa15807b8fae2ac71b5664470483dad6aeab",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p03"
+}

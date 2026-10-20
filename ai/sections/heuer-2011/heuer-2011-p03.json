@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2011",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2011",
+  "id": "heuer-2011-p03",
+  "title": "Speshul integers",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Speshul integers\n\n### Problem\nA positive integer $k$ is called \"speshul\" if there exist positive integers $m$ and $n$ such that\n\n$$\\frac{mn + 1}{m + n} = k.$$\n\nFind all speshul positive integers.\n\n### Solution (adapted from the official solution)\nEvery positive integer is speshul.\n\nHere are two different ways to get the $m$ and $n$ we need:\n\n**Method 1:**\nTo make $mn + 1 = k(m + n) = km + kn$, start by taking $m = k + 1$. Then we want $kn + n + 1 = km + kn$, which simplifies to $n + 1 = km$, so $n = km - 1 = k(k+1) - 1 = k^2 + k - 1$.\nSince $k \\ge 1$, $m = k+1 \\ge 2$ and $n = k^2+k-1 \\ge 1$ are both positive integers.\n\n**Method 2:**\nTake $m = 2k - 1$ and $n = 2k + 1$. Then\n\n$$\\frac{mn + 1}{m + n} = \\frac{(2k - 1)(2k + 1) + 1}{(2k - 1) + (2k + 1)} = \\frac{4k^2 - 1 + 1}{4k} = \\frac{4k^2}{4k} = k.$$\n\nFor any positive integer $k \\ge 1$, $m = 2k-1 \\ge 1$ and $n = 2k+1 \\ge 3$ are positive integers.\n\n### Conceptual Explanation\nThe symmetric expression $\\frac{mn+1}{m+n}$ evaluated at consecutive odd integers $m = 2k-1, n = 2k+1$ yields $\\frac{(4k^2-1)+1}{4k} = k$. Hence every positive integer $k$ is achievable.\n\n### Key Technique\nDifference of squares construction $(2k-1)(2k+1) + 1 = 4k^2$ to cancel denominators.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2011 Problems PDF](https://www.northcentral.maa.org/s/probs11.pdf)\n- Solutions: [Jerry Heuer 2011 Solutions PDF](https://www.northcentral.maa.org/s/solns11.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2011.md",
+  "noteContentSha256": "768de4a528f6e191963aaccebe07d35aaa1821d2e8dfdfa95aab6841b759618f",
+  "contentSha256": "8c1589200298ee7522b8219f8775fe9556f9ac3001205ab24cbe600604e2b3eb",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p03"
+}

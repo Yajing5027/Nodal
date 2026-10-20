@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "node-modular-arithmetic",
+  "title": "Modular Arithmetic（模运算）",
+  "markdown": "<!-- nodal-panel:sec-modular-arithmetic-core:visible -->\n# Modular Arithmetic（模运算）\n\n### 1. 余数（Remainder）\n\n- $a = mq + r$，其中 $0 \\le r < m$，$m > 0$\n- $a \\bmod m = r$（余数 $= r$）\n- $38 \\bmod 6 = 2$\n- $-4 \\bmod 19 = 15$\n\n### 2. 同余（Congruence）★\n\n**核心定义：**\n\n$$\na \\equiv b \\pmod m \\iff m \\mid (a - b)\n$$\n\n即：$a - b$ 是 $m$ 的整数倍 $\\iff a, b$ 除以 $m$ 余数相同。\n\n**例：**\n- $24 \\equiv 1 \\pmod{23}$，因为 $23 \\mid (24 - 1)$\n- $43 \\equiv 5 \\pmod{19}$，因为 $19 \\mid (43 - 5)$\n\n**两种记法：**\n- $a \\bmod m = r \\implies$ 余数等于 $r$\n- $a \\equiv r \\pmod m \\implies a$ 与 $r$ 同余\n- $0 \\le r < m$ 时，两者等价\n\n### 3. 同余运算规则 ★\n\n若 $a \\equiv b \\pmod m$，$c \\equiv d \\pmod m$，则：\n\n- 加：$a + c \\equiv b + d \\pmod m$\n- 减：$a - c \\equiv b - d \\pmod m$\n- 乘：$ac \\equiv bd \\pmod m$\n- 幂：$a^n \\equiv b^n \\pmod m$（$n \\ge 1$）\n\n**取模化简：** 可先取模再进行加、减、乘、幂运算。\n\n例：$24 \\equiv 1 \\pmod{23}$\n\n$$\n24^n \\equiv 1^n \\equiv 1 \\pmod{23}\n$$\n\n### 4. 整除与同余\n\n- $m \\mid A \\iff A \\equiv 0 \\pmod m$\n- $m \\mid (A - B) \\iff A \\equiv B \\pmod m$\n- $m \\mid A$ 且 $m \\mid B \\implies m \\mid (A \\pm B)$\n\n### 5. GCD 与约分 ★\n\n**GCD (Greatest Common Divisor) — 最大公约数**\n两个正整数共有的最大正因数。\n\n$$\n\\gcd(a, b) = 1 \\iff a, b \\text{ are coprime（互质）}\n$$\n\n**Euclidean Algorithm（辗转相除法）★**\n用于快速计算两个整数的 GCD，不必从 2 开始逐个试除。\n\n- **Step 1 — Divide**\n$$\na = bq + r, \\qquad 0 \\le r < b\n$$\n\n- **Step 2 — Repeat**\n$$\n\\gcd(a, b) = \\gcd(b, r)\n$$\n不断用上一步的除数和余数继续相除。\n\n- **Step 3 — Stop**\n当余数第一次等于 0 时停止。\n$$\n\\boxed{\\text{GCD = Last Nonzero Remainder}}\n$$\n\n**实战应用与例题：**\n- 参见 [2011 P4 · Divisor and remainder](#node/heuer-2011/heuer-2011-p04)（差式构造 $781 = 2(355) + 71$ 配合辗转相除法求解除数与余数）。\n\n**只有 $\\gcd(c, m) = 1$，才能保持模数不变直接约去 $c$：**\n\n$$\nca \\equiv cb \\pmod m \\iff a \\equiv b \\pmod m\n$$\n\n**特例：**\n\n$$\nm \\mid ca \\iff m \\mid a \\quad (\\text{需 } \\gcd(c, m) = 1)\n$$\n\n例：\n\n$$\n19 \\mid 2A \\iff 19 \\mid A \\quad (\\text{因为 } \\gcd(2, 19) = 1)\n$$\n\n反例：\n\n$$\n2 \\equiv 8 \\pmod 6, \\quad \\text{但 } 1 \\not\\equiv 4 \\pmod 6\n$$\n\n所以不能直接约去 $2$。\n\n### 6. 线性组合 / 配系数 ★\n\n**核心：构造差 $= m \\times \\text{整数}$**\n\n$$\nF - G = mk \\implies F \\equiv G \\pmod m\n$$\n\n**实战应用与例题：**\n- 参见 [2019 P1 · Divisible by 19](#node/heuer-2019/heuer-2019-p01)（构造线性组合 $5(x+3y) - (5x-4y) = 19y$，结合 $\\gcd$ 约分证明整除充要性）。\n\n### 7. 幂的周期（Periodicity）\n\n- $a^n \\bmod m$ 最终周期循环\n- $\\gcd(a, m) = 1 \\implies$ 从 $n = 1$ 起周期循环\n- 周期长度 $= T$\n\n若周期从 $n = 1$ 开始：\n\n$$\n\\text{位置} = (n - 1) \\bmod T + 1\n$$\n\n等价：$n \\bmod T = 0 \\implies$ 第 $T$ 项。\n\n### 8. 常用证明入口\n\n- 证明 $m \\mid A \\implies$ 证明 $A \\equiv 0 \\pmod m$\n- 证明 $A \\equiv B \\pmod m \\implies$ 计算 $A - B$\n- 证明 $A \\iff B \\implies$ 两个方向，或连续使用 $\\iff$\n- 遇到大指数 $\\implies$ 先取模、找周期\n- 遇到公因子约分 $\\implies$ 先检查 $\\gcd$\n\n### Related problems\n\n- [2011 P4 · Divisor and remainder](#node/heuer-2011/heuer-2011-p04) — pairwise differences and Euclidean algorithm $781 = 2(355) + 71 \\implies \\gcd(355, 781) = 71$\n- [2018 P1 · Multiples of 23](#node/heuer-2018/heuer-2018-p01) — $24 \\equiv 1 \\pmod{23} \\implies 24^n - 1 \\equiv 0 \\pmod{23}$\n- [2019 P1 · Divisible by 19](#node/heuer-2019/heuer-2019-p01) — linear combination $5(x+3y) - (5x-4y) = 19y$ and $\\gcd(2,19)=\\gcd(5,19)=1$\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-modular-arithmetic-core",
+      "title": "Modular Arithmetic（模运算）",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-modular-arithmetic&section=sec-modular-arithmetic-core",
+      "resource": "ai/sections/node-modular-arithmetic/sec-modular-arithmetic-core.json"
+    }
+  ],
+  "sourcePath": "content/notes/node-modular-arithmetic.md",
+  "contentSha256": "f5b999c02550c5f39c03cbdd78a52bc05b9be5f21ab4b0f8952dcdb0b3e3929e",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-modular-arithmetic"
+}

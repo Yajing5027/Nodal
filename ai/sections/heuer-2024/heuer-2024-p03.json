@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2024",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2024",
+  "id": "heuer-2024-p03",
+  "title": "Looking for Primes",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Looking for Primes\n\n### Problem\nDetermine all positive integers $n$ such that $14^n - 9$ is prime. Justify your answer.\n\n### Solution (adapted from the official solution)\nThe only positive integer is $n = 1$.\n\nFor $n = 1$: $14^1 - 9 = 5$, which is prime.\n\nNow test all $n > 1$ by parity of $n$:\n\n- **Case 1: $n$ is even.**\nLet $n = 2k$ with $k \\ge 1$.\nThen $14^n - 9 = 14^{2k} - 3^2 = (14^k - 3)(14^k + 3)$.\nSince $k \\ge 1$, $14^k \\ge 14$, so the smaller factor $14^k - 3 \\ge 11 > 1$, and $14^k + 3 \\ge 17 > 1$.\nThus $14^{2k} - 9$ factors into two integers strictly greater than 1, so it is composite.\n\n- **Case 2: $n$ is odd and $n > 1$.**\nLet $n = 2k + 1$ with $k \\ge 1$.\nConsider $14^n - 9$ modulo 5:\n$$14 \\equiv -1 \\pmod 5.$$\nTherefore:\n$$14^{2k+1} - 9 \\equiv (-1)^{2k+1} - 4 \\equiv -1 - 4 = -5 \\equiv 0 \\pmod 5.$$\nThus $14^{2k+1} - 9$ is divisible by 5.\nSince $k \\ge 1$, $14^{2k+1} - 9 \\ge 14^3 - 9 = 2744 - 9 = 2735 > 5$, so it is a proper multiple of 5 and hence composite.\n\nTherefore, $n = 1$ is the unique solution.\n\n### Conceptual Explanation\nWhen $n$ is even ($n=2k$), difference of squares factors $14^{2k}-9 = (14^k-3)(14^k+3)$ into non-trivial factors. When $n$ is odd ($n \\ge 3$), $14^n - 9 \\equiv (-1)^n - 4 = -5 \\equiv 0 \\pmod 5$, making it a composite multiple of 5. Only $n = 1$ yields a prime ($5$).\n\n### Key Technique\nDifference of squares for even exponents and modulo 5 divisibility obstruction for odd exponents.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2024 Problems PDF](https://www.northcentral.maa.org/s/probs24.pdf)\n- Solutions: [Jerry Heuer 2024 Solutions PDF](https://www.northcentral.maa.org/s/solns24.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2024.md",
+  "noteContentSha256": "f155367e1f7d80b4457fd8e742ebd20ceb828f4e9023c5f8b6efaadd8ff216bd",
+  "contentSha256": "bf6ccf52b4b82fc037789aac47c30e34e8f4e95f2705cce5a11663b3d99c7a6c",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p03"
+}

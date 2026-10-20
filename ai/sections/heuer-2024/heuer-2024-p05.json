@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2024",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2024",
+  "id": "heuer-2024-p05",
+  "title": "Parallel Chords",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Parallel Chords\n\n### Problem\nTwo parallel chords in a circle have length 20 and 12. They lie on opposite sides of the center of the circle, and the distance between them is 16. Find the length of the chord parallel to these two and midway between them.\n\n### Solution (adapted from the official solution)\nThe length of the midway chord is $4\\sqrt{33}$ (approximately 22.98).\n\n![Figure for Jerry Heuer heuer-2024-p05-solution](study/assets/asset-heuer-2024-p05-solution-heuer-2024-p05-solution.png)\n\nLet the radius of the circle be $R$, and let $C$ be the center of the circle.\nPerpendicular distance from $C$ to chord of length 20 has half-chord length 10; let this distance be $a$.\nPerpendicular distance from $C$ to chord of length 12 has half-chord length 6; since the chords lie on opposite sides of $C$ and are 16 apart, this distance is $b = 16 - a$.\n\nBy the Pythagorean theorem:\n\n$$R^2 = a^2 + 10^2 = b^2 + 6^2 = (16 - a)^2 + 36.$$\n\nExpanding:\n\n$$a^2 + 100 = 256 - 32a + a^2 + 36 = a^2 - 32a + 292.$$\n\nSolving for $a$:\n\n$$32a = 292 - 100 = 192 \\implies a = 6.$$\n\nThen $b = 16 - 6 = 10$, and the circle radius squared is:\n\n$$R^2 = 6^2 + 100 = 136.$$\n\nNow, the midway chord lies at the midpoint of the perpendicular segment between the two chords.\nIts distance from the chord of length 20 is $16/2 = 8$.\nSince the center is at distance $a = 6$ from the chord of length 20 (on the side toward the other chord), the distance of the midway chord from the center $C$ is:\n\n$$|8 - 6| = 2.$$\n\nLet $2L$ be the length of this midway chord (so its half-length is $L$).\nBy the Pythagorean theorem:\n\n$$L^2 + 2^2 = R^2 = 136 \\implies L^2 = 136 - 4 = 132.$$\n\nThus:\n\n$$L = \\sqrt{132} = 2\\sqrt{33}.$$\n\nThe full chord length is $2L = 4\\sqrt{33}$.\n\n### Conceptual Explanation\nSetting $a^2 + 10^2 = (16-a)^2 + 6^2$ reveals the center distance $a = 6$ and $R^2 = 136$. The midline between the chords is at distance $|8 - 6| = 2$ from the center, giving half-chord $L = \\sqrt{136 - 4} = \\sqrt{132}$, so the chord length is $2\\sqrt{132} = 4\\sqrt{33}$.\n\n### Key Technique\nPythagorean chord-distance relation $R^2 = d^2 + (c/2)^2$ on opposite sides of the center.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2024 Problems PDF](https://www.northcentral.maa.org/s/probs24.pdf)\n- Solutions: [Jerry Heuer 2024 Solutions PDF](https://www.northcentral.maa.org/s/solns24.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2024.md",
+  "noteContentSha256": "f155367e1f7d80b4457fd8e742ebd20ceb828f4e9023c5f8b6efaadd8ff216bd",
+  "contentSha256": "1d6c19999beb1498fa48d5bd63053f47ae1d8408975ae350eddcbb1b2f34cb9b",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p05"
+}

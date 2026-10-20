@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-trees-heaps-q3",
+  "noteTitle": "Q3 · Trees & Heaps",
+  "id": "sec-mistakes",
+  "title": "错题点",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n### 错题点\n- `L=2i+1`、`R=2i+2` 只得到候选索引，仍须用 heap size `n` 检查；`index < n` 才存在，`index ≥ n` 不存在，等于 n 也越界。\n- 判断 Min-Heap 不能比较数组里相邻的元素。例：`A = [2, 5, 3, 8, 7, 4]` 中虽然 7 后面是 4，但二者不是父子，因此不能据此判错。\n- 对应树形结构：\n\n```text\n        2\n      /        5     3\n    / \\   /\n   8   7 4\n```\n\n- 检查父子关系：2≤5、2≤3、5≤8、5≤7、3≤4，均成立，所以 A 是有效的 Min-Heap。\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-trees-heaps-q3.md",
+  "noteContentSha256": "1181d6350d734724d4adda58118772c6e7f226861a2eaa55f9a99ed83049bfb0",
+  "contentSha256": "8f4a3f87cf88b3c582992b22274bfae81721bbedda93ba7dd31ba7dc470849e1",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-mistakes"
+}

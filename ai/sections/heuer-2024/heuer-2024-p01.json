@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2024",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2024",
+  "id": "heuer-2024-p01",
+  "title": "Decimal Number",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Decimal Number\n\n### Problem\nIf the fraction $\\frac{1}{70,000}$ is written out in decimal form:\n\n$$\\frac{1}{70,000} = 0.a_1 a_2 a_3 \\dots,$$\n\nwhat is the digit $a_{2024}$? Justify your answer.\n\n### Solution (adapted from the official solution)\nThe 2024th digit is 8.\n\nNotice that:\n\n$$\\frac{1}{70000} = \\frac{1}{7} \\times 10^{-4}.$$\n\nThe decimal expansion of $1/7$ is the well-known 6-digit repeating cycle:\n\n$$\\frac{1}{7} = 0.\\overline{142857}.$$\n\nMultiplying by $10^{-4}$ shifts the decimal point by 4 places, producing 4 initial zeros followed by the repeating 6-digit period $(1, 4, 2, 8, 5, 7)$:\n\n$$\\frac{1}{70000} = 0.0000\\overline{142857}.$$\n\nThus, the first 4 digits are $a_1 = a_2 = a_3 = a_4 = 0$.\nFor $k \\ge 5$, digit $a_k$ corresponds to position $k - 4$ in the repeating block $(1, 4, 2, 8, 5, 7)$ of length 6.\n\nFor $k = 2024$:\n\n$$2024 - 4 = 2020.$$\n\nNow divide 2020 by the period length 6:\n\n$$2020 = 336 \\times 6 + 4 \\implies 2020 \\equiv 4 \\pmod 6.$$\n\nThe 4th digit in the 6-digit repeating sequence $(1, 4, 2, 8, 5, 7)$ is 8.\n\nTherefore $a_{2024} = 8$.\n\n### Conceptual Explanation\nFactoring $\\frac{1}{70000} = 10^{-4} \\times 0.\\overline{142857}$ introduces 4 leading zeros followed by the 6-cycle $142857$. The $(2024 - 4) = 2020$-th position mod 6 is $2020 \\equiv 4 \\pmod 6$, pointing to the 4th digit of the cycle, which is 8.\n\n### Key Technique\nPeriodic decimal expansion shift $10^{-k}/7$ and modular index calculation $(2024 - 4) \\pmod 6$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2024 Problems PDF](https://www.northcentral.maa.org/s/probs24.pdf)\n- Solutions: [Jerry Heuer 2024 Solutions PDF](https://www.northcentral.maa.org/s/solns24.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2024.md",
+  "noteContentSha256": "f155367e1f7d80b4457fd8e742ebd20ceb828f4e9023c5f8b6efaadd8ff216bd",
+  "contentSha256": "b329024dd360480c68a70d61abf8dbb355ff157aa1fcf80f702cb11b9a47272e",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p01"
+}

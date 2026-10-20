@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2025",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2025",
+  "id": "heuer-2025-p04",
+  "title": "A Positive Function",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A Positive Function\n\n### Problem\nFor a given real number $a$ with $|a| \\ne 1$, let us define the function:\n\n$$g(t) = 1 - 2a \\cos(t) + a^2.$$\n\nShow that $g(t) > 0$ for all real numbers $t$.\n\n### Solution (adapted from the official solution)\nRewrite $1$ using the Pythagorean trigonometric identity $1 = \\cos^2(t) + \\sin^2(t)$:\n\n$$\\begin{aligned} g(t) &= a^2 - 2a\\cos(t) + 1 \\\\ &= a^2 - 2a\\cos(t) + \\cos^2(t) + \\sin^2(t) \\\\ &= (a - \\cos(t))^2 + \\sin^2(t). \\end{aligned}$$\n\nSince the square of any real number is non-negative, $g(t) \\ge 0$ for all $t$.\n\nTo show that $g(t)$ is strictly positive, suppose for contradiction that $g(t) = 0$ for some $t$.\nThen both non-negative squares must vanish simultaneously:\n1. $\\sin^2(t) = 0 \\implies \\sin(t) = 0 \\implies \\cos(t) = \\pm 1$.\n2. $(a - \\cos(t))^2 = 0 \\implies a = \\cos(t)$.\n\nThis would imply $a = \\pm 1$, so $|a| = 1$.\nHowever, we are given $|a| \\ne 1$, a contradiction!\n\nTherefore both squares cannot vanish simultaneously, so $g(t) > 0$ for all real numbers $t$.\n\n### Conceptual Explanation\nUsing $1 = \\cos^2 t + \\sin^2 t$, $g(t)$ rewrites as $(a - \\cos t)^2 + \\sin^2 t \\ge 0$. The sum of squares can only equal 0 if $\\sin t = 0$ (so $\\cos t = \\pm 1$) and $a = \\cos t = \\pm 1$. Since $|a| \\ne 1$, $g(t)$ is strictly positive.\n\n### Key Technique\nSum of squares decomposition $g(t) = (a - \\cos t)^2 + \\sin^2 t$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2025 Problems PDF](https://www.northcentral.maa.org/s/probs25.pdf)\n- Solutions: [Jerry Heuer 2025 Solutions PDF](https://www.northcentral.maa.org/s/solns25.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2025.md",
+  "noteContentSha256": "9b25499a5e7c660860c1e50cc65aa33498b301e548ed3b488fa1f8a13ca175f5",
+  "contentSha256": "f088dd6a16e94de5ff526cb7f8173abd7db23e7ce992a23559be201c1dca9f65",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p04"
+}

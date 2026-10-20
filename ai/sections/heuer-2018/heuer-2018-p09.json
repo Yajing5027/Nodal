@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2018",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2018",
+  "id": "heuer-2018-p09",
+  "title": "A max/min problem",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A max/min problem\n\n### Problem\nFor real numbers $x, y, z$, define\n\n$$f(x, y, z) = \\min\\{x - y^2, y - z^2, z - x^2\\}.$$\n\nFind the maximum value of $f(x, y, z)$.\n\n### Solution (adapted from the official solution)\nThe maximum value is $\\frac{1}{4}$, attained at $x = y = z = \\frac{1}{2}$.\n\nAt $x = y = z = 1/2$:\n$$x - y^2 = \\frac{1}{2} - \\frac{1}{4} = \\frac{1}{4}, \\quad y - z^2 = \\frac{1}{4}, \\quad z - x^2 = \\frac{1}{4},$$\nso $f(1/2, 1/2, 1/2) = 1/4$.\n\nWe show that $f(x, y, z) > 1/4$ is impossible for any real numbers $x, y, z$.\n\nSuppose for contradiction that $f(x, y, z) > 1/4$. Then each of the three components must strictly exceed $1/4$:\n1. $x - y^2 > 1/4$\n2. $y - z^2 > 1/4$\n3. $z - x^2 > 1/4$\n\nAdding these three inequalities:\n\n$$(x + y + z) - (x^2 + y^2 + z^2) > \\frac{3}{4}.$$\n\nRearranging all terms to one side:\n\n$$(x^2 - x) + (y^2 - y) + (z^2 - z) + \\frac{3}{4} < 0.$$\n\nComplete the square for each variable:\n\n$$\\left(x - \\frac{1}{2}\\right)^2 + \\left(y - \\frac{1}{2}\\right)^2 + \\left(z - \\frac{1}{2}\\right)^2 < 0.$$\n\nSince the sum of squares of real numbers is always non-negative, this is a contradiction!\n\nTherefore $f(x, y, z) \\le 1/4$ for all $x, y, z$, and the maximum value is $1/4$.\n\n### Conceptual Explanation\nAssuming $f(x, y, z) > 1/4$ implies the sum $(x - y^2) + (y - z^2) + (z - x^2) > 3/4$, which rewrites to $\\sum (x - 1/2)^2 < 0$, an impossibility. Equality is attained at $x = y = z = 1/2$.\n\n### Key Technique\nCyclic sum inequality and completing the square $\\sum (x_i - 1/2)^2 \\ge 0$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2018 Problems PDF](https://www.northcentral.maa.org/s/probs18.pdf)\n- Solutions: [Jerry Heuer 2018 Solutions PDF](https://www.northcentral.maa.org/s/solns18.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2018.md",
+  "noteContentSha256": "52117a8f6f7cc785475940fb239e395e61db403802c2b7d0880aac666cc3521b",
+  "contentSha256": "61bea3140cbc6f5ed7a73535a21e373d1ddee3eeb3069206bc47d02a610cf8f7",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p09"
+}

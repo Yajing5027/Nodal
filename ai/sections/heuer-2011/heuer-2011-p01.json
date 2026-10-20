@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2011",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2011",
+  "id": "heuer-2011-p01",
+  "title": "Units digit of S₂₀₁₁",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Units digit of S₂₀₁₁\n\n### Problem\nLet $S_n$ be the sum of the squares of the first $n$ positive odd integers. Find, with proof, the units digit (in base 10) of $S_{2011}$.\n\n### Solution (adapted from the official solution)\nThe units digit of $S_{2011}$ is 1.\n\nWe show this by observing that $S_1 = 1$ has units digit 1, and that $S_{n+10}$ always has the same units digit as does $S_n$.\n\nModulo 10, the sequence of squares of positive odd integers begins $(1, 9, 5, 9, 1)$, after which this cycle repeats itself, because $(n + 10)^2 = n^2 + 20n + 100 \\equiv n^2 \\pmod{10}$.\n\nThen modulo 10, $S_{n+10} - S_n$ will always be the sum of 10 consecutive terms in this sequence, which will be\n\n$$1 + 9 + 5 + 9 + 1 + 1 + 9 + 5 + 9 + 1 = 40 \\equiv 0 \\pmod{10},$$\n\nwherever in the sequence one begins. Thus $S_{n+10} \\equiv S_n \\pmod{10}$.\n\nSince $2011 \\equiv 1 \\pmod{10}$, $S_{2011} \\equiv S_1 = 1^2 = 1 \\pmod{10}$.\n\n### Conceptual Explanation\nThe sequence of odd squares mod 10 repeats with period 5: $1^2 \\equiv 1, 3^2 \\equiv 9, 5^2 \\equiv 5, 7^2 \\equiv 9, 9^2 \\equiv 1$. The sum of two full cycles (10 terms) is $2(1 + 9 + 5 + 9 + 1) = 40 \\equiv 0 \\pmod{10}$. Hence $S_n \\pmod{10}$ has period 10, and $S_{2011} \\equiv S_1 = 1 \\pmod{10}$.\n\n### Key Technique\nPeriodicity of polynomial sums modulo 10; summing full cycles to establish vanishing offsets.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2011 Problems PDF](https://www.northcentral.maa.org/s/probs11.pdf)\n- Solutions: [Jerry Heuer 2011 Solutions PDF](https://www.northcentral.maa.org/s/solns11.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2011.md",
+  "noteContentSha256": "768de4a528f6e191963aaccebe07d35aaa1821d2e8dfdfa95aab6841b759618f",
+  "contentSha256": "632ef4fedf217e456c5063dca6dc4ab48fe7eb78d07e72b3cf3f076996233472",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p01"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-trees-heaps-q3",
+  "noteTitle": "Q3 · Trees & Heaps",
+  "id": "sec-height-index",
+  "title": "高度与索引",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n### 高度与索引\n- Complete Binary Tree 的 height 为 O(log n)。\n- 若高度 h 按 edge 数计算，n ≥ 2^h，因此 h ≤ log₂n。\n- 对 0-based 数组索引 i：parent = ⌊(i−1)/2⌋，left = 2i+1，right = 2i+2。\n- value = array[index]；⌊ ⌋ 表示向下取整。\n- index < n 才存在；index ≥ n 不存在。\n- size = n；最后一个节点索引是 n−1；下一个空槽索引是 n。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-trees-heaps-q3.md",
+  "noteContentSha256": "1181d6350d734724d4adda58118772c6e7f226861a2eaa55f9a99ed83049bfb0",
+  "contentSha256": "1a465657e8493275f58d8e85aecd9371b983562af83906a043d9cb8a0cf42462",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-height-index"
+}

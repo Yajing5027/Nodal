@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-trees-heaps-q3",
+  "noteTitle": "Q3 · Trees & Heaps",
+  "id": "sec-q3-vocab",
+  "title": "Q3 词汇",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n### Q3 词汇\n- slot：槽位、位置、格子。\n- arbitrary：任意指定的、普通的某一个。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-trees-heaps-q3.md",
+  "noteContentSha256": "1181d6350d734724d4adda58118772c6e7f226861a2eaa55f9a99ed83049bfb0",
+  "contentSha256": "ae6c489e7e0852911e5409a5344f136071b507cfc5b0a8e7bfc7e9eab9a93f51",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-q3-vocab"
+}

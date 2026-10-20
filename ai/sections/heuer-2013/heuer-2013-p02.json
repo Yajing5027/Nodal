@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2013",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2013",
+  "id": "heuer-2013-p02",
+  "title": "The 2013th term",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## The 2013th term\n\n### Problem\nAn increasing sequence $3, 15, 24, \\dots$ is formed by the positive multiples of 3 that are one less than a perfect square. Find the 2013th term of the sequence.\n\n### Solution (adapted from the official solution)\nThe 2013th term is $3020^2 - 1 = 9120399$.\n\nAn integer $k^2 - 1 = (k - 1)(k + 1)$ is divisible by 3 if and only if $k$ is not a multiple of 3 (since if $k \\equiv 0 \\pmod 3$, then $k^2 - 1 \\equiv -1 \\not\\equiv 0$, whereas if $k \\equiv \\pm 1 \\pmod 3$, $k^2 - 1 \\equiv 0$).\n\nThus the sequence of admissible $k \\ge 2$ consists of all positive integers not divisible by 3:\n\n$$k = 2, 4, 5, 7, 8, 10, 11, \\dots$$\n\nEvery group of 3 consecutive integers contains 2 terms. Specifically:\n- Even index $2m$: $k = 3m + 1$\n- Odd index $2m + 1$: $k = 3m + 2$\n\nFor the 2013th term, $2013 = 2(1006) + 1$, so $m = 1006$, giving:\n\n$$k = 3(1006) + 2 = 3018 + 2 = 3020.$$\n\nThus $a_{2013} = 3020^2 - 1 = 9120399$.\n\n### Conceptual Explanation\nBy Fermat's Little Theorem / modular arithmetic mod 3, $k^2 - 1$ is a multiple of 3 if and only if $3 \\nmid k$. Filtering out multiples of 3 leaves integers $k_n$, where $k_{2013} = 3020$, so the term is $3020^2 - 1$.\n\n### Key Technique\nModular filtration of integers not divisible by 3 and index arithmetic.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2013 Problems PDF](https://www.northcentral.maa.org/s/probs13.pdf)\n- Solutions: [Jerry Heuer 2013 Solutions PDF](https://www.northcentral.maa.org/s/solns13.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2013.md",
+  "noteContentSha256": "e4d6d7b17c93764ea0bc65b9c85fb4c8602fc259cbb61257b32cf3c0c46c0df8",
+  "contentSha256": "bbe33067d1b48546fd14169101df83fd7e35850442c7217807eb2874813ab140",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013&section=heuer-2013-p02"
+}

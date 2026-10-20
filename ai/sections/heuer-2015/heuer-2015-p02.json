@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2015",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2015",
+  "id": "heuer-2015-p02",
+  "title": "Minimum value of a sequence",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Minimum value of a sequence\n\n### Problem\nIn an arithmetic progression $\\{t_1, t_2, t_3, \\dots\\}$, the first term is $t_1 = 98$, and $t_{13} = 89$. Let $T_n = t_n + t_{n+1} + \\dots + t_{n+6}$. Find the minimum value of $|T_n|$.\n\n### Solution (adapted from the official solution)\nThe minimum value is $|T_{129}| = \\frac{7}{4}$.\n\nThe common difference $d$ of the progression is:\n\n$$d = \\frac{t_{13} - t_1}{12} = \\frac{89 - 98}{12} = -\\frac{9}{12} = -\\frac{3}{4}.$$\n\nSo $t_n = 98 - \\frac{3}{4}(n - 1)$.\n\nThe 7-term sum $T_n$ is:\n\n$$T_n = 7 t_{n+3} = 7\\left(98 - \\frac{3}{4}(n + 2)\\right) = 7\\left(98 - \\frac{3}{2} - \\frac{3n}{4}\\right) = \\frac{7}{4}(386 - 3n).$$\n\nTo minimize $|T_n|$, we find integer $n$ making $3n$ closest to 386:\n\n$$\\frac{386}{3} = 128\\frac{2}{3}.$$\n\n- For $n = 128$: $T_{128} = \\frac{7}{4}(386 - 384) = \\frac{7}{4}(2) = \\frac{7}{2} = 3.5$.\n- For $n = 129$: $T_{129} = \\frac{7}{4}(386 - 387) = \\frac{7}{4}(-1) = -\\frac{7}{4} = -1.75$.\n\nThus $|T_{129}| = \\frac{7}{4} < \\frac{7}{2}$, so the minimum value of $|T_n|$ is $\\frac{7}{4}$.\n\n### Conceptual Explanation\nThe 7-term sum is $7 t_{n+3} = \\frac{7}{4}(386 - 3n)$. The integer minimizing $|386 - 3n|$ is $n = 129$, yielding $|T_{129}| = 7/4$.\n\n### Key Technique\nExpressing symmetric multi-term arithmetic sums via the midpoint term $7 t_{n+3}$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2015 Problems PDF](https://www.northcentral.maa.org/s/probs15.pdf)\n- Solutions: [Jerry Heuer 2015 Solutions PDF](https://www.northcentral.maa.org/s/solns15.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2015.md",
+  "noteContentSha256": "7ac59e1166d45bd51ed4b603c7d75ce8b99c3df34fae5358050075fb223b64a0",
+  "contentSha256": "62ef9c844307e551b45f2ffe3064ddd2aec503f4979ab7a1b8f298d0252821d1",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p02"
+}

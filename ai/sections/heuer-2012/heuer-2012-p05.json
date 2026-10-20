@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2012",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2012",
+  "id": "heuer-2012-p05",
+  "title": "A polynomial extrapolation",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A polynomial extrapolation\n\n### Problem\nThe monic polynomial $f(x)$ has degree 9, and $f(n) = n$ for each integer $n$, $1 \\le n \\le 9$. Find $f(10)$, and justify your answer. (\"Monic\" means with leading coefficient 1.)\n\n### Solution (adapted from the official solution)\nWe show that $f(10) = 9! + 10 = 362890$.\n\nLet $g(x) = f(x) - x$. Since $f(x)$ has degree 9 and leading coefficient 1, $g(x)$ is also monic of degree 9.\n\nFurthermore, for $n = 1, 2, \\dots, 9$,\n\n$$g(n) = f(n) - n = 0.$$\n\nTherefore $1, 2, \\dots, 9$ are the 9 roots of $g(x)$, so\n\n$$g(x) = (x - 1)(x - 2) \\cdots (x - 9).$$\n\nEvaluating at $x = 10$:\n\n$$g(10) = (10 - 1)(10 - 2) \\cdots (10 - 9) = 9 \\cdot 8 \\cdots 1 = 9! = 362880.$$\n\nHence\n\n$$f(10) = g(10) + 10 = 9! + 10 = 362890.$$\n\n### Conceptual Explanation\nThe difference $g(x) = f(x) - x$ vanishes at 9 distinct points. Because $\\deg(g) = 9$ and $g$ is monic, it is uniquely determined by its linear factors. Evaluating at 10 gives $g(10) = 9!$, so $f(10) = 9! + 10 = 362890$.\n\n### Key Technique\nDefining the difference polynomial $g(x) = f(x) - x$ and factoring monic polynomials with known integer roots.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2012 Problems PDF](https://www.northcentral.maa.org/s/probs12.pdf)\n- Solutions: [Jerry Heuer 2012 Solutions PDF](https://www.northcentral.maa.org/s/solns12.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2012.md",
+  "noteContentSha256": "a71b693b5136bb0517d5426bd82c4cf6bf1bb0079f60d0bf5f39e00c6a657c50",
+  "contentSha256": "575d08125525bf39e5e35a2ad5257504df5170592fc0f503bad1df284d8d5e17",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p05"
+}

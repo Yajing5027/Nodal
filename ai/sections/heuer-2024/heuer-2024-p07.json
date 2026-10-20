@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2024",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2024",
+  "id": "heuer-2024-p07",
+  "title": "Approximate to 1",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Approximate to 1\n\n### Problem\nProve that for appropriate choices of positive integers $m$ and $n$, the number $\\frac{\\pi^m}{e^n}$ can be made arbitrarily close to 1.\n\n### Solution (adapted from the official solution)\nTaking the natural logarithm, $\\frac{\\pi^m}{e^n} \\to 1$ is equivalent to showing that:\n\n$$\\ln\\left(\\frac{\\pi^m}{e^n}\\right) = m \\ln \\pi - n$$\n\ncan be made arbitrarily close to 0 for positive integers $m, n$.\n\nThat is, for any integer $k > 0$, we must show there exist positive integers $m, n$ such that:\n\n$$|m \\ln \\pi - n| < \\frac{1}{k}.$$\n\nConsider the $k + 1$ fractional parts:\n\n$$x_i = i \\ln \\pi - \\lfloor i \\ln \\pi \\rfloor \\in [0, 1), \\quad \\text{for } i = 1, 2, \\dots, k + 1.$$\n\nPartition the interval $[0, 1)$ into $k$ equal subintervals of width $1/k$:\n\n$$\\left[0, \\frac{1}{k}\\right), \\left[\\frac{1}{k}, \\frac{2}{k}\\right), \\dots, \\left[\\frac{k-1}{k}, 1\\right).$$\n\nBy the Pigeonhole Principle, since there are $k + 1$ points placed into $k$ subintervals, at least two points $x_p$ and $x_q$ (with $1 \\le q < p \\le k + 1$) must lie in the same subinterval, so $|x_p - x_q| < 1/k$.\n\nExpanding $|x_p - x_q|$:\n\n$$|(p - q)\\ln \\pi - (\\lfloor p \\ln \\pi \\rfloor - \\lfloor q \\ln \\pi \\rfloor)| < \\frac{1}{k}.$$\n\nSet:\n- $m = p - q$, which is a positive integer since $p > q \\ge 1$.\n- $n = \\lfloor p \\ln \\pi \\rfloor - \\lfloor q \\ln \\pi \\rfloor$.\n\nSince $\\pi > e > 1$, $\\ln \\pi > 1$, so $(p - q)\\ln \\pi > 1 > 1/k$, meaning $n$ is also a strictly positive integer.\n\nThus $|m \\ln \\pi - n| < 1/k$. As $k \\to \\infty$, $m \\ln \\pi - n \\to 0$, which implies $e^{m \\ln \\pi - n} = \\frac{\\pi^m}{e^n} \\to e^0 = 1$.\n\n### Conceptual Explanation\nTransforming into logarithmic form requires $|m \\ln \\pi - n| < 1/k$. Applying Dirichlet's Approximation Theorem / Pigeonhole on the fractional parts $\\{i \\ln \\pi\\}$ for $1 \\le i \\le k+1$ traps the difference within $1/k$, showing $\\pi^m / e^n$ can approximate 1 arbitrarily closely.\n\n### Key Technique\nDirichlet's approximation theorem via Pigeonhole on fractional parts $\\{i \\alpha\\}$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2024 Problems PDF](https://www.northcentral.maa.org/s/probs24.pdf)\n- Solutions: [Jerry Heuer 2024 Solutions PDF](https://www.northcentral.maa.org/s/solns24.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2024.md",
+  "noteContentSha256": "f155367e1f7d80b4457fd8e742ebd20ceb828f4e9023c5f8b6efaadd8ff216bd",
+  "contentSha256": "4484762cdbaa5f1dacd5e943b860c97e64e9c77634517d0a2891e84f5bfb842b",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p07"
+}

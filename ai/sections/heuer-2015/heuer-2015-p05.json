@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2015",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2015",
+  "id": "heuer-2015-p05",
+  "title": "Divisibility",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Divisibility\n\n### Problem\nFor what integers $n$ is the integer $n^3 - 8n^2 + 2n$ divisible by $n^2 + 1$?\n\n### Solution (adapted from the official solution)\nThe only integers are $n = -8, 0, 2$.\n\nBy polynomial division:\n\n$$n^3 - 8n^2 + 2n = (n^2 + 1)(n - 8) + (n + 8).$$\n\nThus $n^2 + 1$ divides $n^3 - 8n^2 + 2n$ if and only if $n^2 + 1$ divides $n + 8$.\n\n- If $n + 8 = 0$, then $n = -8$. In this case $n^2 + 1 = 65$ divides 0, which is valid.\n- If $n + 8 \\ne 0$, divisibility requires $|n^2 + 1| \\le |n + 8|$, which means $n^2 + 1 \\le |n + 8|$.\n\nCase 1: $n + 8 > 0$, so $n^2 + 1 \\le n + 8 \\implies n^2 - n - 7 \\le 0$.\nThe roots of $n^2 - n - 7 = 0$ are $\\frac{1 \\pm \\sqrt{29}}{2} \\approx \\frac{1 \\pm 5.385}{2} \\in [-2.19, 3.19]$.\nThe integer candidates are $n \\in \\{-2, -1, 0, 1, 2, 3\\}$:\n- $n = -2: n^2 + 1 = 5, n + 8 = 6$ ($5 \\nmid 6$)\n- $n = -1: n^2 + 1 = 2, n + 8 = 7$ ($2 \\nmid 7$)\n- $n = 0: n^2 + 1 = 1, n + 8 = 8$ ($1 \\mid 8$, valid)\n- $n = 1: n^2 + 1 = 2, n + 8 = 9$ ($2 \\nmid 9$)\n- $n = 2: n^2 + 1 = 5, n + 8 = 10$ ($5 \\mid 10$, valid)\n- $n = 3: n^2 + 1 = 10, n + 8 = 11$ ($10 \\nmid 11$)\n\nCase 2: $n + 8 < 0$, so $n^2 + 1 \\le -(n + 8) = -n - 8 \\implies n^2 + n + 9 \\le 0$.\nSince $n^2 + n + 9 = (n + 1/2)^2 + 35/4 > 0$ for all real $n$, there are no solutions here.\n\nThus the only solutions are $n = -8, 0, 2$.\n\n### Conceptual Explanation\nPolynomial long division gives remainder $n + 8$. The integer condition $(n^2+1) \\mid (n+8)$ requires $n = -8$ or the magnitude bound $n^2+1 \\le |n+8|$, which restricts candidates to a small finite range yielding only $n = 0, 2$.\n\n### Key Technique\nPolynomial division remainder reduction and magnitude bounding $d \\le |r|$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2015 Problems PDF](https://www.northcentral.maa.org/s/probs15.pdf)\n- Solutions: [Jerry Heuer 2015 Solutions PDF](https://www.northcentral.maa.org/s/solns15.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2015.md",
+  "noteContentSha256": "7ac59e1166d45bd51ed4b603c7d75ce8b99c3df34fae5358050075fb223b64a0",
+  "contentSha256": "ae0e39ac5c78df9533fa769b85a7b28209b8c2739e15696a9ac95d5fd63453dc",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015&section=heuer-2015-p05"
+}

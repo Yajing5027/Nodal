@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2024",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2024",
+  "id": "heuer-2024-p06",
+  "title": "Nine Positive Integers",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Nine Positive Integers\n\n### Problem\nSuppose that we have nine distinct positive integers, the sum of which is 200. Show that some four of them add up to at least 100.\n\n### Solution (adapted from the official solution)\nLet the nine distinct positive integers sorted in increasing order be:\n\n$$a_1 < a_2 < a_3 < a_4 < a_5 < a_6 < a_7 < a_8 < a_9.$$\n\nWe are given $\\sum_{i=1}^9 a_i = 200$, and we wish to show that the sum of the largest four satisfies:\n\n$$a_6 + a_7 + a_8 + a_9 \\ge 100.$$\n\nConsider two cases on the value of $a_6$:\n\n- **Case 1: $a_6 \\ge 24$.**\nSince the integers are distinct and strictly increasing:\n$$a_7 \\ge a_6 + 1 \\ge 25, \\quad a_8 \\ge 26, \\quad a_9 \\ge 27.$$\nSumming the four largest:\n$$a_6 + a_7 + a_8 + a_9 \\ge 24 + 25 + 26 + 27 = 102 \\ge 100.$$\n\n- **Case 2: $a_6 \\le 23$.**\nThen $a_5 \\le 22, a_4 \\le 21, a_3 \\le 20, a_2 \\le 19, a_1 \\le 18$.\nSumming the five smallest numbers:\n$$a_1 + a_2 + a_3 + a_4 + a_5 \\le 18 + 19 + 20 + 21 + 22 = 100.$$\nSince the total sum of all nine integers is 200:\n$$a_6 + a_7 + a_8 + a_9 = 200 - (a_1 + a_2 + a_3 + a_4 + a_5) \\ge 200 - 100 = 100.$$\n\nIn both cases, the sum of the four largest integers is at least 100.\n\n### Conceptual Explanation\nDividing on whether the 6th number $a_6$ is $\\ge 24$ or $\\le 23$: if $a_6 \\ge 24$, the top four sum to at least $24+25+26+27 = 102$. If $a_6 \\le 23$, the bottom five sum to at most $18+19+20+21+22 = 100$, leaving at least $200 - 100 = 100$ for the top four.\n\n### Key Technique\nThreshold case split on the median element $a_6 \\gtrless 24$ bounding consecutive distinct integers.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2024 Problems PDF](https://www.northcentral.maa.org/s/probs24.pdf)\n- Solutions: [Jerry Heuer 2024 Solutions PDF](https://www.northcentral.maa.org/s/solns24.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2024.md",
+  "noteContentSha256": "f155367e1f7d80b4457fd8e742ebd20ceb828f4e9023c5f8b6efaadd8ff216bd",
+  "contentSha256": "e7f98b4959013ddba8d40b35c5fb7c076d70f76c550912b0f676a9174e539c6a",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024&section=heuer-2024-p06"
+}

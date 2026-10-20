@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2011",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2011",
+  "id": "heuer-2011-p02",
+  "title": "Area of a square",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Area of a square\n\n### Problem\nAt the left are two copies of the same isosceles right triangle $ABC$, each with an inscribed square. If the first (leftmost) inscribed square has area $S$, what is the area of the other inscribed square? Justify your answer.\n\n![Figure for Jerry Heuer heuer-2011-p02](study/assets/asset-heuer-2011-p02-heuer-2011-p02.png)\n\n### Solution (adapted from the official solution)\nThe area is $\\frac{8}{9}S$.\n\n![Figure for Jerry Heuer heuer-2011-p02-solution](study/assets/asset-heuer-2011-p02-solution-heuer-2011-p02-solution.png)\n\nThe legs of the right triangle have length $2\\sqrt{S}$, so the hypotenuse is $2\\sqrt{2S}$. Then the second inscribed square has side $\\frac{2\\sqrt{2S}}{3}$, because the smaller triangles at $A$ and $C$ are also isosceles right triangles.\n\nThus the area of the second inscribed square is\n\n$$\\left(\\frac{2\\sqrt{2S}}{3}\\right)^2 = \\frac{8S}{9}.$$\n\n### Conceptual Explanation\nIn the first figure, the square shares the right angle at $B$. The remaining triangles along the legs are isosceles right triangles identical to each other, so the legs of $\\triangle ABC$ are each $2s_1 = 2\\sqrt{S}$, giving hypotenuse $2\\sqrt{2S}$. In the second figure, the square has one side on the hypotenuse. The hypotenuse is partitioned into three segments: two legs of corner $45^\\circ-45^\\circ-90^\\circ$ triangles and one square side, all equal to $s_2$. Thus $3s_2 = 2\\sqrt{2S} \\implies s_2 = \\frac{2\\sqrt{2}}{3}\\sqrt{S}$, so $\\text{Area} = s_2^2 = \\frac{8}{9}S$.\n\n### Key Technique\nPartitioning the hypotenuse and legs of an isosceles right triangle using inscribed square geometry.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2011 Problems PDF](https://www.northcentral.maa.org/s/probs11.pdf)\n- Solutions: [Jerry Heuer 2011 Solutions PDF](https://www.northcentral.maa.org/s/solns11.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2011.md",
+  "noteContentSha256": "768de4a528f6e191963aaccebe07d35aaa1821d2e8dfdfa95aab6841b759618f",
+  "contentSha256": "ff4b31bd6d34364494fa8fd9ab9d392e355796b1bde6c8a357a3bc6568a48913",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011&section=heuer-2011-p02"
+}

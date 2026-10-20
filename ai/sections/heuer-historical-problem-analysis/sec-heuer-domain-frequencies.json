@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-historical-problem-analysis",
+  "noteTitle": "Jerry Heuer Historical Problem Analysis",
+  "id": "sec-heuer-domain-frequencies",
+  "title": "2. Historical Domain Frequencies (140 Problems)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 2. Historical Domain Frequencies (140 Problems)\n\nThe counts below summarize the **primary-domain labels in this imported dataset**. They are an editorial classification, not an official contest statistic. Each problem has one primary label; mixed-topic problems may fit more than one subject.\n\n| Primary domain | Problems | Share |\n| :--- | ---: | ---: |\n| Algebra | 37 | 26.4% |\n| Number Theory | 35 | 25.0% |\n| Calculus & Analysis | 21 | 15.0% |\n| Geometry | 20 | 14.3% |\n| Sequences & Recurrences | 9 | 6.4% |\n| Probability | 8 | 5.7% |\n| Combinatorics | 7 | 5.0% |\n| Linear Algebra | 3 | 2.1% |\n\n---",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-historical-problem-analysis.md",
+  "noteContentSha256": "b84098f0673a3f66d97f9d779e6354cca958d4a4a7ee3e93c58f58ccb771af7f",
+  "contentSha256": "2b8cc395c0f3ecee6b127e0c07d6f6749a7d76f14dea5d8e8fc89e29322ff571",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-historical-problem-analysis&section=sec-heuer-domain-frequencies"
+}

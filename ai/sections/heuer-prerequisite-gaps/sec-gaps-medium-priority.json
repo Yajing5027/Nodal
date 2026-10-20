@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-prerequisite-gaps",
+  "noteTitle": "Jerry Heuer Prerequisite Gaps",
+  "id": "sec-gaps-medium-priority",
+  "title": "3. Medium-Priority Gaps (Targeted Skill Extensions)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 3. Medium-Priority Gaps (Targeted Skill Extensions)\n\n### Gap 4: Telescoping & Advanced Series Manipulation\n- **Relevance:** Extends beyond basic Calculus II geometric/p-series tests into constructive partial fractions and logarithmic differences.\n- **Contest References:** 2012 P4, 2017 P5, 2017 P6, 2019 P6, 2022 P8, 2024 P10, 2025 P9.\n- **Minimal Scope to Master:**\n  1. Recognizing telescoping forms: $f(k) - f(k+1)$.\n  2. Logarithmic telescoping: $\\ln\\frac{(k+1)^2}{k(k+2)} = \\ln(k+1) - \\ln k - (\\ln(k+2) - \\ln(k+1))$.\n  3. Power series integration via Abel's Theorem: $\\sum \\frac{(-1)^k}{2k+1} = \\int_0^1 \\frac{1}{1+t^2} dt$.\n\n### Gap 5: Intermediate Combinatorics & Conditioning\n- **Relevance:** Discrete math covers basic permutations and combinations, but contest problems require multi-stage conditioning.\n- **Contest References:** 2010 P8, 2012 P7, 2013 P3, 2017 P3, 2018 P4, 2018 P5, 2019 P8, 2023 P7, 2024 P8, 2025 P5.\n- **Minimal Scope to Master:**\n  1. Non-adjacent item placement: $\\binom{n - k + 1}{k}$ ways to place $k$ non-adjacent objects among $n$ spots.\n  2. First-step conditioning in coin tosses / discrete Markov chains.\n  3. Order statistics in uniform sampling: choosing the $k$-th largest element.\n\n---",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-prerequisite-gaps.md",
+  "noteContentSha256": "77aa1d81fcfd43f764ee888cc3c8f620dc59d216afd1ce56cd6d041595746df6",
+  "contentSha256": "a87fca81a0989ddee14125bc4f7ad1b0867a69d02865abf4ff8c5e5f8a7fca2c",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-prerequisite-gaps&section=sec-gaps-medium-priority"
+}

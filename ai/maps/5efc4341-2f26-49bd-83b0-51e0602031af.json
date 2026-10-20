@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "nodal.ai.map.v1",
+  "id": "5efc4341-2f26-49bd-83b0-51e0602031af",
+  "title": "Shortest Path Comparison",
+  "map": {
+    "id": "5efc4341-2f26-49bd-83b0-51e0602031af",
+    "title": "Shortest Path Comparison",
+    "description": "Compare shortest path algorithms across different constraints.",
+    "tagIds": [
+      "tag-cs-algorithms",
+      "8ff51c8c-ab54-4444-bb9c-41a259ac0490"
+    ],
+    "viewportX": 0,
+    "viewportY": 0,
+    "viewportZoom": 1,
+    "createdAt": 1788894412543,
+    "updatedAt": 1791213015507
+  },
+  "occurrences": [],
+  "frames": [],
+  "relations": [],
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=map&id=5efc4341-2f26-49bd-83b0-51e0602031af",
+  "contentSha256": "733624e43b4b18eb1ed2751ff79d5d7a92b1d591f17eb3cf52f77a723496b046"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2012",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2012",
+  "id": "heuer-2012-p06",
+  "title": "A 2012 stones game",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A 2012 stones game\n\n### Problem\nTwo players, A and B, play the following game. There is initially a pile of 2012 stones, and the players alternate in removing some stones. Player A goes first, and chooses a positive divisor of 2012 and removes that many stones from the pile. Then B chooses a positive divisor of the number of stones remaining, and removes that many. They continue in this manner, and the player who takes the last stone loses. Show that there is a winning strategy for one of the players, and describe that strategy, making clear that it wins.\n\n### Solution (adapted from the official solution)\nPlayer A has a winning strategy.\n\nPlayer A should begin by removing an odd number of stones (for example, 1 stone, since 1 divides 2012, or 503 stones).\n\nThen B is confronted with an odd number of stones (e.g., $2012 - 1 = 2011$).\n\nEvery divisor of an odd number is odd. Therefore B is forced to choose and remove an odd number of stones.\n\nAn odd number minus an odd number leaves an even number of stones for Player A.\n\nPlayer A can then choose the divisor 1 (which divides every positive integer) and remove 1 stone, leaving an odd number of stones for Player B.\n\nThis parity invariant ensures that:\n1. B always faces an odd number of stones $\\ge 1$.\n2. B must always take an odd number of stones.\n3. The game must end in finitely many moves.\n4. When 1 stone remains, it is B's turn. B must take 1 stone and therefore loses.\n\nPlayer A never takes the last stone and wins.\n\n### Conceptual Explanation\nBy taking 1 stone, A hands B an odd pile. Since any divisor of an odd number is odd, B must decrease the pile by an odd amount, handing A an even pile. A then takes 1 stone, repeating the state until B is forced to take the final remaining stone.\n\n### Key Technique\nMaintaining the parity invariant that Player B always faces an odd pile in a normal/misère subtraction game.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2012 Problems PDF](https://www.northcentral.maa.org/s/probs12.pdf)\n- Solutions: [Jerry Heuer 2012 Solutions PDF](https://www.northcentral.maa.org/s/solns12.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2012.md",
+  "noteContentSha256": "a71b693b5136bb0517d5426bd82c4cf6bf1bb0079f60d0bf5f39e00c6a657c50",
+  "contentSha256": "270d85be5b388f23740e93be645d10993f398c40da73aaaf0ba80a0e23d31769",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p06"
+}

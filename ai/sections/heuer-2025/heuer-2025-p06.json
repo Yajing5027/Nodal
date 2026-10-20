@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2025",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2025",
+  "id": "heuer-2025-p06",
+  "title": "A Matrix Identity",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A Matrix Identity\n\n### Problem\nLet $A$ be a square matrix of rank 1 and trace 1. Prove that $A^2 = A$.\n\n### Solution (adapted from the official solution)\nSince $A$ is a square matrix of rank 1, all of its columns are scalar multiples of a single non-zero column vector $u$.\nTherefore $A$ can be written as an outer product of two column vectors $u$ and $v$:\n\n$$A = u v^T.$$\n\nThe trace of an outer product matrix $u v^T$ is the dot product of $u$ and $v$:\n\n$$\\text{tr}(A) = \\text{tr}(u v^T) = v^T u.$$\n\nWe are given that $\\text{tr}(A) = 1$, so:\n\n$$v^T u = 1.$$\n\nNow compute $A^2$ using the associativity of matrix multiplication:\n\n$$A^2 = (u v^T)(u v^T) = u (v^T u) v^T.$$\n\nSince $v^T u$ is a scalar equal to 1:\n\n$$A^2 = u (1) v^T = u v^T = A.$$\n\nTherefore $A^2 = A$, so $A$ is an idempotent projection matrix.\n\n### Conceptual Explanation\nAny rank-1 matrix factors as $A = u v^T$. Its trace is the inner product $\\text{tr}(A) = v^T u = 1$. By associativity, $A^2 = u(v^T u)v^T = u(1)v^T = uv^T = A$.\n\n### Key Technique\nOuter product representation $A = uv^T$ and cyclic trace property $\\text{tr}(uv^T) = v^T u$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2025 Problems PDF](https://www.northcentral.maa.org/s/probs25.pdf)\n- Solutions: [Jerry Heuer 2025 Solutions PDF](https://www.northcentral.maa.org/s/solns25.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2025.md",
+  "noteContentSha256": "9b25499a5e7c660860c1e50cc65aa33498b301e548ed3b488fa1f8a13ca175f5",
+  "contentSha256": "ba960511b061deaaae0b5367dc54effc564939f83971ee9ca96cba1e375a88a1",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025&section=heuer-2025-p06"
+}

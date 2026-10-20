@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2018",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2018",
+  "id": "heuer-2018-p03",
+  "title": "Sums of fourth powers",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Sums of fourth powers\n\n### Problem\nNote that:\n- $1^4 + 2^4 + 3^4 = 2 \\cdot 7^2$\n- $1^4 + 3^4 + 4^4 = 2 \\cdot 13^2$\n- $2^4 + 3^4 + 5^4 = 2 \\cdot 19^2$\n- $1^4 + 4^4 + 5^4 = 2 \\cdot 21^2$\n\nFind, and prove, a general identity of which these are special cases.\n\n### Solution (adapted from the official solution)\nA general identity is:\n\n$$a^4 + b^4 + (a + b)^4 = 2(a^2 + ab + b^2)^2.$$\n\n**Proof by expansion:**\nExpand $(a + b)^4$:\n$$(a + b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4.$$\n\nAdding $a^4 + b^4$:\n$$a^4 + b^4 + (a + b)^4 = 2a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + 2b^4 = 2(a^4 + 2a^3b + 3a^2b^2 + 2ab^3 + b^4).$$\n\nNow expand $(a^2 + ab + b^2)^2$:\n$$\\begin{aligned} (a^2 + ab + b^2)^2 &= a^2(a^2 + ab + b^2) + ab(a^2 + ab + b^2) + b^2(a^2 + ab + b^2) \\\\ &= (a^4 + a^3b + a^2b^2) + (a^3b + a^2b^2 + ab^3) + (a^2b^2 + ab^3 + b^4) \\\\ &= a^4 + 2a^3b + 3a^2b^2 + 2ab^3 + b^4. \\end{aligned}$$\n\nMultiplying by 2 gives precisely $2(a^2 + ab + b^2)^2 = a^4 + b^4 + (a + b)^4$.\n\nIn the given examples:\n- $(a, b) = (1, 2) \\implies a^2+ab+b^2 = 1 + 2 + 4 = 7$\n- $(a, b) = (1, 3) \\implies a^2+ab+b^2 = 1 + 3 + 9 = 13$\n- $(a, b) = (2, 3) \\implies a^2+ab+b^2 = 4 + 6 + 9 = 19$\n- $(a, b) = (1, 4) \\implies a^2+ab+b^2 = 1 + 4 + 16 = 21$.\n\n### Conceptual Explanation\nThe third term in each sum is $a + b$. Expanding $a^4 + b^4 + (a+b)^4$ gives $2(a^4 + 2a^3b + 3a^2b^2 + 2ab^3 + b^4) = 2(a^2 + ab + b^2)^2$, exactly matching all numerical examples.\n\n### Key Technique\nCandido's identity variant $a^4 + b^4 + (a+b)^4 = 2(a^2 + ab + b^2)^2$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2018 Problems PDF](https://www.northcentral.maa.org/s/probs18.pdf)\n- Solutions: [Jerry Heuer 2018 Solutions PDF](https://www.northcentral.maa.org/s/solns18.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2018.md",
+  "noteContentSha256": "52117a8f6f7cc785475940fb239e395e61db403802c2b7d0880aac666cc3521b",
+  "contentSha256": "b9cb4b9f8aae148b63a931dead852d63db55d2bc0e08f1d02cf7c240901e6117",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018&section=heuer-2018-p03"
+}

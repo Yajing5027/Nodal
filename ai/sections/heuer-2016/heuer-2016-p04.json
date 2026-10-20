@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2016",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2016",
+  "id": "heuer-2016-p04",
+  "title": "A sum of squared sines",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A sum of squared sines\n\n### Problem\nFind the value of the sum\n\n$$S = \\sin^2 0^\\circ + \\sin^2 1^\\circ + \\sin^2 2^\\circ + \\dots + \\sin^2 90^\\circ.$$\n\n### Solution (adapted from the official solution)\nThe sum is $45.5 = \\frac{91}{2}$.\n\nPair complementary angle terms using the identity $\\sin(90^\\circ - \\theta) = \\cos \\theta$, so $\\sin^2 \\theta + \\sin^2(90^\\circ - \\theta) = \\sin^2 \\theta + \\cos^2 \\theta = 1$:\n\n$$\\begin{aligned} S &= (\\sin^2 0^\\circ + \\sin^2 90^\\circ) \\\\ &\\quad + (\\sin^2 1^\\circ + \\sin^2 89^\\circ) \\\\ &\\quad + (\\sin^2 2^\\circ + \\sin^2 88^\\circ) \\\\ &\\quad + \\dots \\\\ &\\quad + (\\sin^2 44^\\circ + \\sin^2 46^\\circ) \\\\ &\\quad + \\sin^2 45^\\circ. \\end{aligned}$$\n\n- The pair $(\\sin^2 0^\\circ + \\sin^2 90^\\circ) = 0 + 1 = 1$.\n- The 44 pairs $(\\sin^2 k^\\circ + \\sin^2(90-k)^\\circ)$ for $k = 1, 2, \\dots, 44$ each sum to 1.\n- The unpaired middle term is $\\sin^2 45^\\circ = (1/\\sqrt{2})^2 = 1/2$.\n\nSumming all contributions:\n\n$$S = 1 + 44(1) + \\frac{1}{2} = 45 + \\frac{1}{2} = 45.5.$$\n\n### Conceptual Explanation\nComplementary pairing $\\sin^2 k^\\circ + \\sin^2(90-k)^\\circ = 1$ produces 45 pairs summing to 1 (including the $\\{0^\\circ, 90^\\circ\\}$ pair) plus the isolated central term $\\sin^2 45^\\circ = 1/2$, yielding $45.5$.\n\n### Key Technique\nComplementary angle pairing $\\sin^2 \\theta + \\cos^2 \\theta = 1$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2016 Problems PDF](https://www.northcentral.maa.org/s/probs16.pdf)\n- Solutions: [Jerry Heuer 2016 Solutions PDF](https://www.northcentral.maa.org/s/solns16.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2016.md",
+  "noteContentSha256": "cae2534f9cf89dc5a4acdd3e1e26cbbc5e9c3ca85ce42ed8925f12d754196cb1",
+  "contentSha256": "8ab24132579f9adcafba9fe3fde9170ad67e8b83d7b190613f9b20b1e8d318f9",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p04"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2017",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2017",
+  "id": "heuer-2017-p04",
+  "title": "A sum of reciprocals",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A sum of reciprocals\n\n### Problem\nFind all unordered pairs $\\{x, y\\}$ of integers satisfying\n\n$$\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{14}.$$\n\n### Solution (adapted from the official solution)\nThere are 9 such unordered pairs:\n\n$$\\{15, 210\\}, \\{16, 112\\}, \\{18, 63\\}, \\{21, 42\\}, \\{28, 28\\},$$\n$$\\{13, -182\\}, \\{12, -84\\}, \\{10, -35\\}, \\{7, -14\\}.$$\n\nClear denominators in $\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{14}$:\n\n$$14(x + y) = xy \\implies xy - 14x - 14y = 0.$$\n\nApplying Simon's Favorite Factoring Trick by adding $14^2 = 196$ to both sides:\n\n$$(x - 14)(y - 14) = 196 = 2^2 \\cdot 7^2.$$\n\nThe positive divisors of 196 are $1, 2, 4, 7, 14, 28, 49, 98, 196$ (9 positive divisors, giving $2 \\times 9 - 1 = 17$ integer divisors).\n\nPairing divisors $d_1 d_2 = 196$ with $d_1 \\le d_2$ gives the pairs $\\{d_1, d_2\\}$:\n1. $\\{1, 196\\} \\implies \\{15, 210\\}$\n2. $\\{2, 98\\} \\implies \\{16, 112\\}$\n3. $\\{4, 49\\} \\implies \\{18, 63\\}$\n4. $\\{7, 28\\} \\implies \\{21, 42\\}$\n5. $\\{14, 14\\} \\implies \\{28, 28\\}$\n6. $\\{-1, -196\\} \\implies \\{13, -182\\}$\n7. $\\{-2, -98\\} \\implies \\{12, -84\\}$\n8. $\\{-4, -49\\} \\implies \\{10, -35\\}$\n9. $\\{-7, -28\\} \\implies \\{7, -14\\}$\n10. $\\{-14, -14\\} \\implies \\{0, 0\\}$ (extraneous, since $x, y \\ne 0$).\n\nExcluding the extraneous pair $\\{0, 0\\}$ leaves exactly 9 valid unordered integer pairs.\n\n### Conceptual Explanation\nTransforming into $(x - 14)(y - 14) = 196 = 2^2 \\cdot 7^2$ reduces the problem to factoring 196 into two integers. Out of the 10 unordered factor pairs, $\\{-14, -14\\}$ produces $x = y = 0$ (forbidden by denominators), leaving exactly 9 valid pairs.\n\n### Key Technique\nSimon's Favorite Factoring Trick $(x-n)(y-n) = n^2$ on reciprocal sums.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2017 Problems PDF](https://www.northcentral.maa.org/s/probs17.pdf)\n- Solutions: [Jerry Heuer 2017 Solutions PDF](https://www.northcentral.maa.org/s/solns17.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2017.md",
+  "noteContentSha256": "19b08ac613eb3d71bef37392f343566f6abdbcce98a94a25fb15ca5d35c237c2",
+  "contentSha256": "93efad15f3e41aae80498ce0f65d5ecac4049b8090c734d9193be0516de8fa95",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p04"
+}

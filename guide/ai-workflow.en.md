@@ -52,10 +52,10 @@ Research recording is a separate collection you can start or stop. It keeps ques
 
 Collection starts when enabled; unrecorded past experiences cannot be recovered. Self-ratings describe what you think you recalled, not independently measured correctness. The application cannot automatically know about outside study or why you did not open it.
 
-## Share your study progress
+## Publish notes
 
-A full backup also contains a separate public study snapshot: current notes, maps, event dates and progress for each prompt. Raw responses, research events and recovery archives stay outside that snapshot.
+Approved public Notes and Maps come from versioned GitHub content. The public snapshot contains reading content only; it does not include your review results, schedules, memory states, or research records. A full backup remains private and includes your personal learning data.
 
-Once the snapshot is published, Study progress shows its content and update time. Visitors see the published study state while their own notes and review data stay separate. After studying further, export a new backup for the next update.
+After an approved GitHub publication, the existing **Notes** library can load the newly published content through **Sync notes**. There is no separate Public Knowledge page. Your personal Practice history stays in your browser and private backups.
 
 This is publishing in batches, not live cloud sync. GitHub Pages, different local addresses and different browsers have separate working data. Updating website code does not automatically upload the browser’s learning records.

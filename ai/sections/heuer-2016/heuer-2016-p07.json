@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2016",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2016",
+  "id": "heuer-2016-p07",
+  "title": "Five triangles of equal area",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Five triangles of equal area\n\n### Problem\nIn the triangle $ABC$, $AB = 30$ and $AC = 32$. Points $D$ and $F$ lie on side $AB$ in the order $AFDB$, and points $E$ and $G$ lie on $AC$ in the order $AGEC$. The five triangles $AGF, FGE, FED, DEC$ and $DCB$ all have the same area. Find the length of $FD$.\n\n### Solution (adapted from the official solution)\nThe length of $FD$ is 8.\n\n![Figure for Jerry Heuer heuer-2016-p07-solution](study/assets/asset-heuer-2016-p07-solution-heuer-2016-p07-solution.png)\n\nLet the area of each of the 5 triangles be $T$. Then the total area of $\\triangle ABC$ is $5T$.\n\nNotice that $\\triangle ADC$ is composed of the 4 triangles $AGF, FGE, FED, DEC$, so:\n\n$$\\text{Area}(\\triangle ADC) = 4T = \\frac{4}{5}\\text{Area}(\\triangle ABC).$$\n\nTriangles $\\triangle ADC$ and $\\triangle ABC$ share the vertex $C$ and their bases $AD$ and $AB$ lie on the same line $AB$. Therefore, their areas are directly proportional to their bases:\n\n$$\\frac{AD}{AB} = \\frac{\\text{Area}(\\triangle ADC)}{\\text{Area}(\\triangle ABC)} = \\frac{4}{5} \\implies AD = \\frac{4}{5} \\times 30 = 24.$$\n\nNext, consider $\\triangle AED$, which consists of the 3 triangles $AGF, FGE, FED$, so $\\text{Area}(\\triangle AED) = 3T$.\n\nTriangle $\\triangle FED$ is one of these three triangles, with area $T = \\frac{1}{3}\\text{Area}(\\triangle AED)$.\n\nTriangles $\\triangle FED$ and $\\triangle AED$ share the vertex $E$ and their bases $FD$ and $AD$ lie on the line $AB$. Thus:\n\n$$\\frac{FD}{AD} = \\frac{\\text{Area}(\\triangle FED)}{\\text{Area}(\\triangle AED)} = \\frac{1}{3} \\implies FD = \\frac{1}{3} \\times AD = \\frac{1}{3} \\times 24 = 8.$$\n\n### Conceptual Explanation\nTriangles sharing a vertex have areas proportional to their bases. $\\triangle ADC$ has $4/5$ of $\\triangle ABC$'s area, so $AD = \\frac{4}{5}(30) = 24$. Then $\\triangle FED$ has $1/3$ of $\\triangle AED$'s area, so $FD = \\frac{1}{3} AD = 8$.\n\n### Key Technique\nCommon-altitude area proportions between nested triangles.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2016 Problems PDF](https://www.northcentral.maa.org/s/probs16.pdf)\n- Solutions: [Jerry Heuer 2016 Solutions PDF](https://www.northcentral.maa.org/s/solns16.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2016.md",
+  "noteContentSha256": "cae2534f9cf89dc5a4acdd3e1e26cbbc5e9c3ca85ce42ed8925f12d754196cb1",
+  "contentSha256": "6812da5f6e69e43093221974e5363f4ac54953c68e64c6963826f0bf0f673aa5",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016&section=heuer-2016-p07"
+}

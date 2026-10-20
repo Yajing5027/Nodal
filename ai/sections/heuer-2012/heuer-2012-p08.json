@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2012",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2012",
+  "id": "heuer-2012-p08",
+  "title": "Trading denominators to make the sum 2012",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Trading denominators to make the sum 2012\n\n### Problem\nDo there exist positive integers $a, b, c, d$ such that\n\n$$\\frac{a}{b} + \\frac{c}{d} = 1 \\quad \\text{and} \\quad \\frac{a}{d} + \\frac{c}{b} = 2012?$$\n\n### Solution (adapted from the official solution)\nYes, such positive integers do exist.\n\nLet $r = a/b$. Then $0 < r < 1$ and $c/d = 1 - r$.\nWe want\n\n$$2012 = \\frac{a}{d} + \\frac{c}{b} = \\frac{a(1-r)}{c} + \\frac{cr}{a}.$$\n\nLet $s = a/c$. Then\n\n$$2012 = s(1 - r) + \\frac{r}{s} = s + r\\left(\\frac{1}{s} - s\\right) = s - r\\frac{s^2 - 1}{s}.$$\n\nSolving for $r$:\n\n$$r = \\frac{(s - 2012)s}{s^2 - 1}.$$\n\nWe need $0 < r < 1$. Choosing any integer $s > 2012$, say $s = 2013$, gives:\n\n$$r = \\frac{(2013 - 2012)2013}{2013^2 - 1} = \\frac{2013}{2013^2 - 1} \\in (0, 1).$$\n\nSince $r = a/b$, we can set $a = 2013$, $b = 2013^2 - 1 = 4052168$, and $c = 1$ (since $s = a/c = 2013$).\n\nThen $d = \\frac{c}{1 - r} = \\frac{1}{1 - \\frac{2013}{2013^2 - 1}} = \\frac{2013^2 - 1}{2013^2 - 2014} = \\frac{4052168}{4050154} = \\frac{2026084}{2025077}$.\n\nThis produces rational values for $a, b, c, d$. Scaling all four by the common denominator $2025077$ yields positive integer solutions.\n\n### Conceptual Explanation\nSetting $a/b = r$ and $a/c = s$ reduces the pair of equations to $r = \\frac{s(s-2012)}{s^2-1}$. Taking $s = 2013$ ensures $0 < r < 1$ with rational values, which can then be cleared of denominators to obtain strictly positive integers.\n\n### Key Technique\nParametrization via ratios $r = a/b, s = a/c$ and clearing fractional denominators.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2012 Problems PDF](https://www.northcentral.maa.org/s/probs12.pdf)\n- Solutions: [Jerry Heuer 2012 Solutions PDF](https://www.northcentral.maa.org/s/solns12.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2012.md",
+  "noteContentSha256": "a71b693b5136bb0517d5426bd82c4cf6bf1bb0079f60d0bf5f39e00c6a657c50",
+  "contentSha256": "f024dbd42aa63aabee71ddde2f49424189237414d16bcff03ba2710c60917351",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p08"
+}

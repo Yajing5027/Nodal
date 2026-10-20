@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2023",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2023",
+  "id": "heuer-2023-p01",
+  "title": "Area between two Curves",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Area between two Curves\n\n### Problem\nIf $m$ is a positive real number and the area enclosed by the graphs of $y = mx$ and $y = x^2$ is 9, determine the value of $m$.\n\n### Solution (adapted from the official solution)\nThe value of $m$ is $\\sqrt[3]{54} = 3\\sqrt[3]{2}$.\n\nThe intersection points of $y = mx$ and $y = x^2$ satisfy $x^2 = mx \\implies x(x - m) = 0$, giving $x = 0$ and $x = m$.\nOn the interval $[0, m]$, the line $y = mx$ lies above the parabola $y = x^2$.\n\nThe enclosed area is:\n\n$$\\int_0^m (mx - x^2) \\, dx = \\left[ \\frac{mx^2}{2} - \\frac{x^3}{3} \\right]_0^m = \\frac{m^3}{2} - \\frac{m^3}{3} = \\frac{m^3}{6}.$$\n\nSetting this equal to 9:\n\n$$\\frac{m^3}{6} = 9 \\implies m^3 = 54 \\implies m = \\sqrt[3]{54} = 3\\sqrt[3]{2}.$$\n\n### Conceptual Explanation\nIntegrating $mx - x^2$ from $0$ to $m$ gives $\\frac{m^3}{6}$. Equating this to 9 yields $m^3 = 54$, so $m = 3\\sqrt[3]{2}$.\n\n### Key Technique\nIntegration of vertical difference between line and parabola $\\int_0^m (mx - x^2) dx = m^3/6$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2023 Problems PDF](https://www.northcentral.maa.org/s/probs23.pdf)\n- Solutions: [Jerry Heuer 2023 Solutions PDF](https://www.northcentral.maa.org/s/solns23.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2023.md",
+  "noteContentSha256": "5b79ad2df928427c231809c12043ac80d017d64c03d9076363e13fd022275ff9",
+  "contentSha256": "6fb7677f375b97b31a8537b3fa8ca95667b8915ae4e690f175418e138b48ae02",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023&section=heuer-2023-p01"
+}

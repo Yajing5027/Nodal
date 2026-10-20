@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2017",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2017",
+  "id": "heuer-2017-p06",
+  "title": "A sum of 2017 terms",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A sum of 2017 terms\n\n### Problem\nFor positive integers $n$, let\n\n$$\na_n = \\frac{2^n}{2^{2n+1} - 2^{n+1} - 2^n + 1}.\n$$\n\nShow that\n\n$$\na_1 + a_2 + \\cdots + a_{2017} < 1.\n$$\n\n### Solution (adapted from the official solution)\n#### Substitution\n\nSet $t = 2^n$. Then\n\n$$\n\\begin{aligned}\n2^{2n+1} - 2^{n+1} - 2^n + 1\n&= 2t^2 - 3t + 1 \\\\\n&= (2t - 1)(t - 1).\n\\end{aligned}\n$$\n\nHence\n\n$$\na_n = \\frac{t}{(2t - 1)(t - 1)}\n    = \\frac{1}{t - 1} - \\frac{1}{2t - 1}.\n$$\n\nSubstituting $t = 2^n$ back gives\n\n$$\na_n = \\frac{1}{2^n - 1} - \\frac{1}{2^{n+1} - 1}.\n$$\n\n#### Telescoping\n\n$$\n\\begin{aligned}\n\\sum_{n=1}^{2017} a_n\n&= \\sum_{n=1}^{2017}\n   \\left(\\frac{1}{2^n - 1} - \\frac{1}{2^{n+1} - 1}\\right) \\\\\n&= 1 - \\frac{1}{2^{2018} - 1}.\n\\end{aligned}\n$$\n\n#### Final Proof\n\n$$\n\\frac{1}{2^{2018} - 1} > 0,\n$$\n\nso\n\n$$\n\\therefore\\quad 1 - \\frac{1}{2^{2018} - 1} < 1.\n$$\n\n### Conceptual Explanation\nThe denominator factors as $(2^n - 1)(2^{n+1} - 1)$. Partial fractions give\n\n$$\na_n = \\frac{1}{2^n - 1} - \\frac{1}{2^{n+1} - 1}.\n$$\n\nAdjacent terms cancel, leaving a sum strictly less than $1$.\n\n### Key Technique\nPartial fraction decomposition followed by a [telescoping sum](#node/node-telescoping-technique/sec-telescoping-core).\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2017 Problems PDF](https://www.northcentral.maa.org/s/probs17.pdf)\n- Solutions: [Jerry Heuer 2017 Solutions PDF](https://www.northcentral.maa.org/s/solns17.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2017.md",
+  "noteContentSha256": "19b08ac613eb3d71bef37392f343566f6abdbcce98a94a25fb15ca5d35c237c2",
+  "contentSha256": "b166515e4eaab87212c54fd79382a3bfb87474209bdaf0e20080ae6d093995e3",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p06"
+}

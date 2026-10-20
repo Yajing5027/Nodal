@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2012",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2012",
+  "id": "heuer-2012-p04",
+  "title": "A 2012 trigonometric identity",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A 2012 trigonometric identity\n\n### Problem\nProve that if $\\sin x \\cos x \\ne 0$, then\n\n$$\\frac{\\sin x}{\\cos x} + \\frac{\\sin 2x}{\\cos^2 x} + \\dots + \\frac{\\sin 2011x}{\\cos^{2011} x} = \\cot x - \\frac{\\cos 2012x}{\\sin x \\cos^{2011} x}.$$\n\n### Solution (adapted from the official solution)\nWe prove more generally by induction that for all positive integers $n$,\n\n$$\\sum_{k=1}^n \\frac{\\sin kx}{\\cos^k x} = \\cot x - \\frac{\\cos(n+1)x}{\\sin x \\cos^n x}.$$\n\n**Base Case ($n=1$):**\n$$\\cot x - \\frac{\\cos 2x}{\\sin x \\cos x} = \\frac{\\cos x}{\\sin x} - \\frac{\\cos^2 x - \\sin^2 x}{\\sin x \\cos x} = \\frac{\\cos^2 x - \\cos^2 x + \\sin^2 x}{\\sin x \\cos x} = \\frac{\\sin x}{\\cos x}.$$\n\n**Inductive Step ($n = k \\to k+1$):**\nWe need to show:\n\n$$\\frac{\\sin(k+1)x}{\\cos^{k+1} x} = \\frac{\\cos(k+1)x}{\\sin x \\cos^k x} - \\frac{\\cos(k+2)x}{\\sin x \\cos^{k+1} x}.$$\n\nMultiplying by $\\sin x \\cos^{k+1} x$, this is equivalent to:\n\n$$\\sin(k+1)x \\sin x = \\cos(k+1)x \\cos x - \\cos(k+2)x,$$\n\nwhich is exactly the cosine addition formula:\n\n$$\\cos(k+2)x = \\cos(k+1)x \\cos x - \\sin(k+1)x \\sin x.$$\n\nThus the identity holds by induction for all $n \\ge 1$, and specifically for $n = 2011$.\n\n### Conceptual Explanation\nThe relation $\\frac{\\cos kx}{\\sin x \\cos^{k-1} x} - \\frac{\\cos(k+1)x}{\\sin x \\cos^k x} = \\frac{\\sin kx}{\\cos^k x}$ reveals that each term in the sum telescopes when expressed as a difference of consecutive terms, leaving $\\cot x - \\frac{\\cos 2012x}{\\sin x \\cos^{2011} x}$.\n\n### Key Technique\nTelescoping decomposition via the cosine subtraction formula $\\cos(A+B) = \\cos A \\cos B - \\sin A \\sin B$.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2012 Problems PDF](https://www.northcentral.maa.org/s/probs12.pdf)\n- Solutions: [Jerry Heuer 2012 Solutions PDF](https://www.northcentral.maa.org/s/solns12.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2012.md",
+  "noteContentSha256": "a71b693b5136bb0517d5426bd82c4cf6bf1bb0079f60d0bf5f39e00c6a657c50",
+  "contentSha256": "f4bc923b0e8066236db74fed3a6a9a738c15851157714e45699b51d4d1f7beff",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012&section=heuer-2012-p04"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2017",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2017",
+  "id": "heuer-2017-p10",
+  "title": "Infinitely many terms divisible by 2017",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Infinitely many terms divisible by 2017\n\n### Problem\nThe sequence $\\{a_n\\}$ is defined recursively by $a_1 = 8, a_2 = 45$, and $a_{n+2} = a_{n+1}^2 - a_n$. Prove that there are infinitely many terms of the sequence divisible by 2017.\n\n### Solution (adapted from the official solution)\nCalculate the first three terms of the sequence:\n- $a_1 = 8$\n- $a_2 = 45$\n- $a_3 = a_2^2 - a_1 = 45^2 - 8 = 2025 - 8 = 2017$.\n\nThus $a_3 = 2017 \\equiv 0 \\pmod{2017}$.\n\nNow consider the sequence modulo 2017. Each state is determined by the consecutive pair $(a_n, a_{n+1}) \\pmod{2017}$.\nThere are only $2017^2$ possible pairs modulo 2017. By the Pigeonhole Principle, some pair must repeat: $(a_{n+r}, a_{n+r+1}) \\equiv (a_n, a_{n+1}) \\pmod{2017}$ for some $n \\ge 1$ and $r \\ge 1$.\n\nCrucially, the recurrence is completely reversible backward in time:\n\n$$a_n = a_{n+1}^2 - a_{n+2}.$$\n\nBecause the predecessor $a_n$ is uniquely determined by $(a_{n+1}, a_{n+2})$, any periodicity running forward must also extend backward all the way to the initial terms $(a_1, a_2) \\equiv (8, 45) \\pmod{2017}$.\n\nTherefore the sequence is purely periodic modulo 2017 with some period $r$. Since $a_3 \\equiv 0 \\pmod{2017}$, we have:\n\n$$a_{3 + kr} \\equiv a_3 \\equiv 0 \\pmod{2017}$$\n\nfor every positive integer $k$. Hence infinitely many terms of the sequence are divisible by 2017.\n\n### Conceptual Explanation\nDirect calculation shows $a_3 = 45^2 - 8 = 2017 \\equiv 0 \\pmod{2017}$. Because the recurrence $a_n = a_{n+1}^2 - a_{n+2}$ is reversible, the sequence modulo 2017 is purely periodic, meaning $a_3 \\equiv 0$ recurs periodically every $r$ steps.\n\n### Key Technique\nReversible modular recurrences generating pure periodicity via the Pigeonhole Principle.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2017 Problems PDF](https://www.northcentral.maa.org/s/probs17.pdf)\n- Solutions: [Jerry Heuer 2017 Solutions PDF](https://www.northcentral.maa.org/s/solns17.pdf)\n\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2017.md",
+  "noteContentSha256": "19b08ac613eb3d71bef37392f343566f6abdbcce98a94a25fb15ca5d35c237c2",
+  "contentSha256": "1f73406c507083e260654762fb931b3036d39912c0313df06750ea891c6fe2c5",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017&section=heuer-2017-p10"
+}

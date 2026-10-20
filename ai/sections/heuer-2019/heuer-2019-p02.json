@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "heuer-2019",
+  "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2019",
+  "id": "heuer-2019-p02",
+  "title": "Intersections of quadratics",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## Intersections of quadratics\n\n### Problem\nIsn't it true that the graphs of two quadratic equations can intersect in at most four points? Explain, then, how it is possible for the five points $(-1, 6), (3, -2), (1, 1), (0, 4),$ and $(2, 0)$ to satisfy both of the following quadratic equations:\n\n$$\\begin{aligned} 2x^2 - y^2 - xy - 4x + 4y &= 0 \\quad (1) \\\\ 6x^2 - y^2 + xy - 16x + 2y + 8 &= 0 \\quad (2) \\end{aligned}$$\n\n### Solution (adapted from the official solution)\nBézout's Theorem states that two plane curves of degree 2 without common components intersect in at most $2 \\times 2 = 4$ points. However, if the curves share a common component, their intersection contains infinitely many points.\n\nFactor both quadratic polynomials:\n\n1. Equation (1):\n$$2x^2 - xy - y^2 - 4x + 4y = (2x + y - 4)(x - y) = 0.$$\nThe graph is the union of two lines: $2x + y - 4 = 0$ and $x - y = 0$.\n\n2. Equation (2):\n$$6x^2 + xy - y^2 - 16x + 2y + 8 = (2x + y - 4)(3x - y - 2) = 0.$$\nThe graph is the union of two lines: $2x + y - 4 = 0$ and $3x - y - 2 = 0$.\n\nNotice that both quadratics share the common line factor $2x + y - 4 = 0$!\n\nCheck the five given points on this line:\n- $(-1, 6): 2(-1) + 6 - 4 = 0$\n- $(3, -2): 2(3) + (-2) - 4 = 0$\n- $(1, 1):$ satisfies $x - y = 0$ and $3x - y - 2 = 0$ (intersection of the other two lines!)\n- $(0, 4): 2(0) + 4 - 4 = 0$\n- $(2, 0): 2(2) + 0 - 4 = 0$\n\nBecause the two quadratic curves share the entire straight line $2x + y - 4 = 0$, they intersect in infinitely many points along that line, explaining why five (or more) points satisfy both equations.\n\n### Conceptual Explanation\nBoth quadratics factor and share the linear factor $(2x + y - 4)$. Four of the five points lie on this common line, and the fifth point $(1, 1)$ is the intersection of the remaining two lines, fully resolving Bézout's theorem for degenerate conics.\n\n### Key Technique\nFactoring bivariate quadratics into linear factors to identify shared components in Bézout's theorem.\n\n### Sources & Official Reference\n- Problems: [Jerry Heuer 2019 Problems PDF](https://www.northcentral.maa.org/s/probs19.pdf)\n- Solutions: [Jerry Heuer 2019 Solutions PDF](https://www.northcentral.maa.org/s/solns19.pdf)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/heuer-2019.md",
+  "noteContentSha256": "abb5d59d9f3d5bc683336a26f30df7cf179ff8d4a5237f49b7239fb5c195af59",
+  "contentSha256": "469763669073031561dc8a73f4feb8d29953157fc49119a92d814044354c58f5",
+  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019&section=heuer-2019-p02"
+}
