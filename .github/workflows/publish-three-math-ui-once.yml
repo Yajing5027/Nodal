@@ -19,9 +19,11 @@ jobs:
     env:
       RELEASE_ZIP_URL: https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-9220-822f-8554-4996c5b79267/raw?se=2026-10-20T19%3A17%3A56Z&sp=r&sv=2026-02-06&sr=b&scid=6d2b1511-2c28-5238-ad0c-dc3dfd059d09&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-19T21%3A11%3A34Z&ske=2026-10-20T21%3A11%3A34Z&sks=b&skv=2026-02-06&sig=AE0QGUQk8wqELVGi0olDzSA2jJxFmO7/FoidVXngxPg%3D
       EXPECTED_ZIP_SHA256: fa6dc99b9435829c04f28c2a67058c425b70f401f723526eb0a9d05c5b8b1d15
-      BEFORE_WORKFLOW_SHA: 4cabc66330e1e46b7f3d009fe0442ce1f793dca9
+      BEFORE_WORKFLOW_SHA: 85ed819f47b54d1fd090cf1788d6d764ba62205a
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - name: Verify no unexpected public commit
         run: |
           test "$(git rev-parse HEAD^)" = "$BEFORE_WORKFLOW_SHA"
