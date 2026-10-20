@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz6-stack-and-queue",
+  "noteTitle": "Quiz 6 · Stack & Queue",
+  "id": "sec-queue-trap",
+  "title": "TODO · Queue — Head / Tail Question",
+  "parentId": "sec-queue",
+  "hidden": false,
+  "markdown": "### TODO · Queue — Head / Tail Question",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz6-stack-and-queue.md",
+  "noteContentSha256": "f8fb36874ce57ef7aa711ef4b9a5bd0f2411d52c976cf2dd4bde7bf11dbc7485",
+  "contentSha256": "7aa4f3e811121974efe1dd8a0ed255c681b9a9f7517476b06541e152b6b8ae93",
+  "publishedAt": "2026-10-20T16:37:27.515Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-trap"
+}

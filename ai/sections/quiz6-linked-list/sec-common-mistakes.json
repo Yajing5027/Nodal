@@ -9,8 +9,8 @@
   "markdown": "### 4. 易错题\n\n**判断：Linked List 通过 Reference 连接，因此比 Array 更适合查找目标 Value**\n\n**查看答案 ↓**",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz6-linked-list.md",
-  "noteContentSha256": "d332bc8214ca8c108392fe6c335b68ee0bcaacfa583d38ba980900d4f8fa45cc",
+  "noteContentSha256": "411597f455f1bcd537a0d980e5d0125214f9b123471f1a79264bc2ebe9cf1ece",
   "contentSha256": "1a1a979776cf104b210edc09f252c96a5f989d72b01dbb2c7ca654e380008c37",
-  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "publishedAt": "2026-10-20T16:37:27.515Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-common-mistakes"
 }

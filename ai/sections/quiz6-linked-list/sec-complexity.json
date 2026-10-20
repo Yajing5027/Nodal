@@ -9,8 +9,8 @@
   "markdown": "### 3. Access / Insert / Delete — Big-O\n\n| Operation | Array | Linked List |\n|---|---|---|\n| Index Access | **O(1)** | O(n) |\n| Value Search（无序） | O(n) | O(n) |\n| Insert / Delete（中间） | O(n) | **O(1)**\\* |\n\n\\* 已知操作位置 → O(1)；需 Traversal → O(n)\n\n- **Array**：Index → 直接计算 Memory Address\n- **Linked List**：Counter 记录逻辑 Index → Sequential Traversal → O(n)\n- **Insert / Delete**：Array 通常移动 Elements；Linked List 修改 References\n\n**Linked List — Insert / Delete（Singly vs Doubly）**\n\n| Operation | Singly（next） | Doubly（prev + next） |\n|---|---|---|\n| **Structure** | A → B → C | A ⇄ B ⇄ C |\n| **Insert N after A** | `N.next = B` | `N.prev = A` |\n|  | `A.next = N` | `N.next = B` |\n|  |  | `A.next = N` |\n|  |  | `B.prev = N` |\n| **Insert Time** | O(1)（仅知 A） | O(1)（仅知 A） |\n| **Delete B** | `A.next = C` | `B.prev.next = B.next` |\n|  |  | `B.next.prev = B.prev` |\n| **Delete Time** | 仅知 A → O(1) | 仅知 B → O(1) |\n|  | 仅知 B → O(n) |  |\n\n*前提：中间位置（非 Head / Tail）*",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz6-linked-list.md",
-  "noteContentSha256": "d332bc8214ca8c108392fe6c335b68ee0bcaacfa583d38ba980900d4f8fa45cc",
+  "noteContentSha256": "411597f455f1bcd537a0d980e5d0125214f9b123471f1a79264bc2ebe9cf1ece",
   "contentSha256": "e8ad306c52550a9ef89e3bd71fd58fa4234189594f9a00b2d888ae136b189434",
-  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "publishedAt": "2026-10-20T16:37:27.515Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-complexity"
 }

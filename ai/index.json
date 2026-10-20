@@ -1,6 +1,6 @@
 {
   "schemaVersion": "nodal.ai.index.v1",
-  "publishedAt": "2026-10-20T14:20:33.988Z",
+  "publishedAt": "2026-10-20T16:37:27.515Z",
   "notes": [
     {
       "id": "heuer-2010",
@@ -1558,7 +1558,7 @@
       "title": "Quiz 6 · Linked List",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list",
       "resource": "ai/notes/quiz6-linked-list.json",
-      "contentSha256": "d332bc8214ca8c108392fe6c335b68ee0bcaacfa583d38ba980900d4f8fa45cc",
+      "contentSha256": "411597f455f1bcd537a0d980e5d0125214f9b123471f1a79264bc2ebe9cf1ece",
       "sections": [
         {
           "id": "sec-structure",
@@ -1599,6 +1599,119 @@
           "hidden": true,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-common-mistakes-answer",
           "resource": "ai/sections/quiz6-linked-list/sec-common-mistakes-answer.json"
+        }
+      ]
+    },
+    {
+      "id": "quiz6-stack-and-queue",
+      "title": "Quiz 6 · Stack & Queue",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue",
+      "resource": "ai/notes/quiz6-stack-and-queue.json",
+      "contentSha256": "f8fb36874ce57ef7aa711ef4b9a5bd0f2411d52c976cf2dd4bde7bf11dbc7485",
+      "sections": [
+        {
+          "id": "sec-lifo",
+          "title": "Stack vs Queue — ADT",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-lifo",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-lifo.json"
+        },
+        {
+          "id": "sec-stack",
+          "title": "Stack",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-stack.json"
+        },
+        {
+          "id": "sec-stack-operations",
+          "title": "TODO · Stack — Array Implementation",
+          "parentId": "sec-stack",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-operations",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-stack-operations.json"
+        },
+        {
+          "id": "sec-stack-boundary",
+          "title": "TODO · Stack — Top Index / Capacity",
+          "parentId": "sec-stack",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-boundary",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-stack-boundary.json"
+        },
+        {
+          "id": "sec-stack-quiz",
+          "title": "TODO · Stack — Output Order Question",
+          "parentId": "sec-stack",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-quiz",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-stack-quiz.json"
+        },
+        {
+          "id": "sec-queue",
+          "title": "Queue",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue.json"
+        },
+        {
+          "id": "sec-queue-operations",
+          "title": "TODO · Queue — Linear Array Implementation",
+          "parentId": "sec-queue",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-operations",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-operations.json"
+        },
+        {
+          "id": "sec-queue-circular",
+          "title": "TODO · Queue — Circular Index / Wraparound",
+          "parentId": "sec-queue",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-circular",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-circular.json"
+        },
+        {
+          "id": "sec-queue-boundary",
+          "title": "TODO · Queue — Reserved Empty Slot / Capacity n−1",
+          "parentId": "sec-queue",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-boundary",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-boundary.json"
+        },
+        {
+          "id": "sec-queue-pseudocode",
+          "title": "TODO · Queue — ENQUEUE / DEQUEUE Pseudocode",
+          "parentId": "sec-queue",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-pseudocode",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-pseudocode.json"
+        },
+        {
+          "id": "sec-queue-complexity",
+          "title": "TODO · Queue — Big-O",
+          "parentId": "sec-queue",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-complexity",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-complexity.json"
+        },
+        {
+          "id": "sec-queue-trap",
+          "title": "TODO · Queue — Head / Tail Question",
+          "parentId": "sec-queue",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-trap",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-trap.json"
+        },
+        {
+          "id": "sec-queue-trap-answer",
+          "title": "TODO · Queue — Answer",
+          "parentId": "sec-queue-trap",
+          "hidden": true,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-trap-answer",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-trap-answer.json"
         }
       ]
     }

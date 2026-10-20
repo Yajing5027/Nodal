@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "quiz6-stack-and-queue",
+  "title": "Quiz 6 · Stack & Queue",
+  "markdown": "<!-- nodal-panel:sec-lifo:visible -->\n\n\n\n### Stack vs Queue — ADT\n\n$$\n\\text{ADT} = \\text{Operations} + \\text{Behavior Rules} \\neq \\text{Implementation}\n$$\n\n| | **Stack** | **Queue** |\n|---|---|---|\n| **Operations** | `push(x)`, `pop()` | `enqueue(x)`, `dequeue()` |\n| **Behavior Rules** | **LIFO · Top only** | **FIFO · Enqueue at Tail / Dequeue at Head** |\n\n**States & Error Conditions**\n\n| State | Stack（Fixed-capacity Array） | Queue（Circular Array） |\n|---|---|---|\n| **Empty · 空栈 / 空队列** | `S.top == 0` | `Q.head == Q.tail` |\n| **Full · 满栈 / 满队列** | `S.top == S.size` | `next(Q.tail) == Q.head` |\n| **Underflow · 下溢** | 对空栈执行 `pop()` | 对空队列执行 `dequeue()` |\n| **Overflow · 上溢** | 对满栈执行 `push(x)` | 对满队列执行 `enqueue(x)` |\n\n```svg\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 960 172\" preserveAspectRatio=\"xMidYMid meet\">\n <rect x=\"4\" y=\"4\" width=\"952\" height=\"164\" rx=\"9\" fill=\"#080C10\" stroke=\"#34424C\" stroke-width=\"1.3\"/>\n <g font-family=\"Arial, sans-serif\">\n  <text x=\"25\" y=\"26\" font-size=\"18\" font-weight=\"bold\" fill=\"#EEF3F6\">Stack</text>\n  <text x=\"102\" y=\"26\" font-size=\"16\" font-weight=\"bold\" fill=\"#95BEEB\">LIFO</text>\n  <text x=\"186\" y=\"26\" font-size=\"15\" fill=\"#95BEEB\">Only Top</text>\n  <text x=\"513\" y=\"26\" font-size=\"18\" font-weight=\"bold\" fill=\"#EEF3F6\">Queue</text>\n  <text x=\"605\" y=\"26\" font-size=\"16\" font-weight=\"bold\" fill=\"#85D9AE\">FIFO</text>\n  <line x1=\"475\" y1=\"15\" x2=\"475\" y2=\"157\" stroke=\"#32444D\" stroke-width=\"1.4\"/>\n  <path d=\"M149 49 V138 H262 V49\" fill=\"none\" stroke=\"#83A1C2\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <rect x=\"159\" y=\"107\" width=\"93\" height=\"25\" rx=\"3\" fill=\"#1C4262\" stroke=\"#7EA7D8\"/>\n  <rect x=\"159\" y=\"80\" width=\"93\" height=\"25\" rx=\"3\" fill=\"#1C4262\" stroke=\"#7EA7D8\"/>\n  <rect x=\"159\" y=\"53\" width=\"93\" height=\"25\" rx=\"3\" fill=\"#264E71\" stroke=\"#9BC9F5\"/>\n  <text x=\"205\" y=\"125\" font-size=\"16\" text-anchor=\"middle\" fill=\"#EFF6FF\">A</text>\n  <text x=\"205\" y=\"98\" font-size=\"16\" text-anchor=\"middle\" fill=\"#EFF6FF\">B</text>\n  <text x=\"205\" y=\"71\" font-size=\"16\" text-anchor=\"middle\" fill=\"#EFF6FF\">C</text>\n  <line x1=\"195\" y1=\"33\" x2=\"195\" y2=\"47\" stroke=\"#74C59D\" stroke-width=\"2\"/>\n  <polygon points=\"195,52 189,44 201,44\" fill=\"#74C59D\"/>\n  <line x1=\"220\" y1=\"48\" x2=\"220\" y2=\"35\" stroke=\"#E4BC80\" stroke-width=\"2\"/>\n  <polygon points=\"220,30 214,38 226,38\" fill=\"#E4BC80\"/>\n  <text x=\"175\" y=\"43\" font-size=\"13\" text-anchor=\"end\" fill=\"#74C59D\">push</text>\n  <text x=\"241\" y=\"43\" font-size=\"13\" text-anchor=\"start\" fill=\"#E4BC80\">pop</text>\n  <text x=\"539\" y=\"64\" font-size=\"13\" text-anchor=\"middle\" fill=\"#E6C08D\">enqueue</text>\n  <line x1=\"509\" y1=\"104\" x2=\"570\" y2=\"104\" stroke=\"#E6C08D\" stroke-width=\"2.5\"/>\n  <polygon points=\"578,104 566,98 566,110\" fill=\"#E6C08D\"/>\n  <path d=\"M590 66 H832 M590 140 H832\" stroke=\"#83A1C2\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"/>\n  <rect x=\"608\" y=\"90\" width=\"58\" height=\"32\" rx=\"3\" fill=\"#1D3742\" stroke=\"#779AAF\"/>\n  <rect x=\"674\" y=\"90\" width=\"58\" height=\"32\" rx=\"3\" fill=\"#1D3742\" stroke=\"#779AAF\"/>\n  <rect x=\"740\" y=\"90\" width=\"58\" height=\"32\" rx=\"3\" fill=\"#1B4A36\" stroke=\"#6BBB93\"/>\n  <text x=\"637\" y=\"112\" font-size=\"18\" text-anchor=\"middle\" fill=\"#F2F7FF\">C</text>\n  <text x=\"703\" y=\"112\" font-size=\"18\" text-anchor=\"middle\" fill=\"#F2F7FF\">B</text>\n  <text x=\"769\" y=\"112\" font-size=\"18\" text-anchor=\"middle\" fill=\"#F2F7FF\">A</text>\n  <line x1=\"836\" y1=\"104\" x2=\"901\" y2=\"104\" stroke=\"#74C59D\" stroke-width=\"2.5\"/>\n  <polygon points=\"909,104 897,98 897,110\" fill=\"#74C59D\"/>\n  <text x=\"873\" y=\"64\" font-size=\"13\" text-anchor=\"middle\" fill=\"#8BE3AF\">dequeue</text>\n  <text x=\"705\" y=\"157\" font-size=\"14\" text-anchor=\"middle\" fill=\"#B9C9D6\">Left in · Right out</text>\n </g>\n</svg>\n```\n\n<!-- nodal-panel:sec-stack:visible -->\n\n### Stack\n\n<!-- nodal-panel:sec-stack-operations:visible:parent=sec-stack -->\n\n### TODO · Stack — Array Implementation\n\n<!-- nodal-panel:sec-stack-boundary:visible:parent=sec-stack -->\n\n### TODO · Stack — Top Index / Capacity\n\n<!-- nodal-panel:sec-stack-quiz:visible:parent=sec-stack -->\n\n### TODO · Stack — Output Order Question\n\n<!-- nodal-panel:sec-queue:visible -->\n\n### Queue\n\n<!-- nodal-panel:sec-queue-operations:visible:parent=sec-queue -->\n\n### TODO · Queue — Linear Array Implementation\n\n<!-- nodal-panel:sec-queue-circular:visible:parent=sec-queue -->\n\n### TODO · Queue — Circular Index / Wraparound\n\n<!-- nodal-panel:sec-queue-boundary:visible:parent=sec-queue -->\n\n### TODO · Queue — Reserved Empty Slot / Capacity n−1\n\n<!-- nodal-panel:sec-queue-pseudocode:visible:parent=sec-queue -->\n\n### TODO · Queue — ENQUEUE / DEQUEUE Pseudocode\n\n<!-- nodal-panel:sec-queue-complexity:visible:parent=sec-queue -->\n\n### TODO · Queue — Big-O\n\n<!-- nodal-panel:sec-queue-trap:visible:parent=sec-queue -->\n\n### TODO · Queue — Head / Tail Question\n\n<!-- nodal-panel:sec-queue-trap-answer:hidden:parent=sec-queue-trap -->\n\n### TODO · Queue — Answer\n\n",
+  "svgBlocks": [
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 960 172\" preserveAspectRatio=\"xMidYMid meet\">\n <rect x=\"4\" y=\"4\" width=\"952\" height=\"164\" rx=\"9\" fill=\"#080C10\" stroke=\"#34424C\" stroke-width=\"1.3\"/>\n <g font-family=\"Arial, sans-serif\">\n  <text x=\"25\" y=\"26\" font-size=\"18\" font-weight=\"bold\" fill=\"#EEF3F6\">Stack</text>\n  <text x=\"102\" y=\"26\" font-size=\"16\" font-weight=\"bold\" fill=\"#95BEEB\">LIFO</text>\n  <text x=\"186\" y=\"26\" font-size=\"15\" fill=\"#95BEEB\">Only Top</text>\n  <text x=\"513\" y=\"26\" font-size=\"18\" font-weight=\"bold\" fill=\"#EEF3F6\">Queue</text>\n  <text x=\"605\" y=\"26\" font-size=\"16\" font-weight=\"bold\" fill=\"#85D9AE\">FIFO</text>\n  <line x1=\"475\" y1=\"15\" x2=\"475\" y2=\"157\" stroke=\"#32444D\" stroke-width=\"1.4\"/>\n  <path d=\"M149 49 V138 H262 V49\" fill=\"none\" stroke=\"#83A1C2\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <rect x=\"159\" y=\"107\" width=\"93\" height=\"25\" rx=\"3\" fill=\"#1C4262\" stroke=\"#7EA7D8\"/>\n  <rect x=\"159\" y=\"80\" width=\"93\" height=\"25\" rx=\"3\" fill=\"#1C4262\" stroke=\"#7EA7D8\"/>\n  <rect x=\"159\" y=\"53\" width=\"93\" height=\"25\" rx=\"3\" fill=\"#264E71\" stroke=\"#9BC9F5\"/>\n  <text x=\"205\" y=\"125\" font-size=\"16\" text-anchor=\"middle\" fill=\"#EFF6FF\">A</text>\n  <text x=\"205\" y=\"98\" font-size=\"16\" text-anchor=\"middle\" fill=\"#EFF6FF\">B</text>\n  <text x=\"205\" y=\"71\" font-size=\"16\" text-anchor=\"middle\" fill=\"#EFF6FF\">C</text>\n  <line x1=\"195\" y1=\"33\" x2=\"195\" y2=\"47\" stroke=\"#74C59D\" stroke-width=\"2\"/>\n  <polygon points=\"195,52 189,44 201,44\" fill=\"#74C59D\"/>\n  <line x1=\"220\" y1=\"48\" x2=\"220\" y2=\"35\" stroke=\"#E4BC80\" stroke-width=\"2\"/>\n  <polygon points=\"220,30 214,38 226,38\" fill=\"#E4BC80\"/>\n  <text x=\"175\" y=\"43\" font-size=\"13\" text-anchor=\"end\" fill=\"#74C59D\">push</text>\n  <text x=\"241\" y=\"43\" font-size=\"13\" text-anchor=\"start\" fill=\"#E4BC80\">pop</text>\n  <text x=\"539\" y=\"64\" font-size=\"13\" text-anchor=\"middle\" fill=\"#E6C08D\">enqueue</text>\n  <line x1=\"509\" y1=\"104\" x2=\"570\" y2=\"104\" stroke=\"#E6C08D\" stroke-width=\"2.5\"/>\n  <polygon points=\"578,104 566,98 566,110\" fill=\"#E6C08D\"/>\n  <path d=\"M590 66 H832 M590 140 H832\" stroke=\"#83A1C2\" stroke-width=\"4\" stroke-linecap=\"round\" fill=\"none\"/>\n  <rect x=\"608\" y=\"90\" width=\"58\" height=\"32\" rx=\"3\" fill=\"#1D3742\" stroke=\"#779AAF\"/>\n  <rect x=\"674\" y=\"90\" width=\"58\" height=\"32\" rx=\"3\" fill=\"#1D3742\" stroke=\"#779AAF\"/>\n  <rect x=\"740\" y=\"90\" width=\"58\" height=\"32\" rx=\"3\" fill=\"#1B4A36\" stroke=\"#6BBB93\"/>\n  <text x=\"637\" y=\"112\" font-size=\"18\" text-anchor=\"middle\" fill=\"#F2F7FF\">C</text>\n  <text x=\"703\" y=\"112\" font-size=\"18\" text-anchor=\"middle\" fill=\"#F2F7FF\">B</text>\n  <text x=\"769\" y=\"112\" font-size=\"18\" text-anchor=\"middle\" fill=\"#F2F7FF\">A</text>\n  <line x1=\"836\" y1=\"104\" x2=\"901\" y2=\"104\" stroke=\"#74C59D\" stroke-width=\"2.5\"/>\n  <polygon points=\"909,104 897,98 897,110\" fill=\"#74C59D\"/>\n  <text x=\"873\" y=\"64\" font-size=\"13\" text-anchor=\"middle\" fill=\"#8BE3AF\">dequeue</text>\n  <text x=\"705\" y=\"157\" font-size=\"14\" text-anchor=\"middle\" fill=\"#B9C9D6\">Left in · Right out</text>\n </g>\n</svg>"
+  ],
+  "sections": [
+    {
+      "id": "sec-lifo",
+      "title": "Stack vs Queue — ADT",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-lifo",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-lifo.json"
+    },
+    {
+      "id": "sec-stack",
+      "title": "Stack",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-stack.json"
+    },
+    {
+      "id": "sec-stack-operations",
+      "title": "TODO · Stack — Array Implementation",
+      "parentId": "sec-stack",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-operations",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-stack-operations.json"
+    },
+    {
+      "id": "sec-stack-boundary",
+      "title": "TODO · Stack — Top Index / Capacity",
+      "parentId": "sec-stack",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-boundary",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-stack-boundary.json"
+    },
+    {
+      "id": "sec-stack-quiz",
+      "title": "TODO · Stack — Output Order Question",
+      "parentId": "sec-stack",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-quiz",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-stack-quiz.json"
+    },
+    {
+      "id": "sec-queue",
+      "title": "Queue",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-queue.json"
+    },
+    {
+      "id": "sec-queue-operations",
+      "title": "TODO · Queue — Linear Array Implementation",
+      "parentId": "sec-queue",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-operations",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-operations.json"
+    },
+    {
+      "id": "sec-queue-circular",
+      "title": "TODO · Queue — Circular Index / Wraparound",
+      "parentId": "sec-queue",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-circular",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-circular.json"
+    },
+    {
+      "id": "sec-queue-boundary",
+      "title": "TODO · Queue — Reserved Empty Slot / Capacity n−1",
+      "parentId": "sec-queue",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-boundary",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-boundary.json"
+    },
+    {
+      "id": "sec-queue-pseudocode",
+      "title": "TODO · Queue — ENQUEUE / DEQUEUE Pseudocode",
+      "parentId": "sec-queue",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-pseudocode",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-pseudocode.json"
+    },
+    {
+      "id": "sec-queue-complexity",
+      "title": "TODO · Queue — Big-O",
+      "parentId": "sec-queue",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-complexity",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-complexity.json"
+    },
+    {
+      "id": "sec-queue-trap",
+      "title": "TODO · Queue — Head / Tail Question",
+      "parentId": "sec-queue",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-trap",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-trap.json"
+    },
+    {
+      "id": "sec-queue-trap-answer",
+      "title": "TODO · Queue — Answer",
+      "parentId": "sec-queue-trap",
+      "hidden": true,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-trap-answer",
+      "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-trap-answer.json"
+    }
+  ],
+  "sourcePath": "content/notes/quiz6-stack-and-queue.md",
+  "contentSha256": "f8fb36874ce57ef7aa711ef4b9a5bd0f2411d52c976cf2dd4bde7bf11dbc7485",
+  "publishedAt": "2026-10-20T16:37:27.515Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue"
+}
