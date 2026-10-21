@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz6-stack-and-queue",
+  "noteTitle": "Quiz 6 · Stack & Queue",
+  "id": "sec-explicit-state-update",
+  "title": "计算 ≠ 状态更新",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### 计算 ≠ 状态更新\n\n**Common Rule**：算出新 Index / Reference 不会自动更新原变量，必须显式赋值\n\n**Array Stack**：`S.top = S.top - 1`（Pop 后更新 Top）\n\n**Circular Queue**：`Q.tail = next(Q.tail)` / `Q.head = next(Q.head)`\n\n**易错点**：Enqueue 先写旧 `Q[tail]`，再赋值 `tail = next(tail)`；只计算 `next(tail)` 不会更新 Tail，下次插入会用错槽位 → [练习 · Tail Update](https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&mode=practice&section=sec-explicit-state-update&question=cis223-q6-queue-tail-update-v1)\n\n**Linked List**：`x.next = y`（修改 Node 的 Reference）\n\n`next()` 只是我们讲解用的计算辅助函数，CLRS 原版使用 `if / else` 直接更新 Tail\n\n```text\nif Q.tail == Q.size\n    Q.tail = 1\nelse\n    Q.tail = Q.tail + 1\n```",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz6-stack-and-queue.md",
+  "noteContentSha256": "57c83ccd8e844d0e1b658c9cf379fc7f88675bb5bc9d2f6d363550561eef4387",
+  "contentSha256": "93d3c1833e275f894f30bd1ba61519ec485aed171f6e03501265f98565ce63a0",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-explicit-state-update"
+}

@@ -1,0 +1,1 @@
+import{Tt as e}from"./index-gOKc2A2V.js";function t(t,n){return e(t,n,220)}export{t};

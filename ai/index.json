@@ -1,6 +1,6 @@
 {
   "schemaVersion": "nodal.ai.index.v1",
-  "publishedAt": "2026-10-20T16:37:27.515Z",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
   "notes": [
     {
       "id": "heuer-2010",
@@ -1558,7 +1558,7 @@
       "title": "Quiz 6 · Linked List",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list",
       "resource": "ai/notes/quiz6-linked-list.json",
-      "contentSha256": "411597f455f1bcd537a0d980e5d0125214f9b123471f1a79264bc2ebe9cf1ece",
+      "contentSha256": "af4935d5a58b9986d4e9f444504c5ee6625798f2ac88a6dc3b60842d3c3e4ff4",
       "sections": [
         {
           "id": "sec-structure",
@@ -1578,7 +1578,7 @@
         },
         {
           "id": "sec-complexity",
-          "title": "3. Access / Insert / Delete — Big-O",
+          "title": "3. Operations",
           "parentId": null,
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-complexity",
@@ -1586,7 +1586,7 @@
         },
         {
           "id": "sec-common-mistakes",
-          "title": "4. 易错题",
+          "title": "4. Practice",
           "parentId": null,
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-common-mistakes",
@@ -1603,15 +1603,444 @@
       ]
     },
     {
+      "id": "cis224-midterm-architecture-datapath-instructions",
+      "title": "CIS 224 Midterm · Architecture, Datapath & Instructions",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions",
+      "resource": "ai/notes/cis224-midterm-architecture-datapath-instructions.json",
+      "contentSha256": "99d6a2a5b04799c6d8a6a25d2d812fdef5e2bd6988e016bd0c8a2145daf5c20a",
+      "sections": [
+        {
+          "id": "sec-04-original-content",
+          "title": "sec-04-original-content",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions&section=sec-04-original-content",
+          "resource": "ai/sections/cis224-midterm-architecture-datapath-instructions/sec-04-original-content.json"
+        },
+        {
+          "id": "sec-computer-architecture-processor-performance-d87306",
+          "title": "Computer Architecture & Processor Performance 计算机体系结构与处理器性能",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions&section=sec-computer-architecture-processor-performance-d87306",
+          "resource": "ai/sections/cis224-midterm-architecture-datapath-instructions/sec-computer-architecture-processor-performance-d87306.json"
+        },
+        {
+          "id": "sec-unit-1-foundations-performance-ae4c90",
+          "title": "Unit 1 — Foundations & Performance 基础架构与性能",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions&section=sec-unit-1-foundations-performance-ae4c90",
+          "resource": "ai/sections/cis224-midterm-architecture-datapath-instructions/sec-unit-1-foundations-performance-ae4c90.json"
+        },
+        {
+          "id": "sec-system-architecture-85e7fb",
+          "title": "System Architecture",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions&section=sec-system-architecture-85e7fb",
+          "resource": "ai/sections/cis224-midterm-architecture-datapath-instructions/sec-system-architecture-85e7fb.json"
+        },
+        {
+          "id": "sec-unit-4-processor-pipelining-ed0f09",
+          "title": "Unit 4 — Processor & Pipelining 处理器与流水线",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions&section=sec-unit-4-processor-pipelining-ed0f09",
+          "resource": "ai/sections/cis224-midterm-architecture-datapath-instructions/sec-unit-4-processor-pipelining-ed0f09.json"
+        },
+        {
+          "id": "sec-components-4123ae",
+          "title": "Components",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions&section=sec-components-4123ae",
+          "resource": "ai/sections/cis224-midterm-architecture-datapath-instructions/sec-components-4123ae.json"
+        },
+        {
+          "id": "sec-instruction-types-bf17ec",
+          "title": "Instruction — Types",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions&section=sec-instruction-types-bf17ec",
+          "resource": "ai/sections/cis224-midterm-architecture-datapath-instructions/sec-instruction-types-bf17ec.json"
+        }
+      ]
+    },
+    {
+      "id": "cis224-midterm-bits-integers-bitwise",
+      "title": "CIS 224 Midterm · Binary, Integers & Bitwise Operations",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise",
+      "resource": "ai/notes/cis224-midterm-bits-integers-bitwise.json",
+      "contentSha256": "029dd8db0f0a4bc317bae87be83320c9467ab50514d284d4c986487de4ce0d06",
+      "sections": [
+        {
+          "id": "sec-01-original-content",
+          "title": "sec-01-original-content",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-01-original-content",
+          "resource": "ai/sections/cis224-midterm-bits-integers-bitwise/sec-01-original-content.json"
+        },
+        {
+          "id": "sec-unit-2-number-representation-conversion-e2bb64",
+          "title": "Unit 2 — Number Representation & Conversion 数字表示与转换",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-unit-2-number-representation-conversion-e2bb64",
+          "resource": "ai/sections/cis224-midterm-bits-integers-bitwise/sec-unit-2-number-representation-conversion-e2bb64.json"
+        },
+        {
+          "id": "sec-binary-hex-5c22cc",
+          "title": "Binary & Hex",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-binary-hex-5c22cc",
+          "resource": "ai/sections/cis224-midterm-bits-integers-bitwise/sec-binary-hex-5c22cc.json"
+        },
+        {
+          "id": "sec-bitwise-operations-extension-shifts-masks-e3a242",
+          "title": "Bitwise Operations — Extension, Shifts & Masks 位操作",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-bitwise-operations-extension-shifts-masks-e3a242",
+          "resource": "ai/sections/cis224-midterm-bits-integers-bitwise/sec-bitwise-operations-extension-shifts-masks-e3a242.json"
+        },
+        {
+          "id": "sec-integer-two-s-complement-e3bfae",
+          "title": "Integer / Two's Complement",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-integer-two-s-complement-e3bfae",
+          "resource": "ai/sections/cis224-midterm-bits-integers-bitwise/sec-integer-two-s-complement-e3bfae.json"
+        },
+        {
+          "id": "sec-conversion-56813d",
+          "title": "Conversion 补码转换",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-conversion-56813d",
+          "resource": "ai/sections/cis224-midterm-bits-integers-bitwise/sec-conversion-56813d.json"
+        },
+        {
+          "id": "sec-arithmetic-6b0785",
+          "title": "Arithmetic 运算",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-arithmetic-6b0785",
+          "resource": "ai/sections/cis224-midterm-bits-integers-bitwise/sec-arithmetic-6b0785.json"
+        },
+        {
+          "id": "sec-solving-master-2026-10-14-unit-2-numbers-a45d20",
+          "title": "【补充术语速查｜Solving Master 对照｜2026-10-14】 UNIT 2 — Numbers（附加，不改原笔记）",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-solving-master-2026-10-14-unit-2-numbers-a45d20",
+          "resource": "ai/sections/cis224-midterm-bits-integers-bitwise/sec-solving-master-2026-10-14-unit-2-numbers-a45d20.json"
+        },
+        {
+          "id": "sec-unit-2-numbers-ieee-754-f932c3",
+          "title": "UNIT 2 — NUMBERS / IEEE 754",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-unit-2-numbers-ieee-754-f932c3",
+          "resource": "ai/sections/cis224-midterm-bits-integers-bitwise/sec-unit-2-numbers-ieee-754-f932c3.json"
+        },
+        {
+          "id": "sec-unit-2-numbers-binary-ieee-754-165946",
+          "title": "UNIT 2 — Numbers · Binary · IEEE 754",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-unit-2-numbers-binary-ieee-754-165946",
+          "resource": "ai/sections/cis224-midterm-bits-integers-bitwise/sec-unit-2-numbers-binary-ieee-754-165946.json"
+        }
+      ]
+    },
+    {
+      "id": "cis224-midterm-cpu-performance-pipeline",
+      "title": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline",
+      "resource": "ai/notes/cis224-midterm-cpu-performance-pipeline.json",
+      "contentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+      "sections": [
+        {
+          "id": "sec-05-original-content",
+          "title": "sec-05-original-content",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-05-original-content",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-05-original-content.json"
+        },
+        {
+          "id": "sec-performance-8cb522",
+          "title": "Performance",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-performance-8cb522",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-performance-8cb522.json"
+        },
+        {
+          "id": "sec-solving-master-2026-10-14-unit-1-foundations-performa-26557f",
+          "title": "【补充术语速查｜Solving Master 对照｜2026-10-14】 UNIT 1 — Foundations & Performance（附加，不改原笔记）",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-solving-master-2026-10-14-unit-1-foundations-performa-26557f",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-solving-master-2026-10-14-unit-1-foundations-performa-26557f.json"
+        },
+        {
+          "id": "sec-pipeline-f-d-e-m-w-if-id-ex-mem-wb-b519b4",
+          "title": "Pipeline — F / D / E / M / W（IF / ID / EX / MEM / WB）",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-pipeline-f-d-e-m-w-if-id-ex-mem-wb-b519b4",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-pipeline-f-d-e-m-w-if-id-ex-mem-wb-b519b4.json"
+        },
+        {
+          "id": "sec-hazards-structural-data-control-a41bf2",
+          "title": "Hazards — Structural / Data / Control",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-hazards-structural-data-control-a41bf2",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-hazards-structural-data-control-a41bf2.json"
+        },
+        {
+          "id": "sec-clock-prediction-speculation-61f465",
+          "title": "Clock / Prediction / Speculation",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-clock-prediction-speculation-61f465",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-clock-prediction-speculation-61f465.json"
+        },
+        {
+          "id": "sec-solving-master-2026-10-14-unit-4-processor-pipeline-4a7fb1",
+          "title": "【补充术语速查｜Solving Master 对照｜2026-10-14】 UNIT 4 — Processor & Pipeline（附加，不改原笔记）",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-solving-master-2026-10-14-unit-4-processor-pipeline-4a7fb1",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-solving-master-2026-10-14-unit-4-processor-pipeline-4a7fb1.json"
+        },
+        {
+          "id": "sec-2026-10-14-5f960e",
+          "title": "【期中易错与易混淆总表｜2026-10-14】",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-2026-10-14-5f960e",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-2026-10-14-5f960e.json"
+        },
+        {
+          "id": "sec-unit-1-foundations-47140d",
+          "title": "UNIT 1 — FOUNDATIONS",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-unit-1-foundations-47140d",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-unit-1-foundations-47140d.json"
+        },
+        {
+          "id": "sec-unit-4-processor-pipeline-2e6e4f",
+          "title": "UNIT 4 — PROCESSOR / PIPELINE",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-unit-4-processor-pipeline-2e6e4f",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-unit-4-processor-pipeline-2e6e4f.json"
+        },
+        {
+          "id": "sec-cis-224-exam-solving-master-c2eb15",
+          "title": "CIS 224 · Exam Solving Master",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-cis-224-exam-solving-master-c2eb15",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-cis-224-exam-solving-master-c2eb15.json"
+        },
+        {
+          "id": "sec-a2-practice-0b106c",
+          "title": "A2 / Practice 逐题检索",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-a2-practice-0b106c",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-a2-practice-0b106c.json"
+        },
+        {
+          "id": "sec-unit-1-foundations-performance-fd771c",
+          "title": "UNIT 1 — Foundations · Performance",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-unit-1-foundations-performance-fd771c",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-unit-1-foundations-performance-fd771c.json"
+        },
+        {
+          "id": "sec-unit-4-processor-pipeline-prediction-2d454b",
+          "title": "UNIT 4 — Processor · Pipeline · Prediction",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-unit-4-processor-pipeline-prediction-2d454b",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-unit-4-processor-pipeline-prediction-2d454b.json"
+        },
+        {
+          "id": "sec-a2-practice-8ed8f4",
+          "title": "A2 / Practice 结果核对",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-a2-practice-8ed8f4",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-a2-practice-8ed8f4.json"
+        },
+        {
+          "id": "sec-topic-4c3f56",
+          "title": "考试前检查",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-topic-4c3f56",
+          "resource": "ai/sections/cis224-midterm-cpu-performance-pipeline/sec-topic-4c3f56.json"
+        }
+      ]
+    },
+    {
+      "id": "cis224-midterm-ieee754-floating-point",
+      "title": "CIS 224 Midterm · IEEE 754 Floating Point & Precision",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point",
+      "resource": "ai/notes/cis224-midterm-ieee754-floating-point.json",
+      "contentSha256": "7232673d96ecaa6f5b080c04a095ed746b99598c96bd182a3fcafd9dd7149d7a",
+      "sections": [
+        {
+          "id": "sec-02-original-content",
+          "title": "sec-02-original-content",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-02-original-content",
+          "resource": "ai/sections/cis224-midterm-ieee754-floating-point/sec-02-original-content.json"
+        },
+        {
+          "id": "sec-ieee-754-half-precision-11515b",
+          "title": "IEEE 754 — Half Precision 浮点表示与转换",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-ieee-754-half-precision-11515b",
+          "resource": "ai/sections/cis224-midterm-ieee754-floating-point/sec-ieee-754-half-precision-11515b.json"
+        },
+        {
+          "id": "sec-format-formula-6e61f4",
+          "title": "Format / Formula",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-format-formula-6e61f4",
+          "resource": "ai/sections/cis224-midterm-ieee754-floating-point/sec-format-formula-6e61f4.json"
+        },
+        {
+          "id": "sec-binary-fractions-normalization-333a01",
+          "title": "Binary Fractions / Normalization",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-binary-fractions-normalization-333a01",
+          "resource": "ai/sections/cis224-midterm-ieee754-floating-point/sec-binary-fractions-normalization-333a01.json"
+        },
+        {
+          "id": "sec-value-16-bit-float-621d0f",
+          "title": "Value → 16-bit Float 编码",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-value-16-bit-float-621d0f",
+          "resource": "ai/sections/cis224-midterm-ieee754-floating-point/sec-value-16-bit-float-621d0f.json"
+        },
+        {
+          "id": "sec-16-bit-float-hex-value-3aa4de",
+          "title": "16-bit Float / Hex → Value 解码",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-16-bit-float-hex-value-3aa4de",
+          "resource": "ai/sections/cis224-midterm-ieee754-floating-point/sec-16-bit-float-hex-value-3aa4de.json"
+        },
+        {
+          "id": "sec-special-cases-bec141",
+          "title": "Special Cases 保留指数",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-special-cases-bec141",
+          "resource": "ai/sections/cis224-midterm-ieee754-floating-point/sec-special-cases-bec141.json"
+        },
+        {
+          "id": "sec-precision-rounding-ae64f7",
+          "title": "Precision / Rounding 精度",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-precision-rounding-ae64f7",
+          "resource": "ai/sections/cis224-midterm-ieee754-floating-point/sec-precision-rounding-ae64f7.json"
+        },
+        {
+          "id": "sec-one-full-conversion-17ab9b",
+          "title": "One Full Conversion 双向验算",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-one-full-conversion-17ab9b",
+          "resource": "ai/sections/cis224-midterm-ieee754-floating-point/sec-one-full-conversion-17ab9b.json"
+        }
+      ]
+    },
+    {
+      "id": "cis224-midterm-logic-circuits-alu",
+      "title": "CIS 224 Midterm · Logic Gates, Adders & ALU",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu",
+      "resource": "ai/notes/cis224-midterm-logic-circuits-alu.json",
+      "contentSha256": "74285fee47131b7cf76180995eb731420463cafa85cf3c448ddc3d890c047dff",
+      "sections": [
+        {
+          "id": "sec-03-original-content",
+          "title": "sec-03-original-content",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu&section=sec-03-original-content",
+          "resource": "ai/sections/cis224-midterm-logic-circuits-alu/sec-03-original-content.json"
+        },
+        {
+          "id": "sec-logic-gates-recognition-523fbc",
+          "title": "Logic Gates — Recognition 逻辑门识别",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu&section=sec-logic-gates-recognition-523fbc",
+          "resource": "ai/sections/cis224-midterm-logic-circuits-alu/sec-logic-gates-recognition-523fbc.json"
+        },
+        {
+          "id": "sec-boolean-identities-de-morgan-848887",
+          "title": "Boolean Identities / De Morgan — 逻辑定律速查",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu&section=sec-boolean-identities-de-morgan-848887",
+          "resource": "ai/sections/cis224-midterm-logic-circuits-alu/sec-boolean-identities-de-morgan-848887.json"
+        },
+        {
+          "id": "sec-solving-master-2026-10-14-unit-3-logic-alu-03b71f",
+          "title": "【补充术语速查｜Solving Master 对照｜2026-10-14】 UNIT 3 — Logic & ALU（附加，不改原笔记）",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu&section=sec-solving-master-2026-10-14-unit-3-logic-alu-03b71f",
+          "resource": "ai/sections/cis224-midterm-logic-circuits-alu/sec-solving-master-2026-10-14-unit-3-logic-alu-03b71f.json"
+        },
+        {
+          "id": "sec-unit-3-logic-alu-50ac18",
+          "title": "UNIT 3 — LOGIC / ALU",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu&section=sec-unit-3-logic-alu-50ac18",
+          "resource": "ai/sections/cis224-midterm-logic-circuits-alu/sec-unit-3-logic-alu-50ac18.json"
+        },
+        {
+          "id": "sec-unit-3-logic-gates-alu-7ad9dd",
+          "title": "UNIT 3 — Logic · Gates · ALU",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu&section=sec-unit-3-logic-gates-alu-7ad9dd",
+          "resource": "ai/sections/cis224-midterm-logic-circuits-alu/sec-unit-3-logic-gates-alu-7ad9dd.json"
+        }
+      ]
+    },
+    {
       "id": "quiz6-stack-and-queue",
       "title": "Quiz 6 · Stack & Queue",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue",
       "resource": "ai/notes/quiz6-stack-and-queue.json",
-      "contentSha256": "f8fb36874ce57ef7aa711ef4b9a5bd0f2411d52c976cf2dd4bde7bf11dbc7485",
+      "contentSha256": "57c83ccd8e844d0e1b658c9cf379fc7f88675bb5bc9d2f6d363550561eef4387",
       "sections": [
         {
           "id": "sec-lifo",
-          "title": "Stack vs Queue — ADT",
+          "title": "Stack vs Queue",
           "parentId": null,
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-lifo",
@@ -1627,7 +2056,7 @@
         },
         {
           "id": "sec-stack-operations",
-          "title": "TODO · Stack — Array Implementation",
+          "title": "Array Stack",
           "parentId": "sec-stack",
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-operations",
@@ -1635,19 +2064,27 @@
         },
         {
           "id": "sec-stack-boundary",
-          "title": "TODO · Stack — Top Index / Capacity",
-          "parentId": "sec-stack",
+          "title": "Top",
+          "parentId": "sec-stack-operations",
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-boundary",
           "resource": "ai/sections/quiz6-stack-and-queue/sec-stack-boundary.json"
         },
         {
           "id": "sec-stack-quiz",
-          "title": "TODO · Stack — Output Order Question",
+          "title": "Output Order",
           "parentId": "sec-stack",
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-quiz",
           "resource": "ai/sections/quiz6-stack-and-queue/sec-stack-quiz.json"
+        },
+        {
+          "id": "sec-stack-resize-thrashing",
+          "title": "Resize Thrashing",
+          "parentId": "sec-stack-operations",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-resize-thrashing",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-stack-resize-thrashing.json"
         },
         {
           "id": "sec-queue",
@@ -1658,57 +2095,81 @@
           "resource": "ai/sections/quiz6-stack-and-queue/sec-queue.json"
         },
         {
-          "id": "sec-queue-operations",
-          "title": "TODO · Queue — Linear Array Implementation",
+          "id": "sec-queue-array",
+          "title": "Array Queue",
           "parentId": "sec-queue",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-array",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-array.json"
+        },
+        {
+          "id": "sec-queue-operations",
+          "title": "Linear Array Queue",
+          "parentId": "sec-queue-array",
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-operations",
           "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-operations.json"
         },
         {
           "id": "sec-queue-circular",
-          "title": "TODO · Queue — Circular Index / Wraparound",
-          "parentId": "sec-queue",
+          "title": "Circular Array Queue",
+          "parentId": "sec-queue-array",
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-circular",
           "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-circular.json"
         },
         {
-          "id": "sec-queue-boundary",
-          "title": "TODO · Queue — Reserved Empty Slot / Capacity n−1",
-          "parentId": "sec-queue",
-          "hidden": false,
-          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-boundary",
-          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-boundary.json"
-        },
-        {
           "id": "sec-queue-pseudocode",
-          "title": "TODO · Queue — ENQUEUE / DEQUEUE Pseudocode",
-          "parentId": "sec-queue",
+          "title": "Pseudocode",
+          "parentId": "sec-queue-circular",
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-pseudocode",
           "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-pseudocode.json"
         },
         {
           "id": "sec-queue-complexity",
-          "title": "TODO · Queue — Big-O",
-          "parentId": "sec-queue",
+          "title": "Big-O",
+          "parentId": "sec-queue-array",
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-complexity",
           "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-complexity.json"
         },
         {
           "id": "sec-queue-trap",
-          "title": "TODO · Queue — Head / Tail Question",
-          "parentId": "sec-queue",
+          "title": "Head / Tail",
+          "parentId": "sec-queue-circular",
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-trap",
           "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-trap.json"
         },
         {
+          "id": "sec-logical-vs-physical",
+          "title": "逻辑删除 ≠ 物理清空",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-logical-vs-physical",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-logical-vs-physical.json"
+        },
+        {
+          "id": "sec-explicit-state-update",
+          "title": "计算 ≠ 状态更新",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-explicit-state-update",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-explicit-state-update.json"
+        },
+        {
+          "id": "sec-queue-boundary",
+          "title": "Reserved Slot / Capacity：Legacy Section",
+          "parentId": "sec-queue",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-boundary",
+          "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-boundary.json"
+        },
+        {
           "id": "sec-queue-trap-answer",
-          "title": "TODO · Queue — Answer",
-          "parentId": "sec-queue-trap",
+          "title": "Queue Head / Tail Answer：Legacy Section",
+          "parentId": "sec-queue",
           "hidden": true,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-trap-answer",
           "resource": "ai/sections/quiz6-stack-and-queue/sec-queue-trap-answer.json"

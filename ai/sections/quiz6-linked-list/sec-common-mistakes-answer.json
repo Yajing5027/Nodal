@@ -6,11 +6,11 @@
   "title": "sec-common-mistakes-answer",
   "parentId": "sec-common-mistakes",
   "hidden": true,
-  "markdown": "**错**\n\n- 无序 Value Search：两者均 O(n)\n- Index Access：Array O(1)，Linked List O(n)\n- Linked List 的主要优势是已知位置后的 Insert / Delete，而不是 Search\n",
+  "markdown": "\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz6-linked-list.md",
-  "noteContentSha256": "411597f455f1bcd537a0d980e5d0125214f9b123471f1a79264bc2ebe9cf1ece",
-  "contentSha256": "4d732c5e4ba3747bee03742745a2434a8de264b53172a433f34669868067401b",
-  "publishedAt": "2026-10-20T16:37:27.515Z",
+  "noteContentSha256": "af4935d5a58b9986d4e9f444504c5ee6625798f2ac88a6dc3b60842d3c3e4ff4",
+  "contentSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-common-mistakes-answer"
 }

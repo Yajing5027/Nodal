@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-bits-integers-bitwise",
+  "noteTitle": "CIS 224 Midterm · Binary, Integers & Bitwise Operations",
+  "id": "sec-unit-2-number-representation-conversion-e2bb64",
+  "title": "Unit 2 — Number Representation & Conversion 数字表示与转换",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Unit 2 — Number Representation & Conversion 数字表示与转换\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-bits-integers-bitwise.md",
+  "noteContentSha256": "029dd8db0f0a4bc317bae87be83320c9467ab50514d284d4c986487de4ce0d06",
+  "contentSha256": "a7689f6c3e514d216a2d78bdfb3f9baee93fadcc9c7158a307d24e36bf28ca25",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-unit-2-number-representation-conversion-e2bb64"
+}

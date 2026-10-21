@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-ieee754-floating-point",
+  "noteTitle": "CIS 224 Midterm · IEEE 754 Floating Point & Precision",
+  "id": "sec-02-original-content",
+  "title": "sec-02-original-content",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-ieee754-floating-point.md",
+  "noteContentSha256": "7232673d96ecaa6f5b080c04a095ed746b99598c96bd182a3fcafd9dd7149d7a",
+  "contentSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-02-original-content"
+}

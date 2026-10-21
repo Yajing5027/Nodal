@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-ieee754-floating-point",
+  "noteTitle": "CIS 224 Midterm · IEEE 754 Floating Point & Precision",
+  "id": "sec-special-cases-bec141",
+  "title": "Special Cases 保留指数",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "##### Special Cases 保留指数\n\n• E=00000：F=0 → ±0（+0 == −0 为 True）；F≠0 → Subnormal 非规格化\n\n  ◦ Value = (−1)S × 0.F₂ × 2−14（无 Hidden 1）\n\n• E=11111：F=0 → ±Infinity；F≠0 → NaN（Not a Number）\n\n  ◦ NaN Comparison（Quiz 1 Q12）：x != x 为 True → x 是 NaN（NaN != NaN）；−0.0 == +0.0 为 True\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-ieee754-floating-point.md",
+  "noteContentSha256": "7232673d96ecaa6f5b080c04a095ed746b99598c96bd182a3fcafd9dd7149d7a",
+  "contentSha256": "7d5c1fd68628a6890e01a64c5f51ff13eb3d1eb910e277de74fa392a3bb09b9c",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-special-cases-bec141"
+}

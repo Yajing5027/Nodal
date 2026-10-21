@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-cpu-performance-pipeline",
+  "noteTitle": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+  "id": "sec-cis-224-exam-solving-master-c2eb15",
+  "title": "CIS 224 · Exam Solving Master",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## CIS 224 · Exam Solving Master\n\nUnits 1–4 | 题型检索 → 解题步骤 → 例题核对\n\n可编辑母版：以原始 PDF 的全部卡片为基准，仅整合你已明确要求的修订原版 PDF 独立保留，不受后续编辑影响\n\n使用：读题干英文关键词和输出单位 → 查卡片 ID → 用步骤替换数字 → 核对注意\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
+  "noteContentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+  "contentSha256": "96d14111bf22fdd91060067caafb9c41cd9a00d79c9a63e262b1cc6329ae2fcf",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-cis-224-exam-solving-master-c2eb15"
+}

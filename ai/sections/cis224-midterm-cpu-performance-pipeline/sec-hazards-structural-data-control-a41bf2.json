@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-cpu-performance-pipeline",
+  "noteTitle": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+  "id": "sec-hazards-structural-data-control-a41bf2",
+  "title": "Hazards — Structural / Data / Control",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "##### Hazards — Structural / Data / Control\n\n• Hazard 流水线冒险：按冲突原因区分 Structural / Data / Control，不能只看有无 Stall\n\n  ◦ Structural Hazard 结构冒险：同 Cycle 争用资源（例：F/M 抢唯一 Memory Port）→ Stall / 增资源\n\n    ▪ ≠ Data Hazard 〔错题↗〕\n\n  ◦ Data Hazard 数据冒险 — RAW (Read After Write)：后条所需结果未就绪 → Forwarding / Stall\n\n    ▪ Forwarding 前递：Pipeline Registers 流水线寄存器暂存阶段结果；就绪值旁路送后条 E，不必等 W\n\n    ▪ No Forwarding：后条在 D 等前条 W；本课允许同周期先 W 后 D\n\n    ▪ ALU→ALU：前条 E 末产出 → 后条下一周期 E 使用\n\n      · 有 Forwarding 时通常不用停\n\n    ▪ Load-use：lw 在 M 末才得到 Data\n\n      · 紧邻依赖即使 Forwarding 也需 1 Stall / Bubble - 暂停一周期\n\n  ◦ Control Hazard 控制冒险 — Branch：路径未定 → Prediction；猜错 → Flush（beq 在 E 判定）\n\n    ▪ Taken：跳转 target；Flush 两条较年轻的错误路径指令\n\n    ▪ Not Taken：顺序执行 PC+4；无需该 Flush\n\n    ▪ Wrong Path 错误路径 ≠ Invalid Instruction 无效指令：指令合法，仅不该沿此路径执行\n\n    ▪ Flush（Control Hazard / Pipeline）→ 清除错误路径指令\n\n      · Squash（Speculative Execution）→ 作废错误路径推测结果，禁止 Commit\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
+  "noteContentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+  "contentSha256": "11fc2ff7b0ae5b31ce3881dc1c2b624ca30b6ea852722cf57c2af20126aace10",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-hazards-structural-data-control-a41bf2"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-ieee754-floating-point",
+  "noteTitle": "CIS 224 Midterm · IEEE 754 Floating Point & Precision",
+  "id": "sec-format-formula-6e61f4",
+  "title": "Format / Formula",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "##### Format / Formula\n\n• S | E | F = Sign (1 bit) | Exponent (5 bits) | Fraction (10 bits)\n\n  ◦ 共 16 bits；Bias = 15\n\n• Sign Bit (S)：0 - Positive；1 - Negative\n\n• Exponent (E) 指数：E=1–30 Stored Exponent；e=E−15 Real Exponent\n\n• Normalized 规格化：Value = (−1)S × 1.F₂ × 2E−15；Hidden 1 隐藏的 1 不存入 F\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-ieee754-floating-point.md",
+  "noteContentSha256": "7232673d96ecaa6f5b080c04a095ed746b99598c96bd182a3fcafd9dd7149d7a",
+  "contentSha256": "9b0329bcc80f13c5523fa237d2809fd8007d49e83cee28823df5da9d97ddcdca",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-format-formula-6e61f4"
+}

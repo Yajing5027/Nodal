@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-cpu-performance-pipeline",
+  "noteTitle": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+  "id": "sec-clock-prediction-speculation-61f465",
+  "title": "Clock / Prediction / Speculation",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "##### Clock / Prediction / Speculation\n\n• Clock：Tick - 时钟边沿；Cycle - 相邻两次 Tick 间；Period - 1 Cycle 时长；1 ns = 10⁻⁹ s；1 ps = 10⁻¹² s；1 ns = 1000 ps\n\n• Performance Equation 性能公式：CPU Time = Instruction Count × CPI × Clock Period = Total Cycles × Clock Period\n\n  ◦ 1 GHz ↔ 1 ns\n\n• Critical Path：最慢 Stage 决定最短 Clock Period\n\n  ◦ 拆分 Stage 只有降低最大阶段延迟才可能提速，还会增加 Pipeline Fill Cycles 与 Register Overhead\n\n• Branch Prediction（Control Hazard）：beq 在 E 判定前预测 T/NT → Fetch；Prediction ≠ Actual → Misprediction → Flush\n\n  ◦ Static Prediction 静态预测：固定规则、无需 2-bit Counter；Always NT\n\n    ▪ BTFNT (Backward Taken, Forward Not Taken)：Target 较 PC 小→T；较大→NT\n\n  ◦ Dynamic Prediction 动态预测：按历史 Actual 更新\n\n    ▪ 1-bit：下次预测 = 上次 Actual\n\n    ▪ 2-bit Saturating Counter：00 Strong NT ↔ 01 Weak NT ↔ 10 Weak T ↔ 11 Strong T\n\n      · Saturating 饱和：00/11 不越界\n\n      · 先预测 → 按 Actual 更新：T +1 / NT −1\n\n  ◦ BHT (Branch History Table)：存预测状态\n\n  ◦ BTB (Branch Target Buffer)：存目标地址\n\n  ◦ Speculative Execution 推测执行：沿预测路径提前执行\n\n    ▪ 正确 → Commit / Retire 提交\n\n    ▪ 错误 → Squash 取消：不更新 Architectural State 程序可见状态\n\n    ▪ Spectre 幽灵漏洞：Squash ≠ 撤销 Cache Side Effects\n\n      · 错误路径 lw 可留下 Cache Line → Hit 快 / Miss 慢\n\n      · Cache Timing ≠ Prediction Correctness → 时间差可泄露信息\n\n────────────────────────────────────────\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
+  "noteContentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+  "contentSha256": "e0059d45094cfb5f2fca9468d931fadc265bb050ac708edb3c38244711f11dff",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-clock-prediction-speculation-61f465"
+}

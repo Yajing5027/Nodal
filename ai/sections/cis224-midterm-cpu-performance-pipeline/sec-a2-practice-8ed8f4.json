@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-cpu-performance-pipeline",
+  "noteTitle": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+  "id": "sec-a2-practice-8ed8f4",
+  "title": "A2 / Practice 结果核对",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## A2 / Practice 结果核对\n\n先独立查卡片解题，再用下表比对；这里不是考试真实题\n\n\n| Q | A2 Formal | Practice |\n| --- | --- | --- |\n| Q1 | 1 ns；7.5×10⁹ cycles；7.5 s | 0.6667 ns；12.5×10⁹ cycles；8.33 s |\n| Q2 | 2.6；3.9×10⁹ cycles；1.56 s | 3.7；29.6×10⁹ cycles；7.4 s |\n| Q3 | X=1.8 s；Y=3 s；X；1.67× | X=2.5 s；Y=8.33 s；X；3.33× |\n| Q12 | 11 cycles；CPI 1.57；2200ps；1000ps；I4 WB@8；I4 C5=ID；1.004 | 9 cycles；CPI1.80；1800ps；1000ps；I4 ID@5；I3 C7=WB；1.004 |\n| Q13 | P/U latency1000/750ps；throughput5.00/1.33 inst/ns；time100.8/375ns；P快，U单条低延迟 | P/U latency750/500ps；throughput6.67/2.00 inst/ns；time15.6/50ns；P快，U单条低延迟 |\n\nU1 Slides Q1：500,000,000 inst×1.5=7.5×10⁸ cycles；×0.5 ns=0.375 s\n\nU1 Slides Q2：贡献=0.5、0.6、0.6；平均 CPI=1.7\n\nU1 Slides Q3：A per-inst=1.2/2=0.6ns；B=2/3≈0.667ns；A 快 1.11×\n\nU1/U4 Slides Q4：A 单周期 L=1ns, TP=1 inst/ns；B 五级、T=0.2ns→L=1ns,TP=5 inst/ns；吞吐5×，延迟相同\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
+  "noteContentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+  "contentSha256": "f69312a742f79f5d659ae173012296953e0f0787bd4bce241e5dc22117e99eb3",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-a2-practice-8ed8f4"
+}

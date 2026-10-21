@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-cpu-performance-pipeline",
+  "noteTitle": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+  "id": "sec-unit-1-foundations-47140d",
+  "title": "UNIT 1 — FOUNDATIONS",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "#### UNIT 1 — FOUNDATIONS\n\n01 Clock Rate / Period〔考纲〕｜把 GHz 当执行时间 → T=1/f；2 GHz 对应 0.5 ns/cycle\n\n02 Total Cycles / CPU Time〔A2〕｜只问 Cycles 却乘秒 → Cycles=IC×CPI；Time=Cycles×T\n\n03 Instruction Mix〔A2〕｜对各类 CPI 直接求平均 → Average CPI=Σ(比例×该类 CPI)\n\n04 Speedup〔A2〕｜只看 GHz 或比值颠倒 → 先分别求 Time；慢时间÷快时间\n\n05 Latency / Throughput / Bandwidth〔考纲〕｜把单次时间、完成速率、传输上限混淆 → Latency=单次耗时；Throughput=任务数/时间；Bandwidth=最大数据传输率\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
+  "noteContentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+  "contentSha256": "bd546ca7e403b1755d684f0cd1a3f60ff661381ff050a7afe4a61f6303e0ef5d",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-unit-1-foundations-47140d"
+}

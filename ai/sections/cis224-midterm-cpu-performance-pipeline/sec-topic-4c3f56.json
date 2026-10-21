@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-cpu-performance-pipeline",
+  "noteTitle": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+  "id": "sec-topic-4c3f56",
+  "title": "考试前检查",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## 考试前检查\n\n□ A2 Q1–13 可按编号查出步骤   □ Practice 可换数字复做   □ IEEE 754 双向   □ SOP/NAND   □ ALU Flags   □ Forwarding/Load-use   □ Flush/2-bit Counter\n\n注意：删除卡片仅为腾出打印空间，不代表老师不考不要拿其他版本直接替换此母版；每次使用同一 Google Doc 原地局部修改，并保存版本记录\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
+  "noteContentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+  "contentSha256": "1d4affc4e53935e8e9fa928ebbab383adf9731bb1a7116a40376d03f3ca3d205",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-topic-4c3f56"
+}

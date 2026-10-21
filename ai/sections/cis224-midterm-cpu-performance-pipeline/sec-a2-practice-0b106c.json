@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-cpu-performance-pipeline",
+  "noteTitle": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+  "id": "sec-a2-practice-0b106c",
+  "title": "A2 / Practice 逐题检索",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### A2 / Practice 逐题检索\n\n\n| 题号 | 题干识别 | 查这里 |\n| --- | --- | --- |\n| Q1 | Clock / Cycles / Time | U1-01–03 |\n| Q2 | Weighted Average CPI / Contribution | U1-04 |\n| Q3 | Compare Machines / Speedup | U1-05–07 |\n| Q12 | Ideal pipeline | U4-08–10 |\n| Q13 | Pipelined vs unpipelined | U4-10 |\n\nA2 之外也要复习：IEEE 754 双向转换、SOP、Adder/ALU、Hazards、Branch Prediction、Superscalar/IPC\n\n明确不考或降权：Amdahl、Flynn/SIMD/GPU、复杂 forwarding-distance table、详细 Cache 题、从零编写 C以老师最新通知为准\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
+  "noteContentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+  "contentSha256": "8793543ba68779722fde524168d156d937c5bc0c37764fb1ecda9ea79d3da12a",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-a2-practice-0b106c"
+}

@@ -6,11 +6,11 @@
   "title": "Queue",
   "parentId": null,
   "hidden": false,
-  "markdown": "### Queue",
+  "markdown": "### Queue\n\n**Head Position**：Linear / Circular Array Queue 的 Head 都不必位于 `Q[1]`；有效区间外可有逻辑空槽，物理上也可能残留旧值\n\n**No Internal Gaps**：有效元素从 Head 到 Tail 前一格按 Index 顺序连续排列，中间无逻辑空洞；Circular 可跨 `n → 1`，Linear 不回绕（这里 Tail 指下一插入位）",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz6-stack-and-queue.md",
-  "noteContentSha256": "f8fb36874ce57ef7aa711ef4b9a5bd0f2411d52c976cf2dd4bde7bf11dbc7485",
-  "contentSha256": "8452edaee08d9f98e349c6381b60bfa905b26522d2dc91b2830c4dac2464e1af",
-  "publishedAt": "2026-10-20T16:37:27.515Z",
+  "noteContentSha256": "57c83ccd8e844d0e1b658c9cf379fc7f88675bb5bc9d2f6d363550561eef4387",
+  "contentSha256": "6531c159064492733d842340784c7401c9a5782eb2c7f3413f0c8774b0660c9c",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue"
 }

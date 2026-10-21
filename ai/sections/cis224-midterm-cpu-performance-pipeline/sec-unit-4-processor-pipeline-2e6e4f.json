@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-cpu-performance-pipeline",
+  "noteTitle": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+  "id": "sec-unit-4-processor-pipeline-2e6e4f",
+  "title": "UNIT 4 — PROCESSOR / PIPELINE",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "#### UNIT 4 — PROCESSOR / PIPELINE\n\n38 Critical Path〔考纲〕｜用平均 Stage Delay 当时钟周期 → 取最慢 Stage；仅题给寄存器延迟才另外加\n\n43 Five Stages / MEM〔考纲〕｜每条指令在 M 都访问 Data Memory → 都过 F/D/E/M/W，但只有 load/store 实际读写 Data Memory\n\n44 Pipeline n+k−1〔A2〕｜算 n×k 或认为 CPI 恒为5 → 理想无 Stall：Cycles=n+k−1；CPI=Cycles/n\n\n45 Pipeline Latency vs Throughput〔A2〕｜流水线快就认为单条 Latency 必更低 → 单条约 k×T；稳态单发射 Throughput≈1/T\n\n46 Fill / Drain / Flush〔考纲〕｜Drain 当作 Flush → Drain=旧指令正常完成；Flush=取消错误路径；Fill=起始填满过程\n\n47 Structural vs RAW〔个人错题〕｜IF/MEM 抢单一 Memory Port 判 Data → 抢硬件资源=Structural；前写后读同寄存器=RAW Data\n\n48 Forwarding vs Load-use〔考纲〕｜所有 RAW 都有 Stall；Forwarding 总能无停顿 → ALU→ALU 常0 Stall；紧邻 lw→use 仍需1 Bubble\n\n49 Branch 2-cycle Flush〔考纲〕｜只要 beq 就罚2周期 → 本课预测 NT 实际 Taken、E 判定才冲掉两条错误路径；预测正确不冲\n\n50 1-bit vs 2-bit Predictor〔考纲〕｜先按实际结果更新后再预测 → 1-bit看上次结果；2-bit按旧 Counter 先预测，再按 Actual +1/−1\n\n51 2-bit State 10〔个人错题〕｜把二进制10当编号10；ST遇一次NT就变NT预测 → 00/01猜NT，10/11猜T；11遇NT→10仍猜T\n\n52 IPC / CPI / Superscalar〔考纲〕｜CPI<1 认为不可能；超标量等于多核 → IPC=Instructions/Cycles，CPI=Cycles/Instructions；12/6→IPC2,CPI0.5\n\n53 EX/MEM vs Register File〔考纲〕｜E3计算后就认为已写回普通寄存器 → EX/MEM 阶段间暂存→M4传递→W5才写 RF\n\n54 In-order / Out-of-order〔考纲〕｜后条先 Execute 就认定先 Commit → 独立后条可先执行，但 Execute 顺序≠提交顺序\n\n55 BHT vs BTB〔考纲〕｜方向状态与目标地址混淆 → BHT 方向/Counter；BTB Target Address\n\n56 Speculation / Cache〔考纲〕｜Flush 以为会撤销所有 Cache 变化 → 错路正式写回取消，Cache Side Effects 可留下\n\n考试边界提醒〔课堂/官方〕：Amdahl、Flynn/SIMD/GPU、Forwarding-distance Table 不在本次范围；Load-use 1 Bubble、Branch 2-cycle Flush 仍在范围；书面 Guide 与老师口头对扩展 CPI 占比惩罚公式说法有差异，按课堂澄清降低其优先级。\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
+  "noteContentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+  "contentSha256": "c24bd09de0446436ee0bc8ad0b08e0ac389b0178171fb3bb0f9a16e84cab554b",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-unit-4-processor-pipeline-2e6e4f"
+}

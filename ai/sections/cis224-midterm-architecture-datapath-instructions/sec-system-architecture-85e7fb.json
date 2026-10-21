@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-architecture-datapath-instructions",
+  "noteTitle": "CIS 224 Midterm · Architecture, Datapath & Instructions",
+  "id": "sec-system-architecture-85e7fb",
+  "title": "System Architecture",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "##### System Architecture\n\n• Stored-program 存储程序：Instructions / Data 都存于 Memory；CPU 按 Fetch → Decode → Execute 执行\n\n• Von Neumann 冯·诺依曼：Instructions 与 Data 共用 Address Space / Memory Path → Bottleneck 瓶颈\n\n• Harvard 哈佛：Instruction / Data Memory 与 Paths 分离 → 可同 Cycle Fetch + Data Access\n\n• Modified Harvard 改进哈佛：程序可见统一 Memory；靠近 Core 的 Instruction / Data Caches、Paths 分离\n\n• Memory Hierarchy：Register → L1 Cache → Main Memory（通常越往右越慢）\n\n  ◦ Cache Miss → 可能增加 CPI\n\n• Von Neumann Bottleneck 冯·诺依曼瓶颈：取 Instruction 和读写 Data 争用共用的 Memory 通路，造成等待；不是 ALU 自己算得慢\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-architecture-datapath-instructions.md",
+  "noteContentSha256": "99d6a2a5b04799c6d8a6a25d2d812fdef5e2bd6988e016bd0c8a2145daf5c20a",
+  "contentSha256": "e06fc41c2801c3af3afe16c1f142ad5ba6e0c30ab762e7b17b1ef2cc044e5f30",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions&section=sec-system-architecture-85e7fb"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-bits-integers-bitwise",
+  "noteTitle": "CIS 224 Midterm · Binary, Integers & Bitwise Operations",
+  "id": "sec-unit-2-numbers-binary-ieee-754-165946",
+  "title": "UNIT 2 — Numbers · Binary · IEEE 754",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "## UNIT 2 — Numbers · Binary · IEEE 754\n\nUnit 2 已按要求移出 U2-01–06、U2-08、U2-12–16；掌握的题型仍属于考试范围\n\n\n<div class=\"nodal-cols nodal-cols-2\">\n\n<div class=\"nodal-col\">\n\nU2-07  Subtraction / Borrow  A2 / 重点  \n识别  subtract as ALU / invert B / borrow  \n步骤  A−B = A+(~B)+1；把 C0 设置为1；逐列算 C7,C8  \n例题  −14−95：11110010+ (~01011111=10100000)+1→10010011(−109)；C7=C8=1  \n注意  减法 unsigned borrow iff C8=0；仍用 C7≠C8 判 signed overflow  \n\n</div>\n\n<div class=\"nodal-col\">\n\nU2-09  Left / Right Shift  范围  \n识别  << / logical right / arithmetic right  \n步骤  左移右补0；逻辑右移左补0；算术右移左补原符号位  \n例题  10010110 logical>>2→00100101；arithmetic>>2→11100101  \n注意  固定8位时移出的 bits 丢弃  \n\n</div>\n\n</div>\n\n<div class=\"nodal-cols nodal-cols-2\">\n\n<div class=\"nodal-col\">\n\nU2-10  Test / Set / Clear / Toggle Bit  范围  \n识别  bit k / mask / set / clear / flip  \n步骤  x=原始 bits；k=要操作的位号（最右 bit0）；m=mask（掩码）=1<<k；test=(x&m)!=0；set=x|m；clear=x&~m；flip=x^m  \n例题  x=1010₂，k=1 → m=0010；test=0010（非零，bit1=1）；clear=1000；flip=1000  \n注意  m 不是新的输入值，而是选中目标 bit 的掩码；&、|、^、~ 都是 bitwise  \n\n</div>\n\n<div class=\"nodal-col\">\n\nU2-11  Extract Bit Field  范围  \n识别  extract bits[high:low] / field / shift then mask  \n步骤  bits[4:2] 指 bit4、bit3、bit2 共3位（不是4除以2）；low=2，width=4−2+1=3；(x>>low)&((1<<width)−1)  \n例题  x=10110110₂（bit7…bit0），bits[4:2]=101₂=5；(x>>2)&00000111=00000101  \n注意  先将所需字段右移到 bit0，再用 width 个连续1的 mask 保留它  \n\n</div>\n\n</div>\n\n\n\n<div class=\"nodal-cols nodal-cols-2\">\n\n<div class=\"nodal-col\">\n\nU3-16  C Masking: Bitwise vs Logical  范围  \n识别  test set clear extract / & vs &&  \n步骤  test x&(1<<k)；set x|=mask；clear x&=~mask；flip x^=mask； extract先>>再&；C 的 &&/|| 用于真假  \n例题  x=0100,y=0010→x&y=0000；x&&y=1  \n注意  ~ 按位取反，! 对整个值逻辑取反详细位移查 U2-10/11  \n\n</div>\n\n<div class=\"nodal-col\">\n\n\n</div>\n\n</div>\n\n\n\n| Q | A2 Formal | Practice |\n| --- | --- | --- |\n| Q4 | 00011010；26；C7=1,C8=1；signed No, unsigned Yes | 00101100；44；C7=0,C8=0；No/No |\n| Q5 | 01110011；115；C7=0,C8=1；Yes/Yes | 00110110；54；C7=0,C8=1；Yes/Yes |\n| Q6 | 10010011；−109；C7=1,C8=1；No borrow | 10100001；−95；C7=1,C8=1；No borrow |\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-bits-integers-bitwise.md",
+  "noteContentSha256": "029dd8db0f0a4bc317bae87be83320c9467ab50514d284d4c986487de4ce0d06",
+  "contentSha256": "e3435a298c746f315e59e010adf12d5397047f980073597716ab0e957dbd392f",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-unit-2-numbers-binary-ieee-754-165946"
+}

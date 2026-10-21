@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-midterm-ieee754-floating-point",
+  "noteTitle": "CIS 224 Midterm · IEEE 754 Floating Point & Precision",
+  "id": "sec-binary-fractions-normalization-333a01",
+  "title": "Binary Fractions / Normalization",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "##### Binary Fractions / Normalization\n\n• 小数位权：.b₁b₂…₂ = b₁×2−1 + b₂×2−2 + …；.11₂ = 0.75\n\n• Decimal Fraction → Binary：小数连续 ×2，每次取整数位 0/1；余下小数继续，直到为 0 或需要舍入\n\n• Normalize 正规化：移二进制小数点至 1.F₂ × 2e；左移 → e 增，右移 → e 减\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-midterm-ieee754-floating-point.md",
+  "noteContentSha256": "7232673d96ecaa6f5b080c04a095ed746b99598c96bd182a3fcafd9dd7149d7a",
+  "contentSha256": "25bf5c591f0574f354076eaee427ed076ebd71bba7faa9c6a55c75a8e28bf554",
+  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-binary-fractions-normalization-333a01"
+}
