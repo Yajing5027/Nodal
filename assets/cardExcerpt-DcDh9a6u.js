@@ -1,0 +1,1 @@
+import{kt as e}from"./index-CpVsLK4A.js";function t(t,n){return e(t,n,220)}export{t};
