@@ -1,10 +1,10 @@
 {
   "schemaVersion": "nodal.owner-overview.v1",
-  "capturedAt": "2026-10-28T12:01:26.610Z",
+  "capturedAt": "2026-10-28T23:23:02.860Z",
   "summary": {
     "questions": 165,
     "reviewedQuestions": 6,
-    "reviewAttempts": 35,
+    "reviewAttempts": 36,
     "studyEvents": 2
   },
   "cards": [
@@ -1005,9 +1005,9 @@
       "noteTitle": "Jerry Heuer MAA-NCS Team Contest 2019",
       "sectionTitle": "Problem 01",
       "learningState": "review",
-      "reviewCount": 6,
-      "lastReviewedAt": 1792595055339,
-      "dueAt": 1792767855339
+      "reviewCount": 7,
+      "lastReviewedAt": 1793198393247,
+      "dueAt": 1793543993247
     },
     {
       "id": "heuer-2019-p02-practice",
@@ -1826,10 +1826,22 @@
   ],
   "events": [
     {
+      "id": "event-algorithms-quiz",
+      "title": "Algorithms Quiz",
+      "kind": "weekly",
+      "date": "",
+      "weekday": 3,
+      "enabled": true,
+      "showCountdown": true,
+      "noteIds": [
+        "node-trees-heaps-q3"
+      ]
+    },
+    {
       "id": "event-heuer-2026",
       "title": "Jerry Heuer Team Contest",
       "kind": "once",
-      "date": "2026-11-15",
+      "date": "2026-11-14",
       "weekday": 0,
       "enabled": true,
       "showCountdown": true,
@@ -1850,18 +1862,6 @@
         "heuer-2025",
         "heuer-historical-problem-analysis",
         "heuer-prerequisite-gaps"
-      ]
-    },
-    {
-      "id": "event-algorithms-quiz",
-      "title": "Algorithms Quiz",
-      "kind": "weekly",
-      "date": "",
-      "weekday": 3,
-      "enabled": true,
-      "showCountdown": true,
-      "noteIds": [
-        "node-trees-heaps-q3"
       ]
     }
   ]

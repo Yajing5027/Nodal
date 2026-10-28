@@ -14,6 +14,8 @@ For example, after a quiz on trees and heaps, you might write one note, give the
 
 This site is a showcase of how I use Nodal. I publish some of my actual notes, along with a dated, read-only view of my practice progress and upcoming events, so visitors can see a real study workflow instead of an empty example. The shared view is intentional: it is my published snapshot, not a visitor account or a copy of my private backup. It updates when I publish a new snapshot; work you do in the site stays in your own browser. Nodal does not yet offer separate online accounts or live cross-device sync.
 
+The **Research** tag and its notes have a password lock. The current site serves an encrypted copy for browser-side unlocking; the short passphrase is a courtesy lock, not account security. An unlocked copy is stored in that browser. Current public files do not contain readable Research notes, but earlier public Git commits did, and this update cannot erase that history. A hosted version will need server-side access control.
+
 ## Start with the way you actually take notes
 
 A note can be a lecture summary, a worked problem, a concept, or a longer topic you are still figuring out. Write with headings, lists, tables, code, equations, and images. Add a short overview if you want a quick way back into the subject. You can read the finished note without the editing controls in the way, then switch back when you need to change it.
