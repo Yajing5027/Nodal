@@ -10,6 +10,10 @@ Start with a note. You can organize it into sections, see it in a knowledge map,
 
 For example, after a quiz on trees and heaps, you might write one note, give the Java implementation its own section, connect heap operations to related ideas on a map, and make a question about array indexes. When that question comes due, you practice retrieving the answer rather than rereading the entire note.
 
+## About this public site
+
+This site is a showcase of how I use Nodal. I publish some of my actual notes, along with a dated, read-only view of my practice progress and upcoming events, so visitors can see a real study workflow instead of an empty example. The shared view is intentional: it is my published snapshot, not a visitor account or a copy of my private backup. It updates when I publish a new snapshot; work you do in the site stays in your own browser. Nodal does not yet offer separate online accounts or live cross-device sync.
+
 ## Start with the way you actually take notes
 
 A note can be a lecture summary, a worked problem, a concept, or a longer topic you are still figuring out. Write with headings, lists, tables, code, equations, and images. Add a short overview if you want a quick way back into the subject. You can read the finished note without the editing controls in the way, then switch back when you need to change it.
@@ -56,8 +60,8 @@ If you want an external AI to draft practice questions, Nodal can provide a prom
 
 [Open Nodal](https://yajing5027.github.io/Nodal/) and begin with a note. The current website saves your workspace in the browser you use. It has no account or automatic sync, and data at the public site and a local development address do not transfer automatically. Download a **full backup** from **Data & backup** regularly, especially before clearing browser data or moving to another browser or device. Importing a backup replaces the workspace at the destination.
 
-A new workspace includes the two course quiz notes and the Jerry Heuer contest archive, with practice questions you can try. You can edit or delete that material. What you write stays in that browser unless you choose to export it. Browser storage is how this version works today; it is not a promise that Nodal will always be limited to one device.
+A new workspace starts with my published notes and questions. You can explore or edit a local copy; those edits remain in your browser unless you export them. The public progress and events are a separate read-only view of my use of Nodal. Browser storage is how this version works today; it is not a promise that Nodal will always be limited to one device.
 
-**Study progress** shows a dated, read-only snapshot of the owner’s notes, maps and per-question progress. Updating it is a deliberate publication step, separate from your own workspace. A full backup includes a public snapshot alongside private study data; exporting never resets progress.
+**Study progress** shows a dated, read-only snapshot of my published notes and per-question progress; Today and Review also show the published progress and events separately from your local work. Updating it is a deliberate publication step. A full backup includes a public snapshot alongside private study data; exporting never resets progress.
 
 Optional **Research recording** keeps a separate history of content changes, question presentations, answer reveals and completed reviews, including precise review timestamps and scheduling context. Those records are kept in full backups, including after deleting a note or restoring an older backup. Raw answers and the research journal are not part of the public study snapshot.

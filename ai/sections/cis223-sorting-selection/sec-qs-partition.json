@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-qs-partition",
+  "title": "Partition",
+  "parentId": "sec-quick-sort",
+  "hidden": false,
+  "markdown": "Rearranges subarray $a[lo \\dots hi]$ around a pivot.\n\n- **Outcome**: places pivot into its **final sorted index** $p$.\n- **Return value**: returns index $p$, not the pivot value.\n- **Subarray invariant**:\n  - Left side ($a[lo \\dots p-1]$): all values $\\le$ pivot.\n  - Right side ($a[p+1 \\dots hi]$): all values $\\ge$ pivot.\n- Partition performs a single reorganization pass; it does not sort the subarrays.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "8c62fe82c8162439e7bdf9aecabf8e6d49d36cd42b04b23cac74354f9464bc3a",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-qs-partition"
+}

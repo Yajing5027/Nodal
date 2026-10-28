@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-qs-pivot-selection",
+  "title": "Pivot Selection",
+  "parentId": "sec-quick-sort",
+  "hidden": false,
+  "markdown": "- **First**: $lo$\n- **Last**: $hi$\n- **Halfway**: $lo + (hi - lo) / 2$\n\n**Median-of-three**\n- Inspect values at $a[lo]$, $a[mid]$, and $a[hi]$, where $mid = lo + (hi - lo) / 2$.\n- Select the value that is neither the strict minimum nor the strict maximum of the three.\n- With duplicates, implementation allows a non-unique median index.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "cc2be90ceddd0bf1161017d061fb811580131a488de92354c59cdffd52660046",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-qs-pivot-selection"
+}

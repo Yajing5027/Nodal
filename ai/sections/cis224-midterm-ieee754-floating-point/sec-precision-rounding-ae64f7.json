@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-ieee754-floating-point",
-  "noteTitle": "CIS 224 Midterm · IEEE 754 Floating Point & Precision",
+  "noteTitle": "IEEE 754 Floating Point & Precision",
   "id": "sec-precision-rounding-ae64f7",
   "title": "Precision / Rounding 精度",
   "parentId": null,
@@ -11,6 +11,6 @@
   "sourcePath": "content/notes/cis224-midterm-ieee754-floating-point.md",
   "noteContentSha256": "7232673d96ecaa6f5b080c04a095ed746b99598c96bd182a3fcafd9dd7149d7a",
   "contentSha256": "46a9257fecf518060a1c8eb1e3309895b4eb9f4aa4c61c44194ee1c210139a8e",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-precision-rounding-ae64f7"
 }

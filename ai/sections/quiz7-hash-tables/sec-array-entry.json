@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-array-entry",
+  "title": "Array & Entry",
+  "parentId": "sec-hash-model",
+  "hidden": false,
+  "markdown": "### Array & Entry\n\n**Array**：T[0..m−1]；m = Capacity（Bucket / Slot 数），n = 当前有效元素数\n\n- **Key-only**：保存 k；**Dictionary Entry**：保存 (k,v)，如 (13,Alice)（Key + Value）\n- **Chaining**：T[j] → Head Reference → Linked List Nodes（Key / Entry + next）\n- **Open Addressing**：T[j] → Key / Entry（直接存 Array Slot）\n- **Dictionary**：同一 Key 对应一个当前 Value；不同 Key 可对应同一 Value\n\n*Stored Data（Key-only / Key–Value）≠ Collision Resolution（Chaining / Open Addressing）；Linked List ≠ Array。参见 [ADT vs Implementation](nodal://note/data-structures-adt/sec-adt-examples)。*",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "538c1182f9ab79e336c1c90ef0cd9fcb55d7a350ea11e7ff334c14f90f8be3e9",
+  "contentSha256": "f770add513c6d3078fd9ddfd4c8a6361bb7624b790cd3ca887740cbc0cf0a286",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-array-entry"
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-logic-circuits-alu",
-  "noteTitle": "CIS 224 Midterm · Logic Gates, Adders & ALU",
+  "noteTitle": "Logic Gates, Adders & ALU",
   "id": "sec-logic-gates-recognition-523fbc",
   "title": "Logic Gates — Recognition 逻辑门识别",
   "parentId": null,
@@ -9,8 +9,8 @@
   "markdown": "### Logic Gates — Recognition 逻辑门识别\n\n• AND：Both 1；OR：At least one 1\n\n  ◦ XOR：Different inputs；NOT：Invert\n\n• NAND = NOT AND；NOR = NOT OR；Output Bubble 输出小圆圈= 取反\n\n• SOP (Sum of Products)：OUT=1 的行（输入 0 取反）→ 行内 AND、行间 OR；OUT 列全 0 → 0、全 1 → 1；仅要求时 Simplify\n\n  ◦ NAND-only 电路化简：另一个题型\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-logic-circuits-alu.md",
-  "noteContentSha256": "74285fee47131b7cf76180995eb731420463cafa85cf3c448ddc3d890c047dff",
+  "noteContentSha256": "7a08b60dc30c0986ac38987253cf29abbc414381d122a33ef5ab6e354a24fbbe",
   "contentSha256": "4f9f18a323938a742a021c60244aafa4b33dc6b393485aee6cf9f4ac5c5fdc41",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu&section=sec-logic-gates-recognition-523fbc"
 }

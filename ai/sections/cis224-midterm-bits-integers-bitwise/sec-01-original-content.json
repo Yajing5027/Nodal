@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-bits-integers-bitwise",
-  "noteTitle": "CIS 224 Midterm · Binary, Integers & Bitwise Operations",
+  "noteTitle": "Binary, Integers & Bitwise Operations",
   "id": "sec-01-original-content",
   "title": "sec-01-original-content",
   "parentId": null,
@@ -9,8 +9,8 @@
   "markdown": "",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-bits-integers-bitwise.md",
-  "noteContentSha256": "029dd8db0f0a4bc317bae87be83320c9467ab50514d284d4c986487de4ce0d06",
+  "noteContentSha256": "542a64d8c97f1ab8ef7d1f9d7ae854de404b3869a25831c5872d25717e236946",
   "contentSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-01-original-content"
 }

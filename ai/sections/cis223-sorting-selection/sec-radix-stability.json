@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-radix-stability",
+  "title": "Stability",
+  "parentId": "sec-radix-sort",
+  "hidden": false,
+  "markdown": "- **Definition**: elements with equal keys preserve their prior relative order.\n- **Why Radix requires stability**: earlier passes establish correct lower-digit order. A later pass must not disrupt this relative order when current digits match.\n- **Reusing buckets**: each decimal pass partitions into digits $0 \\dots 9$, reusing the same 10 counters / buckets.\n- **Complexity**: $\\Theta(d(n + k))$ where $d = \\text{digits}$, $k = \\text{radix}$ (10 for decimal). For fixed $d$, time is $\\Theta(n)$.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "b9f182d911a5d12c4e1ef996dee84eb4d2f02f6e7288166baf6a6f0a3c97f296",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-radix-stability"
+}

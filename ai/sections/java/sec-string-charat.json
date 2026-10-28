@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "java",
+  "noteTitle": "Java",
+  "id": "sec-string-charat",
+  "title": "String → char：`charAt(i)`",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### String → char：`charAt(i)`\n\n- `value.charAt(i)`：读取 String 中 Index 为 `i` 的单个字符，返回类型是 `char`\n- **Index 从 0 开始**；`charAt(0)` 是第一个字符，`charAt(1)` 是第二个字符\n- `charAt()` 是读取字符，**不会自动把数字字符转换为整数**\n\n```java\nString value = \"508\";\n\nchar a = value.charAt(0); // '5'（char）\nchar b = value.charAt(1); // '0'（char）\nchar c = value.charAt(2); // '8'（char）\n```",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/java.md",
+  "noteContentSha256": "1a308334def78597b3a895731e53bddd6070e0dc99e9fa52f35d0ed5762ad4e6",
+  "contentSha256": "e258abe40fbf70e862a8fc4489d409efa3997498a422aca7bc1cff6a449d10b8",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=java&section=sec-string-charat"
+}

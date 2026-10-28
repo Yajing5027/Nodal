@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-03-simulator",
+  "noteTitle": "模拟器在做什么：一次检索怎样改变状态",
+  "id": "sec-research-03-mechanism",
+  "title": "关键机制：你需要能够解释什么？",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 关键机制：你需要能够解释什么？\n\n单次检索事件遵循：旧TRUE状态→计算本次成功概率→随机或测试指定结果r→ESTIMATE从独立旧状态和可见r提议更新→检查后共同提交。若失败，应避免提交半条事件；外层随机数准备与内部checkpoint的完整原子性仍需要迁移后runner集成验证。\n\n策略只能看到日期、当前可用项、自己的历史和估计概率、今天宣布的容量等；不能看到TRUE状态、隐藏随机数、未来黑屏日或特权审计轨迹。Day28/42的只读终点是研究候选，不产生额外检索。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-03-simulator.md",
+  "noteContentSha256": "6bf2c3c21a54a6fbffc50ef144b5f33119d0a1706288866a47be42409b9b876c",
+  "contentSha256": "583966e5a6c179b73a0f1fff2acd4ae9fa7402526dcccf1f6078f64d2120e091",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-03-simulator&section=sec-research-03-mechanism"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-heap-upheap-downheap",
+  "title": "Upheap & Downheap",
+  "parentId": "sec-heap-foundations",
+  "hidden": false,
+  "markdown": "Restoration procedures for disturbed heap property.\n\n- **Upheap**:\n  - Insert new key at the next free slot ($i = n$).\n  - Compare with parent; swap upward until heap invariant holds or root is reached.\n  - Used primarily for `add` ($O(\\log n)$ path).\n- **Downheap**:\n  - Root disturbed or replaced by last element.\n  - Compare with children; swap with the appropriate child (smaller child for min-heap, larger child for max-heap).\n  - Used for `removeRoot` and Heap Sort extraction ($O(\\log n)$ path).",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "a44263c20818c5dc4ac65c5942e2c1a5f99390c93c6a0b03787581041cdfe6ca",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-upheap-downheap"
+}

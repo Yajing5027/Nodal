@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "java",
+  "noteTitle": "Java",
+  "id": "sec-digit-char-to-int",
+  "title": "数字字符 → int：减去 `'0'`",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### 数字字符 → int：减去 `'0'`\n\n- 如果读取到的字符属于 `'0'`–`'9'`，使用 `value.charAt(i) - '0'` 得到对应的整数 **0–9**\n- **`'0'` 必须是单引号**：它是 `char`，不是整数 `0`，也不是字符串 `\"0\"`\n- 原理：数字字符的编码连续；`'4'` 的编码值为 52，`'0'` 为 48，因此 `'4' - '0' == 4`\n- 这里是减法，不是字符串拼接；不会额外带上一个 0\n\n```java\nString value = \"508\";\n\nint first = value.charAt(0) - '0';  // 5\nint middle = value.charAt(1) - '0'; // 0\nint last = value.charAt(2) - '0';   // 8\n```\n\n| 写法 | 结果或类型 |\n| --- | --- |\n| `'4'` | `char`，字符 4 |\n| `\"4\"` | `String`，字符串 4 |\n| `4` | `int`，整数 4 |\n| `'4' - '0'` | `int`，结果 4 |\n| `'4' - 0` | `int`，结果 52，**不是** 4 |\n| `'4' * 1` | `int`，结果 52，**不是** 4 |\n\n**适用前提：** 必须先确认字符是十进制数字 `'0'`–`'9'`；符号 `'-'` 或其他字符不能直接当作数字处理\n\n**课程关联：** CIS 223 Homework 6 的 `BigInt(String value)` 要求检查并读取字符串中的数字字符，再将每一位保存为链表 Node 的 `digit`（0–9）。上面的 `charAt()` 代码是 Java 语法示例，并非老师 Starter Code 中已经实现的内容",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/java.md",
+  "noteContentSha256": "1a308334def78597b3a895731e53bddd6070e0dc99e9fa52f35d0ed5762ad4e6",
+  "contentSha256": "2bdf10945693055465ecf7f8c81bc51a40f1b12f35a03ef853fe95478c513dcb",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=java&section=sec-digit-char-to-int"
+}

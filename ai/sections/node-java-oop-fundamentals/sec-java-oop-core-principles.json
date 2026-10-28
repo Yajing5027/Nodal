@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-java-oop-fundamentals",
+  "noteTitle": "Java & Object-Oriented Programming",
+  "id": "sec-java-oop-core-principles",
+  "title": "面向对象四大基本原则 (OOP Four Principles)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 面向对象四大基本原则 (OOP Four Principles)\n\n- **封装 (Encapsulation)**：数据属性私有化（`private`），通过公共接口（`getter/setter`）受控读写与状态校验。\n- **继承 (Inheritance)**：子类（`extends`）复用父类结构与逻辑，经由 `super` 调用父类构造与方法，消除冗余代码。\n- **多态 (Polymorphism)**：父类引用指向子类实例（`Parent p = new Child()`），运行期根据实际类型动态分派方法（`@Override`）。\n- **抽象 (Abstraction)**：提取通用业务协议，忽略非核心实现细节（`interface` 与 `abstract class`）。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-java-oop-fundamentals.md",
+  "noteContentSha256": "157e6d2a1029fd8a318f3703c2c7592dcbd6a278b6451e7a91cc9c2a96160212",
+  "contentSha256": "b0ef73dd334f181dae063207fa89c1a3d10d03a3f5f9bf2f2d30d68489b21fcf",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals&section=sec-java-oop-core-principles"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-physics-mechanics",
+  "noteTitle": "University Physics · Mechanics & Rotational Dynamics",
+  "id": "sec-phys-momentum-impulse-collisions",
+  "title": "动量冲量与碰撞模型 (Momentum, Impulse & Collisions)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 动量冲量与碰撞模型 (Momentum, Impulse & Collisions)\n\n- **动量与冲量定理**：\n\n$$\n\\vec{p} = m\\vec{v} \\ (\\text{矢量}), \\qquad \\vec{J} = \\int \\vec{F}_{net}\\,dt = \\Delta\\vec{p}\n$$\n\n  - 一维反向跳变：初速 $v_i = +1$, 末速 $v_f = -3 \\implies |\\Delta p| = m|(-3) - (+1)| = 4m$。\n- **碰撞模型与守恒铁律**：\n  - **动量永远守恒**（系统外力合力为 0 时 $\\sum \\vec{p} = \\text{const}$）。\n  - **完全弹性碰撞 (Elastic)**：动量守恒 + 动能/机械能守恒。若 $m_1 = m_2$，碰撞后**直接交换速度**（$v_1' = v_2, v_2' = v_1$）。\n  - **完全非弹性碰撞 (Completely Inelastic)**：碰撞后粘连共速，动能损失最大：\n\n$$\nv' = \\frac{m_1 v_1 + m_2 v_2}{m_1 + m_2}\n$$\n\n  - **弹簧缓冲碰撞**：压缩至最近共速瞬间相当于完全非弹性；回弹完全后全程机械能守恒。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-physics-mechanics.md",
+  "noteContentSha256": "da1823ca0edada4bd2b2e953dc2f1af8d3de682eb9e9580120c8d38272a44619",
+  "contentSha256": "aad58dced7dc6248c93a2998931ddcae8c73eab8022ecec3e8b2b6c2a37d2527",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-physics-mechanics&section=sec-phys-momentum-impulse-collisions"
+}

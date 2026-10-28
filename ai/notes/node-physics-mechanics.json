@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "node-physics-mechanics",
+  "title": "University Physics · Mechanics & Rotational Dynamics",
+  "markdown": "<!-- nodal-panel:sec-phys-kinematics-uncertainty:visible -->\n## 运动学状态与不确定度 (Kinematics & Uncertainty)\n\n- **有效数字规则 (Significant Figures)**：\n  - 前导零无效：$0.0030$ 为 2 位有效数字（3 与末尾 0）。\n  - 乘除运算：结果精度取决于有效数字**最少**的操作数（如 $2.50 / 5. = 0.5$）。\n  - 乘积相对不确定度：若 $C = AB$，则 $\\frac{\\delta C}{C} = \\frac{\\delta A}{A} + \\frac{\\delta B}{B}$。\n- **速度与加速度核心辨析**：\n\n$$\nv(t) = \\frac{dr}{dt}, \\qquad a(t) = \\frac{dv}{dt}\n$$\n\n  - **速度为 0 不代表加速度为 0**（$a$ 为速度变化率，非瞬时速度值）：\n    - 竖直上抛最高点瞬间：$v = 0$，但受重力加速度 $a = g \\neq 0$。\n    - 减速制动停止瞬间：末角速度 $\\omega = 0$，制动加速度为过程量。\n\n<!-- nodal-panel:sec-phys-momentum-impulse-collisions:visible -->\n## 动量冲量与碰撞模型 (Momentum, Impulse & Collisions)\n\n- **动量与冲量定理**：\n\n$$\n\\vec{p} = m\\vec{v} \\ (\\text{矢量}), \\qquad \\vec{J} = \\int \\vec{F}_{net}\\,dt = \\Delta\\vec{p}\n$$\n\n  - 一维反向跳变：初速 $v_i = +1$, 末速 $v_f = -3 \\implies |\\Delta p| = m|(-3) - (+1)| = 4m$。\n- **碰撞模型与守恒铁律**：\n  - **动量永远守恒**（系统外力合力为 0 时 $\\sum \\vec{p} = \\text{const}$）。\n  - **完全弹性碰撞 (Elastic)**：动量守恒 + 动能/机械能守恒。若 $m_1 = m_2$，碰撞后**直接交换速度**（$v_1' = v_2, v_2' = v_1$）。\n  - **完全非弹性碰撞 (Completely Inelastic)**：碰撞后粘连共速，动能损失最大：\n\n$$\nv' = \\frac{m_1 v_1 + m_2 v_2}{m_1 + m_2}\n$$\n\n  - **弹簧缓冲碰撞**：压缩至最近共速瞬间相当于完全非弹性；回弹完全后全程机械能守恒。\n\n<!-- nodal-panel:sec-phys-rotational-dynamics:visible -->\n## 转动惯量与角动量守恒 (Moment of Inertia & Angular Momentum)\n\n- **转动惯量 (Moment of Inertia)**：$I = \\sum m_i r_i^2 = \\int r^2 dm$。\n  - 决定因素：总质量 $M$、相对转轴质量分布形状、转轴位置。\n  - 质量离转轴越远，转动惯量越大：\n    - 空心薄球壳 ($I = \\frac{2}{3}MR^2$) > 实心球 ($I = \\frac{2}{5}MR^2$)\n    - 细杆绕端点轴 ($I = \\frac{1}{3}ML^2$) > 细杆绕中心轴 ($I = \\frac{1}{12}ML^2$)\n- **力矩与转动定律**：$\\vec{\\tau} = \\vec{r} \\times \\vec{F}$，$\\tau_{net} = I\\alpha$。\n- **角动量守恒定律 (Angular Momentum)**：$\\vec{L} = I\\vec{\\omega}$，外力矩合力为 0 时 $\\vec{L} = \\text{const}$。\n\n$$\n\\text{子弹击入转盘}: \\quad I_0\\omega_0 + m v r = (I_0 + m r^2)\\omega\n$$\n\n$$\n\\text{人向转盘中心移动}: \\quad r \\downarrow \\implies I_{tot} \\downarrow \\implies \\omega \\uparrow\n$$\n\n<!-- nodal-panel:sec-phys-energy-dimensions:visible -->\n## 功、能量与量纲矩阵 (Work, Energy & Dimensions)\n\n- **动能定理与势能**：$W_{net} = \\Delta K$。势能由特定保守力决定：重力势能 $U_g = mgh$，弹力势能 $U_e = \\frac{1}{2}kx^2$。\n- **标准 SI 基本单位与量纲对应表**：\n\n| 物理量 (Quantity) | 符号 | SI 导出单位 | 基本量纲 |\n| :--- | :---: | :--- | :--- |\n| 力 (Force) | $F$ | $\\text{N}$ | $\\text{kg}\\cdot\\text{m}/\\text{s}^2$ |\n| 功 / 动能 / 势能 | $W, K, U$ | $\\text{J} = \\text{N}\\cdot\\text{m}$ | $\\text{kg}\\cdot\\text{m}^2/\\text{s}^2$ |\n| 功率 (Power) | $P$ | $\\text{W} = \\text{J}/\\text{s}$ | $\\text{kg}\\cdot\\text{m}^2/\\text{s}^3$ |\n| 动量 / 冲量 | $p, J$ | $\\text{kg}\\cdot\\text{m}/\\text{s}, \\text{N}\\cdot\\text{s}$ | $\\text{kg}\\cdot\\text{m}/\\text{s}$ |\n| 力矩 (Torque) | $\\tau$ | $\\text{N}\\cdot\\text{m}$ | 空间力偶（非焦耳） |\n| 转动惯量 (Inertia) | $I$ | $\\text{kg}\\cdot\\text{m}^2$ | 质量二阶矩 |\n| 角动量 (Angular Mom) | $L$ | $\\text{kg}\\cdot\\text{m}^2/\\text{s}$ | 动量矩 |\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-phys-kinematics-uncertainty",
+      "title": "运动学状态与不确定度 (Kinematics & Uncertainty)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-physics-mechanics&section=sec-phys-kinematics-uncertainty",
+      "resource": "ai/sections/node-physics-mechanics/sec-phys-kinematics-uncertainty.json"
+    },
+    {
+      "id": "sec-phys-momentum-impulse-collisions",
+      "title": "动量冲量与碰撞模型 (Momentum, Impulse & Collisions)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-physics-mechanics&section=sec-phys-momentum-impulse-collisions",
+      "resource": "ai/sections/node-physics-mechanics/sec-phys-momentum-impulse-collisions.json"
+    },
+    {
+      "id": "sec-phys-rotational-dynamics",
+      "title": "转动惯量与角动量守恒 (Moment of Inertia & Angular Momentum)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-physics-mechanics&section=sec-phys-rotational-dynamics",
+      "resource": "ai/sections/node-physics-mechanics/sec-phys-rotational-dynamics.json"
+    },
+    {
+      "id": "sec-phys-energy-dimensions",
+      "title": "功、能量与量纲矩阵 (Work, Energy & Dimensions)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-physics-mechanics&section=sec-phys-energy-dimensions",
+      "resource": "ai/sections/node-physics-mechanics/sec-phys-energy-dimensions.json"
+    }
+  ],
+  "sourcePath": "content/notes/node-physics-mechanics.md",
+  "contentSha256": "da1823ca0edada4bd2b2e953dc2f1af8d3de682eb9e9580120c8d38272a44619",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-physics-mechanics"
+}

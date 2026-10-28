@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-07-prior-work",
+  "noteTitle": "为什么不能随便说我们的研究很新？",
+  "id": "sec-research-07-next",
+  "title": "下一轮补充计划",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 下一轮补充计划\n\n持续扩充图前动机、手算练习、逐图解释、强反例、原论文具体页码与源码行段；每次更新同时修改图源码、相关Section、审稿与图谱索引。禁止将条件性方案自动提升为正式研究要求。\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-07-prior-work.md",
+  "noteContentSha256": "9397a94d0f38839a15b7bf64bbd89e4a49e1649ce120f0653703f935ff5e2ec9",
+  "contentSha256": "a83c5448e235cd7c512adf499462303ee7d5bb3085df346a7174a69ab6b511f9",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-07-prior-work&section=sec-research-07-next"
+}

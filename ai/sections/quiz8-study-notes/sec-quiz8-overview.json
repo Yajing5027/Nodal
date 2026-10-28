@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz8-study-notes",
+  "noteTitle": "Quiz 8 · Study Notes",
+  "id": "sec-quiz8-overview",
+  "title": "Quiz 8 · 记录入口",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Quiz 8 · 记录入口\n\n- **课程**：CIS 223 Algorithms\n- **日期**：2026-11-04（以 2026-10-14 版 Syllabus 为准）\n- **状态**：笔记已建立；Quiz 8 的实际题面、老师确认的考查范围和答案尚待提供\n- **课程日程提示**：同日课表安排 Lecture 19 · Shortest Paths；但当日 Lecture 的主题不自动等于 Quiz 8 的考查范围\n- **整理原则**：后续按 Q6 笔记模式，以独立 Section 按知识点归档；准确区分原题、选项、实际提交、教师答案、推导与易错点\n- **范围边界**：之前讨论的 BST / AVL、Traversal 与插入顺序暂不自动归到 Quiz 8；若实际 Q8 材料涉及，再按来源补入\n\n**待整理**：收到 Q8 原题、截图、教师讲义或课堂记录后，在本 Note 下逐节追加内容；不将未核验内容冒充老师原话或正式答案\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz8-study-notes.md",
+  "noteContentSha256": "2c6cb861359f65a00ca7a3328ce3bbf77dbf2ca3470164e46beb3386a14f1433",
+  "contentSha256": "662b94234bc8ca485167411d33f9db50210a1a90264d56e3d39a9cfc1a914721",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz8-study-notes&section=sec-quiz8-overview"
+}

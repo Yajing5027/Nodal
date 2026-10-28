@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-heap-array-indexing",
+  "title": "Array Representation & Indexing",
+  "parentId": "sec-heap-foundations",
+  "hidden": false,
+  "markdown": "Stored in a 0-based sequential array without explicit node pointers.\n\n- $\\text{parent}(i) = \\lfloor (i - 1) / 2 \\rfloor$\n- $\\text{leftChild}(i) = 2i + 1$\n- $\\text{rightChild}(i) = 2i + 2$\n\n**Properties**\n- Node exists if and only if $\\text{index} < n$ (heap size).\n- Tree height grows logarithmically: $h = \\lfloor \\log_2 n \\rfloor$.\n- Root-to-leaf path length is $O(\\log n)$.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "7f081fff2d858d03324c6703aba6f19479e4cbbd31d38e06b85bf22d0f450f9a",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-array-indexing"
+}

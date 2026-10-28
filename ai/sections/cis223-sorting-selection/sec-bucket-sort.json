@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-bucket-sort",
+  "title": "Bucket Sort",
+  "parentId": "sec-non-comparison-sort",
+  "hidden": false,
+  "markdown": "Distribute elements across equal-width value intervals (buckets), sort within each bucket, and concatenate.\n\n![Bucket Sort: Distribute into equal-width buckets, sort, and concatenate](study/assets/asset-bucket-sort-%E6%A1%B6%E6%8E%92%E5%BA%8F%E6%B5%81%E7%A8%8B%E4%BF%A1%E6%81%AF%E5%9B%BE.png)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "4402e59ddc349fd2568fa565250be1d88f074534e1f1a3158169794ffec3fab2",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-bucket-sort"
+}

@@ -1,0 +1,1 @@
+import{kt as e}from"./index-BvK7RZlu.js";function t(t,n){return e(t,n,220)}export{t};

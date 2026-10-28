@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-discrete-logic-set-theory",
+  "noteTitle": "Discrete Mathematics · Mathematical Logic & Set Theory",
+  "id": "sec-logic-argument-inference-rules",
+  "title": "论证有效性与推理规则 (Inference Rules & Validity)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 论证有效性与推理规则 (Inference Rules & Validity)\n\n- **有效论证 (Valid)**：前提全部为真时，结论必然为真（无反例）。\n\n$$\n\\text{Modus Ponens (肯定前件)}: \\quad P \\to Q, \\quad P \\quad \\therefore Q\n$$\n\n$$\n\\text{Modus Tollens (否定后件)}: \\quad P \\to Q, \\quad \\sim Q \\quad \\therefore \\sim P\n$$\n\n$$\n\\text{Disjunctive Syllogism (析取三段论)}: \\quad P \\lor Q, \\quad \\sim P \\quad \\therefore Q\n$$\n\n- **经典逻辑谬误**：\n  - 肯定后件 (Affirming Consequent): $P \\to Q, Q \\therefore P$（无效 ❌）\n  - 否定前件 (Denying Antecedent): $P \\to Q, \\sim P \\therefore \\sim Q$（无效 ❌）\n- **谓词推理四律**：UI (全称特例化), UG (全称概括), EI (存在特例化), EG (存在概括)。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-discrete-logic-set-theory.md",
+  "noteContentSha256": "22517d5be93f394764ca7a606caa6f55bfe809a8167fa2142e2fb575e13c64d3",
+  "contentSha256": "179b4dfebd7a4eb40808b8119b7bc3c7e983706056039525cd9173e6e67cbf2e",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-logic-argument-inference-rules"
+}

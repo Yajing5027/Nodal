@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-frontend-web-fundamentals",
+  "noteTitle": "Front End Web Fundamentals",
+  "id": "sec-fe-ui-component-patterns",
+  "title": "交互组件状态机模型 (UI Interactive Patterns)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 交互组件状态机模型 (UI Interactive Patterns)\n\n- **密码明暗显隐机制**：切换输入框 `input.type` 属性为 `text` 或 `password`。\n- **全选框与子列表双向同步不变量**：\n  - 主选框点击：`items.forEach(cb => cb.checked = master.checked);`\n  - 子选框点击联动：\n    - `master.checked = items.every(cb => cb.checked);`\n    - `master.indeterminate = !master.checked && items.some(cb => cb.checked);`\n- **轮播图状态循环机 (Carousel FSM)**：自动定时触发 (`setInterval`)，悬停抑制 (`mouseenter` 暂停 / `mouseleave` 重启)，环形越界修正 `idx = (idx ± 1 + N) % N`。\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-frontend-web-fundamentals.md",
+  "noteContentSha256": "c734969e8b9e0e9679655e53dcd0db37c416d2aa1f88c98c398faed412e89640",
+  "contentSha256": "ba1746b86252a65aef19b2004c97f86abcbeb4a661ad3f5302457628108fdf80",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-frontend-web-fundamentals&section=sec-fe-ui-component-patterns"
+}

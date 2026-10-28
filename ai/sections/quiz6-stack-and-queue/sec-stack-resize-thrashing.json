@@ -9,8 +9,8 @@
   "markdown": "### Resize Thrashing\n\n**易错点**：Grow / Shrink 触发阈值间隔太小 → 少量 Push / Pop 就频繁 Resize，每次 Copy Θ(n) 个元素 → **Amortized Θ(n)，不再是 O(1)** → [练习 · Resize Thrashing](https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&mode=practice&section=sec-stack-resize-thrashing&question=cis223-q6-stack-resize-thrashing-v1)",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz6-stack-and-queue.md",
-  "noteContentSha256": "57c83ccd8e844d0e1b658c9cf379fc7f88675bb5bc9d2f6d363550561eef4387",
+  "noteContentSha256": "11cbe60f5cd18df03f5db3d177e2a958124855680eb07c8afb398478321166b1",
   "contentSha256": "565f0fe27b9fe78a295a7d1f77d8919410faae39feb5b26797b5215cfb772eb0",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-resize-thrashing"
 }

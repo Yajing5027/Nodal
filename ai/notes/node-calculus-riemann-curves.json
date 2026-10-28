@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "node-calculus-riemann-curves",
+  "title": "Calculus · Riemann Sums & Curves",
+  "markdown": "<!-- nodal-panel:sec-calc-riemann-endpoints-bounds:visible -->\n## 黎曼和端点性质与估算误差 (Riemann Sums & Error Bounds)\n\n- **端点采样本质与几何覆盖**：\n  - 左端点 ($L_n$)：取小区间起始点 $x_{i-1}$，矩形左上角钉在函数曲线上。\n  - 右端点 ($R_n$)：取小区间终点 $x_i$，矩形右上角钉在函数曲线上。\n- **函数单调性决定误差方向（定理）**：\n\n| 函数性质 | 左端点和 ($L_n$) | 右端点和 ($R_n$) | 原因机制 |\n| :--- | :---: | :---: | :--- |\n| **严格单调递减 ($f' < 0$)** | **高估 (Overestimate)** | **低估 (Underestimate)** | 左侧最高冒尖露在曲线外；右侧最低填不满积分面积 |\n| **严格单调递增 ($f' > 0$)** | **低估 (Underestimate)** | **高估 (Overestimate)** | 左侧最低填不满面积；右侧最高超出曲线 |\n\n<!-- nodal-panel:sec-calc-polar-series-dynamics:visible -->\n## 极坐标交点与级数动态 (Polar Origin & Geometric Series)\n\n- **极坐标交点陷阱 (Origin Intersection Pitfall)**：\n  - 极点几何位置唯一（$r=0$），但可对应任意极角 $\\theta$。\n  - 若两曲线 $r_1(\\theta)$ 与 $r_2(\\theta)$ 分别穿过原点，其到达极点的极角可能完全不同。联立代数方程 $r_1(\\theta) = r_2(\\theta)$ 会遗漏原点交点，**必须单独检查 $r=0$**。\n- **等比级数动态特性矩阵 ($S_n = \\sum_{k=0}^n a r^k$)**：\n\n$$\n|r| < 1 \\implies S = \\frac{a}{1-r}\n$$\n\n  - 符号效应：$r > 0 \\implies S_n$ 单调收敛；$r < 0 \\implies S_n$ 绕极限交错震荡。\n  - 敛速曲率：$|r| \\to 0$ 极快收敛早变平；$|r| \\to 1$ 极慢收敛。\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-calc-riemann-endpoints-bounds",
+      "title": "黎曼和端点性质与估算误差 (Riemann Sums & Error Bounds)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-calculus-riemann-curves&section=sec-calc-riemann-endpoints-bounds",
+      "resource": "ai/sections/node-calculus-riemann-curves/sec-calc-riemann-endpoints-bounds.json"
+    },
+    {
+      "id": "sec-calc-polar-series-dynamics",
+      "title": "极坐标交点与级数动态 (Polar Origin & Geometric Series)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-calculus-riemann-curves&section=sec-calc-polar-series-dynamics",
+      "resource": "ai/sections/node-calculus-riemann-curves/sec-calc-polar-series-dynamics.json"
+    }
+  ],
+  "sourcePath": "content/notes/node-calculus-riemann-curves.md",
+  "contentSha256": "7e5fd198a9c88e44ded353030828610eee201f213a7b0009c20a08115337f6a8",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-calculus-riemann-curves"
+}

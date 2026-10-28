@@ -9,8 +9,8 @@
   "markdown": "### Output Order\n\n**易错点**：先完成全部 Push，再连续 Pop，输出顺序只能是入栈顺序的逆序；不能跳过栈顶 → [练习 · 不可能的输出顺序](https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&mode=practice&section=sec-stack-quiz&question=cis223-q6-stack-lifo-order-v1)",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz6-stack-and-queue.md",
-  "noteContentSha256": "57c83ccd8e844d0e1b658c9cf379fc7f88675bb5bc9d2f6d363550561eef4387",
+  "noteContentSha256": "11cbe60f5cd18df03f5db3d177e2a958124855680eb07c8afb398478321166b1",
   "contentSha256": "63034c7d53d169a9020bfa6a59a53c87bb11ae0182f0d2362e30b005bc3c0d81",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-quiz"
 }

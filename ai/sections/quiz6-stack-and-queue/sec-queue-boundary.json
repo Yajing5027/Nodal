@@ -9,8 +9,8 @@
   "markdown": "### Reserved Slot / Capacity：Legacy Section\n\nThe reserved empty slot and capacity of a Circular Array Queue are now explained in [Circular Array Queue](nodal://note/quiz6-stack-and-queue/sec-queue-circular). This Section ID is retained so existing links and associated questions still resolve.",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz6-stack-and-queue.md",
-  "noteContentSha256": "57c83ccd8e844d0e1b658c9cf379fc7f88675bb5bc9d2f6d363550561eef4387",
+  "noteContentSha256": "11cbe60f5cd18df03f5db3d177e2a958124855680eb07c8afb398478321166b1",
   "contentSha256": "8d74b00008ec1a875070d3ded973a01c04eeab555e6adac03504d050c701aa06",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-queue-boundary"
 }

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-frontend-web-fundamentals",
+  "noteTitle": "Front End Web Fundamentals",
+  "id": "sec-fe-js-operators-evaluation",
+  "title": "JavaScript 表达式求值 (JS Expression Evaluation)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## JavaScript 表达式求值 (JS Expression Evaluation)\n\n- **前置自增 vs 后置自增**：\n  - 后置 `i++`：先返回当前变量值用于计算，随后自身递增 1。\n  - 前置 `++i`：变量自身先递增 1，随后返回最新值用于计算。\n- **经典复合表达式拆解**：\n\n```javascript\nlet i = 1;\nconsole.log(i++ + ++i + i); // 结果为 7\n```\n\n  - 执行步序：\n    1. `i++`：取值 $1$（求值后 $i \\to 2$）；\n    2. `++i`：先增至 $3$，取值 $3$（此时 $i=3$）；\n    3. `i`：直接取最新值 $3$；\n    4. 求和：$1 + 3 + 3 = 7$。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-frontend-web-fundamentals.md",
+  "noteContentSha256": "c734969e8b9e0e9679655e53dcd0db37c416d2aa1f88c98c398faed412e89640",
+  "contentSha256": "c1d0c4f44837e08b7c62c24a9ea7cde2e2f0c5ec3c31476a4a692d39b1744f8f",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-frontend-web-fundamentals&section=sec-fe-js-operators-evaluation"
+}

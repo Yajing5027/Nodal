@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "cis223-sorting-selection",
+  "title": "CIS 223 · Sorting & Selection",
+  "markdown": "<!-- nodal-panel:sec-overview:visible:title=Overview -->\n\n**Sorting Algorithms**\n- **Comparison Sort**: Insertion, Merge, Heap, Quick\n- **Non-comparison Sort**: Counting, Radix, Bucket\n- **Selection**: Quickselect\n\n**Core Distinctions**\n- **Comparison Sort**: relative order comes strictly from comparing elements.\n- **Non-comparison Sort**: uses structure of keys, digits, or value ranges.\n- **Selection**: finds a specific rank without fully sorting.\n\n**Lower Bound**\n- Any comparison-based sorting algorithm has a lower bound of $\\Omega(n \\log n)$.\n\n<!-- nodal-panel:sec-comparison-sort:visible:title=Comparison%20Sort -->\n\nObtains relative order strictly via pairwise element comparisons.\n\n- Covered algorithms: Insertion Sort, Merge Sort, Heap Sort, Quick Sort.\n- Theoretical limit: $\\Omega(n \\log n)$ comparisons in the worst case.\n\n<!-- nodal-panel:sec-insertion-sort:visible:parent=sec-comparison-sort:title=Insertion%20Sort -->\n\nGrow a sorted prefix, one key at a time.\n\n![Insertion Sort: Grow a sorted prefix, one key at a time](study/assets/asset-insertion-sort-%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F%EF%BC%9A%E9%80%90%E6%AD%A5%E6%9E%84%E5%BB%BA%E6%9C%89%E5%BA%8F%E5%89%8D%E7%BC%80.png)\n\n- **Sorted prefix invariant**: at step $i$, prefix $A[0 \\dots i-1]$ is already sorted.\n- **Inner operation sequence**: find position $\\to$ shift elements right $\\to$ insert key into vacant slot.\n- **Order direction**:\n  - Ascending: shift elements where $A[j] > \\text{key}$.\n  - Descending: shift elements where $A[j] < \\text{key}$.\n\n<!-- nodal-panel:sec-insertion-code:visible:parent=sec-insertion-sort:title=Code -->\n\n```java\nfor (int i = 1; i < a.length; i++) {\n    Key key = a[i];          // current key to insert\n    int j = i - 1;\n    // find position & shift\n    while (j >= 0 && a[j].compareTo(key) > 0) {\n        a[j + 1] = a[j];     // shift right\n        j--;\n    }\n    a[j + 1] = key;          // insert into vacant position\n}\n```\n\n- `i = 1` starts from the second element (a single element prefix $A[0]$ is trivially sorted).\n- Loop test `j >= 0` must precede `compareTo` to guard against index out-of-bounds.\n\n<!-- nodal-panel:sec-merge-sort:visible:parent=sec-comparison-sort:title=Merge%20Sort -->\n\nDivide into halves, recursively sort, then merge the sorted halves.\n\n![Merge Sort: Divide into halves, recursively sort, then merge](study/assets/asset-merge-sort-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3.png)\n\n- **Base case**: stop when subarray size $\\le 1$.\n- **Split point**: `mid` is an index / split position ($lo + (hi - lo) / 2$), never the element value stored at $S[n/2]$.\n- **Merge contract**: takes two already-sorted subarrays and produces one combined sorted array.\n\n<!-- nodal-panel:sec-merge-code-bugs:visible:parent=sec-merge-sort:title=Code%20%26%20Bug%20Recognition -->\n\n```java\nprivate static void sort(Key[] a, Key[] aux, int lo, int hi) {\n    if (hi <= lo) return; // base case: size <= 1\n    int mid = lo + (hi - lo) / 2;\n    sort(a, aux, lo, mid);\n    sort(a, aux, mid + 1, hi);\n    merge(a, aux, lo, mid, hi);\n}\n```\n\n**Common Quiz Traps & Bugs**\n- **Base case omission**: `if (hi <= lo) return;` must stop for 1 element. Stopping only on 0 elements leads to infinite recursion.\n- **Mid index vs value**: `mid` is the boundary index `lo + (hi - lo) / 2`, not the array value `a[mid]`.\n- **Merge loop bounds**: pointer conditions must guard against running past subarray ends (`i <= mid` and `j <= hi`).\n- **Remaining elements**: remaining elements in either half must be fully copied to target array.\n\n<!-- nodal-panel:sec-heap-sort:visible:parent=sec-comparison-sort:title=Heap%20Sort -->\n\nRelies on a heap priority structure to repeatedly place the extreme element into its final sorted position.\n\n- Operates as a comparison sort with $\\Theta(n \\log n)$ running time.\n\n<!-- nodal-panel:sec-heap-foundations:visible:parent=sec-heap-sort:title=Heap%20Foundations -->\n\nEssential heap structures and mechanics required to execute Heap Sort.\n\n<!-- nodal-panel:sec-heap-property:visible:parent=sec-heap-foundations:title=Heap%20Property -->\n\nA complete ordered binary tree storing keys with a strict parent-child invariant.\n\n- **Min-Heap**: $\\text{parent} \\le \\text{children}$ (root is the minimum).\n- **Max-Heap**: $\\text{parent} \\ge \\text{children}$ (root is the maximum).\n- **No sibling order**: Heap property enforces parent-child order only; sibling or adjacent array elements have no relative ordering constraint.\n\n<!-- nodal-panel:sec-heap-array-indexing:visible:parent=sec-heap-foundations:title=Array%20Representation%20%26%20Indexing -->\n\nStored in a 0-based sequential array without explicit node pointers.\n\n- $\\text{parent}(i) = \\lfloor (i - 1) / 2 \\rfloor$\n- $\\text{leftChild}(i) = 2i + 1$\n- $\\text{rightChild}(i) = 2i + 2$\n\n**Properties**\n- Node exists if and only if $\\text{index} < n$ (heap size).\n- Tree height grows logarithmically: $h = \\lfloor \\log_2 n \\rfloor$.\n- Root-to-leaf path length is $O(\\log n)$.\n\n<!-- nodal-panel:sec-heap-upheap-downheap:visible:parent=sec-heap-foundations:title=Upheap%20%26%20Downheap -->\n\nRestoration procedures for disturbed heap property.\n\n- **Upheap**:\n  - Insert new key at the next free slot ($i = n$).\n  - Compare with parent; swap upward until heap invariant holds or root is reached.\n  - Used primarily for `add` ($O(\\log n)$ path).\n- **Downheap**:\n  - Root disturbed or replaced by last element.\n  - Compare with children; swap with the appropriate child (smaller child for min-heap, larger child for max-heap).\n  - Used for `removeRoot` and Heap Sort extraction ($O(\\log n)$ path).\n\n<!-- nodal-panel:sec-heap-java-impl:visible:parent=sec-heap-foundations:title=Java%20Implementation -->\n\n```java\n// Upheap: restore invariant after adding at count\nprivate void upheap(int i) {\n    while (i > 0 && keys[(i - 1) / 2] > keys[i]) {\n        swap((i - 1) / 2, i);\n        i = (i - 1) / 2;\n    }\n}\n\n// Downheap: restore invariant after removing root\nprivate void downheap(int i, int n) {\n    while (2 * i + 1 < n) {\n        int left = 2 * i + 1;\n        int right = 2 * i + 2;\n        int child = left;\n        if (right < n && keys[right] < keys[left]) {\n            child = right;\n        }\n        if (keys[i] <= keys[child]) break;\n        swap(i, child);\n        i = child;\n    }\n}\n```\n\n- When swapping upward, update index $i$ to parent: `i = (i - 1) / 2`.\n- Child candidates must be verified with `child < n` before array access.\n\n<!-- nodal-panel:sec-heap-sort-process:visible:parent=sec-heap-sort:title=Heap%20Sort%20Process -->\n\nRepeatedly extract the root and place it into the shrinking boundary.\n\n![Heap Sort: Build heap and repeatedly extract extreme element (流程与复杂度)](study/assets/asset-heap-sort-%E5%A0%86%E6%8E%92%E5%BA%8F%E6%B5%81%E7%A8%8B%E4%B8%8E%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BF%A1%E6%81%AF%E5%9B%BE.png)\n\n**Order Rule**\n- **Ascending sort**: use **Max-Heap** (max root moves to end $n-1, n-2, \\dots$).\n- **Descending sort**: use **Min-Heap** (min root moves to end).\n\n**Phase Analysis**\n1. **Build Heap**: bottom-up downheap takes $O(n)$ time.\n2. **Sort Down**:\n   - Swap root with last active element.\n   - Shrink active heap range by 1.\n   - Downheap new root ($O(\\log n)$).\n   - Repeat $n - 1$ times $\\to \\Theta(n \\log n)$.\n- Overall time complexity: $\\Theta(n \\log n)$ in best, worst, and average cases.\n\n<!-- nodal-panel:sec-quick-sort:visible:parent=sec-comparison-sort:title=Quick%20Sort -->\n\nPartition around a pivot, place the pivot in its final sorted position, then recursively sort both sides.\n\n![Quick Sort: Partition around pivot and recursively sort both sides](study/assets/asset-quick-sort-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%BF%A1%E6%81%AF%E5%9B%BE.png)\n\n<!-- nodal-panel:sec-qs-pivot-selection:visible:parent=sec-quick-sort:title=Pivot%20Selection -->\n\n- **First**: $lo$\n- **Last**: $hi$\n- **Halfway**: $lo + (hi - lo) / 2$\n\n**Median-of-three**\n- Inspect values at $a[lo]$, $a[mid]$, and $a[hi]$, where $mid = lo + (hi - lo) / 2$.\n- Select the value that is neither the strict minimum nor the strict maximum of the three.\n- With duplicates, implementation allows a non-unique median index.\n\n<!-- nodal-panel:sec-qs-partition:visible:parent=sec-quick-sort:title=Partition -->\n\nRearranges subarray $a[lo \\dots hi]$ around a pivot.\n\n- **Outcome**: places pivot into its **final sorted index** $p$.\n- **Return value**: returns index $p$, not the pivot value.\n- **Subarray invariant**:\n  - Left side ($a[lo \\dots p-1]$): all values $\\le$ pivot.\n  - Right side ($a[p+1 \\dots hi]$): all values $\\ge$ pivot.\n- Partition performs a single reorganization pass; it does not sort the subarrays.\n\n<!-- nodal-panel:sec-qs-pointer-rules:visible:parent=sec-qs-partition:title=Pointer%20Rules -->\n\nWhen `pivot = a[hi]`:\n- Pointers initialize to `left = lo`, `right = hi - 1` ($a[hi]$ reserved for pivot).\n- `left` scans right to find an element $\\ge \\text{pivot}$ (misplaced on left).\n- `right` scans left to find an element $\\le \\text{pivot}$ (misplaced on right).\n- If `left <= right`: swap `a[left]` and `a[right]`, then `left++`, `right--`.\n- When pointers cross (`left > right`): swap `a[left]` with `a[hi]`. Pivot is now at final position `left`. Return `left`.\n\nWhen `pivot = a[lo]`:\n- Pointers initialize to `left = lo + 1`, `right = hi`.\n- After crossing: swap `a[lo]` with `a[right]`. Return `right`.\n\n**Key Traps**\n- A single partition can perform multiple internal swaps, followed by one final pivot placement swap.\n- `x.compareTo(y)`:\n  - `< 0` $\\implies x < y$\n  - `== 0` $\\implies x == y$\n  - `> 0` $\\implies x > y$\n\n<!-- nodal-panel:sec-qs-code:visible:parent=sec-quick-sort:title=Code -->\n\n```java\npublic static void sort(Key[] a) {\n    if (a.length < 2) {\n        return;\n    }\n    sort(a, 0, a.length - 1);\n}\n\nprivate static void sort(Key[] a, int lo, int hi) {\n    if (lo >= hi) {\n        return;\n    }\n\n    int p = partition(a, lo, hi);\n\n    sort(a, lo, p - 1);\n    sort(a, p + 1, hi);\n}\n\nprivate static int partition(Key[] a, int lo, int hi) {\n    Key pivot = a[hi];\n\n    int left = lo;\n    int right = hi - 1;\n\n    while (left <= right) {\n\n        while (left <= right &&\n               a[left].compareTo(pivot) < 0) {\n            left++;\n        }\n\n        while (left <= right &&\n               a[right].compareTo(pivot) > 0) {\n            right--;\n        }\n\n        if (left <= right) {\n            Key.swap(a, left, right);\n            left++;\n            right--;\n        }\n    }\n\n    Key.swap(a, left, hi);\n\n    return left;\n}\n```\n\n**Control Flow & Guard Clauses**\n- `sort(a)`: whole-array entry point.\n- `sort(a, lo, hi)`: Guard clause (`lo >= hi`) stops recursion; main body partitions, retrieves pivot index $p$, and recurses left and right.\n- `partition`: chooses pivot, scans pointers, swaps misplaced pairs, places pivot after crossing, returns $p$.\n\n<!-- nodal-panel:sec-non-comparison-sort:visible:title=Non-comparison%20Sort -->\n\nSorts elements without relying solely on pairwise comparisons.\n\n- Uses structural properties: key values, digit positions, or range intervals.\n- Can surpass the $\\Omega(n \\log n)$ comparison lower bound under domain assumptions.\n- Covered: Counting Sort, Radix Sort, Bucket Sort.\n\n<!-- nodal-panel:sec-counting-sort:visible:parent=sec-non-comparison-sort:title=Counting%20Sort -->\n\nCount occurrences of each key directly by index, then rebuild output in order.\n\n![Counting Sort: Direct indexing and frequency counts to rebuild in order](study/assets/asset-counting-sort-%E8%AE%A1%E6%95%B0%E6%8E%92%E5%BA%8F%EF%BC%9A%E7%BB%9F%E8%AE%A1%E5%88%B0%E6%9C%89%E5%BA%8F%E8%BE%93%E5%87%BA.png)\n\n**Counting Sort $\\neq$ Hash Table**\n- **Counting Sort**: direct indexing `key -> count[key]`. The array index itself represents the value. No hash function, no collision resolution.\n- **Hash Table**: `key -> h(key) -> table[index]`. Uses a hash function and handles collisions.\n\n<!-- nodal-panel:sec-counting-range-complexity:visible:parent=sec-counting-sort:title=Range%20%26%20Complexity -->\n\n- **Dense integer range**: highly efficient when range $k$ is small relative to $n$.\n- **Sparse / extreme range**: e.g., $\\{1, 1000000, 1\\}$ wastes memory and requires scanning empty slots.\n- **Offset handling**: if values range over $[\\min \\dots \\max]$, allocate size $\\max - \\min + 1$ with index `val - min`.\n- **Complexity**: $\\Theta(n + k)$\n  - $k$ = key range size\n  - only if $k = O(n) \\to \\Theta(n)$\n  - if $k \\gg n$, $k$ dominates\n  - Example: $n = 100, k = 1{,}000{,}000 \\to \\text{not } \\Theta(n)$\n\n<!-- nodal-panel:sec-counting-code:visible:parent=sec-counting-sort:title=Code -->\n\n```java\nstatic void countingSort(int[] numbers, int k) {\n\n    // 1. 开 count\n    int[] count = new int[k];\n\n    // 2. 数每个数字出现几次\n    for (int number : numbers) {\n        count[number]++;\n    }\n\n    // 3. 把次数变成右边界\n    for (int i = 1; i < count.length; i++) {\n        count[i] += count[i - 1];\n    }\n\n    // 4. 开 output\n    int[] output = new int[numbers.length];\n\n    // 5. 从右往左，把每个数放到自己的位置\n    for (int i = numbers.length - 1; i >= 0; i--) {\n        int number = numbers[i];\n\n        count[number]--;\n\n        output[count[number]] = number;\n    }\n\n    // 6. copy back\n    for (int i = 0; i < numbers.length; i++) {\n        numbers[i] = output[i];\n    }\n}\n```\n\n<!-- nodal-panel:sec-counting-stable-object:visible:parent=sec-counting-sort:title=Stable%20%2B%20object -->\n\nsame key ≠ same record\nrecord = key + payload / ID\n\ncount key → move whole record\n4A, 2X, 4B → 2X, 4A, 4B\n\nstable → equal keys keep relative order\nright-boundary version → scan input right → left\n\n⚠ wrapper/object 保留 identity\n⚠ stable 由 placement order 保证，不是 wrapper 本身保证\n\n<!-- nodal-panel:sec-radix-sort:visible:parent=sec-non-comparison-sort:title=Radix%20Sort -->\n\nSort multi-digit keys digit by digit, from least significant digit (LSD) to most significant digit (MSD).\n\n![Radix Sort: LSD to MSD digit passes with stable sub-sorts](study/assets/asset-radix-sort-%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F%EF%BC%9A%E9%80%90%E4%BD%8D%E7%A8%B3%E5%AE%9A%E6%8E%92%E5%BA%8F%E6%B5%81%E7%A8%8B.png)\n\n<!-- nodal-panel:sec-radix-stability:visible:parent=sec-radix-sort:title=Stability -->\n\n- **Definition**: elements with equal keys preserve their prior relative order.\n- **Why Radix requires stability**: earlier passes establish correct lower-digit order. A later pass must not disrupt this relative order when current digits match.\n- **Reusing buckets**: each decimal pass partitions into digits $0 \\dots 9$, reusing the same 10 counters / buckets.\n- **Complexity**: $\\Theta(d(n + k))$ where $d = \\text{digits}$, $k = \\text{radix}$ (10 for decimal). For fixed $d$, time is $\\Theta(n)$.\n\n<!-- nodal-panel:sec-radix-code:visible:parent=sec-radix-sort:title=Code -->\n\n```java\nstatic void radixSort(int[] numbers) {\n\n    if (numbers.length <= 1) {\n        return;\n    }\n\n    // Find max\n    int max = numbers[0];\n\n    for (int number : numbers) {\n        if (number > max) {\n            max = number;\n        }\n    }\n\n    // Ones → tens → hundreds → ...\n    for (int exp = 1; max / exp > 0; exp *= 10) {\n        countingSortByDigit(numbers, exp);\n    }\n}\n\n\nstatic void countingSortByDigit(int[] numbers, int exp) {\n\n    int[] count = new int[10];\n\n    // Count current digit\n    for (int number : numbers) {\n        int digit = (number / exp) % 10;\n        count[digit]++;\n    }\n\n    // Cumulative boundaries\n    for (int i = 1; i < count.length; i++) {\n        count[i] += count[i - 1];\n    }\n\n    int[] output = new int[numbers.length];\n\n    // Stable placement: right → left\n    for (int i = numbers.length - 1; i >= 0; i--) {\n\n        int number = numbers[i];\n        int digit = (number / exp) % 10;\n\n        count[digit]--;\n        output[count[digit]] = number;\n    }\n\n    // Copy back\n    for (int i = 0; i < numbers.length; i++) {\n        numbers[i] = output[i];\n    }\n}\n```\n\n<!-- nodal-panel:sec-bucket-sort:visible:parent=sec-non-comparison-sort:title=Bucket%20Sort -->\n\nDistribute elements across equal-width value intervals (buckets), sort within each bucket, and concatenate.\n\n![Bucket Sort: Distribute into equal-width buckets, sort, and concatenate](study/assets/asset-bucket-sort-%E6%A1%B6%E6%8E%92%E5%BA%8F%E6%B5%81%E7%A8%8B%E4%BF%A1%E6%81%AF%E5%9B%BE.png)\n\n<!-- nodal-panel:sec-bucket-distribution:visible:parent=sec-bucket-sort:title=Distribution -->\n\n- Value domain is partitioned into equal-width buckets (e.g., $B_0: [0, 9], B_1: [10, 19], B_2: [20, 29]$).\n- **Equal-width $\\neq$ equal count**: equal interval size does not guarantee equal element counts.\n- Boundaries are designed from the known input range, not chosen randomly.\n- **Uniform distribution requirement**: near-linear performance relies on roughly uniform input distribution.\n- **Floating-point index formula**: for values in $[0, 1)$ with 10 buckets: $\\text{index} = \\lfloor 10 \\times \\text{value} \\rfloor$ (e.g., $0.46 \\implies \\lfloor 4.6 \\rfloor = \\text{bucket } 4$).\n\n<!-- nodal-panel:sec-bucket-worst-case:visible:parent=sec-bucket-sort:title=Worst%20Case -->\n\n- Standard implementation sorts inside buckets using **Insertion Sort**.\n- **Expected / Average time**: $\\Theta(n)$ when elements distribute uniformly.\n- **Worst-case time**: $\\Theta(n^2)$ when all $n$ elements collapse into a single bucket and degrade to Insertion Sort on $n$ items.\n\n<!-- nodal-panel:sec-selection:visible:title=Selection -->\n\nFinds a specific order statistic or rank without sorting the entire collection.\n\n- Distinct category from sorting algorithms.\n- Primary method: Quickselect.\n\n<!-- nodal-panel:sec-quickselect:visible:parent=sec-selection:title=Quickselect -->\n\nPartition array around a pivot like Quick Sort, but recurse only into the side containing the target rank.\n\n![Quickselect: Partition around pivot and prune unneeded side to find k-th order statistic](study/assets/asset-quickselect-Quickselect%20%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E4%BF%A1%E6%81%AF%E5%9B%BE.png)\n\n- Selection algorithm, not a sorting algorithm.\n\n<!-- nodal-panel:sec-quickselect-order-statistics:visible:parent=sec-quickselect:title=Order%20Statistics -->\n\nThe $i$-th order statistic is the $i$-th smallest element in sorted order.\n\n- Minimum = 1st smallest.\n- Maximum = $n$-th smallest.\n- Median = middle rank ($\\lfloor (n + 1) / 2 \\rfloor$).\n\n**Single Minimum or Maximum (单独找)**\n- $n - 1$ comparisons (track current min/max, compare against each remaining element).\n- $\\Theta(n)$ time.\n\n**Simultaneous Minimum + Maximum (同时找 · Pairing)**\n- naive $\\to 2n - 2$ comparisons\n- better: process pairs\n  - $a$ vs $b$\n  - smaller $\\to$ compare with min\n  - larger $\\to$ compare with max\n- **odd $n$**:\n  - first element $\\to$ both min and max\n  - rest $\\to$ process in pairs\n  - comparisons: $3\\lfloor n/2 \\rfloor$\n- **even $n$**:\n  - compare first two once: smaller $\\to$ min, larger $\\to$ max\n  - rest $\\to$ process in pairs\n  - comparisons: $3n/2 - 2$\n- $\\approx 3n/2$ comparisons, still $\\Theta(n)$\n- Recognize the process: pair first $\\to$ smaller to min, larger to max\n\n**Quiz Trap**\n- $i$-th smallest $\\ne$ value $i$.\n- Example: in $\\{1, 11, 12, 6, 13, 18\\}$, sorted is $\\{1, 6, 11, 12, 13, 18\\}$. The 6th smallest element is 18, not 6.\n\n<!-- nodal-panel:sec-quickselect-relation-qs:visible:parent=sec-quickselect:title=Relation%20to%20Quick%20Sort -->\n\n- **Quick Sort**: partitions, then recurses into **both** sides until fully sorted.\n- **Quickselect**: partitions using the same routine as [Quick Sort / Partition](nodal://node/cis223-sorting-selection/sec-qs-partition), then recurses **only** into the subarray containing the target rank.\n\n**Pivot Rank Discovery**\n- Choosing a pivot does not reveal its rank beforehand.\n- Partitioning places the pivot into its final index $p$ and establishes that $p$ elements precede it.\n- If $p == \\text{target index}$: done; pivot is the answer.\n- If $\\text{target index} < p$: recurse only on left.\n- If $\\text{target index} > p$: recurse only on right.\n- Average time $\\Theta(n)$; worst case $\\Theta(n^2)$.\n\n\n\n\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-overview",
+      "title": "Overview",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-overview",
+      "resource": "ai/sections/cis223-sorting-selection/sec-overview.json"
+    },
+    {
+      "id": "sec-comparison-sort",
+      "title": "Comparison Sort",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-comparison-sort",
+      "resource": "ai/sections/cis223-sorting-selection/sec-comparison-sort.json"
+    },
+    {
+      "id": "sec-insertion-sort",
+      "title": "Insertion Sort",
+      "parentId": "sec-comparison-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-insertion-sort",
+      "resource": "ai/sections/cis223-sorting-selection/sec-insertion-sort.json"
+    },
+    {
+      "id": "sec-insertion-code",
+      "title": "Code",
+      "parentId": "sec-insertion-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-insertion-code",
+      "resource": "ai/sections/cis223-sorting-selection/sec-insertion-code.json"
+    },
+    {
+      "id": "sec-merge-sort",
+      "title": "Merge Sort",
+      "parentId": "sec-comparison-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-merge-sort",
+      "resource": "ai/sections/cis223-sorting-selection/sec-merge-sort.json"
+    },
+    {
+      "id": "sec-merge-code-bugs",
+      "title": "Code & Bug Recognition",
+      "parentId": "sec-merge-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-merge-code-bugs",
+      "resource": "ai/sections/cis223-sorting-selection/sec-merge-code-bugs.json"
+    },
+    {
+      "id": "sec-heap-sort",
+      "title": "Heap Sort",
+      "parentId": "sec-comparison-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-sort",
+      "resource": "ai/sections/cis223-sorting-selection/sec-heap-sort.json"
+    },
+    {
+      "id": "sec-heap-foundations",
+      "title": "Heap Foundations",
+      "parentId": "sec-heap-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-foundations",
+      "resource": "ai/sections/cis223-sorting-selection/sec-heap-foundations.json"
+    },
+    {
+      "id": "sec-heap-property",
+      "title": "Heap Property",
+      "parentId": "sec-heap-foundations",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-property",
+      "resource": "ai/sections/cis223-sorting-selection/sec-heap-property.json"
+    },
+    {
+      "id": "sec-heap-array-indexing",
+      "title": "Array Representation & Indexing",
+      "parentId": "sec-heap-foundations",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-array-indexing",
+      "resource": "ai/sections/cis223-sorting-selection/sec-heap-array-indexing.json"
+    },
+    {
+      "id": "sec-heap-upheap-downheap",
+      "title": "Upheap & Downheap",
+      "parentId": "sec-heap-foundations",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-upheap-downheap",
+      "resource": "ai/sections/cis223-sorting-selection/sec-heap-upheap-downheap.json"
+    },
+    {
+      "id": "sec-heap-java-impl",
+      "title": "Java Implementation",
+      "parentId": "sec-heap-foundations",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-java-impl",
+      "resource": "ai/sections/cis223-sorting-selection/sec-heap-java-impl.json"
+    },
+    {
+      "id": "sec-heap-sort-process",
+      "title": "Heap Sort Process",
+      "parentId": "sec-heap-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-sort-process",
+      "resource": "ai/sections/cis223-sorting-selection/sec-heap-sort-process.json"
+    },
+    {
+      "id": "sec-quick-sort",
+      "title": "Quick Sort",
+      "parentId": "sec-comparison-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-quick-sort",
+      "resource": "ai/sections/cis223-sorting-selection/sec-quick-sort.json"
+    },
+    {
+      "id": "sec-qs-pivot-selection",
+      "title": "Pivot Selection",
+      "parentId": "sec-quick-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-qs-pivot-selection",
+      "resource": "ai/sections/cis223-sorting-selection/sec-qs-pivot-selection.json"
+    },
+    {
+      "id": "sec-qs-partition",
+      "title": "Partition",
+      "parentId": "sec-quick-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-qs-partition",
+      "resource": "ai/sections/cis223-sorting-selection/sec-qs-partition.json"
+    },
+    {
+      "id": "sec-qs-pointer-rules",
+      "title": "Pointer Rules",
+      "parentId": "sec-qs-partition",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-qs-pointer-rules",
+      "resource": "ai/sections/cis223-sorting-selection/sec-qs-pointer-rules.json"
+    },
+    {
+      "id": "sec-qs-code",
+      "title": "Code",
+      "parentId": "sec-quick-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-qs-code",
+      "resource": "ai/sections/cis223-sorting-selection/sec-qs-code.json"
+    },
+    {
+      "id": "sec-non-comparison-sort",
+      "title": "Non-comparison Sort",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-non-comparison-sort",
+      "resource": "ai/sections/cis223-sorting-selection/sec-non-comparison-sort.json"
+    },
+    {
+      "id": "sec-counting-sort",
+      "title": "Counting Sort",
+      "parentId": "sec-non-comparison-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-counting-sort",
+      "resource": "ai/sections/cis223-sorting-selection/sec-counting-sort.json"
+    },
+    {
+      "id": "sec-counting-range-complexity",
+      "title": "Range & Complexity",
+      "parentId": "sec-counting-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-counting-range-complexity",
+      "resource": "ai/sections/cis223-sorting-selection/sec-counting-range-complexity.json"
+    },
+    {
+      "id": "sec-counting-code",
+      "title": "Code",
+      "parentId": "sec-counting-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-counting-code",
+      "resource": "ai/sections/cis223-sorting-selection/sec-counting-code.json"
+    },
+    {
+      "id": "sec-counting-stable-object",
+      "title": "Stable + object",
+      "parentId": "sec-counting-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-counting-stable-object",
+      "resource": "ai/sections/cis223-sorting-selection/sec-counting-stable-object.json"
+    },
+    {
+      "id": "sec-radix-sort",
+      "title": "Radix Sort",
+      "parentId": "sec-non-comparison-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-radix-sort",
+      "resource": "ai/sections/cis223-sorting-selection/sec-radix-sort.json"
+    },
+    {
+      "id": "sec-radix-stability",
+      "title": "Stability",
+      "parentId": "sec-radix-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-radix-stability",
+      "resource": "ai/sections/cis223-sorting-selection/sec-radix-stability.json"
+    },
+    {
+      "id": "sec-radix-code",
+      "title": "Code",
+      "parentId": "sec-radix-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-radix-code",
+      "resource": "ai/sections/cis223-sorting-selection/sec-radix-code.json"
+    },
+    {
+      "id": "sec-bucket-sort",
+      "title": "Bucket Sort",
+      "parentId": "sec-non-comparison-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-bucket-sort",
+      "resource": "ai/sections/cis223-sorting-selection/sec-bucket-sort.json"
+    },
+    {
+      "id": "sec-bucket-distribution",
+      "title": "Distribution",
+      "parentId": "sec-bucket-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-bucket-distribution",
+      "resource": "ai/sections/cis223-sorting-selection/sec-bucket-distribution.json"
+    },
+    {
+      "id": "sec-bucket-worst-case",
+      "title": "Worst Case",
+      "parentId": "sec-bucket-sort",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-bucket-worst-case",
+      "resource": "ai/sections/cis223-sorting-selection/sec-bucket-worst-case.json"
+    },
+    {
+      "id": "sec-selection",
+      "title": "Selection",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-selection",
+      "resource": "ai/sections/cis223-sorting-selection/sec-selection.json"
+    },
+    {
+      "id": "sec-quickselect",
+      "title": "Quickselect",
+      "parentId": "sec-selection",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-quickselect",
+      "resource": "ai/sections/cis223-sorting-selection/sec-quickselect.json"
+    },
+    {
+      "id": "sec-quickselect-order-statistics",
+      "title": "Order Statistics",
+      "parentId": "sec-quickselect",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-quickselect-order-statistics",
+      "resource": "ai/sections/cis223-sorting-selection/sec-quickselect-order-statistics.json"
+    },
+    {
+      "id": "sec-quickselect-relation-qs",
+      "title": "Relation to Quick Sort",
+      "parentId": "sec-quickselect",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-quickselect-relation-qs",
+      "resource": "ai/sections/cis223-sorting-selection/sec-quickselect-relation-qs.json"
+    }
+  ],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "contentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection"
+}

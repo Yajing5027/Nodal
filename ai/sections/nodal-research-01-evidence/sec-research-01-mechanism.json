@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-01-evidence",
+  "noteTitle": "科研证据怎么分层：已经验证和还没有做的事",
+  "id": "sec-research-01-mechanism",
+  "title": "关键机制：你需要能够解释什么？",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 关键机制：你需要能够解释什么？\n\n用一条具体反例检查证据：即使历史测试全部PASS，迁移后的import路径仍可能引用已不存在的目录；这同时成立而不矛盾。因此每个结论要记录来源文件、Git blob SHA、运行环境、适用域与尚缺的证据。\n\n真实REVIEWED=0：SVG的XML正确、PNG能渲染、RED TEAM miniature测试PASS，均不等于Nodal Note实际显示、独立科研审核或正式实验完成。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-01-evidence.md",
+  "noteContentSha256": "60256307778bec92b3c2f9a65466061746bc4db05da2726b7949f7dad960db8f",
+  "contentSha256": "d4d398e1130dcde5fc0e7853da84a8b9afad68fda8c0460fea16dee3d87f0427",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-01-evidence&section=sec-research-01-mechanism"
+}

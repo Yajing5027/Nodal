@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-double-hashing",
+  "title": "Double Hashing",
+  "parentId": "sec-open-addressing",
+  "hidden": false,
+  "markdown": "#### Double Hashing\n\n$$\\boxed{h(k,i)=(h_1(k)+i\\,h_2(k))\\bmod m}$$\n\n*h₁(k) = Initial Index；h₂(k) = Step Size；i = Probe Number。*\n\n- Step = h₂(k)（非固定 +1）\n- 为确保探测能访问全部 m 个 Slot，通常要求 $\\gcd(h_2(k),m)=1$",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "538c1182f9ab79e336c1c90ef0cd9fcb55d7a350ea11e7ff334c14f90f8be3e9",
+  "contentSha256": "0f9796b3834c95f9597b59d58c4fe8a7dad9da41811e35e64935a786ef5b480d",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-double-hashing"
+}

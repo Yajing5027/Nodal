@@ -9,8 +9,8 @@
   "markdown": "### Top\n\n**Top Index：** `top` = Index，`S[top]` = Value；确认 `top` 指向当前栈顶还是下一空位，避免 Off-by-One Error\n\n**Boundary**：若 `top` 指向当前栈顶，则 Empty：`S.top = 0`；Fixed Array Full：`S.top = S.size`（`S.size` 表示数组容量）\n\n**易错点**：`top` 指当前栈顶 Index；Pop 返回原 `S[top]`，不能把 `top--` 后的位置当成原栈顶 → [练习 · Top Index](https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&mode=practice&section=sec-stack-boundary&question=cis223-q6-stack-top-index-v1)",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz6-stack-and-queue.md",
-  "noteContentSha256": "57c83ccd8e844d0e1b658c9cf379fc7f88675bb5bc9d2f6d363550561eef4387",
+  "noteContentSha256": "11cbe60f5cd18df03f5db3d177e2a958124855680eb07c8afb398478321166b1",
   "contentSha256": "36a010885e28a2d0f3855b14e4be0278881a2171e6e39b065238b731ff1d48c5",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack-boundary"
 }

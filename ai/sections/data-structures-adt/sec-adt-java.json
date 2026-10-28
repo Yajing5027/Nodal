@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "data-structures-adt",
+  "noteTitle": "Data Structures · ADT vs Implementation",
+  "id": "sec-adt-java",
+  "title": "Java Interface vs Class",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Java Interface vs Class\n\n- **Java `Map<K,V>`**：表达 Key–Value 映射需要支持的方法的 Interface\n- **Java `HashMap<K,V>`**：实现 `Map` 的一个 Class，内部采用 Hash Table 机制\n- **`new HashMap<>()`**：创建实际对象；不会先额外创建一个 Dictionary 容器再由 Hash Table 去搜索它\n\n```java\nMap<Integer, String> students = new HashMap<>();\nstudents.put(13, \"Alice\"); // Insert\nstudents.get(13);          // Search -> Alice\n```\n\n**Common Mistake**：`Dictionary / Map (ADT)` 与 `Hash Table (implementation)` 描述不同层次；`Hash Function` 仅是哈希表定位机制的一部分，不是 Dictionary 本身\n\n**关联 Note ID**：`quiz6-stack-and-queue`（Stack / Queue）、`quiz7-hash-tables`（Dictionary / Hash Table）——为以后添加实际 Nodal 关系链接保留稳定目标，不声称已在浏览器中建立 Map Edge\n\n**课程依据**：CIS 223 Week 7 / 0701（老师明确 Dictionary / Map 是 ADT，Hash Table 是其实现）；Quiz 6 · Stack & Queue 原 Note 中 ADT 定义。Java `Map` / `HashMap` 的接口与实现语法属于 Java API 补充\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/data-structures-adt.md",
+  "noteContentSha256": "ef2bf5fff7adc0961a0eb1475412b7cf25c94cdf0f7dbe4aedee4f83d79c6066",
+  "contentSha256": "7836c48bd225c638763474bcfab97ec436f760becf19d34873a43b74c4c3eb7d",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-adt&section=sec-adt-java"
+}

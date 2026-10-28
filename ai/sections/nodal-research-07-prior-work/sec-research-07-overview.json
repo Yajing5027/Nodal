@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-07-prior-work",
+  "noteTitle": "为什么不能随便说我们的研究很新？",
+  "id": "sec-research-07-overview",
+  "title": "为什么不能随便说我们的研究很新？",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n# 为什么不能随便说我们的研究很新？\n\n> **研究学习草稿 / NOT PUBLISHED**。面向零基础学习者。本文中的科研设计尚未正式冻结，所有SVG仍待Nodal兼容与独立审稿。\n\n「时间早晚有影响」或「复习调度很重要」都不是自动的新颖性，因为以前的研究已经分析过练习位置、已知中断、延迟保留、不同策略和不规则时间。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-07-prior-work.md",
+  "noteContentSha256": "9397a94d0f38839a15b7bf64bbd89e4a49e1649ce120f0653703f935ff5e2ec9",
+  "contentSha256": "0b71b63a4b0f51c5a2c2f9c4e97dbb0345be662f48c65d8ecdb2228c2ef92d3c",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-07-prior-work&section=sec-research-07-overview"
+}

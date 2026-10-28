@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-physics-mechanics",
+  "noteTitle": "University Physics · Mechanics & Rotational Dynamics",
+  "id": "sec-phys-energy-dimensions",
+  "title": "功、能量与量纲矩阵 (Work, Energy & Dimensions)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 功、能量与量纲矩阵 (Work, Energy & Dimensions)\n\n- **动能定理与势能**：$W_{net} = \\Delta K$。势能由特定保守力决定：重力势能 $U_g = mgh$，弹力势能 $U_e = \\frac{1}{2}kx^2$。\n- **标准 SI 基本单位与量纲对应表**：\n\n| 物理量 (Quantity) | 符号 | SI 导出单位 | 基本量纲 |\n| :--- | :---: | :--- | :--- |\n| 力 (Force) | $F$ | $\\text{N}$ | $\\text{kg}\\cdot\\text{m}/\\text{s}^2$ |\n| 功 / 动能 / 势能 | $W, K, U$ | $\\text{J} = \\text{N}\\cdot\\text{m}$ | $\\text{kg}\\cdot\\text{m}^2/\\text{s}^2$ |\n| 功率 (Power) | $P$ | $\\text{W} = \\text{J}/\\text{s}$ | $\\text{kg}\\cdot\\text{m}^2/\\text{s}^3$ |\n| 动量 / 冲量 | $p, J$ | $\\text{kg}\\cdot\\text{m}/\\text{s}, \\text{N}\\cdot\\text{s}$ | $\\text{kg}\\cdot\\text{m}/\\text{s}$ |\n| 力矩 (Torque) | $\\tau$ | $\\text{N}\\cdot\\text{m}$ | 空间力偶（非焦耳） |\n| 转动惯量 (Inertia) | $I$ | $\\text{kg}\\cdot\\text{m}^2$ | 质量二阶矩 |\n| 角动量 (Angular Mom) | $L$ | $\\text{kg}\\cdot\\text{m}^2/\\text{s}$ | 动量矩 |\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-physics-mechanics.md",
+  "noteContentSha256": "da1823ca0edada4bd2b2e953dc2f1af8d3de682eb9e9580120c8d38272a44619",
+  "contentSha256": "4acecd267b494ada7e87e4c9429704cf1871eb942e087ccefdcdb330d6869736",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-physics-mechanics&section=sec-phys-energy-dimensions"
+}

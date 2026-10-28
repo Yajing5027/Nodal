@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-ieee754-floating-point",
-  "noteTitle": "CIS 224 Midterm · IEEE 754 Floating Point & Precision",
+  "noteTitle": "IEEE 754 Floating Point & Precision",
   "id": "sec-value-16-bit-float-621d0f",
   "title": "Value → 16-bit Float 编码",
   "parentId": null,
@@ -11,6 +11,6 @@
   "sourcePath": "content/notes/cis224-midterm-ieee754-floating-point.md",
   "noteContentSha256": "7232673d96ecaa6f5b080c04a095ed746b99598c96bd182a3fcafd9dd7149d7a",
   "contentSha256": "129096f9b75b4a4b3aa67c8be2894caa8055b29e9bfc26853ec0586854455410",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-value-16-bit-float-621d0f"
 }

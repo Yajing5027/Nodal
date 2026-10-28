@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-08-decisions",
+  "noteTitle": "导师需要决定什么：方法学与下一步",
+  "id": "sec-research-08-overview",
+  "title": "导师需要决定什么：方法学与下一步",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n# 导师需要决定什么：方法学与下一步\n\n> **研究学习草稿 / NOT PUBLISHED**。面向零基础学习者。本文中的科研设计尚未正式冻结，所有SVG仍待Nodal兼容与独立审稿。\n\n写好图和文档不等于导师批准。当前科学合同仍有关键OPEN问题，需要区分已证实事实、工程候选参数和真正需要导师确认的设计决策。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-08-decisions.md",
+  "noteContentSha256": "fafd5f43113b67d3ac28eeb95ef107575a6a3284dd50ce8d07d0f847b44db200",
+  "contentSha256": "3d929d6806866730fadea9d3f9a504e966f60bbb2386b1bc5510df69c1a6f1fc",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-08-decisions&section=sec-research-08-overview"
+}

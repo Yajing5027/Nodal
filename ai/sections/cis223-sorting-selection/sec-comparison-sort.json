@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-comparison-sort",
+  "title": "Comparison Sort",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "Obtains relative order strictly via pairwise element comparisons.\n\n- Covered algorithms: Insertion Sort, Merge Sort, Heap Sort, Quick Sort.\n- Theoretical limit: $\\Omega(n \\log n)$ comparisons in the worst case.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "9780cfa049940e989aeb03d9b8044047236fa32ca43f2ae873fa4e9ffcaef8b1",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-comparison-sort"
+}

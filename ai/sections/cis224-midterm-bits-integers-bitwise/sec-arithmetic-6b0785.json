@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-bits-integers-bitwise",
-  "noteTitle": "CIS 224 Midterm · Binary, Integers & Bitwise Operations",
+  "noteTitle": "Binary, Integers & Bitwise Operations",
   "id": "sec-arithmetic-6b0785",
   "title": "Arithmetic 运算",
   "parentId": null,
@@ -9,8 +9,8 @@
   "markdown": "##### Arithmetic 运算\n\n• Addition 加法：ALU 用加法器计算 A+B（C₀=0）\n\n• Subtraction 减法：ALU 用加法器实现 A−B ≡ A+(~B)+1（mod 2ᴺ；C₀=1）\n\n  ◦ Minuend = 被减数（A）；Subtrahend = 减数（B）\n\n  ◦ Unsigned A<B → Borrow；Result = A−B+2ᴺ（8-bit：20−120=−100+256=156）\n\n• Wraparound 回绕：N-bit 运算按 mod 2ᴺ 保留低 N bits；越过对应 Range 边界 → 从另一端继续  e.g. 8-bit：Unsigned 255+1 → 0；Signed 127+1 → −128（C8 不必为 1）\n\n• Carry / Borrow & Overflow 进位、借位与溢出\n\n  ◦ Carry = 进位；Borrow = 借位\n\n  \t◦ Carry in / out = 进入 / 离开当前 bit 的进位；8-bit：C7 进 bit 7，C8 出 bit 7\n\n  ◦ Overflow / Borrow\n\n    ▪ Principle：固定 N-bit 运算始终产生 N-bit Result（即使 Overflow）\n\n      · True Result vs. Stored Value：数学应得值 / CPU 的 N-bit 存储解释值\n\n    ▪ 判定\n\n      · Signed Overflow：① True Result 超出 Signed Range；② Cₙ₋₁ ≠ Cₙ（8-bit：C7 ≠ C8）\n\n      · Unsigned Addition：Cₙ = 1 → Carry / Overflow\n\n      · Unsigned Subtraction：Cₙ = 0 → Borrow\n\n    ▪ Representability 可表示性 vs. Arithmetic Overflow 算术溢出\n\n      · 原数超 Range → 无法表示；合法输入运算后 True Result 超 Range → Overflow（Stored Value ≠ True Result）\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-bits-integers-bitwise.md",
-  "noteContentSha256": "029dd8db0f0a4bc317bae87be83320c9467ab50514d284d4c986487de4ce0d06",
+  "noteContentSha256": "542a64d8c97f1ab8ef7d1f9d7ae854de404b3869a25831c5872d25717e236946",
   "contentSha256": "07f40df2c8a57f492526c3efea1d86879a386648153ac8a59553b923444fe611",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-arithmetic-6b0785"
 }

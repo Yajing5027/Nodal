@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-05-design",
+  "noteTitle": "为什么需要比较早期与晚期机会损失？",
+  "id": "sec-research-05-overview",
+  "title": "为什么需要比较早期与晚期机会损失？",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n# 为什么需要比较早期与晚期机会损失？\n\n> **研究学习草稿 / NOT PUBLISHED**。面向零基础学习者。本文中的科研设计尚未正式冻结，所有SVG仍待Nodal兼容与独立审稿。\n\n公平比较不是强行让三种策略做完全相同的题，而是控制**外部提供的机会数量**，让策略造成的复习轨迹差异自然发生。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-05-design.md",
+  "noteContentSha256": "4a69fd0f4e2e2446e14d313af6573176904831fd5d693bb8a8e038a39621df26",
+  "contentSha256": "31ef8e93f01df0ac8f329a1eb1cec6256b6c66381e63ccd2f295c451c6d44ad8",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-05-design&section=sec-research-05-overview"
+}

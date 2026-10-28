@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-counting-stable-object",
+  "title": "Stable + object",
+  "parentId": "sec-counting-sort",
+  "hidden": false,
+  "markdown": "same key ≠ same record\nrecord = key + payload / ID\n\ncount key → move whole record\n4A, 2X, 4B → 2X, 4A, 4B\n\nstable → equal keys keep relative order\nright-boundary version → scan input right → left\n\n⚠ wrapper/object 保留 identity\n⚠ stable 由 placement order 保证，不是 wrapper 本身保证",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "6f05c6874cffe576f68750625ba83badbf846d6f9ec449b924714bac93b3bbf8",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-counting-stable-object"
+}

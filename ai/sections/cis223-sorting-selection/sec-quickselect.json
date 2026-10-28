@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-quickselect",
+  "title": "Quickselect",
+  "parentId": "sec-selection",
+  "hidden": false,
+  "markdown": "Partition array around a pivot like Quick Sort, but recurse only into the side containing the target rank.\n\n![Quickselect: Partition around pivot and prune unneeded side to find k-th order statistic](study/assets/asset-quickselect-Quickselect%20%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E4%BF%A1%E6%81%AF%E5%9B%BE.png)\n\n- Selection algorithm, not a sorting algorithm.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "fb3708f00cdad29412194b75723418dc36c24d7d2315e1a771beaeafc24df54c",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-quickselect"
+}

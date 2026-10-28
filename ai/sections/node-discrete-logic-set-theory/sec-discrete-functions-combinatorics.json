@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-discrete-logic-set-theory",
+  "noteTitle": "Discrete Mathematics · Mathematical Logic & Set Theory",
+  "id": "sec-discrete-functions-combinatorics",
+  "title": "关系函数与图论组合 (Functions, Graphs & Counting)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 关系函数与图论组合 (Functions, Graphs & Counting)\n\n- **函数映射类型**：\n  - 单射 (One-to-one / Injective): $f(a) = f(b) \\implies a = b$\n  - 满射 (Onto / Surjective): $\\forall y \\in B, \\exists x \\in A, f(x) = y$\n  - 双射 (Bijective): 既单且满（可逆）\n- **图论欧拉回路定理 (Euler Circuit)**：连通图（忽略孤立点）存在欧拉回路 $\\iff$ 每一个顶点的度数均为偶数（$\\forall v, \\deg(v) \\text{ even}$）。\n- **二项式定理与概率乘法**：\n\n$$\n(a + b)^n = \\sum_{k=0}^n \\binom{n}{k} a^{n-k} b^k, \\qquad P(A \\cap B) = P(A)P(B) \\ (\\text{独立时})\n$$\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-discrete-logic-set-theory.md",
+  "noteContentSha256": "22517d5be93f394764ca7a606caa6f55bfe809a8167fa2142e2fb575e13c64d3",
+  "contentSha256": "7eaec11244c30e569ce3a8c8aa88a4d7555185e830b858ae40444e61736f9d98",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-discrete-functions-combinatorics"
+}

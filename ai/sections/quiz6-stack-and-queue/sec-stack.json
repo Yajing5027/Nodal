@@ -9,8 +9,8 @@
   "markdown": "### Stack\n\n| State | Fixed Array Stack | Dynamic Array Stack | Linear Array Queue | Circular Array Queue |\n|---|---|---|---|---|\n| **Empty** | `S.top = 0` | `Size = 0` | `head = tail` | `head = tail` |\n| **Full / Capacity Limit** | `S.top = Capacity` | `Size = Capacity` → Resize 扩容 | Tail 到末端且不能复用前方空槽 | `next(tail) = head` |\n\n**Underflow**：Empty 时删除失败\n\n**Overflow**：无法继续插入时发生（Fixed Array 达到容量上限，Dynamic Array 通常先扩容而非直接 Overflow）",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz6-stack-and-queue.md",
-  "noteContentSha256": "57c83ccd8e844d0e1b658c9cf379fc7f88675bb5bc9d2f6d363550561eef4387",
+  "noteContentSha256": "11cbe60f5cd18df03f5db3d177e2a958124855680eb07c8afb398478321166b1",
   "contentSha256": "0b2145304af71701122a6f5c0f7baf8d6911578fa47608aa5147f375850c8616",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-stack-and-queue&section=sec-stack"
 }

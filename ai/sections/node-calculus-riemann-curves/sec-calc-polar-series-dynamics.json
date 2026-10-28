@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-calculus-riemann-curves",
+  "noteTitle": "Calculus · Riemann Sums & Curves",
+  "id": "sec-calc-polar-series-dynamics",
+  "title": "极坐标交点与级数动态 (Polar Origin & Geometric Series)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 极坐标交点与级数动态 (Polar Origin & Geometric Series)\n\n- **极坐标交点陷阱 (Origin Intersection Pitfall)**：\n  - 极点几何位置唯一（$r=0$），但可对应任意极角 $\\theta$。\n  - 若两曲线 $r_1(\\theta)$ 与 $r_2(\\theta)$ 分别穿过原点，其到达极点的极角可能完全不同。联立代数方程 $r_1(\\theta) = r_2(\\theta)$ 会遗漏原点交点，**必须单独检查 $r=0$**。\n- **等比级数动态特性矩阵 ($S_n = \\sum_{k=0}^n a r^k$)**：\n\n$$\n|r| < 1 \\implies S = \\frac{a}{1-r}\n$$\n\n  - 符号效应：$r > 0 \\implies S_n$ 单调收敛；$r < 0 \\implies S_n$ 绕极限交错震荡。\n  - 敛速曲率：$|r| \\to 0$ 极快收敛早变平；$|r| \\to 1$ 极慢收敛。\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-calculus-riemann-curves.md",
+  "noteContentSha256": "7e5fd198a9c88e44ded353030828610eee201f213a7b0009c20a08115337f6a8",
+  "contentSha256": "f3a304fcd2f75d3768cb0ef270ab9b085747d61f8952d919437b55285b2f5e55",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-calculus-riemann-curves&section=sec-calc-polar-series-dynamics"
+}

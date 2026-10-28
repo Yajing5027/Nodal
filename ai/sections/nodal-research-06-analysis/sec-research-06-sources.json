@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-06-analysis",
+  "noteTitle": "如何读懂结果：比较、配对与置信区间",
+  "id": "sec-research-06-sources",
+  "title": "研究出处与证据边界",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 研究出处与证据边界\n\n- [Experiment-v0 草案](https://github.com/Yajing5027/nodal-research-intelligence/blob/main/research/experiment/experiment-v0.md) · blob `13f5a4aae02e3b7f85aa3136453ea8574452ec96`\n- [DHP MODEL_CONTRACT](https://github.com/Yajing5027/nodal-research-intelligence/blob/main/research/models/dhp_2022_reference/MODEL_CONTRACT.md) · blob `fd3029918ce142c9993fca02d5a31acac7b7e649`\n- [当前科研Dashboard](https://github.com/Yajing5027/nodal-research-intelligence/blob/main/dashboard/current-status.md) · blob `f5f66e230946fedde6ec2fcb27b59db66d15bdf9`\n- [零基础学习路线](https://github.com/Yajing5027/nodal-research-intelligence/blob/main/research/learning/LEARNING_ROADMAP.md) · blob `ff0e485f84b0a4358d44c43b138d3d13ef1a675a`\n\n**证据状态：** historical diagnostic / draft proposal / independent figure audit；没有正式 Experiment1、导师确认或真实学生效果。图形布局检查≠Nodal产品内预览通过。只在独立科研审核后升级 REVIEWED。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-06-analysis.md",
+  "noteContentSha256": "7071048fef42f83394547f765011b6080321bf139fdc19aae280eb288fc9b656",
+  "contentSha256": "62f0e8f8e565c6e5d0aabe6cbf3b303c730c89f7b56baa529544d5be69a8c78a",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-06-analysis&section=sec-research-06-sources"
+}

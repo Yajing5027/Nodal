@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-00-start",
+  "noteTitle": "从零认识 Nodal 科研：我们为什么研究复习机会？",
+  "id": "sec-research-00-overview",
+  "title": "从零认识 Nodal 科研：我们为什么研究复习机会？",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n# 从零认识 Nodal 科研：我们为什么研究复习机会？\n\n> **研究学习草稿 / NOT PUBLISHED**。面向零基础学习者。本文中的科研设计尚未正式冻结，所有SVG仍待Nodal兼容与独立审稿。\n\n我们研究的不是「哪种App最聪明」，也不是「你这次测验能考多少分」。核心问题是：**假设同一个模拟学习者少了同样多的复习机会，机会丢在前半段和后半段，对不同选题规则的影响会不会不一样？**\n\n例如：有100道已学题目，每天最多20次检索机会。突然有三天不能复习，相当于从日历删除60个**名义机会**。删除三天在前面或后面，策略经历的记忆状态不同，这就形成一个可以控制变量的问题。100项、每日20次、特定黑屏日和Day28/42终点都只是**工程候选配置**，尚未经导师最终冻结。\n\n现阶段研究仍为 PRE-FORMAL：尚无正式运行的策略效果或真实人的回忆测量。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-00-start.md",
+  "noteContentSha256": "678da7476f096d36e13de0a61b66d1eb8d0173fc5a63dd4631cf44b8d0f5441c",
+  "contentSha256": "06ceae6e01f76ab336e74b02b74cd7098ea87455249196e72e279e494ee032ac",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-00-start&section=sec-research-00-overview"
+}

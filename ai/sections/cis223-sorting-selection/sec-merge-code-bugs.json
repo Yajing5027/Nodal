@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-merge-code-bugs",
+  "title": "Code & Bug Recognition",
+  "parentId": "sec-merge-sort",
+  "hidden": false,
+  "markdown": "```java\nprivate static void sort(Key[] a, Key[] aux, int lo, int hi) {\n    if (hi <= lo) return; // base case: size <= 1\n    int mid = lo + (hi - lo) / 2;\n    sort(a, aux, lo, mid);\n    sort(a, aux, mid + 1, hi);\n    merge(a, aux, lo, mid, hi);\n}\n```\n\n**Common Quiz Traps & Bugs**\n- **Base case omission**: `if (hi <= lo) return;` must stop for 1 element. Stopping only on 0 elements leads to infinite recursion.\n- **Mid index vs value**: `mid` is the boundary index `lo + (hi - lo) / 2`, not the array value `a[mid]`.\n- **Merge loop bounds**: pointer conditions must guard against running past subarray ends (`i <= mid` and `j <= hi`).\n- **Remaining elements**: remaining elements in either half must be fully copied to target array.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "efea68c36f79c46c45f598bc8298fc907c9d3c220597664c14f616b4eb12d02d",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-merge-code-bugs"
+}

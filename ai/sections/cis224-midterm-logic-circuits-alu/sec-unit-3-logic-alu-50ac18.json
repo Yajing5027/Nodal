@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-logic-circuits-alu",
-  "noteTitle": "CIS 224 Midterm · Logic Gates, Adders & ALU",
+  "noteTitle": "Logic Gates, Adders & ALU",
   "id": "sec-unit-3-logic-alu-50ac18",
   "title": "UNIT 3 — LOGIC / ALU",
   "parentId": null,
@@ -9,8 +9,8 @@
   "markdown": "#### UNIT 3 — LOGIC / ALU\n\n25 Truth Table / Single Input〔课堂〕｜把 G1/G2 当输入；给一行也算完整表 → n 个独立输入是2^n行；给 ABC 就逐层算 G1→G2→OUT\n\n26 XOR vs OR〔A2〕｜以为 1^1=1 → XOR 输入不同才为1；1^1=0，但1|1=1\n\n27 NOT Scope〔A2〕｜!(B^C) 写成 !B^C → NOT 必须作用于整个括号；逐层代入时保留括号\n\n28 SOP Purpose〔课堂〕｜以为是猜原电路、只让 OUT=1 的行正确 → 目标是所有行正确；OUT=1 各行 AND，行间 OR，其余必须得0\n\n29 SOP: 0 in Input〔课堂〕｜写 010 为 A&B&C → 输入0写 !变量，故010对应 (!A&B&!C)\n\n30 NAND-only〔A2〕｜!(A&A)=A；忽略 Gate Count → !(A&A)=!A，NOT 只要1个NAND\n\n31 De Morgan〔考纲〕｜只对一边取反或未交换 & / | → !(A&B)=!A|!B，!(A|B)=!A&!B\n\n32 MUX vs Decoder〔考纲〕｜以为两者都选输入 → MUX 从 D0/D1 选择一路数据；Decoder 按二进制编号激活某个输出 Yk\n\n33 Half vs Full Adder〔考纲〕｜Full 忘 Cin、Carry 当 XOR → Half Sum=A^B, Carry=A&B；Full Sum=A^B^Cin，Cout 至少2个输入为1\n\n34 Ripple Carry vs Overflow〔考纲〕｜最高 Carry 就判 Signed Overflow → 4-bit V=C3^C4；C4 是无符号 carry，不一定是 V\n\n35 ALU Select / SUB〔Lab〕｜算数前没看 Select；减法漏 Cin=1 → L4 先看 S1S0；SUB=1 用 A+(~B)+1\n\n36 N/Z/C/V〔Lab〕｜C 与 V 混淆；N 看输入 → N=结果最高位，Z=结果是否全0，C=最后 Cout，V=最高位前后进位 XOR\n\n37 SR / D Latch / Flip-flop〔考纲〕｜把透明锁存器和边沿触发混淆 → D Latch E=1期间跟随D；Flip-flop 只在指定Edge采样；NAND型SR低有效 01 Set/10 Reset/11 Hold/00 Invalid\n\n\n| 题号 | 题干识别 | 查这里 |\n| --- | --- | --- |\n| Q7 | Gate list | U3-02/03 |\n| Q8 | Different gate list | U3-02/03 |\n| Q9 | NAND-only | U3-07 |\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-logic-circuits-alu.md",
-  "noteContentSha256": "74285fee47131b7cf76180995eb731420463cafa85cf3c448ddc3d890c047dff",
+  "noteContentSha256": "7a08b60dc30c0986ac38987253cf29abbc414381d122a33ef5ab6e354a24fbbe",
   "contentSha256": "3255483fda923c094fa7875fc1c431db354da881d762b820fd66384f5e4e9a8e",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu&section=sec-unit-3-logic-alu-50ac18"
 }

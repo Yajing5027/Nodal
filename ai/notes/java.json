@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "java",
+  "title": "Java",
+  "markdown": "\n<!-- nodal-panel:sec-string-charat:visible -->\n\n### String → char：`charAt(i)`\n\n- `value.charAt(i)`：读取 String 中 Index 为 `i` 的单个字符，返回类型是 `char`\n- **Index 从 0 开始**；`charAt(0)` 是第一个字符，`charAt(1)` 是第二个字符\n- `charAt()` 是读取字符，**不会自动把数字字符转换为整数**\n\n```java\nString value = \"508\";\n\nchar a = value.charAt(0); // '5'（char）\nchar b = value.charAt(1); // '0'（char）\nchar c = value.charAt(2); // '8'（char）\n```\n\n<!-- nodal-panel:sec-digit-char-to-int:visible -->\n\n### 数字字符 → int：减去 `'0'`\n\n- 如果读取到的字符属于 `'0'`–`'9'`，使用 `value.charAt(i) - '0'` 得到对应的整数 **0–9**\n- **`'0'` 必须是单引号**：它是 `char`，不是整数 `0`，也不是字符串 `\"0\"`\n- 原理：数字字符的编码连续；`'4'` 的编码值为 52，`'0'` 为 48，因此 `'4' - '0' == 4`\n- 这里是减法，不是字符串拼接；不会额外带上一个 0\n\n```java\nString value = \"508\";\n\nint first = value.charAt(0) - '0';  // 5\nint middle = value.charAt(1) - '0'; // 0\nint last = value.charAt(2) - '0';   // 8\n```\n\n| 写法 | 结果或类型 |\n| --- | --- |\n| `'4'` | `char`，字符 4 |\n| `\"4\"` | `String`，字符串 4 |\n| `4` | `int`，整数 4 |\n| `'4' - '0'` | `int`，结果 4 |\n| `'4' - 0` | `int`，结果 52，**不是** 4 |\n| `'4' * 1` | `int`，结果 52，**不是** 4 |\n\n**适用前提：** 必须先确认字符是十进制数字 `'0'`–`'9'`；符号 `'-'` 或其他字符不能直接当作数字处理\n\n**课程关联：** CIS 223 Homework 6 的 `BigInt(String value)` 要求检查并读取字符串中的数字字符，再将每一位保存为链表 Node 的 `digit`（0–9）。上面的 `charAt()` 代码是 Java 语法示例，并非老师 Starter Code 中已经实现的内容\n\n<!-- nodal-panel:sec-division-and-remainder:visible -->\n\n### Java 除法与取余：`/`、`%`\n\n| 运算 | 运算符 | Java 表达式 | 结果 |\n| --- | --- | --- | --- |\n| 整数除法（Integer Division） | `/` | `5 / 2` | `2`（两个 `int` 相除，舍弃小数部分） |\n| 取余（Remainder） | `%` | `5 % 2` | `1`（余数） |\n| 浮点数除法（Floating-point Division） | `/` | `5.0 / 2` | `2.5`（至少一个操作数是浮点数） |\n\n```java\nSystem.out.println(5 / 2);    // 2\nSystem.out.println(5 % 2);    // 1\nSystem.out.println(5.0 / 2);  // 2.5\nSystem.out.println(5 / 2.0);  // 2.5\n\ndouble a = 5 / 2;     // 2.0：整数除法先得到 2，再转换成 double\ndouble b = 5.0 / 2;   // 2.5：除法时已有一个 double\nboolean odd = 5 % 2 != 0; // true：通过余数判断奇偶\n```\n\n**记忆点：** `/` 是否保留小数取决于**参与运算的操作数类型**，不是接收结果的变量类型；Java 的整数除法向零截断（例如 `-5 / 2 == -2`），`%` 给出对应余数（`-5 % 2 == -1`）。\n\n<!-- nodal-panel:sec-for-loop-two-indices:visible -->\n\n### Java `for`：一个循环，同时管理两个索引\n\n```java\nfor (int i = 0, j = 1; j < nums.length; i++, j++) {\n    // 相邻元素：比较 nums[i] 和 nums[j]\n}\n\n// Reverse Array：这里只展示循环框架，交换语句由自己练习\nfor (int i = 0, j = nums.length - 1; i < j; i++, j--) {\n    // 在这里交换 nums[i] 与 nums[j]\n}\n```\n\n**`for (初始化; 条件; 更新)` 的三个部分：**\n\n| 位置 | 示例 | 含义 |\n| --- | --- | --- |\n| 初始化（Initialization） | `int i = 0, j = 1` | 在同一部分声明两个 `int` 变量，用逗号分隔 |\n| 条件（Condition） | `j < nums.length` 或 `i < j` | **一个布尔表达式**决定整个循环是否继续；不是要求每个变量各写一个停止条件 |\n| 更新（Update） | `i++, j++` 或 `i++, j--` | 可以用逗号放多个更新操作，每轮循环体结束后依次执行 |\n\n- **Adjacent comparison（相邻比较）**：`i` 与 `j` 同向移动，只需判断 `j < nums.length`，因为 `j` 始终比 `i` 大 1\n- **Reverse Array（原地反转）**：左指针 `i++`、右指针 `j--`，只需 `i < j`；奇数长度会停在中间位置，偶数长度会在指针交错时停止\n- **注意**：条件位置是**一个布尔表达式**，可以由 `&&` 或 `||` 组合多个判断，但不能把两个条件直接用逗号隔开\n- Java `for` 的初始化可以使用逗号声明同类型的多个变量；如果类型不同，通常先在循环外声明\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-string-charat",
+      "title": "String → char：`charAt(i)`",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=java&section=sec-string-charat",
+      "resource": "ai/sections/java/sec-string-charat.json"
+    },
+    {
+      "id": "sec-digit-char-to-int",
+      "title": "数字字符 → int：减去 `'0'`",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=java&section=sec-digit-char-to-int",
+      "resource": "ai/sections/java/sec-digit-char-to-int.json"
+    },
+    {
+      "id": "sec-division-and-remainder",
+      "title": "Java 除法与取余：`/`、`%`",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=java&section=sec-division-and-remainder",
+      "resource": "ai/sections/java/sec-division-and-remainder.json"
+    },
+    {
+      "id": "sec-for-loop-two-indices",
+      "title": "Java `for`：一个循环，同时管理两个索引",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=java&section=sec-for-loop-two-indices",
+      "resource": "ai/sections/java/sec-for-loop-two-indices.json"
+    }
+  ],
+  "sourcePath": "content/notes/java.md",
+  "contentSha256": "1a308334def78597b3a895731e53bddd6070e0dc99e9fa52f35d0ed5762ad4e6",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=java"
+}

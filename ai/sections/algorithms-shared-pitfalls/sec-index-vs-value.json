@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "algorithms-shared-pitfalls",
+  "noteTitle": "Algorithms · Shared Pitfalls",
+  "id": "sec-index-vs-value",
+  "title": "Index ≠ Stored Value",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Index ≠ Stored Value\n\n- **Index** 是 Array 位置，**Value / Entry** 才是该位置存放的数据；数组容量不是元素数值上限\n- **Quiz 6 · Stack**：`S.top` 是 Index，`S[S.top]` 才是 Value\n- **Quiz 7 · Hash Table**：`h(k)` → Initial Index ≠ Stored Key / Entry（Key-only 或 Key–Value）\n- 相关来源：[Quiz 6 · Top](nodal://note/quiz6-stack-and-queue/sec-stack-boundary) · [Quiz 7 · Hash Function](nodal://note/quiz7-hash-tables/sec-hash-function)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/algorithms-shared-pitfalls.md",
+  "noteContentSha256": "18bba26e3b12aec52552747f6a515f94b45f77e9b7becf979908dcb446429c2e",
+  "contentSha256": "01fbf4c3e823996cd5af8863719141a90f114262c233ece318d3f0f69308f950",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=algorithms-shared-pitfalls&section=sec-index-vs-value"
+}

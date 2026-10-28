@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "java",
+  "noteTitle": "Java",
+  "id": "sec-division-and-remainder",
+  "title": "Java 除法与取余：`/`、`%`",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Java 除法与取余：`/`、`%`\n\n| 运算 | 运算符 | Java 表达式 | 结果 |\n| --- | --- | --- | --- |\n| 整数除法（Integer Division） | `/` | `5 / 2` | `2`（两个 `int` 相除，舍弃小数部分） |\n| 取余（Remainder） | `%` | `5 % 2` | `1`（余数） |\n| 浮点数除法（Floating-point Division） | `/` | `5.0 / 2` | `2.5`（至少一个操作数是浮点数） |\n\n```java\nSystem.out.println(5 / 2);    // 2\nSystem.out.println(5 % 2);    // 1\nSystem.out.println(5.0 / 2);  // 2.5\nSystem.out.println(5 / 2.0);  // 2.5\n\ndouble a = 5 / 2;     // 2.0：整数除法先得到 2，再转换成 double\ndouble b = 5.0 / 2;   // 2.5：除法时已有一个 double\nboolean odd = 5 % 2 != 0; // true：通过余数判断奇偶\n```\n\n**记忆点：** `/` 是否保留小数取决于**参与运算的操作数类型**，不是接收结果的变量类型；Java 的整数除法向零截断（例如 `-5 / 2 == -2`），`%` 给出对应余数（`-5 % 2 == -1`）。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/java.md",
+  "noteContentSha256": "1a308334def78597b3a895731e53bddd6070e0dc99e9fa52f35d0ed5762ad4e6",
+  "contentSha256": "4f8d532dd076aa1188910d35ac1e87cd848f8977b107a7a216e560c3c7f7574d",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=java&section=sec-division-and-remainder"
+}

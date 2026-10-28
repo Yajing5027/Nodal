@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-insertion-sort",
+  "title": "Insertion Sort",
+  "parentId": "sec-comparison-sort",
+  "hidden": false,
+  "markdown": "Grow a sorted prefix, one key at a time.\n\n![Insertion Sort: Grow a sorted prefix, one key at a time](study/assets/asset-insertion-sort-%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F%EF%BC%9A%E9%80%90%E6%AD%A5%E6%9E%84%E5%BB%BA%E6%9C%89%E5%BA%8F%E5%89%8D%E7%BC%80.png)\n\n- **Sorted prefix invariant**: at step $i$, prefix $A[0 \\dots i-1]$ is already sorted.\n- **Inner operation sequence**: find position $\\to$ shift elements right $\\to$ insert key into vacant slot.\n- **Order direction**:\n  - Ascending: shift elements where $A[j] > \\text{key}$.\n  - Descending: shift elements where $A[j] < \\text{key}$.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "66b352e51c52d05d2062e9675cbf80924d4fb4dbeee31d6cfa2661daab47ad32",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-insertion-sort"
+}

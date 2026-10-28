@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-physics-mechanics",
+  "noteTitle": "University Physics · Mechanics & Rotational Dynamics",
+  "id": "sec-phys-rotational-dynamics",
+  "title": "转动惯量与角动量守恒 (Moment of Inertia & Angular Momentum)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 转动惯量与角动量守恒 (Moment of Inertia & Angular Momentum)\n\n- **转动惯量 (Moment of Inertia)**：$I = \\sum m_i r_i^2 = \\int r^2 dm$。\n  - 决定因素：总质量 $M$、相对转轴质量分布形状、转轴位置。\n  - 质量离转轴越远，转动惯量越大：\n    - 空心薄球壳 ($I = \\frac{2}{3}MR^2$) > 实心球 ($I = \\frac{2}{5}MR^2$)\n    - 细杆绕端点轴 ($I = \\frac{1}{3}ML^2$) > 细杆绕中心轴 ($I = \\frac{1}{12}ML^2$)\n- **力矩与转动定律**：$\\vec{\\tau} = \\vec{r} \\times \\vec{F}$，$\\tau_{net} = I\\alpha$。\n- **角动量守恒定律 (Angular Momentum)**：$\\vec{L} = I\\vec{\\omega}$，外力矩合力为 0 时 $\\vec{L} = \\text{const}$。\n\n$$\n\\text{子弹击入转盘}: \\quad I_0\\omega_0 + m v r = (I_0 + m r^2)\\omega\n$$\n\n$$\n\\text{人向转盘中心移动}: \\quad r \\downarrow \\implies I_{tot} \\downarrow \\implies \\omega \\uparrow\n$$",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-physics-mechanics.md",
+  "noteContentSha256": "da1823ca0edada4bd2b2e953dc2f1af8d3de682eb9e9580120c8d38272a44619",
+  "contentSha256": "f1fc6d56abd9bd8c911f64311f28ed78de525053407c3a91be6c823358919659",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-physics-mechanics&section=sec-phys-rotational-dynamics"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-counting-range-complexity",
+  "title": "Range & Complexity",
+  "parentId": "sec-counting-sort",
+  "hidden": false,
+  "markdown": "- **Dense integer range**: highly efficient when range $k$ is small relative to $n$.\n- **Sparse / extreme range**: e.g., $\\{1, 1000000, 1\\}$ wastes memory and requires scanning empty slots.\n- **Offset handling**: if values range over $[\\min \\dots \\max]$, allocate size $\\max - \\min + 1$ with index `val - min`.\n- **Complexity**: $\\Theta(n + k)$\n  - $k$ = key range size\n  - only if $k = O(n) \\to \\Theta(n)$\n  - if $k \\gg n$, $k$ dominates\n  - Example: $n = 100, k = 1{,}000{,}000 \\to \\text{not } \\Theta(n)$",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "77105c9efc785a8e53c0c6446e8dcb006d4bba42b6b8d0c25f951228c449f3fa",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-counting-range-complexity"
+}

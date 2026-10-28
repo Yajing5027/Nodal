@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-discrete-logic-set-theory",
+  "noteTitle": "Discrete Mathematics · Mathematical Logic & Set Theory",
+  "id": "sec-logic-implication-nec-suff",
+  "title": "条件命题与充分必要条件 (Conditionals & Nec/Suff)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 条件命题与充分必要条件 (Conditionals & Nec/Suff)\n\n**条件命题变体矩阵 (Variations of $P \\to Q$)**\n\n| 变体 | 符号 | 关系 | 关键词 |\n| :--- | :---: | :--- | :--- |\n| 原命题 (Original) | $P \\to Q$ | 基准 | If $P$, then $Q$ |\n| 逆命题 (Converse) | $Q \\to P$ | 独立真假 | 换位 ($P \\leftrightarrow Q$) |\n| 否命题 (Inverse) | $\\sim P \\to \\sim Q$ | 等价于逆命题 | 双否定 |\n| 逆否命题 (Contrapositive) | $\\sim Q \\to \\sim P$ | $\\equiv P \\to Q$ (同真同假) | 换位且否定 |\n\n**充分条件 vs 必要条件 (Sufficient vs Necessary)**\n\n- **充分条件 (Sufficient)**：$P \\implies Q$。$P$ 为前件/前提。有 $P$ 必有 $Q$（$P$ is sufficient for $Q$）。\n- **必要条件 (Necessary)**：$P \\implies Q$。$Q$ 为后件/结论。无 $Q$ 必无 $P$（$\\sim Q \\implies \\sim P$，$Q$ is necessary for $P$）。\n- 句式速查：\n  - $P$ only if $Q \\implies P \\to Q$\n  - $P$ if $Q \\implies Q \\to P$\n  - $P$ unless $Q \\implies \\sim Q \\to P \\equiv \\sim P \\to Q$",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-discrete-logic-set-theory.md",
+  "noteContentSha256": "22517d5be93f394764ca7a606caa6f55bfe809a8167fa2142e2fb575e13c64d3",
+  "contentSha256": "db2af6e4a1833429a77834cddaca0964b6f7d089022f074ef64f84be6b40e5a7",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-logic-implication-nec-suff"
+}

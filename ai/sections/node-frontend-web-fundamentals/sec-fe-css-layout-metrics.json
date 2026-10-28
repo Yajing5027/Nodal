@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-frontend-web-fundamentals",
+  "noteTitle": "Front End Web Fundamentals",
+  "id": "sec-fe-css-layout-metrics",
+  "title": "CSS 间距阶梯与边框模型 (CSS Spacing & Borders)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## CSS 间距阶梯与边框模型 (CSS Spacing & Borders)\n\n- **标准工程间距阶梯 (Spacing Scale)**：\n  - `0`: 清零重置；`5px`: 微型边距 (tight)；`10px`: 小型控件内衬；`15px` / `20px`: 标准卡片内外间距；`30px`: 模块段落分隔；`50px`: 区块间距。\n- **表格边框合并规范**：\n\n```css\ntable {\n  border-collapse: collapse; /* 合并相邻单元格边框，消除双重线条 */\n  margin: 20px;\n}\nth, td {\n  border: 1px solid #ddd;\n  padding: 8px 12px;\n}\n```",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-frontend-web-fundamentals.md",
+  "noteContentSha256": "c734969e8b9e0e9679655e53dcd0db37c416d2aa1f88c98c398faed412e89640",
+  "contentSha256": "59544e7177dcc7d0bd769df3dca0d0d05d0956e1ca70f00a32e3d64f17d33f1a",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-frontend-web-fundamentals&section=sec-fe-css-layout-metrics"
+}

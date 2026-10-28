@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-discrete-logic-set-theory",
+  "noteTitle": "Discrete Mathematics · Mathematical Logic & Set Theory",
+  "id": "sec-logic-predicates-quantifier-order",
+  "title": "谓词逻辑与量词作用域 (Predicate Logic & Quantifiers)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 谓词逻辑与量词作用域 (Predicate Logic & Quantifiers)\n\n- **谓词 (Predicate)**：$P(x): D \\to \\{T, F\\}$，论域 $D$ 为个体允许取值集合。\n- **约束与自由**：$\\forall x$ / $\\exists x$ 绑定变量。自由变量未约束 $\\implies$ 开语句；全约束 $\\implies$ 命题。\n- **空真 (Vacuous Truth)**：$\\forall x \\in \\emptyset, P(x) \\equiv T$；$\\forall x (P(x) \\to Q(x))$ 当前提 $P(x)$ 恒假时全称命题直接为 $T$。\n\n**量词出场顺序决定变量性质（核心原则）**\n\n| 量词次序 | 形式 | 变量本质 | 解读 |\n| :--- | :---: | :--- | :--- |\n| 先 $\\forall$ 后 $\\exists$ | $\\forall x \\exists y, P(x, y)$ | $y$ 为随动变量 | **私人订制**：对任意给定的 $x$，存在匹配的 $y = f(x)$ |\n| 先 $\\exists$ 后 $\\forall$ | $\\exists x \\forall y, P(x, y)$ | $x$ 为固定常数 | **以一敌百**：存在唯一死常数 $x$，能搞定所有变动的 $y$ |\n\n**量词否定与分配律 (Quantifier De Morgan & Distribution)**\n\n$$\n\\sim(\\forall x, P(x)) \\equiv \\exists x, \\sim P(x), \\qquad \\sim(\\exists x, P(x)) \\equiv \\forall x, \\sim P(x)\n$$\n\n$$\n\\sim(\\forall x, P(x) \\to Q(x)) \\equiv \\exists x, (P(x) \\land \\sim Q(x))\n$$\n\n- $\\forall$ 对 $\\land$ 可分配：$\\forall x (P(x) \\land Q(x)) \\equiv (\\forall x P(x)) \\land (\\forall x Q(x))$\n- $\\exists$ 对 $\\lor$ 可分配：$\\exists x (P(x) \\lor Q(x)) \\equiv (\\exists x P(x)) \\lor (\\exists x Q(x))$\n- **禁区**：$\\forall$ 对 $\\lor$、$\\exists$ 对 $\\land$ 不可随意分配（$\\not\\equiv$）。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-discrete-logic-set-theory.md",
+  "noteContentSha256": "22517d5be93f394764ca7a606caa6f55bfe809a8167fa2142e2fb575e13c64d3",
+  "contentSha256": "0ad72041d6417e7b6abde51ad0f3b0d1fd48770d3e784a92ea2b192ae81592f0",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-logic-predicates-quantifier-order"
+}

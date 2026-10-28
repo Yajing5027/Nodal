@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-dictionary-operations",
+  "title": "3. Operations & Complexity (Application)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### 3. Operations & Complexity (Application)\n\n| Operation | Key-only | Dictionary / Map |\n|---|---|---|\n| Insert / Update | Insert Key（依重复 Key 策略） | put(k,v)：新 Key 插入，已有 Key 更新 Value |\n| Search | Find Key | get(k) / containsKey(k) |\n| Delete | Remove Key | remove(k) |\n| Size | Key Count | size()（Entry Count） |\n\n```java\nMap<Integer, String> students = new HashMap<>();\nstudents.put(13, \"Alice\");\nstudents.get(13);          // \"Alice\"\nstudents.put(13, \"David\"); // Update Value\nstudents.remove(13);       // Delete\n```\n\n\n*Java API 补充：Map = Interface；HashMap = Class；以上只是一种 Dictionary 实现，不是所有 Hash Tables 的统一接口*\n\n**Deletion · Tombstone only**：Never-used → Search 可停止；Deleted → Search 继续、Insert 可复用；NIL=-1 / DELETED=-2 只是某些整数 Key 实现的 Sentinel，不是通用定义",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "538c1182f9ab79e336c1c90ef0cd9fcb55d7a350ea11e7ff334c14f90f8be3e9",
+  "contentSha256": "a09a72a570b51e99c217664458b898fd2f9d7841de9e07c6179660df9ba6ed96",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-dictionary-operations"
+}

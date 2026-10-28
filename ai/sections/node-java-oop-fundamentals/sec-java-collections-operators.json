@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-java-oop-fundamentals",
+  "noteTitle": "Java & Object-Oriented Programming",
+  "id": "sec-java-collections-operators",
+  "title": "集合打印与运算行为 (Collections & Operators)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 集合打印与运算行为 (Collections & Operators)\n\n- **容器与数组输出机制**：\n  - 原生数组直接 `System.out.println(arr)`：输出类型与内存哈希（如 `[I@1b6d3586`）。正确格式化须调用 `Arrays.toString(arr)`。\n  - 集合结构（`ArrayList`, `LinkedList`, `Stack`, `Queue`）：内部已重写 `toString()`，直接输出元素列表 `[a, b, c]`。\n- **逻辑运算符短路机制与优先级**：\n  - `&` / `|`：位运算或非短路逻辑运算（两端均执行）。\n  - `&&` / `||`：短路逻辑运算（前项已决断结果时跳过右侧求值）。\n  - 优先级：AND 运算（`&`, `&&`）高于 OR 运算（`|`, `||`）。\n- **幂运算结合性跨语言对比 (Associativity)**：\n  - Python `**` 为**右结合 (Right-associative)**：`2**3**2` $\\implies 2^{(3^2)} = 2^9 = 512$；而 `(2**3)**2 = 8^2 = 64$。\n  - Java 中无原生 `**` 运算符，须使用静态方法 `Math.pow(2, Math.pow(3, 2))`。\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-java-oop-fundamentals.md",
+  "noteContentSha256": "157e6d2a1029fd8a318f3703c2c7592dcbd6a278b6451e7a91cc9c2a96160212",
+  "contentSha256": "93ba5e4158fcd6a8c0792d3d468f36e5fc6fc58a5f2668fadf61e43c9abdbb20",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals&section=sec-java-collections-operators"
+}

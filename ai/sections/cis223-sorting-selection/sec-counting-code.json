@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-counting-code",
+  "title": "Code",
+  "parentId": "sec-counting-sort",
+  "hidden": false,
+  "markdown": "```java\nstatic void countingSort(int[] numbers, int k) {\n\n    // 1. 开 count\n    int[] count = new int[k];\n\n    // 2. 数每个数字出现几次\n    for (int number : numbers) {\n        count[number]++;\n    }\n\n    // 3. 把次数变成右边界\n    for (int i = 1; i < count.length; i++) {\n        count[i] += count[i - 1];\n    }\n\n    // 4. 开 output\n    int[] output = new int[numbers.length];\n\n    // 5. 从右往左，把每个数放到自己的位置\n    for (int i = numbers.length - 1; i >= 0; i--) {\n        int number = numbers[i];\n\n        count[number]--;\n\n        output[count[number]] = number;\n    }\n\n    // 6. copy back\n    for (int i = 0; i < numbers.length; i++) {\n        numbers[i] = output[i];\n    }\n}\n```",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "1979defe88daf51e9af81a6e7f53eaacf3e54d94a64012a6bf277d745055a3b1",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-counting-code"
+}

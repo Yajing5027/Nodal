@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-heap-java-impl",
+  "title": "Java Implementation",
+  "parentId": "sec-heap-foundations",
+  "hidden": false,
+  "markdown": "```java\n// Upheap: restore invariant after adding at count\nprivate void upheap(int i) {\n    while (i > 0 && keys[(i - 1) / 2] > keys[i]) {\n        swap((i - 1) / 2, i);\n        i = (i - 1) / 2;\n    }\n}\n\n// Downheap: restore invariant after removing root\nprivate void downheap(int i, int n) {\n    while (2 * i + 1 < n) {\n        int left = 2 * i + 1;\n        int right = 2 * i + 2;\n        int child = left;\n        if (right < n && keys[right] < keys[left]) {\n            child = right;\n        }\n        if (keys[i] <= keys[child]) break;\n        swap(i, child);\n        i = child;\n    }\n}\n```\n\n- When swapping upward, update index $i$ to parent: `i = (i - 1) / 2`.\n- Child candidates must be verified with `child < n` before array access.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "2debfbcb339a95c6ca9774f16f0d6be3b775f477cae60efc3c1c15276688ff61",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-java-impl"
+}

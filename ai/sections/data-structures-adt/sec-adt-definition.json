@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "data-structures-adt",
+  "noteTitle": "Data Structures · ADT vs Implementation",
+  "id": "sec-adt-definition",
+  "title": "ADT — Abstract Data Type",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### ADT — Abstract Data Type\n\n**ADT = Operations + Behavior Rules ≠ Implementation**\n\n$\\text{ADT}\\xrightarrow{\\text{Implemented by}}\\text{Data Structure}$\n\n- **ADT（抽象数据类型）**：描述一类数据及其允许的操作、行为规则；**不规定底层 Memory Layout**\n- **Implementation（具体实现）**：实际用 Array、Linked List、Hash Table、Tree 等组织与访问数据\n- **区分**：ADT 描述逻辑上能存/查什么；实现负责真正完成存取。二者不是必须分别创建的两个运行时容器",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/data-structures-adt.md",
+  "noteContentSha256": "ef2bf5fff7adc0961a0eb1475412b7cf25c94cdf0f7dbe4aedee4f83d79c6066",
+  "contentSha256": "7064dd4fb4fbf5e5bfeb216649d9565b5ee306ec8ea76ad91dda8c459d5cc040",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-adt&section=sec-adt-definition"
+}

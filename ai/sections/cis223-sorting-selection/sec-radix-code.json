@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-radix-code",
+  "title": "Code",
+  "parentId": "sec-radix-sort",
+  "hidden": false,
+  "markdown": "```java\nstatic void radixSort(int[] numbers) {\n\n    if (numbers.length <= 1) {\n        return;\n    }\n\n    // Find max\n    int max = numbers[0];\n\n    for (int number : numbers) {\n        if (number > max) {\n            max = number;\n        }\n    }\n\n    // Ones → tens → hundreds → ...\n    for (int exp = 1; max / exp > 0; exp *= 10) {\n        countingSortByDigit(numbers, exp);\n    }\n}\n\n\nstatic void countingSortByDigit(int[] numbers, int exp) {\n\n    int[] count = new int[10];\n\n    // Count current digit\n    for (int number : numbers) {\n        int digit = (number / exp) % 10;\n        count[digit]++;\n    }\n\n    // Cumulative boundaries\n    for (int i = 1; i < count.length; i++) {\n        count[i] += count[i - 1];\n    }\n\n    int[] output = new int[numbers.length];\n\n    // Stable placement: right → left\n    for (int i = numbers.length - 1; i >= 0; i--) {\n\n        int number = numbers[i];\n        int digit = (number / exp) % 10;\n\n        count[digit]--;\n        output[count[digit]] = number;\n    }\n\n    // Copy back\n    for (int i = 0; i < numbers.length; i++) {\n        numbers[i] = output[i];\n    }\n}\n```",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "f06406409edc0f83896ef65bcc92c0bd015ae9e4aa5b24463d8a8836a36c6032",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-radix-code"
+}

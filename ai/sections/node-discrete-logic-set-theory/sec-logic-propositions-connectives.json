@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-discrete-logic-set-theory",
+  "noteTitle": "Discrete Mathematics · Mathematical Logic & Set Theory",
+  "id": "sec-logic-propositions-connectives",
+  "title": "命题逻辑与联结词 (Propositional Logic & Connectives)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 命题逻辑与联结词 (Propositional Logic & Connectives)\n\n- **命题 (Proposition)**：有确定真假值（$T/F$）的陈述句。含自由变量的开语句（如 $2x+y=8$）非命题。\n- **原子命题 (Atomic)**：不可再分基元 $P, Q$。**复合命题 (Compound)**：由逻辑联结词合成。\n\n| 联结词 (Connective) | 符号 | 语义 | 真值特征 |\n| :--- | :---: | :--- | :--- |\n| 否定 (Negation) | $\\sim P$ | not $P$ | $\\sim T = F, \\sim F = T$ |\n| 合取 (Conjunction) | $P \\land Q$ | $P$ and $Q$ | 全真才真 |\n| 析取 (Disjunction) | $P \\lor Q$ | $P$ or $Q$ | 有真即真 |\n| 条件 (Conditional) | $P \\to Q$ | if $P$ then $Q$ | 仅 $T \\to F$ 为假（$P$ 假时恒真：空真） |\n| 双条件 (Biconditional) | $P \\leftrightarrow Q$ | $P$ iff $Q$ | 同真同假为真 |\n| 异或 (Exclusive OR) | $P \\oplus Q$ | either $P$ or $Q$ | 真值相异为真 |\n\n**德摩根定律与条件改写 (De Morgan & Equivalence)**\n\n$$\n\\sim(P \\land Q) \\equiv \\sim P \\lor \\sim Q, \\qquad \\sim(P \\lor Q) \\equiv \\sim P \\land \\sim Q\n$$\n\n$$\nP \\to Q \\equiv \\sim P \\lor Q \\equiv \\sim Q \\to \\sim P, \\qquad \\sim(P \\to Q) \\equiv P \\land \\sim Q\n$$",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-discrete-logic-set-theory.md",
+  "noteContentSha256": "22517d5be93f394764ca7a606caa6f55bfe809a8167fa2142e2fb575e13c64d3",
+  "contentSha256": "c70656454a6e4204df450b7d2370761a0d58987d60822ed79c755d3600b7fda3",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-logic-propositions-connectives"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-calculus-riemann-curves",
+  "noteTitle": "Calculus · Riemann Sums & Curves",
+  "id": "sec-calc-riemann-endpoints-bounds",
+  "title": "黎曼和端点性质与估算误差 (Riemann Sums & Error Bounds)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 黎曼和端点性质与估算误差 (Riemann Sums & Error Bounds)\n\n- **端点采样本质与几何覆盖**：\n  - 左端点 ($L_n$)：取小区间起始点 $x_{i-1}$，矩形左上角钉在函数曲线上。\n  - 右端点 ($R_n$)：取小区间终点 $x_i$，矩形右上角钉在函数曲线上。\n- **函数单调性决定误差方向（定理）**：\n\n| 函数性质 | 左端点和 ($L_n$) | 右端点和 ($R_n$) | 原因机制 |\n| :--- | :---: | :---: | :--- |\n| **严格单调递减 ($f' < 0$)** | **高估 (Overestimate)** | **低估 (Underestimate)** | 左侧最高冒尖露在曲线外；右侧最低填不满积分面积 |\n| **严格单调递增 ($f' > 0$)** | **低估 (Underestimate)** | **高估 (Overestimate)** | 左侧最低填不满面积；右侧最高超出曲线 |",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-calculus-riemann-curves.md",
+  "noteContentSha256": "7e5fd198a9c88e44ded353030828610eee201f213a7b0009c20a08115337f6a8",
+  "contentSha256": "73481371746b6dc853cc4daedaa74699988f12802ee47d0dafcce5c94e398573",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-calculus-riemann-curves&section=sec-calc-riemann-endpoints-bounds"
+}

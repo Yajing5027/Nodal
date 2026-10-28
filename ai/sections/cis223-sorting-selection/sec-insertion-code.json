@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-insertion-code",
+  "title": "Code",
+  "parentId": "sec-insertion-sort",
+  "hidden": false,
+  "markdown": "```java\nfor (int i = 1; i < a.length; i++) {\n    Key key = a[i];          // current key to insert\n    int j = i - 1;\n    // find position & shift\n    while (j >= 0 && a[j].compareTo(key) > 0) {\n        a[j + 1] = a[j];     // shift right\n        j--;\n    }\n    a[j + 1] = key;          // insert into vacant position\n}\n```\n\n- `i = 1` starts from the second element (a single element prefix $A[0]$ is trivially sorted).\n- Loop test `j >= 0` must precede `compareTo` to guard against index out-of-bounds.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "b8b7cae5f341423cc834dfb071e1868a5ec7f2bbb6b2ef3d03928d30ebbffe90",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-insertion-code"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-heap-property",
+  "title": "Heap Property",
+  "parentId": "sec-heap-foundations",
+  "hidden": false,
+  "markdown": "A complete ordered binary tree storing keys with a strict parent-child invariant.\n\n- **Min-Heap**: $\\text{parent} \\le \\text{children}$ (root is the minimum).\n- **Max-Heap**: $\\text{parent} \\ge \\text{children}$ (root is the maximum).\n- **No sibling order**: Heap property enforces parent-child order only; sibling or adjacent array elements have no relative ordering constraint.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "b571ee70a62ad9a1f6f53afaa44fbe3b685241884fd5c86b5139e52f1ba43651",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-property"
+}

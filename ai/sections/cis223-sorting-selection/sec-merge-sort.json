@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-merge-sort",
+  "title": "Merge Sort",
+  "parentId": "sec-comparison-sort",
+  "hidden": false,
+  "markdown": "Divide into halves, recursively sort, then merge the sorted halves.\n\n![Merge Sort: Divide into halves, recursively sort, then merge](study/assets/asset-merge-sort-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3.png)\n\n- **Base case**: stop when subarray size $\\le 1$.\n- **Split point**: `mid` is an index / split position ($lo + (hi - lo) / 2$), never the element value stored at $S[n/2]$.\n- **Merge contract**: takes two already-sorted subarrays and produces one combined sorted array.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "52ad3f1173067c6ac1e8d819b235bde769fc4b1856ec07b1082c540ed65b3a5c",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-merge-sort"
+}

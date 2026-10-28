@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-02-memory",
+  "noteTitle": "为什么记忆会遗忘：DHP、FSRS和数值边界",
+  "id": "sec-research-02-mechanism",
+  "title": "关键机制：你需要能够解释什么？",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 关键机制：你需要能够解释什么？\n\nDHP 的单项状态有难度d、半衰期h、上次复习时刻last。成功/失败会使用**旧**d/h/p计算新的h，然后更新last；失败局部更新d+2。在冻结作者源码的SOURCE_REFERENCE中d截到18，但论文未给出可以直接认定的同一上界实现。\n\nTRUE是模拟环境隐藏的状态，ESTIMATE是策略用可观察反馈独立重构的状态；在理想matched-history设置下两套数值可能相同，**但绝不是同一个内存对象，更不是对真人记忆的直接测量**。\n\nFSRS-4.5与DHP的记忆状态与反馈语义不同，当前FSRS只是条件性对照模型；不能凭两条曲线匹配一个概率就认为模型已等价。边界错误：很小的正间隔下binary64可能把p舍入为1，使源码计算的q=1−p为0，失败更新可能出错。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-02-memory.md",
+  "noteContentSha256": "7c8a5be5403a8df9b6c5fd63a968f698036169eabe6476209c91f3c223e4ba24",
+  "contentSha256": "f4b7def49aa1d7661ad3404fce59c1c4be7472b7ac45e29cfd5e3dd13082d803",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-02-memory&section=sec-research-02-mechanism"
+}

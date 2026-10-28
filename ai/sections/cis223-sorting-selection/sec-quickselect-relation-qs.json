@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-quickselect-relation-qs",
+  "title": "Relation to Quick Sort",
+  "parentId": "sec-quickselect",
+  "hidden": false,
+  "markdown": "- **Quick Sort**: partitions, then recurses into **both** sides until fully sorted.\n- **Quickselect**: partitions using the same routine as [Quick Sort / Partition](nodal://node/cis223-sorting-selection/sec-qs-partition), then recurses **only** into the subarray containing the target rank.\n\n**Pivot Rank Discovery**\n- Choosing a pivot does not reveal its rank beforehand.\n- Partitioning places the pivot into its final index $p$ and establishes that $p$ elements precede it.\n- If $p == \\text{target index}$: done; pivot is the answer.\n- If $\\text{target index} < p$: recurse only on left.\n- If $\\text{target index} > p$: recurse only on right.\n- Average time $\\Theta(n)$; worst case $\\Theta(n^2)$.\n\n\n\n\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "3b47ce715f516bbb0522cc29c88f3c481c170761a27d62942cf144b8ecab570c",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-quickselect-relation-qs"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-heap-sort-process",
+  "title": "Heap Sort Process",
+  "parentId": "sec-heap-sort",
+  "hidden": false,
+  "markdown": "Repeatedly extract the root and place it into the shrinking boundary.\n\n![Heap Sort: Build heap and repeatedly extract extreme element (流程与复杂度)](study/assets/asset-heap-sort-%E5%A0%86%E6%8E%92%E5%BA%8F%E6%B5%81%E7%A8%8B%E4%B8%8E%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BF%A1%E6%81%AF%E5%9B%BE.png)\n\n**Order Rule**\n- **Ascending sort**: use **Max-Heap** (max root moves to end $n-1, n-2, \\dots$).\n- **Descending sort**: use **Min-Heap** (min root moves to end).\n\n**Phase Analysis**\n1. **Build Heap**: bottom-up downheap takes $O(n)$ time.\n2. **Sort Down**:\n   - Swap root with last active element.\n   - Shrink active heap range by 1.\n   - Downheap new root ($O(\\log n)$).\n   - Repeat $n - 1$ times $\\to \\Theta(n \\log n)$.\n- Overall time complexity: $\\Theta(n \\log n)$ in best, worst, and average cases.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "4e2c9ee80420682519e8f7dd1ef2ca6f843e0d256e3353545912f6ca426d65f2",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-heap-sort-process"
+}

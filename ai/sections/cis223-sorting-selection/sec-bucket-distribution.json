@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-bucket-distribution",
+  "title": "Distribution",
+  "parentId": "sec-bucket-sort",
+  "hidden": false,
+  "markdown": "- Value domain is partitioned into equal-width buckets (e.g., $B_0: [0, 9], B_1: [10, 19], B_2: [20, 29]$).\n- **Equal-width $\\neq$ equal count**: equal interval size does not guarantee equal element counts.\n- Boundaries are designed from the known input range, not chosen randomly.\n- **Uniform distribution requirement**: near-linear performance relies on roughly uniform input distribution.\n- **Floating-point index formula**: for values in $[0, 1)$ with 10 buckets: $\\text{index} = \\lfloor 10 \\times \\text{value} \\rfloor$ (e.g., $0.46 \\implies \\lfloor 4.6 \\rfloor = \\text{bucket } 4$).",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "41cb3df9ea4083587d0dd461c5dc673c38972de30d78471bb7c468097a181f85",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-bucket-distribution"
+}

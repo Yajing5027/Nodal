@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-java-oop-fundamentals",
+  "noteTitle": "Java & Object-Oriented Programming",
+  "id": "sec-java-class-memory-model",
+  "title": "类构造与值传递模型 (Classes & Pass-by-Value)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 类构造与值传递模型 (Classes & Pass-by-Value)\n\n- **类与对象**：类（Class）是创建实体的模板/蓝图；对象（Object）是堆内存分配的具体实例（`new`）。\n- **纯粹严格值传递 (Strictly Pass-by-Value)**：\n  - 基本数据类型（`int`, `double`）：方法实参直接复制一份数值传给形参。\n  - 引用数据类型（`Object`, `Array`）：方法实参复制一份**堆内存地址指针**传给形参。\n  - 关键陷阱：方法内部执行 `obj = new Other()` 只是修改了形参指针副本，不会改变外部原引用；但通过 `obj.setX()` 会直接改变堆中同一实体状态。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-java-oop-fundamentals.md",
+  "noteContentSha256": "157e6d2a1029fd8a318f3703c2c7592dcbd6a278b6451e7a91cc9c2a96160212",
+  "contentSha256": "976fddf425fc98ba28e38b4bfa57c42c21c3cf7d9e4b8f11c5d0949724c49519",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals&section=sec-java-class-memory-model"
+}

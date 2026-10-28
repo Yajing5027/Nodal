@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-physics-mechanics",
+  "noteTitle": "University Physics · Mechanics & Rotational Dynamics",
+  "id": "sec-phys-kinematics-uncertainty",
+  "title": "运动学状态与不确定度 (Kinematics & Uncertainty)",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 运动学状态与不确定度 (Kinematics & Uncertainty)\n\n- **有效数字规则 (Significant Figures)**：\n  - 前导零无效：$0.0030$ 为 2 位有效数字（3 与末尾 0）。\n  - 乘除运算：结果精度取决于有效数字**最少**的操作数（如 $2.50 / 5. = 0.5$）。\n  - 乘积相对不确定度：若 $C = AB$，则 $\\frac{\\delta C}{C} = \\frac{\\delta A}{A} + \\frac{\\delta B}{B}$。\n- **速度与加速度核心辨析**：\n\n$$\nv(t) = \\frac{dr}{dt}, \\qquad a(t) = \\frac{dv}{dt}\n$$\n\n  - **速度为 0 不代表加速度为 0**（$a$ 为速度变化率，非瞬时速度值）：\n    - 竖直上抛最高点瞬间：$v = 0$，但受重力加速度 $a = g \\neq 0$。\n    - 减速制动停止瞬间：末角速度 $\\omega = 0$，制动加速度为过程量。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-physics-mechanics.md",
+  "noteContentSha256": "da1823ca0edada4bd2b2e953dc2f1af8d3de682eb9e9580120c8d38272a44619",
+  "contentSha256": "3db30bbb5184a32f3c4a32fbd92a3b88fc87c950241f22270566500946e261fb",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-physics-mechanics&section=sec-phys-kinematics-uncertainty"
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "node-java-oop-fundamentals",
+  "title": "Java & Object-Oriented Programming",
+  "markdown": "<!-- nodal-panel:sec-java-oop-core-principles:visible -->\n## 面向对象四大基本原则 (OOP Four Principles)\n\n- **封装 (Encapsulation)**：数据属性私有化（`private`），通过公共接口（`getter/setter`）受控读写与状态校验。\n- **继承 (Inheritance)**：子类（`extends`）复用父类结构与逻辑，经由 `super` 调用父类构造与方法，消除冗余代码。\n- **多态 (Polymorphism)**：父类引用指向子类实例（`Parent p = new Child()`），运行期根据实际类型动态分派方法（`@Override`）。\n- **抽象 (Abstraction)**：提取通用业务协议，忽略非核心实现细节（`interface` 与 `abstract class`）。\n\n<!-- nodal-panel:sec-java-class-memory-model:visible -->\n## 类构造与值传递模型 (Classes & Pass-by-Value)\n\n- **类与对象**：类（Class）是创建实体的模板/蓝图；对象（Object）是堆内存分配的具体实例（`new`）。\n- **纯粹严格值传递 (Strictly Pass-by-Value)**：\n  - 基本数据类型（`int`, `double`）：方法实参直接复制一份数值传给形参。\n  - 引用数据类型（`Object`, `Array`）：方法实参复制一份**堆内存地址指针**传给形参。\n  - 关键陷阱：方法内部执行 `obj = new Other()` 只是修改了形参指针副本，不会改变外部原引用；但通过 `obj.setX()` 会直接改变堆中同一实体状态。\n\n<!-- nodal-panel:sec-java-collections-operators:visible -->\n## 集合打印与运算行为 (Collections & Operators)\n\n- **容器与数组输出机制**：\n  - 原生数组直接 `System.out.println(arr)`：输出类型与内存哈希（如 `[I@1b6d3586`）。正确格式化须调用 `Arrays.toString(arr)`。\n  - 集合结构（`ArrayList`, `LinkedList`, `Stack`, `Queue`）：内部已重写 `toString()`，直接输出元素列表 `[a, b, c]`。\n- **逻辑运算符短路机制与优先级**：\n  - `&` / `|`：位运算或非短路逻辑运算（两端均执行）。\n  - `&&` / `||`：短路逻辑运算（前项已决断结果时跳过右侧求值）。\n  - 优先级：AND 运算（`&`, `&&`）高于 OR 运算（`|`, `||`）。\n- **幂运算结合性跨语言对比 (Associativity)**：\n  - Python `**` 为**右结合 (Right-associative)**：`2**3**2` $\\implies 2^{(3^2)} = 2^9 = 512$；而 `(2**3)**2 = 8^2 = 64$。\n  - Java 中无原生 `**` 运算符，须使用静态方法 `Math.pow(2, Math.pow(3, 2))`。\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-java-oop-core-principles",
+      "title": "面向对象四大基本原则 (OOP Four Principles)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals&section=sec-java-oop-core-principles",
+      "resource": "ai/sections/node-java-oop-fundamentals/sec-java-oop-core-principles.json"
+    },
+    {
+      "id": "sec-java-class-memory-model",
+      "title": "类构造与值传递模型 (Classes & Pass-by-Value)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals&section=sec-java-class-memory-model",
+      "resource": "ai/sections/node-java-oop-fundamentals/sec-java-class-memory-model.json"
+    },
+    {
+      "id": "sec-java-collections-operators",
+      "title": "集合打印与运算行为 (Collections & Operators)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals&section=sec-java-collections-operators",
+      "resource": "ai/sections/node-java-oop-fundamentals/sec-java-collections-operators.json"
+    }
+  ],
+  "sourcePath": "content/notes/node-java-oop-fundamentals.md",
+  "contentSha256": "157e6d2a1029fd8a318f3703c2c7592dcbd6a278b6451e7a91cc9c2a96160212",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals"
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-cpu-performance-pipeline",
-  "noteTitle": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+  "noteTitle": "CPU Performance, Pipeline & Prediction",
   "id": "sec-2026-10-14-5f960e",
   "title": "【期中易错与易混淆总表｜2026-10-14】",
   "parentId": null,
@@ -9,8 +9,8 @@
   "markdown": "### 【期中易错与易混淆总表｜2026-10-14】\n\n看题型关键词 → 查看容易犯的错 → 用右侧规则自检。〔Quiz〕真实错题；〔课堂/考纲/A2/Lab〕课程范围内题型；〔防错〕根据题型整理的提醒，不代表必考。\n\n字段：题型／最容易错 → 正确检查\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
-  "noteContentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+  "noteContentSha256": "e2f1deceafd5a7dd0336688b89b37a9d4d9824dcd234b921b1c39748284e31e4",
   "contentSha256": "4282b41713a56aefcedb4a3495a6d5a70b1f74c672176fdf3fd8cf37e3b04d49",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-2026-10-14-5f960e"
 }

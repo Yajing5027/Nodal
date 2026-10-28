@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "java",
+  "noteTitle": "Java",
+  "id": "sec-for-loop-two-indices",
+  "title": "Java `for`：一个循环，同时管理两个索引",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Java `for`：一个循环，同时管理两个索引\n\n```java\nfor (int i = 0, j = 1; j < nums.length; i++, j++) {\n    // 相邻元素：比较 nums[i] 和 nums[j]\n}\n\n// Reverse Array：这里只展示循环框架，交换语句由自己练习\nfor (int i = 0, j = nums.length - 1; i < j; i++, j--) {\n    // 在这里交换 nums[i] 与 nums[j]\n}\n```\n\n**`for (初始化; 条件; 更新)` 的三个部分：**\n\n| 位置 | 示例 | 含义 |\n| --- | --- | --- |\n| 初始化（Initialization） | `int i = 0, j = 1` | 在同一部分声明两个 `int` 变量，用逗号分隔 |\n| 条件（Condition） | `j < nums.length` 或 `i < j` | **一个布尔表达式**决定整个循环是否继续；不是要求每个变量各写一个停止条件 |\n| 更新（Update） | `i++, j++` 或 `i++, j--` | 可以用逗号放多个更新操作，每轮循环体结束后依次执行 |\n\n- **Adjacent comparison（相邻比较）**：`i` 与 `j` 同向移动，只需判断 `j < nums.length`，因为 `j` 始终比 `i` 大 1\n- **Reverse Array（原地反转）**：左指针 `i++`、右指针 `j--`，只需 `i < j`；奇数长度会停在中间位置，偶数长度会在指针交错时停止\n- **注意**：条件位置是**一个布尔表达式**，可以由 `&&` 或 `||` 组合多个判断，但不能把两个条件直接用逗号隔开\n- Java `for` 的初始化可以使用逗号声明同类型的多个变量；如果类型不同，通常先在循环外声明\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/java.md",
+  "noteContentSha256": "1a308334def78597b3a895731e53bddd6070e0dc99e9fa52f35d0ed5762ad4e6",
+  "contentSha256": "6356c73bca7ab776073322f376e3d900c5ca4881d8bd84104363f2b6fee5cfc5",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=java&section=sec-for-loop-two-indices"
+}

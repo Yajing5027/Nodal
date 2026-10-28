@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "algorithms-shared-pitfalls",
+  "title": "Algorithms · Shared Pitfalls",
+  "markdown": "<!-- nodal-panel:sec-index-vs-value:visible -->\n\n### Index ≠ Stored Value\n\n- **Index** 是 Array 位置，**Value / Entry** 才是该位置存放的数据；数组容量不是元素数值上限\n- **Quiz 6 · Stack**：`S.top` 是 Index，`S[S.top]` 才是 Value\n- **Quiz 7 · Hash Table**：`h(k)` → Initial Index ≠ Stored Key / Entry（Key-only 或 Key–Value）\n- 相关来源：[Quiz 6 · Top](nodal://note/quiz6-stack-and-queue/sec-stack-boundary) · [Quiz 7 · Hash Function](nodal://note/quiz7-hash-tables/sec-hash-function)\n\n<!-- nodal-panel:sec-compute-vs-write:visible -->\n\n### Calculation ≠ State Update\n\n- **计算得到新位置 ≠ 对容器完成写入**；必要时必须显式修改 Array Slot、Index、Pointer 或 Entry\n- **Quiz 6 · Queue**：计算 `next(tail)` 并不会自动更新 `tail`，需赋值 `tail = next(tail)`\n- **Quiz 7 · Hash Table**：计算 Initial Index ≠ 完成 Insert / Update；如遇 Collision，须按 Collision Resolution 正确存储\n- 相关来源：[Quiz 6 · State Updates](nodal://note/quiz6-stack-and-queue/sec-explicit-state-update) · [Quiz 7 · Lookup](nodal://note/quiz7-hash-tables/sec-lookup-flow)\n\n<!-- nodal-panel:sec-capacity-vs-size:visible -->\n\n### Capacity ≠ Number of Entries\n\n- **Capacity** 指 Array 可用 Slot 的规模；**Size** 指当前逻辑上存了多少个元素 / Entry，二者不等\n- **Quiz 6 · Queue**：部分 Circular Queue 实现保留一个空 Slot 辅助区分 Empty / Full；不能把物理容量当作实际可放的元素数\n- **Quiz 7 · Hash Table**：$m$ 是 Bucket 数、$n$ 是 Entry 数；Chaining 的 $n$ 可超过 $m$\n- **Index 基准依实现而定**：Java Array 通常从 0 编号；课程部分算法伪代码使用 1-based Index，不能直接混用公式\n- 相关来源：[Quiz 6 · Circular Queue](nodal://note/quiz6-stack-and-queue/sec-queue-circular) · [Quiz 7 · Array](nodal://note/quiz7-hash-tables/sec-array-entry)\n\n**保留原题链接原则**：Quiz 6 中已绑定 Practice Question 的具体易错提示继续留在原 Section，此 Note 只提取跨知识点通用规则，不重建题目、不改变学习状态\n\n**课程来源**：Quiz 6 · Stack / Queue 现存 Note；Quiz 7 · Hash Tables 课堂对应主题；共同抽象规则为笔记整理归纳，不作为老师直接原话\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-index-vs-value",
+      "title": "Index ≠ Stored Value",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=algorithms-shared-pitfalls&section=sec-index-vs-value",
+      "resource": "ai/sections/algorithms-shared-pitfalls/sec-index-vs-value.json"
+    },
+    {
+      "id": "sec-compute-vs-write",
+      "title": "Calculation ≠ State Update",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=algorithms-shared-pitfalls&section=sec-compute-vs-write",
+      "resource": "ai/sections/algorithms-shared-pitfalls/sec-compute-vs-write.json"
+    },
+    {
+      "id": "sec-capacity-vs-size",
+      "title": "Capacity ≠ Number of Entries",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=algorithms-shared-pitfalls&section=sec-capacity-vs-size",
+      "resource": "ai/sections/algorithms-shared-pitfalls/sec-capacity-vs-size.json"
+    }
+  ],
+  "sourcePath": "content/notes/algorithms-shared-pitfalls.md",
+  "contentSha256": "18bba26e3b12aec52552747f6a515f94b45f77e9b7becf979908dcb446429c2e",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=algorithms-shared-pitfalls"
+}

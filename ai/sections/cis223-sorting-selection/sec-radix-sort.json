@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-radix-sort",
+  "title": "Radix Sort",
+  "parentId": "sec-non-comparison-sort",
+  "hidden": false,
+  "markdown": "Sort multi-digit keys digit by digit, from least significant digit (LSD) to most significant digit (MSD).\n\n![Radix Sort: LSD to MSD digit passes with stable sub-sorts](study/assets/asset-radix-sort-%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F%EF%BC%9A%E9%80%90%E4%BD%8D%E7%A8%B3%E5%AE%9A%E6%8E%92%E5%BA%8F%E6%B5%81%E7%A8%8B.png)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "d12bacd441c5de538aa7c6a871998d9a6feec22cd0a121859b54752bbe60a00d",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-radix-sort"
+}

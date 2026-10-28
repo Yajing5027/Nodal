@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-bits-integers-bitwise",
-  "noteTitle": "CIS 224 Midterm · Binary, Integers & Bitwise Operations",
+  "noteTitle": "Binary, Integers & Bitwise Operations",
   "id": "sec-unit-2-numbers-ieee-754-f932c3",
   "title": "UNIT 2 — NUMBERS / IEEE 754",
   "parentId": null,
@@ -9,8 +9,8 @@
   "markdown": "#### UNIT 2 — NUMBERS / IEEE 754\n\n08 N-bit Count vs Max〔Quiz〕｜模式数量当最大值 → 共有 2^N 种；Unsigned 最大值=2^N−1\n\n09 +200 in 8-bit Signed〔Quiz〕｜把 11001000 误认为 Signed +200 → Signed 范围 −128..127，+200 不可表示；该位串作 Signed=−56\n\n10 Signed vs Unsigned〔考纲〕｜相同 bits 以为相同数值 → 8-bit MSB=1 时 Signed=Unsigned−256\n\n11 Negative → Two's Complement〔A1〕｜只 Flip、忘 +1 → 写正数 8 bits→反转→加1\n\n12 Sign vs Zero Extension〔考纲〕｜负数扩位左补0 → Signed 复制 MSB；Unsigned 左补0\n\n13 C7 / C8〔A2〕｜C8=1 就叫 Signed Overflow → 只看 C7≠C8；C8 是 unsigned Carry\n\n14 Subtraction / Borrow〔A2〕｜忘记给 Cin=1；把 C8=1 当 Borrow → A−B=A+(~B)+1；Unsigned Borrow ⇔ C8=0\n\n15 Representability vs Overflow〔Quiz/A2〕｜原数无法表示当算术 Overflow → 先判输入是否在范围，再判合法运算结果是否超范围\n\n16 Logical vs Arithmetic Right Shift〔考纲〕｜都左补0 → Logical 补0；Arithmetic 复制旧符号位\n\n17 Mask / Index〔课件〕｜从左数 bit0；Set/Clear 运算符混淆 → bit0 在最右；Test &，Set |，Clear &~，Flip ^；Extract 先 >> 再 &\n\n18 C bitwise vs logical〔课件〕｜& 与 &&、~ 与 ! 混用 → 单符号逐 bit；&&/||/! 判整个值的真假\n\n\n| 题号 | 题干识别 | 查这里 |\n| --- | --- | --- |\n| Q4 | 8-bit add, C7/C8 | 已熟练：核对页 |\n| Q5 | 8-bit signed overflow | 已熟练：核对页 |\n| Q6 | 8-bit subtraction/borrow | U2-07 |\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-bits-integers-bitwise.md",
-  "noteContentSha256": "029dd8db0f0a4bc317bae87be83320c9467ab50514d284d4c986487de4ce0d06",
+  "noteContentSha256": "542a64d8c97f1ab8ef7d1f9d7ae854de404b3869a25831c5872d25717e236946",
   "contentSha256": "7b6ed49776b8c1164477cd8132099fa22ebbd82da35eb6e67b321f861a595df9",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-unit-2-numbers-ieee-754-f932c3"
 }

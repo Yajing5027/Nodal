@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-qs-pointer-rules",
+  "title": "Pointer Rules",
+  "parentId": "sec-qs-partition",
+  "hidden": false,
+  "markdown": "When `pivot = a[hi]`:\n- Pointers initialize to `left = lo`, `right = hi - 1` ($a[hi]$ reserved for pivot).\n- `left` scans right to find an element $\\ge \\text{pivot}$ (misplaced on left).\n- `right` scans left to find an element $\\le \\text{pivot}$ (misplaced on right).\n- If `left <= right`: swap `a[left]` and `a[right]`, then `left++`, `right--`.\n- When pointers cross (`left > right`): swap `a[left]` with `a[hi]`. Pivot is now at final position `left`. Return `left`.\n\nWhen `pivot = a[lo]`:\n- Pointers initialize to `left = lo + 1`, `right = hi`.\n- After crossing: swap `a[lo]` with `a[right]`. Return `right`.\n\n**Key Traps**\n- A single partition can perform multiple internal swaps, followed by one final pivot placement swap.\n- `x.compareTo(y)`:\n  - `< 0` $\\implies x < y$\n  - `== 0` $\\implies x == y$\n  - `> 0` $\\implies x > y$",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "21af58c5e3478ebf9dee56456936d1d5b4561537a88cd3a21b720a10d0149cf1",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-qs-pointer-rules"
+}

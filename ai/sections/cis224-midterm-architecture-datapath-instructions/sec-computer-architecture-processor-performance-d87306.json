@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-architecture-datapath-instructions",
-  "noteTitle": "CIS 224 Midterm · Architecture, Datapath & Instructions",
+  "noteTitle": "Architecture, Datapath & Instructions",
   "id": "sec-computer-architecture-processor-performance-d87306",
   "title": "Computer Architecture & Processor Performance 计算机体系结构与处理器性能",
   "parentId": null,
@@ -11,6 +11,6 @@
   "sourcePath": "content/notes/cis224-midterm-architecture-datapath-instructions.md",
   "noteContentSha256": "99d6a2a5b04799c6d8a6a25d2d812fdef5e2bd6988e016bd0c8a2145daf5c20a",
   "contentSha256": "af8b34e696dd8bfccebf47e37669db6eb57264c05f5f42e76410c1cd1e35e6a9",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions&section=sec-computer-architecture-processor-performance-d87306"
 }

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-open-addressing",
+  "title": "Open Addressing",
+  "parentId": "sec-collision-notes",
+  "hidden": false,
+  "markdown": "### Open Addressing\n\n**Initial Slot occupied → Probe Sequence → Available Slot**（冲突元素仍存 Array 中，不额外使用 Linked Lists）\n\n- **Linear Probing**：逐格 +1；**Double Hashing**：Step = h₂(k)；Open Addressing 不一定逐格前进\n- **Full Table**：不能覆盖有效 Key；可能失败返回、抛异常或 Resize（依实现而定）",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "538c1182f9ab79e336c1c90ef0cd9fcb55d7a350ea11e7ff334c14f90f8be3e9",
+  "contentSha256": "c9a60049d9d483bddb654c16a40bf90258165ccd7cc7c1c50134edecdf7205f5",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-open-addressing"
+}

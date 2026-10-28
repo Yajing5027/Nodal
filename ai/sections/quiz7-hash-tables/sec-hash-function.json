@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-hash-function",
+  "title": "Hash Function",
+  "parentId": "sec-hash-model",
+  "hidden": false,
+  "markdown": "### Hash Function\n\n$$\\boxed{h_m:K\\rightarrow\\{0,1,\\ldots,m-1\\}}$$\n\n*K = Key 集合；k∈K = Input（自变量）；m = Capacity Parameter；h_m(k) = Initial Index（输出 / 因变量）。*\n\n**Mapping**：k → Initial Bucket / Slot；相同 Key + 相同 Hash 配置 → 相同 Initial Index；**不直接决定 Final Storage Location**\n\n| Method | Formula / Rule |\n|---|---|\n| Division | $h_m(k)=k\\bmod m$ |\n| Multiplication | $h_m(k)=\\lfloor m\\,\\mathrm{frac}(kA)\\rfloor$；$0<A<1$ |\n| Universal Hashing | 从 Hash Function Family 中选择函数（不是单个固定公式） |\n\n*frac(x)=x−⌊x⌋；例：m=5, k=13 → h(13)=3。Good Hash：计算快、分布尽量均匀；Collision 仍可能发生。*\n\n**Resize (Grow / Shrink) → Rehash → Reinsert**\n\n*Key / Value、k → v 逻辑关系不变；Capacity 变化后，Initial Index、Storage Position、Chain / Probe Length 与性能可能变化（不保证改善）*",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "538c1182f9ab79e336c1c90ef0cd9fcb55d7a350ea11e7ff334c14f90f8be3e9",
+  "contentSha256": "7ab5ac79dc166b03a8b80b089be1bd26388b8edb345838762aca19111f3c47fb",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-hash-function"
+}

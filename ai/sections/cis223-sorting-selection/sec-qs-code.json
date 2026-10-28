@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-qs-code",
+  "title": "Code",
+  "parentId": "sec-quick-sort",
+  "hidden": false,
+  "markdown": "```java\npublic static void sort(Key[] a) {\n    if (a.length < 2) {\n        return;\n    }\n    sort(a, 0, a.length - 1);\n}\n\nprivate static void sort(Key[] a, int lo, int hi) {\n    if (lo >= hi) {\n        return;\n    }\n\n    int p = partition(a, lo, hi);\n\n    sort(a, lo, p - 1);\n    sort(a, p + 1, hi);\n}\n\nprivate static int partition(Key[] a, int lo, int hi) {\n    Key pivot = a[hi];\n\n    int left = lo;\n    int right = hi - 1;\n\n    while (left <= right) {\n\n        while (left <= right &&\n               a[left].compareTo(pivot) < 0) {\n            left++;\n        }\n\n        while (left <= right &&\n               a[right].compareTo(pivot) > 0) {\n            right--;\n        }\n\n        if (left <= right) {\n            Key.swap(a, left, right);\n            left++;\n            right--;\n        }\n    }\n\n    Key.swap(a, left, hi);\n\n    return left;\n}\n```\n\n**Control Flow & Guard Clauses**\n- `sort(a)`: whole-array entry point.\n- `sort(a, lo, hi)`: Guard clause (`lo >= hi`) stops recursion; main body partitions, retrieves pivot index $p$, and recurses left and right.\n- `partition`: chooses pivot, scans pointers, swaps misplaced pairs, places pivot after crossing, returns $p$.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "15df75eda2a7545f776874879e5b54c34085a4b08c5cd4eee00ed4905432c6ed",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-qs-code"
+}

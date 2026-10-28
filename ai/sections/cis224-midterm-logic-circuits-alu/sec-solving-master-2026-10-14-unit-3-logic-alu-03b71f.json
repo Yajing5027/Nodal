@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-logic-circuits-alu",
-  "noteTitle": "CIS 224 Midterm · Logic Gates, Adders & ALU",
+  "noteTitle": "Logic Gates, Adders & ALU",
   "id": "sec-solving-master-2026-10-14-unit-3-logic-alu-03b71f",
   "title": "【补充术语速查｜Solving Master 对照｜2026-10-14】 UNIT 3 — Logic & ALU（附加，不改原笔记）",
   "parentId": null,
@@ -9,8 +9,8 @@
   "markdown": "#### 【补充术语速查｜Solving Master 对照｜2026-10-14】 UNIT 3 — Logic & ALU（附加，不改原笔记）\n\n• 先认目的：Circuit Tracing 是「给输入→按 G1、G2、OUT 顺序算结果」；Circuit Expression 是「把 G1、G2 逐层代入 OUT」；不是猜原电路\n\n• SOP (Sum of Products) 积之和：给完整 Truth Table，造一个与所有 OUT 一致的式子。每个 OUT=1 的输入行是一个 AND 条件（输入 0 写 !变量）；把这些条件 OR 在一起。例：仅 010 与 110 输出 1 → (!A&B&!C)|(A&B&!C)，可化简 B&!C\n\n• NAND-only：NAND(A,B)=!(A&B)；NOT A=!(A&A)（1 个 NAND）；A OR B= !(!(A&A)&!(B&B))（3 个 NAND）。NAND 表达式中 ! 作用在整个括号\n\n• De Morgan's Laws 德摩根定律：!(A&B)=!A|!B；!(A|B)=!A&!B。括号内每项都要取反，AND/OR 互换\n\n• MUX (Multiplexer) 多路选择器：「从多个数据输入中选一个」。2:1 MUX 的 Select S=0 取 D0，S=1 取 D1；D0、D1 是输入，不是运算结果\n\n• Decoder 译码器：「用输入二进制编号指定哪一路输出有效」。2-to-4 Decoder：S1S0=10（十进制 2）→ Y2 有效；若题目说 active-low / enable，先按题设判断有效电平\n\n• Half Adder 半加器：只加 A、B 两个 bit；Sum=A^B，Carry=A&B。例 1+1=10₂ → Sum=0、Carry=1\n\n• Full Adder 全加器：加 A、B 和上一位进位 Cin；Sum=A^B^Cin；Cout=(A&B)|(A&Cin)|(B&Cin)，即三个输入至少两个是 1 才进位\n\n• Ripple-carry Adder 行波进位加法器：最低位的 Cout 连到高一位的 Cin，一位一位传进位。C3 是进入 bit3 的进位，C4 是从 bit3 输出的进位（4-bit 例）\n\n• ALU (Arithmetic Logic Unit) 算术逻辑单元：Select Line 选择做 ADD/SUB/AND/OR/XOR 哪一种运算；本课 Lab L4 的 S1S0=00 算术，01 AND，10 OR，11 XOR；算术通路再用 SUB 区分加减\n\n• ALU Subtraction：减法不是另发明算法；SUB=1 时把 B 的每位取反，并让 Cin=1，得到 A+(~B)+1。例 0101−0011 → 0010\n\n• N/Z/C/V Flags（Lab L4 四位 ALU）：N=Negative，看结果最高位 R3；Z=Zero，结果全 0 则 1；C=Carry，看最终 C4；V=Signed Overflow，看 C3^C4。C 与 V 不是同一回事\n\n• SR Latch：Set=置 Q 为1，Reset=置 Q 为0，Hold=保持原值；NAND 型低有效输入 S̅R̅：01→Set，10→Reset，11→Hold，00→Invalid\n\n• Gated D Latch：Enable E=1 时 Q 跟随 D（Transparent，透明）；E=0 时 Q 不再随 D 变而是保持；Flip-flop 仅在题目指定的 Clock Edge（如上升沿）采样 D\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-logic-circuits-alu.md",
-  "noteContentSha256": "74285fee47131b7cf76180995eb731420463cafa85cf3c448ddc3d890c047dff",
+  "noteContentSha256": "7a08b60dc30c0986ac38987253cf29abbc414381d122a33ef5ab6e354a24fbbe",
   "contentSha256": "f6cad6f6c1d212e069f6fc783877364a771cfc13bf570374bf3a66e49b7e6c18",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu&section=sec-solving-master-2026-10-14-unit-3-logic-alu-03b71f"
 }

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-hash-complexity",
+  "title": "Big-O",
+  "parentId": "sec-dictionary-operations",
+  "hidden": false,
+  "markdown": "### Big-O\n\n$$\\alpha=\\frac{n}{m}\\quad\\text{(Load Factor)}$$\n\n*n = 有效元素数；m = Bucket / Slot 数；固定容量，不含 Resize 的成本*\n\n| Operation | Best | Expected* | Worst |\n|---|---|---|---|\n| Chaining · Search by Key | $O(1)$ | $O(1+\\alpha)$ | $O(n)$ |\n| Chaining · Insert at Head（已知新 Key） | $O(1)$ | $O(1)$ | $O(1)$ |\n| Chaining · Insert / Update（先检查 Key） | $O(1)$ | $O(1+\\alpha)$ | $O(n)$ |\n| Chaining · Delete by Key | $O(1)$ | $O(1+\\alpha)$ | $O(n)$ |\n| Open Addressing · Search / Insert / Delete | $O(1)$ | 依 Hash / Probe / Load 前提 | $O(m)$ |\n\n*Expected 需合适的 Hash Distribution / Load Factor 假设；α 受控时 Chaining Search 期望为 O(1)；Open Addressing 需适当的探测条件*\n\n- **已知 Node 直接修改 ≠ 先 Search 再修改**（复杂度不同）\n- 跨章节易错点：[Shared Pitfalls](nodal://note/algorithms-shared-pitfalls/sec-index-vs-value)\n\n**课程依据**：CIS 223 0701 / 0702；指定教材 *Introduction to Algorithms* 第 4 版 Ch. 11。Java API 与 Tombstone 数值属于具体实现说明\n\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "538c1182f9ab79e336c1c90ef0cd9fcb55d7a350ea11e7ff334c14f90f8be3e9",
+  "contentSha256": "a9059e8c642fe2e05620255515aeee0b0a76ed1f6a50fdf7e921e7b766ebbfa0",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-hash-complexity"
+}

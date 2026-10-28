@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-cpu-performance-pipeline",
-  "noteTitle": "CIS 224 Midterm · CPU Performance, Pipeline & Prediction",
+  "noteTitle": "CPU Performance, Pipeline & Prediction",
   "id": "sec-solving-master-2026-10-14-unit-4-processor-pipeline-4a7fb1",
   "title": "【补充术语速查｜Solving Master 对照｜2026-10-14】 UNIT 4 — Processor & Pipeline（附加，不改原笔记）",
   "parentId": null,
@@ -9,8 +9,8 @@
   "markdown": "##### 【补充术语速查｜Solving Master 对照｜2026-10-14】 UNIT 4 — Processor & Pipeline（附加，不改原笔记）\n\n• I1 / I2 / I3：第 1 / 2 / 3 条 Instruction；C3 / Cycle 3：第 3 个时钟周期；E3 表示「某条指令在 Cycle 3 进入 Execute」，不是数值 3。Grid 横向看一条指令经历哪些 Cycle，纵向看同 Cycle 哪些指令重叠\n\n• IF/ID/EX/MEM/WB：Instruction Fetch 取指 / Instruction Decode 译码读寄存器 / Execute 用 ALU / Memory Access 访存阶段 / Write Back 写回；缩写 F/D/E/M/W 是同一套五阶段的简写\n\n• EX/MEM（也写 E/M）= Execute 与 Memory 之间的 Pipeline Register（阶段间临时寄存器），不是普通 RF。例：某条 add 在 E3 算完→结果先暂存在 EX/MEM→M4 传递→W5 才写普通 RF；MEM/WB 同理是 M 与 W 之间的阶段寄存器\n\n• Clock Edge 时钟边沿：相邻 Pipeline Stages 在指定时钟边沿交接暂存数据；「一条指令处在 M4」不等于已经把结果写到 x 寄存器，通常在 W 写回\n\n• In-order Execution 顺序执行：通常按程序顺序执行；Out-of-order Execution 乱序执行：较早指令等待时，后面没有依赖的指令可以先执行。例慢 lw 等数据时，独立 add 可先算；先执行≠先正式提交（Commit）\n\n• Superscalar 超标量：同一个 Core 每个 Cycle 可以发射/处理多条指令（不是增加 CPU Core 数）。IPC=Instructions Per Cycle，每周期完成指令数；CPI=Cycles Per Instruction，每条平均周期数；两者互为倒数\n\n• 例：12 instructions / 6 cycles → IPC=12÷6=2 instructions/cycle；CPI=6÷12=0.5 cycles/instruction。IPC>1、CPI<1 并不矛盾，表示平均每周期完成多条\n\n• Stall 暂停：让指令等；Bubble 空泡：等待在流水线形成的空阶段；Forwarding 前递：不等普通 RF 写回，直接从阶段间暂存结果送给后续指令。相邻 lw→使用加载结果通常仍需 1 Bubble\n\n• Flush / Squash：错误分支预测时丢弃错误路径指令；本课 Branch 在 E 决定，预测 Not Taken 但实际 Taken → 丢弃其后两个年轻指令。Drain 只是让正确指令执行完，绝不是 Flush\n\n• BHT (Branch History Table) 存 Taken / Not Taken 预测状态；BTB (Branch Target Buffer) 存目标地址。2-bit Counter 00/01 预测 NT、10/11 预测 T；先预测、再根据 Actual 更新（T+1/NT−1，在 00..11 饱和）\n\n────────────────────────────────────────\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
-  "noteContentSha256": "463d84e992bad34f480b2dea5f6d28e4beaed5b23bf8d3719c22cbc1418462e2",
+  "noteContentSha256": "e2f1deceafd5a7dd0336688b89b37a9d4d9824dcd234b921b1c39748284e31e4",
   "contentSha256": "7589149fed8016b20d7fde60bed924f94ea550228a7c58b90791c9076d083e03",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-solving-master-2026-10-14-unit-4-processor-pipeline-4a7fb1"
 }

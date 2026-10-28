@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "node-discrete-logic-set-theory",
+  "title": "Discrete Mathematics · Mathematical Logic & Set Theory",
+  "markdown": "<!-- nodal-panel:sec-logic-propositions-connectives:visible -->\n## 命题逻辑与联结词 (Propositional Logic & Connectives)\n\n- **命题 (Proposition)**：有确定真假值（$T/F$）的陈述句。含自由变量的开语句（如 $2x+y=8$）非命题。\n- **原子命题 (Atomic)**：不可再分基元 $P, Q$。**复合命题 (Compound)**：由逻辑联结词合成。\n\n| 联结词 (Connective) | 符号 | 语义 | 真值特征 |\n| :--- | :---: | :--- | :--- |\n| 否定 (Negation) | $\\sim P$ | not $P$ | $\\sim T = F, \\sim F = T$ |\n| 合取 (Conjunction) | $P \\land Q$ | $P$ and $Q$ | 全真才真 |\n| 析取 (Disjunction) | $P \\lor Q$ | $P$ or $Q$ | 有真即真 |\n| 条件 (Conditional) | $P \\to Q$ | if $P$ then $Q$ | 仅 $T \\to F$ 为假（$P$ 假时恒真：空真） |\n| 双条件 (Biconditional) | $P \\leftrightarrow Q$ | $P$ iff $Q$ | 同真同假为真 |\n| 异或 (Exclusive OR) | $P \\oplus Q$ | either $P$ or $Q$ | 真值相异为真 |\n\n**德摩根定律与条件改写 (De Morgan & Equivalence)**\n\n$$\n\\sim(P \\land Q) \\equiv \\sim P \\lor \\sim Q, \\qquad \\sim(P \\lor Q) \\equiv \\sim P \\land \\sim Q\n$$\n\n$$\nP \\to Q \\equiv \\sim P \\lor Q \\equiv \\sim Q \\to \\sim P, \\qquad \\sim(P \\to Q) \\equiv P \\land \\sim Q\n$$\n\n<!-- nodal-panel:sec-logic-implication-nec-suff:visible -->\n## 条件命题与充分必要条件 (Conditionals & Nec/Suff)\n\n**条件命题变体矩阵 (Variations of $P \\to Q$)**\n\n| 变体 | 符号 | 关系 | 关键词 |\n| :--- | :---: | :--- | :--- |\n| 原命题 (Original) | $P \\to Q$ | 基准 | If $P$, then $Q$ |\n| 逆命题 (Converse) | $Q \\to P$ | 独立真假 | 换位 ($P \\leftrightarrow Q$) |\n| 否命题 (Inverse) | $\\sim P \\to \\sim Q$ | 等价于逆命题 | 双否定 |\n| 逆否命题 (Contrapositive) | $\\sim Q \\to \\sim P$ | $\\equiv P \\to Q$ (同真同假) | 换位且否定 |\n\n**充分条件 vs 必要条件 (Sufficient vs Necessary)**\n\n- **充分条件 (Sufficient)**：$P \\implies Q$。$P$ 为前件/前提。有 $P$ 必有 $Q$（$P$ is sufficient for $Q$）。\n- **必要条件 (Necessary)**：$P \\implies Q$。$Q$ 为后件/结论。无 $Q$ 必无 $P$（$\\sim Q \\implies \\sim P$，$Q$ is necessary for $P$）。\n- 句式速查：\n  - $P$ only if $Q \\implies P \\to Q$\n  - $P$ if $Q \\implies Q \\to P$\n  - $P$ unless $Q \\implies \\sim Q \\to P \\equiv \\sim P \\to Q$\n\n<!-- nodal-panel:sec-logic-predicates-quantifier-order:visible -->\n## 谓词逻辑与量词作用域 (Predicate Logic & Quantifiers)\n\n- **谓词 (Predicate)**：$P(x): D \\to \\{T, F\\}$，论域 $D$ 为个体允许取值集合。\n- **约束与自由**：$\\forall x$ / $\\exists x$ 绑定变量。自由变量未约束 $\\implies$ 开语句；全约束 $\\implies$ 命题。\n- **空真 (Vacuous Truth)**：$\\forall x \\in \\emptyset, P(x) \\equiv T$；$\\forall x (P(x) \\to Q(x))$ 当前提 $P(x)$ 恒假时全称命题直接为 $T$。\n\n**量词出场顺序决定变量性质（核心原则）**\n\n| 量词次序 | 形式 | 变量本质 | 解读 |\n| :--- | :---: | :--- | :--- |\n| 先 $\\forall$ 后 $\\exists$ | $\\forall x \\exists y, P(x, y)$ | $y$ 为随动变量 | **私人订制**：对任意给定的 $x$，存在匹配的 $y = f(x)$ |\n| 先 $\\exists$ 后 $\\forall$ | $\\exists x \\forall y, P(x, y)$ | $x$ 为固定常数 | **以一敌百**：存在唯一死常数 $x$，能搞定所有变动的 $y$ |\n\n**量词否定与分配律 (Quantifier De Morgan & Distribution)**\n\n$$\n\\sim(\\forall x, P(x)) \\equiv \\exists x, \\sim P(x), \\qquad \\sim(\\exists x, P(x)) \\equiv \\forall x, \\sim P(x)\n$$\n\n$$\n\\sim(\\forall x, P(x) \\to Q(x)) \\equiv \\exists x, (P(x) \\land \\sim Q(x))\n$$\n\n- $\\forall$ 对 $\\land$ 可分配：$\\forall x (P(x) \\land Q(x)) \\equiv (\\forall x P(x)) \\land (\\forall x Q(x))$\n- $\\exists$ 对 $\\lor$ 可分配：$\\exists x (P(x) \\lor Q(x)) \\equiv (\\exists x P(x)) \\lor (\\exists x Q(x))$\n- **禁区**：$\\forall$ 对 $\\lor$、$\\exists$ 对 $\\land$ 不可随意分配（$\\not\\equiv$）。\n\n<!-- nodal-panel:sec-logic-argument-inference-rules:visible -->\n## 论证有效性与推理规则 (Inference Rules & Validity)\n\n- **有效论证 (Valid)**：前提全部为真时，结论必然为真（无反例）。\n\n$$\n\\text{Modus Ponens (肯定前件)}: \\quad P \\to Q, \\quad P \\quad \\therefore Q\n$$\n\n$$\n\\text{Modus Tollens (否定后件)}: \\quad P \\to Q, \\quad \\sim Q \\quad \\therefore \\sim P\n$$\n\n$$\n\\text{Disjunctive Syllogism (析取三段论)}: \\quad P \\lor Q, \\quad \\sim P \\quad \\therefore Q\n$$\n\n- **经典逻辑谬误**：\n  - 肯定后件 (Affirming Consequent): $P \\to Q, Q \\therefore P$（无效 ❌）\n  - 否定前件 (Denying Antecedent): $P \\to Q, \\sim P \\therefore \\sim Q$（无效 ❌）\n- **谓词推理四律**：UI (全称特例化), UG (全称概括), EI (存在特例化), EG (存在概括)。\n\n<!-- nodal-panel:sec-set-theory-operations-proofs:visible -->\n## 集合论运算与证明范式 (Set Theory & Proofs)\n\n- **子集与相等判定**：\n  - 子集证明：$A \\subseteq B \\iff \\forall x (x \\in A \\implies x \\in B)$\n  - 相等证明：$A = B \\iff A \\subseteq B \\land B \\subseteq A$（**双向包含法**）\n- **基本运算**：交 $A \\cap B$、并 $A \\cup B$、差 $A \\setminus B$、补 $A^c$、笛卡尔积 $A \\times B$。\n\n$$\n|A \\times B| = |A| \\cdot |B|, \\qquad |\\mathcal{P}(A)| = 2^{|A|}\n$$\n\n- **经典证明典范**：$(A \\cap B) \\cup (A \\cap B^c) = A$\n  - 分配律展开：$A \\cap (B \\cup B^c) = A \\cap U = A$ ✅\n- **数集体系与零的分类**：$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$。$0 \\in \\mathbb{Q}$（因 $0 = 0/1$ 符合整数比），$0$ 为偶数（$0 = 2 \\times 0$）。\n\n<!-- nodal-panel:sec-discrete-functions-combinatorics:visible -->\n## 关系函数与图论组合 (Functions, Graphs & Counting)\n\n- **函数映射类型**：\n  - 单射 (One-to-one / Injective): $f(a) = f(b) \\implies a = b$\n  - 满射 (Onto / Surjective): $\\forall y \\in B, \\exists x \\in A, f(x) = y$\n  - 双射 (Bijective): 既单且满（可逆）\n- **图论欧拉回路定理 (Euler Circuit)**：连通图（忽略孤立点）存在欧拉回路 $\\iff$ 每一个顶点的度数均为偶数（$\\forall v, \\deg(v) \\text{ even}$）。\n- **二项式定理与概率乘法**：\n\n$$\n(a + b)^n = \\sum_{k=0}^n \\binom{n}{k} a^{n-k} b^k, \\qquad P(A \\cap B) = P(A)P(B) \\ (\\text{独立时})\n$$\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-logic-propositions-connectives",
+      "title": "命题逻辑与联结词 (Propositional Logic & Connectives)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-logic-propositions-connectives",
+      "resource": "ai/sections/node-discrete-logic-set-theory/sec-logic-propositions-connectives.json"
+    },
+    {
+      "id": "sec-logic-implication-nec-suff",
+      "title": "条件命题与充分必要条件 (Conditionals & Nec/Suff)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-logic-implication-nec-suff",
+      "resource": "ai/sections/node-discrete-logic-set-theory/sec-logic-implication-nec-suff.json"
+    },
+    {
+      "id": "sec-logic-predicates-quantifier-order",
+      "title": "谓词逻辑与量词作用域 (Predicate Logic & Quantifiers)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-logic-predicates-quantifier-order",
+      "resource": "ai/sections/node-discrete-logic-set-theory/sec-logic-predicates-quantifier-order.json"
+    },
+    {
+      "id": "sec-logic-argument-inference-rules",
+      "title": "论证有效性与推理规则 (Inference Rules & Validity)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-logic-argument-inference-rules",
+      "resource": "ai/sections/node-discrete-logic-set-theory/sec-logic-argument-inference-rules.json"
+    },
+    {
+      "id": "sec-set-theory-operations-proofs",
+      "title": "集合论运算与证明范式 (Set Theory & Proofs)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-set-theory-operations-proofs",
+      "resource": "ai/sections/node-discrete-logic-set-theory/sec-set-theory-operations-proofs.json"
+    },
+    {
+      "id": "sec-discrete-functions-combinatorics",
+      "title": "关系函数与图论组合 (Functions, Graphs & Counting)",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory&section=sec-discrete-functions-combinatorics",
+      "resource": "ai/sections/node-discrete-logic-set-theory/sec-discrete-functions-combinatorics.json"
+    }
+  ],
+  "sourcePath": "content/notes/node-discrete-logic-set-theory.md",
+  "contentSha256": "22517d5be93f394764ca7a606caa6f55bfe809a8167fa2142e2fb575e13c64d3",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-discrete-logic-set-theory"
+}

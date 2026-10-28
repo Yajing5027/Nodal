@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-counting-sort",
+  "title": "Counting Sort",
+  "parentId": "sec-non-comparison-sort",
+  "hidden": false,
+  "markdown": "Count occurrences of each key directly by index, then rebuild output in order.\n\n![Counting Sort: Direct indexing and frequency counts to rebuild in order](study/assets/asset-counting-sort-%E8%AE%A1%E6%95%B0%E6%8E%92%E5%BA%8F%EF%BC%9A%E7%BB%9F%E8%AE%A1%E5%88%B0%E6%9C%89%E5%BA%8F%E8%BE%93%E5%87%BA.png)\n\n**Counting Sort $\\neq$ Hash Table**\n- **Counting Sort**: direct indexing `key -> count[key]`. The array index itself represents the value. No hash function, no collision resolution.\n- **Hash Table**: `key -> h(key) -> table[index]`. Uses a hash function and handles collisions.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "36b12b44fc8d120e454acfe134e578476769b8ace5bcf0c80c88099b2b1c3af7",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-counting-sort"
+}

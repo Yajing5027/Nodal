@@ -1,7 +1,7 @@
 {
   "schemaVersion": "nodal.ai.section.v1",
   "noteId": "cis224-midterm-architecture-datapath-instructions",
-  "noteTitle": "CIS 224 Midterm · Architecture, Datapath & Instructions",
+  "noteTitle": "Architecture, Datapath & Instructions",
   "id": "sec-unit-4-processor-pipelining-ed0f09",
   "title": "Unit 4 — Processor & Pipelining 处理器与流水线",
   "parentId": null,
@@ -11,6 +11,6 @@
   "sourcePath": "content/notes/cis224-midterm-architecture-datapath-instructions.md",
   "noteContentSha256": "99d6a2a5b04799c6d8a6a25d2d812fdef5e2bd6988e016bd0c8a2145daf5c20a",
   "contentSha256": "e28c448f1237f0a7b461d0c317f910ed562b9aaab69abfd1f86ba4ff131ef220",
-  "publishedAt": "2026-10-21T07:09:09.501Z",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions&section=sec-unit-4-processor-pipelining-ed0f09"
 }

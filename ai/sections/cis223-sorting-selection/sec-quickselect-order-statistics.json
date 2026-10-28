@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis223-sorting-selection",
+  "noteTitle": "CIS 223 · Sorting & Selection",
+  "id": "sec-quickselect-order-statistics",
+  "title": "Order Statistics",
+  "parentId": "sec-quickselect",
+  "hidden": false,
+  "markdown": "The $i$-th order statistic is the $i$-th smallest element in sorted order.\n\n- Minimum = 1st smallest.\n- Maximum = $n$-th smallest.\n- Median = middle rank ($\\lfloor (n + 1) / 2 \\rfloor$).\n\n**Single Minimum or Maximum (单独找)**\n- $n - 1$ comparisons (track current min/max, compare against each remaining element).\n- $\\Theta(n)$ time.\n\n**Simultaneous Minimum + Maximum (同时找 · Pairing)**\n- naive $\\to 2n - 2$ comparisons\n- better: process pairs\n  - $a$ vs $b$\n  - smaller $\\to$ compare with min\n  - larger $\\to$ compare with max\n- **odd $n$**:\n  - first element $\\to$ both min and max\n  - rest $\\to$ process in pairs\n  - comparisons: $3\\lfloor n/2 \\rfloor$\n- **even $n$**:\n  - compare first two once: smaller $\\to$ min, larger $\\to$ max\n  - rest $\\to$ process in pairs\n  - comparisons: $3n/2 - 2$\n- $\\approx 3n/2$ comparisons, still $\\Theta(n)$\n- Recognize the process: pair first $\\to$ smaller to min, larger to max\n\n**Quiz Trap**\n- $i$-th smallest $\\ne$ value $i$.\n- Example: in $\\{1, 11, 12, 6, 13, 18\\}$, sorted is $\\{1, 6, 11, 12, 13, 18\\}$. The 6th smallest element is 18, not 6.",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis223-sorting-selection.md",
+  "noteContentSha256": "526a7780d0c80c2a47e9746e995b06dd73e8f6138a3f05e0685cbc8dd86d3876",
+  "contentSha256": "15e463d25c78fa1fa0e7541882777f809d7e32004c9a03529b9fb285dfee3581",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis223-sorting-selection&section=sec-quickselect-order-statistics"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-01-evidence",
+  "noteTitle": "科研证据怎么分层：已经验证和还没有做的事",
+  "id": "sec-research-01-overview",
+  "title": "科研证据怎么分层：已经验证和还没有做的事",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n# 科研证据怎么分层：已经验证和还没有做的事\n\n> **研究学习草稿 / NOT PUBLISHED**。面向零基础学习者。本文中的科研设计尚未正式冻结，所有SVG仍待Nodal兼容与独立审稿。\n\n「存在一些测试通过」与「我们已经做完研究」不是同一件事。需要依次区分：文献原始来源、源代码参考实现、历史测试和pilot、迁移后代码的再次验证、导师批准的正式实验、独立科研审稿。\n\n目前的69项测试、495个历史pilot运行和3780个诊断行可作为**旧目录结构下的历史工件**，但不能自动证明当前目录结构的完整runner已复测，也不能称作正式统计样本。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-01-evidence.md",
+  "noteContentSha256": "60256307778bec92b3c2f9a65466061746bc4db05da2726b7949f7dad960db8f",
+  "contentSha256": "028a1e9045883c69caa089f47418770442be7537403bea149d80f8495f05a169",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-01-evidence&section=sec-research-01-overview"
+}

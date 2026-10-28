@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "nodal-research-08-decisions",
+  "noteTitle": "导师需要决定什么：方法学与下一步",
+  "id": "sec-research-08-mechanism",
+  "title": "关键机制：你需要能够解释什么？",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "\n## 关键机制：你需要能够解释什么？\n\n- **Q1**：研究问题及最强先例是否足以支持独立价值？\n- **Q2**：DHP SOURCE cap18与PAPER数值域、理想matched状态和只读终点是否可接受？\n- **Q3**：三基线是否足够？未来日历信息权限怎样定义？是否另加第四策略？\n- **Q4**：哪些稳健性检验是必要的？FSRS是否需要作为第二learner？\n- **Q5**：θ如何在开发阶段确定、配对推断用哪些seed和precision、如何控制多重比较？\n\n这些决策会影响实验设计，却不是五道固定的串行技术闸门；迁移后runner复测和方法学讨论可并行。不能把合成决策场景写成真实导师意见。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/nodal-research-08-decisions.md",
+  "noteContentSha256": "fafd5f43113b67d3ac28eeb95ef107575a6a3284dd50ce8d07d0f847b44db200",
+  "contentSha256": "b91279461963ed268773a1aed6790ac5f301130b72f191a3da1d2edb030354c4",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=nodal-research-08-decisions&section=sec-research-08-mechanism"
+}

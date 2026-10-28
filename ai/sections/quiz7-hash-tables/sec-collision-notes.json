@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-collision-notes",
+  "title": "2. Collision Resolution",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### 2. Collision Resolution\n\n$$\\text{Collision}:\\quad k_1\\ne k_2\\;\\land\\;h(k_1)=h(k_2)$$\n\n**Collision Resolution ≠ Prevent Collision**：发生冲突后仍能存储、查找数据；无冲突时使用 Initial Bucket / Slot\n\n| Strategy | Collision 后 | Final Location |\n|---|---|---|\n| **Chaining** | 进入 Initial Bucket 的 Linked List | 该 Bucket 链中的 Node |\n| **Open Addressing** | 按 Probe Strategy 检查 Slot | 满足插入规则的可用 Slot |\n\n**易错点 · Practice**：Initial Hash ≠ Final Slot；Chaining → Initial Bucket；Linear Probing → Initial Index + Occupancy → Final Slot；均匀散列的分母不因 Slot 已占用而减少 → [练习 · Collision Probability](https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&mode=practice&section=sec-collision-notes&question=cis223-q7-collision-probability-v1)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "538c1182f9ab79e336c1c90ef0cd9fcb55d7a350ea11e7ff334c14f90f8be3e9",
+  "contentSha256": "c7bd8a426080a5097654f9d7adb67ceeea0a026f6994103f6b23778d34d5b9fc",
+  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-collision-notes"
+}
