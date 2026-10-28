@@ -1,0 +1,284 @@
+{
+  "schemaVersion": "nodal.public-questions.v1",
+  "generatedAt": "2026-10-28T07:31:44.120Z",
+  "questions": [
+    {
+      "id": "cis223-q6-linked-delete-c-refs-v1",
+      "noteId": "quiz6-linked-list",
+      "sectionId": "sec-common-mistakes",
+      "contentRevision": 2,
+      "type": "flashcard",
+      "promptMarkdown": "Given the linked list A → B → C → D (head → A), what is the worst-case time complexity of removing node C itself in each case: (1) singly, given C's reference; (2) doubly, given C's reference; (3) singly, given a reference to C's predecessor B?",
+      "answerMarkdown": "**Answer · Worst-case Time Complexity**\n\n| 已知条件 | 时间 | 关键原因 |\n|---|---|---|\n| Singly：已知 C 的 Reference | **O(n)** | `C.next → D`；需改 `B.next: C → D`，但 `B.next` 在 **B**，只能从 `head` 找 B |\n| Doubly：已知 C 的 Reference | **O(1)** | `C.prev → B`、`C.next → D`；直接改 `B.next → D`、`D.prev → B` |\n| Singly：已知前驱 B 的 Reference | **O(1)** | `B.next → C`、`C.next → D`；直接改 `B.next → D` |\n\n**英文识题**：`predecessor` = 前驱（B）；`successor` = 后继（D）\n\n仅针对删除指定中间 Node 本身，不包含按 Value 搜索，Head / Tail 边界另论\n\n课堂概念改编，非正式 Quiz 原题",
+      "options": [],
+      "correctOptionId": null
+    },
+    {
+      "id": "cis223-q6-linked-value-search-v1",
+      "noteId": "quiz6-linked-list",
+      "sectionId": "sec-common-mistakes",
+      "contentRevision": 2,
+      "type": "choice",
+      "promptMarkdown": "Linked List 通过 Reference 连接，因此比 Array 更适合查找目标 Value\n\n判断 True / False",
+      "answerMarkdown": "**错**\n\n- 无序 Value Search：两者均 O(n)\n- Index Access：Array O(1)，Linked List O(n)\n- Linked List 的主要优势是已知位置后的 Insert / Delete，而不是 Search",
+      "options": [
+        {
+          "id": "a",
+          "textMarkdown": "True"
+        },
+        {
+          "id": "b",
+          "textMarkdown": "False"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "cis223-q6-queue-reserved-slot-v1",
+      "noteId": "quiz6-stack-and-queue",
+      "sectionId": "sec-queue-circular",
+      "contentRevision": 2,
+      "type": "choice",
+      "promptMarkdown": "【易错点 · Reserved Slot】Circular Queue 数组 Q[1..6]，head 指首个元素，tail 指下一插入槽，采用预留 1 空槽的规则。head=2、tail=1。队列是否满？最大能容纳多少元素？",
+      "answerMarkdown": "**B · 陷阱：`head ≠ tail` 也可能是 Full**\n\n预留一个空槽的 Circular Queue 用 `head = tail` 判断 Empty，用 `next(tail) = head` 判断 Full；本题 `next(1) = 2 = head`，因此已满；6 个物理槽位最多容纳 5 个有效元素",
+      "options": [
+        {
+          "id": "a",
+          "textMarkdown": "未满，容量 6"
+        },
+        {
+          "id": "b",
+          "textMarkdown": "已满，最大有效元素数 5"
+        },
+        {
+          "id": "c",
+          "textMarkdown": "为空，最大有效元素数 5"
+        },
+        {
+          "id": "d",
+          "textMarkdown": "已满，最大有效元素数 6"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "cis223-q6-queue-tail-update-v1",
+      "noteId": "quiz6-stack-and-queue",
+      "sectionId": "sec-explicit-state-update",
+      "contentRevision": 2,
+      "type": "flashcard",
+      "promptMarkdown": "【易错点 · Index 计算 ≠ 更新】Circular Queue Q[1..6]，head=2、tail=6，未满。执行 ENQUEUE(7) 时，向哪一格写入？写完后 tail 是多少？仅计算 next(tail) 会改变 tail 吗？",
+      "answerMarkdown": "**陷阱：计算 `next(tail)` 不等于更新 Tail**\n\nEnqueue 先把 7 写入旧 `Q[6]`，再执行 `tail = next(6) = 1`；只算出 1 而不赋值，下次 Enqueue 就会误用旧槽位",
+      "options": [],
+      "correctOptionId": null
+    },
+    {
+      "id": "cis223-q6-queue-wraparound-v1",
+      "noteId": "quiz6-stack-and-queue",
+      "sectionId": "sec-queue-circular",
+      "contentRevision": 2,
+      "type": "flashcard",
+      "promptMarkdown": "【易错点 · Wraparound】Circular Queue Q[1..6]，tail 指下一插入槽。现在 head=5、tail=1，有效元素依次在 Q[5] 和 Q[6]。依次执行 DEQUEUE()、ENQUEUE(7)，新 head、tail 和有效槽位是什么？",
+      "answerMarkdown": "**陷阱：把 `tail` 当成最后一个元素，或按物理 Index 大小判断队列顺序**\n\n`tail` 是下一插入槽；Dequeue 后 `head = 6`；Enqueue 向旧 `Q[1]` 写入 7 后 `tail = 2`；最终有效槽位按队列顺序是 `Q[6] → Q[1]`，可跨数组末尾",
+      "options": [],
+      "correctOptionId": null
+    },
+    {
+      "id": "cis223-q6-stack-amortized-v1",
+      "noteId": "quiz6-stack-and-queue",
+      "sectionId": "sec-stack-operations",
+      "contentRevision": 2,
+      "type": "choice",
+      "promptMarkdown": "【曾答错 · Stack Dynamic Array】初始 Capacity = 4，数组已满。Push(5) 触发容量翻倍并复制旧元素。按 Doubling 策略，Push 的 Worst-case 与 Amortized Time 分别是什么？",
+      "answerMarkdown": "**C · 陷阱：把偶发的单次 Worst-case 当成每次 Push 的均摊成本**\n\n扩容当次复制 n 个旧元素，Worst-case O(n)；但 Doubling 下连续 m 次 Push 的总成本 O(m)，平均分到每次是 Amortized O(1)",
+      "options": [
+        {
+          "id": "a",
+          "textMarkdown": "Worst-case O(1)，Amortized O(1)"
+        },
+        {
+          "id": "b",
+          "textMarkdown": "Worst-case O(n)，Amortized O(n)"
+        },
+        {
+          "id": "c",
+          "textMarkdown": "Worst-case O(n)，Amortized O(1)"
+        },
+        {
+          "id": "d",
+          "textMarkdown": "Worst-case O(1)，Amortized O(n)"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "cis223-q6-stack-lifo-order-v1",
+      "noteId": "quiz6-stack-and-queue",
+      "sectionId": "sec-stack-quiz",
+      "contentRevision": 2,
+      "type": "choice",
+      "promptMarkdown": "【易错题 · Output Order】固定执行 Push(1), Push(2), Push(3) 后，不再 Push，只执行三次 Pop。以下哪种输出顺序不可能出现？",
+      "answerMarkdown": "**B · 陷阱：忽略“先全部 Push，后连续 Pop”的前提**\n\nPush(1)、Push(2)、Push(3) 后，栈顶向下是 3、2、1；之后的输出只能是 3 → 2 → 1；3 → 1 → 2 必须跳过仍压在 1 上面的 2，所以不可能",
+      "options": [
+        {
+          "id": "a",
+          "textMarkdown": "3, 2, 1"
+        },
+        {
+          "id": "b",
+          "textMarkdown": "3, 1, 2"
+        },
+        {
+          "id": "c",
+          "textMarkdown": "以上两种都可能"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "cis223-q6-stack-resize-thrashing-v1",
+      "noteId": "quiz6-stack-and-queue",
+      "sectionId": "sec-stack-resize-thrashing",
+      "contentRevision": 2,
+      "type": "flashcard",
+      "promptMarkdown": "【进阶错题 · Resize Thrashing】Dynamic Array 满时扩容 ×2；Pop 后 Size ≤ Capacity / 2 就缩容 ÷2。为什么 Size 在 8、9 附近交替变化时，Amortized O(1) 可能失效？给出改进策略。",
+      "answerMarkdown": "**根因：Grow / Shrink 触发阈值间隔太小，少量 Push / Pop 就反复触发整批 Copy；不是 8、9 这两个数字特殊**\n\n例如 `(Size, Capacity)` 从 `(9,16)` 执行 Pop → `(8,8)`（Copy 8），再 Push → `(9,16)`（Copy 8）；交替操作每次 Θ(n)，均摊从 O(1) 退化为 Θ(n)\n\n**改进（进阶拓展）**：满时 Grow ×2，Size ≤ Capacity / 4 才 Shrink ×2⁻¹，拉大触发间隔以避免频繁复制；该缩容策略不是已核实的 0601 课堂必考内容",
+      "options": [],
+      "correctOptionId": null
+    },
+    {
+      "id": "cis223-q6-stack-size-capacity-v1",
+      "noteId": "quiz6-stack-and-queue",
+      "sectionId": "sec-stack-operations",
+      "contentRevision": 2,
+      "type": "flashcard",
+      "promptMarkdown": "【复习 · Size vs Capacity / Copy Total】Dynamic Array Stack 初始容量为 4 且已装满，从 Size = 4 再连续执行 5 次 Push，不执行 Pop。最终 Size、Capacity、扩容累计 Copy 的旧元素数分别是多少？",
+      "answerMarkdown": "**陷阱：把 Capacity 当成 Size，或只计最后一次 Resize 的 Copy**\n\n初始 Size = Capacity = 4；连续 5 次 Push 后 Size = 9、Capacity = 16；扩容依次 Copy 4 个和 8 个旧元素，累计 Copy Total = **12**",
+      "options": [],
+      "correctOptionId": null
+    },
+    {
+      "id": "cis223-q6-stack-top-index-v1",
+      "noteId": "quiz6-stack-and-queue",
+      "sectionId": "sec-stack-boundary",
+      "contentRevision": 2,
+      "type": "choice",
+      "promptMarkdown": "【易错点 · Top Index】按 CLRS §10.1 的 1-based Stack，空栈 S.top = 0，Push(11)，Push(22)，然后 Pop()。返回值与 Pop 后 S.top 是多少？",
+      "answerMarkdown": "**B · 陷阱：把 `top` 当下一空位，或先移动 `top` 再取返回值**\n\n本题 `top` 指当前栈顶 Index；两次 Push 后 `top = 2`、`S[2] = 22`；Pop 返回旧 `S[2] = 22`，随后 `top = 1`",
+      "options": [
+        {
+          "id": "a",
+          "textMarkdown": "返回 11，S.top = 1"
+        },
+        {
+          "id": "b",
+          "textMarkdown": "返回 22，S.top = 1"
+        },
+        {
+          "id": "c",
+          "textMarkdown": "返回 22，S.top = 2"
+        },
+        {
+          "id": "d",
+          "textMarkdown": "返回 11，S.top = 2"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "cis223-q7-collision-probability-v1",
+      "noteId": "quiz7-hash-tables",
+      "sectionId": "sec-collision-notes",
+      "contentRevision": 4,
+      "type": "flashcard",
+      "promptMarkdown": "**Chaining vs Linear Probing — Collision Probability**\n\nA hash table has **100 buckets** indexed from 0 to 99.\n\n**Assumptions**\n- **Uniform Hashing**: the next new, distinct key is equally likely to hash initially to any of the 100 buckets\n- Buckets **21–29** are occupied; all other buckets, including **30**, are empty\n- No resize; for open addressing use **Linear Probing**\n\n**Part A.** What is the probability that the next key is finally placed in **Bucket 30** using (1) **Chaining** and (2) **Linear Probing**?\n\n**Part B.** If the new key's initial hash index is **28**, where is it stored using each method? Explain.\n\nExplain **Initial Hash Index vs Final Storage Location**.",
+      "answerMarkdown": "**易错点**：已占用 Slot 仍可能成为 Initial Hash Index；不要把分母错写成 `100−9=91`。\n\n**前提**：Uniform Hashing；初始 Index 在 `0–99` 中等可能；仅 `21–29` 已占用，其余 Slot 均为空。\n\n```svg\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 840 542\" width=\"840\" height=\"542\">\n<rect x=\"0.5\" y=\"0.5\" width=\"839\" height=\"541\" rx=\"12\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"16\" y=\"29\" fill=\"var(--nodal-svg-text)\" font-size=\"24\" font-weight=\"700\" font-family=\"Noto Sans CJK SC\">100 种等可能的初始 Hash Index</text>\n<text x=\"821\" y=\"27\" fill=\"var(--nodal-svg-muted)\" font-size=\"15\" text-anchor=\"end\" font-family=\"Noto Sans CJK SC\">每种 1%</text>\n<text x=\"16\" y=\"65\" fill=\"var(--nodal-svg-text)\" font-size=\"18\" font-weight=\"600\" font-family=\"Noto Sans CJK SC\">① 初始 Hash 到 21–29</text>\n<text x=\"824\" y=\"65\" fill=\"var(--nodal-svg-text)\" font-size=\"18\" font-weight=\"600\" text-anchor=\"end\" font-family=\"Noto Sans CJK SC\">9 种</text>\n<rect x=\"16\" y=\"80\" width=\"808\" height=\"18\" rx=\"8\" fill=\"var(--nodal-svg-border)\"/>\n<rect x=\"16\" y=\"80\" width=\"72.72\" height=\"18\" rx=\"6\" fill=\"var(--nodal-svg-warning)\"/>\n<text x=\"16\" y=\"127\" fill=\"var(--nodal-svg-muted)\" font-size=\"17\" font-family=\"Noto Sans CJK SC\">碰撞 → Linear Probing 向后找 → 最终进入 30</text>\n<text x=\"16\" y=\"157\" fill=\"var(--nodal-svg-text)\" font-size=\"18\" font-weight=\"600\" font-family=\"Noto Sans CJK SC\">② 初始 Hash 正好是 30</text>\n<text x=\"824\" y=\"157\" fill=\"var(--nodal-svg-text)\" font-size=\"18\" font-weight=\"600\" text-anchor=\"end\" font-family=\"Noto Sans CJK SC\">1 种</text>\n<rect x=\"16\" y=\"172\" width=\"808\" height=\"18\" rx=\"8\" fill=\"var(--nodal-svg-border)\"/>\n<rect x=\"16\" y=\"172\" width=\"8.08\" height=\"18\" rx=\"6\" fill=\"var(--nodal-svg-success)\"/>\n<text x=\"16\" y=\"219\" fill=\"var(--nodal-svg-muted)\" font-size=\"17\" font-family=\"Noto Sans CJK SC\">不需要探测 → 直接进入 30</text>\n<text x=\"16\" y=\"249\" fill=\"var(--nodal-svg-text)\" font-size=\"18\" font-weight=\"600\" font-family=\"Noto Sans CJK SC\">③ 初始 Hash 到其余位置</text>\n<text x=\"824\" y=\"249\" fill=\"var(--nodal-svg-text)\" font-size=\"18\" font-weight=\"600\" text-anchor=\"end\" font-family=\"Noto Sans CJK SC\">90 种</text>\n<rect x=\"16\" y=\"264\" width=\"808\" height=\"18\" rx=\"8\" fill=\"var(--nodal-svg-border)\"/>\n<rect x=\"16\" y=\"264\" width=\"727.2\" height=\"18\" rx=\"6\" fill=\"var(--nodal-svg-muted)\"/>\n<text x=\"16\" y=\"311\" fill=\"var(--nodal-svg-muted)\" font-size=\"17\" font-family=\"Noto Sans CJK SC\">这些位置本来就空 → 最终不会进入 30</text>\n<line x1=\"16\" y1=\"351\" x2=\"824\" y2=\"351\" stroke=\"var(--nodal-svg-border)\" stroke-width=\"1\"/>\n<text x=\"16\" y=\"389\" fill=\"var(--nodal-svg-text)\" font-size=\"20\" font-weight=\"600\" font-family=\"Noto Sans CJK SC\">能让 Key 最终进入 30 的初始位置：</text>\n<rect x=\"183\" y=\"407\" width=\"42\" height=\"48\" rx=\"8\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"204\" y=\"440\" fill=\"var(--nodal-svg-text)\" font-size=\"23\" font-weight=\"500\" text-anchor=\"middle\" font-family=\"Noto Sans CJK SC\">21</text>\n<rect x=\"231\" y=\"407\" width=\"42\" height=\"48\" rx=\"8\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"252\" y=\"440\" fill=\"var(--nodal-svg-text)\" font-size=\"23\" font-weight=\"500\" text-anchor=\"middle\" font-family=\"Noto Sans CJK SC\">22</text>\n<rect x=\"279\" y=\"407\" width=\"42\" height=\"48\" rx=\"8\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"300\" y=\"440\" fill=\"var(--nodal-svg-text)\" font-size=\"23\" font-weight=\"500\" text-anchor=\"middle\" font-family=\"Noto Sans CJK SC\">23</text>\n<rect x=\"327\" y=\"407\" width=\"42\" height=\"48\" rx=\"8\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"348\" y=\"440\" fill=\"var(--nodal-svg-text)\" font-size=\"23\" font-weight=\"500\" text-anchor=\"middle\" font-family=\"Noto Sans CJK SC\">24</text>\n<rect x=\"375\" y=\"407\" width=\"42\" height=\"48\" rx=\"8\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"396\" y=\"440\" fill=\"var(--nodal-svg-text)\" font-size=\"23\" font-weight=\"500\" text-anchor=\"middle\" font-family=\"Noto Sans CJK SC\">25</text>\n<rect x=\"423\" y=\"407\" width=\"42\" height=\"48\" rx=\"8\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"444\" y=\"440\" fill=\"var(--nodal-svg-text)\" font-size=\"23\" font-weight=\"500\" text-anchor=\"middle\" font-family=\"Noto Sans CJK SC\">26</text>\n<rect x=\"471\" y=\"407\" width=\"42\" height=\"48\" rx=\"8\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"492\" y=\"440\" fill=\"var(--nodal-svg-text)\" font-size=\"23\" font-weight=\"500\" text-anchor=\"middle\" font-family=\"Noto Sans CJK SC\">27</text>\n<rect x=\"519\" y=\"407\" width=\"42\" height=\"48\" rx=\"8\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"540\" y=\"440\" fill=\"var(--nodal-svg-text)\" font-size=\"23\" font-weight=\"500\" text-anchor=\"middle\" font-family=\"Noto Sans CJK SC\">28</text>\n<rect x=\"567\" y=\"407\" width=\"42\" height=\"48\" rx=\"8\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"588\" y=\"440\" fill=\"var(--nodal-svg-text)\" font-size=\"23\" font-weight=\"500\" text-anchor=\"middle\" font-family=\"Noto Sans CJK SC\">29</text>\n<rect x=\"615\" y=\"407\" width=\"42\" height=\"48\" rx=\"8\" fill=\"var(--nodal-svg-success-surface)\" stroke=\"var(--nodal-svg-success)\"/>\n<text x=\"636\" y=\"440\" fill=\"var(--nodal-svg-text)\" font-size=\"23\" font-weight=\"500\" text-anchor=\"middle\" font-family=\"Noto Sans CJK SC\">30</text>\n<rect x=\"205\" y=\"473\" width=\"450\" height=\"52\" rx=\"0\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"244\" y=\"508\" fill=\"var(--nodal-svg-text)\" font-size=\"30\" font-family=\"serif\">P</text>\n<text x=\"262\" y=\"508\" fill=\"var(--nodal-svg-text)\" font-size=\"26\" font-family=\"serif\">(Final Slot = 30) =</text>\n<text x=\"518\" y=\"492\" fill=\"var(--nodal-svg-text)\" font-size=\"25\" text-anchor=\"middle\" font-family=\"serif\">9 + 1</text>\n<line x1=\"479\" y1=\"497\" x2=\"559\" y2=\"497\" stroke=\"var(--nodal-svg-text)\" stroke-width=\"1.5\"/>\n<text x=\"518\" y=\"522\" fill=\"var(--nodal-svg-text)\" font-size=\"25\" text-anchor=\"middle\" font-family=\"serif\">100</text>\n<text x=\"563\" y=\"508\" fill=\"var(--nodal-svg-text)\" font-size=\"26\" font-family=\"serif\">= 10%</text>\n</svg>\n```\n\n**滑块机制（Linear Probing · Insert）**\n\n`Occupied → Slide Next`；`First Available → Insert & Stop`。从 Initial Index 出发，遇到第一个空 Slot 就立即插入并停止；不会跳过空位，继续往后找。\n\n```svg\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 660 235\">\n<rect x=\"1\" y=\"1\" width=\"658\" height=\"233\" rx=\"9\" fill=\"var(--nodal-svg-surface)\" stroke=\"var(--nodal-svg-border)\"/>\n<text x=\"16\" y=\"27\" font-size=\"17\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"start\" font-weight=\"600\">First available Slot → INSERT &amp; STOP</text>\n<text x=\"638\" y=\"27\" font-size=\"12\" fill=\"var(--nodal-svg-muted)\" font-family=\"sans-serif\" text-anchor=\"end\">Linear Probing</text>\n<text x=\"18\" y=\"66\" font-size=\"12\" fill=\"var(--nodal-svg-muted)\" font-family=\"sans-serif\" text-anchor=\"start\">Index</text>\n<rect x=\"96\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-success-surface)\" stroke=\"var(--nodal-svg-success)\"/>\n<text x=\"116.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">20</text>\n<rect x=\"145\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-warning-surface)\" stroke=\"var(--nodal-svg-warning)\"/>\n<text x=\"165.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">21</text>\n<rect x=\"194\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-warning-surface)\" stroke=\"var(--nodal-svg-warning)\"/>\n<text x=\"214.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">22</text>\n<rect x=\"243\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-warning-surface)\" stroke=\"var(--nodal-svg-warning)\"/>\n<text x=\"263.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">23</text>\n<rect x=\"292\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-warning-surface)\" stroke=\"var(--nodal-svg-warning)\"/>\n<text x=\"312.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">24</text>\n<rect x=\"341\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-warning-surface)\" stroke=\"var(--nodal-svg-warning)\"/>\n<text x=\"361.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">25</text>\n<rect x=\"390\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-warning-surface)\" stroke=\"var(--nodal-svg-warning)\"/>\n<text x=\"410.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">26</text>\n<rect x=\"439\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-warning-surface)\" stroke=\"var(--nodal-svg-warning)\"/>\n<text x=\"459.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">27</text>\n<rect x=\"488\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-warning-surface)\" stroke=\"var(--nodal-svg-warning)\"/>\n<text x=\"508.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">28</text>\n<rect x=\"537\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-warning-surface)\" stroke=\"var(--nodal-svg-warning)\"/>\n<text x=\"557.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">29</text>\n<rect x=\"586\" y=\"41\" width=\"41\" height=\"43\" rx=\"5\" fill=\"var(--nodal-svg-success-surface)\" stroke=\"var(--nodal-svg-success)\"/>\n<text x=\"606.5\" y=\"68\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">30</text>\n<text x=\"18\" y=\"105\" font-size=\"13\" fill=\"var(--nodal-svg-muted)\" font-family=\"sans-serif\" text-anchor=\"start\">Occupied → next     Empty → stop</text>\n<text x=\"18\" y=\"139\" font-size=\"14\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"start\" font-weight=\"600\">h = 20</text>\n<text x=\"100\" y=\"139\" font-size=\"15\" fill=\"var(--nodal-svg-muted)\" font-family=\"sans-serif\" text-anchor=\"start\">20 empty</text>\n<rect x=\"498\" y=\"117\" width=\"146\" height=\"31\" rx=\"5\" fill=\"var(--nodal-svg-success-surface)\" stroke=\"var(--nodal-svg-success)\"/>\n<text x=\"571\" y=\"139\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">STOP @ 20</text>\n<text x=\"18\" y=\"173\" font-size=\"14\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"start\" font-weight=\"600\">h = 25</text>\n<text x=\"100\" y=\"173\" font-size=\"15\" fill=\"var(--nodal-svg-warning)\" font-family=\"sans-serif\" text-anchor=\"start\">25 → 26 → 27 → 28 → 29 → 30</text>\n<rect x=\"498\" y=\"151\" width=\"146\" height=\"31\" rx=\"5\" fill=\"var(--nodal-svg-success-surface)\" stroke=\"var(--nodal-svg-success)\"/>\n<text x=\"571\" y=\"173\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">STOP @ 30</text>\n<text x=\"18\" y=\"207\" font-size=\"14\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"start\" font-weight=\"600\">h = 30</text>\n<text x=\"100\" y=\"207\" font-size=\"15\" fill=\"var(--nodal-svg-muted)\" font-family=\"sans-serif\" text-anchor=\"start\">30 empty</text>\n<rect x=\"498\" y=\"185\" width=\"146\" height=\"31\" rx=\"5\" fill=\"var(--nodal-svg-success-surface)\" stroke=\"var(--nodal-svg-success)\"/>\n<text x=\"571\" y=\"207\" font-size=\"15\" fill=\"var(--nodal-svg-text)\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"600\">STOP @ 30</text>\n</svg>\n```\n\n**为什么只有 21–30 能最终进入 30？**\n- `Initial = 20`：`T[20]` 空 → **直接停在 20**；不会到达 21\n- `Initial = 25`：`T[25..29]` 已占用 → 逐格 Probe → `T[30]` 空 → **停在 30**\n- `Initial = 30`：`T[30]` 空 → **直接停在 30**\n- 其他初始位置：本题中都为空 → **碰到第一个空 Slot 就停止**，最终不在 30\n\n**仅对本题占用状态**：`Final Slot = 30 ⇔ Initial Index ∈ {21,22,...,30}`。\n\n**Chaining**：只有 Initial Hash = 30 才进入 Bucket 30 → `1/100 = 1%`。\n\n**Linear Probing**：21–29 的 9 种起点经 Collision 走到 30，再加初始恰好为 30 的 1 种 → `(9+1)/100 = 10%`。\n\n**为什么 Initial Hash = 20 不算？**因为 `T[20]` 本来就是空的，Insert 在 20 立即停止，不会继续探测到 21–30。\n\n**Part B — Initial Hash = 28**：Chaining → Bucket 28 的 Linked List；Linear Probing → 28、29 已占用 → Final Slot = 30。\n\n**为什么不是 `1/91`？**那是额外条件「Initial Hash 已知均匀落在 91 个空 Slot 中」下的条件概率：`P(Final=30 | Initial empty) = 1/91`。此题不是这种条件概率。\n\n**通则**：Chaining → Initial Bucket；Linear Probing → Initial Index + Occupancy → Final Slot。\n\n**来源**：CIS 223 0702 Class Question 2 的改写；明确 Uniform Hashing、其他位置为空及 Final Slot 的定义。",
+      "options": [],
+      "correctOptionId": null
+    },
+    {
+      "id": "cis223-q7-good-hash-function-v1",
+      "noteId": "quiz7-hash-tables",
+      "sectionId": "sec-hash-function",
+      "contentRevision": 1,
+      "type": "choice",
+      "promptMarkdown": "**0701 Class Question 3 · Good Hash Function**\n\nWhich of the following is **NOT** a property that you expect a well-designed hash function to have?",
+      "answerMarkdown": "**易错点：Most ≠ Every。** 不要把 “Good Distribution for most normal Key Sets” 误读成对所有可能的 Key Sets 都能完美分散；Hash Function 的设计目标不是无条件消除 Collision。\n\n**Correct: D.** 要求 *every* Data Set 都被均匀分散，属于无法对任意 Key 集合保证的绝对化要求。对于有限的 Bucket 数，不同 Keys 仍可能映射到同一 Bucket。\n\n- **A**：Spread out *most* non-pathological Data Sets 是合理目标；“spread out” = 将 Keys 尽可能分散到不同 Buckets\n- **B**：Easy to compute（近似常数时间）是理想的效率属性\n- **C**：Easy to store（函数本身占用很小空间）也是合理设计属性\n- **D**：对 *every* Data Set 都分散良好无法一概保证，故不应作为必备性质\n\n**课堂速记**：Good Hash Function → Fast Computation + Small Storage + Uniform Distribution for **most** Inputs（≠ Every Input）\n\n**来源**：CIS 223 · 0701 Class Question 3（教师原题，原答案 D）。",
+      "options": [
+        {
+          "id": "a",
+          "textMarkdown": "The hash function should \"spread out\" most (i.e., \"non-pathological\") data sets across the buckets/slots of the hash table."
+        },
+        {
+          "id": "b",
+          "textMarkdown": "The hash function should be easy to compute (constant time or close to it)."
+        },
+        {
+          "id": "c",
+          "textMarkdown": "The hash function should be easy to store (constant space or close to it)."
+        },
+        {
+          "id": "d",
+          "textMarkdown": "The hash function should \"spread out\" every data set across the buckets/slots of the hash table."
+        }
+      ],
+      "correctOptionId": "d"
+    },
+    {
+      "id": "cis223-q7-uniform-three-keys-v1",
+      "noteId": "quiz7-hash-tables",
+      "sectionId": "sec-hash-function",
+      "contentRevision": 1,
+      "type": "choice",
+      "promptMarkdown": "**Uniform Hashing · Three Keys（0701 Q1 扩展变式，非教师原题）**\n\nAn initially empty hash table has **10 buckets** (indices 0–9). Three distinct Keys independently hash to uniformly random Initial Indices.\n\nWhat is the probability that **all three Keys do NOT collide**?\n\nChoose **one** expression.",
+      "answerMarkdown": "**易错点：第二、三把 Key 仍各自拥有 10 个可能的 Initial Hash Index，而非从剩余空 Slot 中不放回抽取。** “剩余空位置”决定成功数，不会自动改变 Hash Function 的输出空间。\n\n**Counting · Multiplication Rule**\n\n- 总结果：$10\\times10\\times10=1000$\n- 全部不碰撞：第一个 Key 10 个选项；第二个必须避开 1 个已选 Index，剩 9 个；第三个避开 2 个，剩 8 个\n- 有利结果：$10\\times9\\times8=720$\n\n$$\\boxed{P(\\text{All No Collision})=\\frac{10\\times9\\times8}{10^3}=0.72=72\\%}$$\n\n**Correct: A.** 也可以用条件概率链：$1\\times(9/10)\\times(8/10)$。\n\n**B 的错误**：把 “有多少有利位置” 写成对单个特定位置的概率，还把分母错当作 10、9、8。\n\n**C 的错误**：不放回抽样，错误地让后一个 Key 不可能 Hash 到前一个已占用的 Index。\n\n**D 的错误**：没有分别考虑第一个 Key 可以落在任何位置、以及第三个 Key 必须避开前两个不同位置。\n\n**通则（独立均匀的 Initial Hash Indices）**：$r$ 个不同 Keys 全部不碰撞时（$r\\le m$）：\n\n$$P=\\frac{m(m-1)\\cdots(m-r+1)}{m^r}$$\n\n**来源**：基于 CIS 223 · 0701 Class Question 1 的自拟三 Key 扩展变式；并非老师原题。",
+      "options": [
+        {
+          "id": "a",
+          "textMarkdown": "$\\frac{10}{10}\\times\\frac{9}{10}\\times\\frac{8}{10}$"
+        },
+        {
+          "id": "b",
+          "textMarkdown": "$\\frac{1}{10}\\times\\frac{1}{9}\\times\\frac{1}{8}$"
+        },
+        {
+          "id": "c",
+          "textMarkdown": "$\\frac{10}{10}\\times\\frac{9}{9}\\times\\frac{8}{8}$"
+        },
+        {
+          "id": "d",
+          "textMarkdown": "$\\frac{9}{10}\\times\\frac{9}{10}\\times\\frac{9}{10}$"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "cis223-q7-uniform-two-keys-v1",
+      "noteId": "quiz7-hash-tables",
+      "sectionId": "sec-hash-function",
+      "contentRevision": 1,
+      "type": "choice",
+      "promptMarkdown": "**0701 Class Question 1 · Uniform Hashing**\n\nIf we assume a **uniform hashing function**, what is the probability that **two keys** being inserted into an **empty hashtable of 100 buckets** will **NOT collide**?\n\n*Use the classroom model: the distinct Keys have independent, uniformly distributed Initial Hash Indices.*",
+      "answerMarkdown": "**易错点：已占用一个 Bucket ≠ 第二把 Key 只剩 99 个可能的 Initial Hash Index。** Uniform Hashing 对新 Key 仍给出 100 个等可能的初始位置；其中 **99 个不碰撞、1 个碰撞**。\n\n**Counting · Multiplication Rule**\n\n- 全部有序结果：$100\\times100=10{,}000$\n- 不碰撞结果：$100\\times99=9{,}900$\n- 碰撞结果：$100\\times1=100$\n\n$$\\boxed{P(\\text{No Collision})=\\frac{100\\times99}{100\\times100}=\\frac{99}{100}=99\\%}$$\n\n$$P(\\text{Collision})=\\frac{1}{100}=1\\%$$\n\n**Correct: B.** 也可写成 $(100/100)\\times(99/100)$。\n\n**为什么不是 $1/99$？** $99$ 是第二个 Key 能避开碰撞的 **有利 Initial Indices 数量**，不是它的总可能位置数；Hash Function 不会因为 Index 已占用而改变它的样本空间。\n\n**为什么不能用不放回 Combination？** 本题允许两个不同 Key 得到相同 Initial Index；不能强制把同一个 Index 从第二把 Key 的 Hash 输出中移除。\n\n**来源**：CIS 223 · 0701 Class Question 1（教师原题，答案 B）；课堂均匀散列假设。",
+      "options": [
+        {
+          "id": "a",
+          "textMarkdown": "$1/100$"
+        },
+        {
+          "id": "b",
+          "textMarkdown": "$99/100$"
+        },
+        {
+          "id": "c",
+          "textMarkdown": "$(99/100)\\times(98/100)$"
+        },
+        {
+          "id": "d",
+          "textMarkdown": "$(99/100)\\times(99/100)$"
+        }
+      ],
+      "correctOptionId": "b"
+    }
+  ]
+}

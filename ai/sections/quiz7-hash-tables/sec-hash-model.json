@@ -6,11 +6,11 @@
   "title": "1. Structure",
   "parentId": null,
   "hidden": false,
-  "markdown": "### 1. Structure\n\n**Hash Table = Array + Hash Function + Collision Resolution**\n\n- **Stored Data**：Key-only / (Key, Value)；**Collision Resolution**：Chaining（Bucket Array + Linked Lists）/ Open Addressing（Array Slots）\n- **Hash Table**：具体 Data Structure，可实现 [Dictionary / Map 等 ADT](nodal://note/data-structures-adt/sec-adt-definition)，也可用于 Key-only Collection\n- **Hash Function → Initial Index**；**Collision Resolution + Table State → Final Storage Location**",
+  "markdown": "### 1. Structure\n\n**Hash Table = Array + Hash Function + Collision Resolution**\n\n- [Storage Structure & Stored Data](nodal://note/quiz7-hash-tables/sec-array-entry)；[Collision Resolution](nodal://note/quiz7-hash-tables/sec-collision-notes)\n- **Hash Table**：具体 Data Structure，可实现 [Dictionary / Map 等 ADT](nodal://note/data-structures-adt/sec-adt-definition)，也可用于 Key-only Collection\n- **Hash Function → Initial Index**；**Collision Resolution + Table State → Final Storage Location**",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz7-hash-tables.md",
-  "noteContentSha256": "538c1182f9ab79e336c1c90ef0cd9fcb55d7a350ea11e7ff334c14f90f8be3e9",
-  "contentSha256": "495c8a98ac80e6ac92afaa1e1ba9544188997f40a2be17d6aa4305a79112af36",
-  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "noteContentSha256": "a0f5c1a2c2c8300f73232b5eb50193c7990bdce5ba0b08c7339fce05ae565a27",
+  "contentSha256": "6d8f0f4a648209ecd875bce37466da00bea0e8321fac678542a77ec2d113fe7d",
+  "publishedAt": "2026-10-28T07:24:23.642Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-hash-model"
 }

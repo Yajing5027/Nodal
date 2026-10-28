@@ -1,6 +1,6 @@
 {
   "schemaVersion": "nodal.ai.index.v1",
-  "publishedAt": "2026-10-28T02:19:10.099Z",
+  "publishedAt": "2026-10-28T07:24:23.642Z",
   "notes": [
     {
       "id": "heuer-2010",
@@ -3191,7 +3191,7 @@
       "title": "Quiz 7 · Hash Tables",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables",
       "resource": "ai/notes/quiz7-hash-tables.json",
-      "contentSha256": "538c1182f9ab79e336c1c90ef0cd9fcb55d7a350ea11e7ff334c14f90f8be3e9",
+      "contentSha256": "a0f5c1a2c2c8300f73232b5eb50193c7990bdce5ba0b08c7339fce05ae565a27",
       "sections": [
         {
           "id": "sec-hash-model",
@@ -3203,7 +3203,7 @@
         },
         {
           "id": "sec-array-entry",
-          "title": "Array & Entry",
+          "title": "Storage Structure & Stored Data",
           "parentId": "sec-hash-model",
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-array-entry",
@@ -3256,6 +3256,22 @@
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-linear-probing",
           "resource": "ai/sections/quiz7-hash-tables/sec-linear-probing.json"
+        },
+        {
+          "id": "sec-tombstone",
+          "title": "Tombstone · Optional Deletion Strategy",
+          "parentId": "sec-open-addressing",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-tombstone",
+          "resource": "ai/sections/quiz7-hash-tables/sec-tombstone.json"
+        },
+        {
+          "id": "sec-homework7-hash",
+          "title": "Homework 7 · Course-Specific Implementation",
+          "parentId": "sec-tombstone",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-homework7-hash",
+          "resource": "ai/sections/quiz7-hash-tables/sec-homework7-hash.json"
         },
         {
           "id": "sec-double-hashing",
