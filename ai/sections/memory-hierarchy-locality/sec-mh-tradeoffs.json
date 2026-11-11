@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "memory-hierarchy-locality",
+  "noteTitle": "Memory Hierarchy & Locality",
+  "id": "sec-mh-tradeoffs",
+  "title": "Capacity, Speed & Cost Trade-offs",
+  "parentId": "sec-mh-design",
+  "hidden": false,
+  "markdown": "#### Capacity, Speed & Cost Trade-offs",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/memory-hierarchy-locality.md",
+  "noteContentSha256": "d413eafd1e6640191ec1a780be87e89fec010ae2053be4ed562684ae3ba0ffbc",
+  "contentSha256": "144f763acb75cdd2816ef78340623c31974400f2c17c255acd5dccddfa736d70",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-tradeoffs"
+}

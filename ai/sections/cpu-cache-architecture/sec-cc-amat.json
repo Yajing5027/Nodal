@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cpu-cache-architecture",
+  "noteTitle": "CPU Cache Architecture",
+  "id": "sec-cc-amat",
+  "title": "Average Memory Access Time (AMAT)",
+  "parentId": "sec-cc-perf",
+  "hidden": false,
+  "markdown": "#### Average Memory Access Time (AMAT)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cpu-cache-architecture.md",
+  "noteContentSha256": "1525c674c68b6e52529c11f785c252bb0aa70a0b262d08f5afed6f100d6cd7e2",
+  "contentSha256": "c5e3eb3957e07e0f3b050defafdb0fce7add932bec07e20b53c6a68225ae56ac",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-amat"
+}

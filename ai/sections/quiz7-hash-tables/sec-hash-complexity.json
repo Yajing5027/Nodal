@@ -9,8 +9,8 @@
   "markdown": "### Big-O\n\n$$\\alpha=\\frac{n}{m}\\quad\\text{(Load Factor)}$$\n\n*n = 有效 Key 总数（包括 Chaining 的 Linked List 内所有 Key）；m = Bucket / Slot 总数；以下不计 Resize。*\n\n| Method / Operation | Best | Expected* | Worst |\n|---|---|---|---|\n| Direct Addressing · Search / Insert / Delete | $O(1)$ | $O(1)$ | $O(1)$ |\n| Chaining · Search / Insert-Update / Delete by Key | $O(1)$ | $O(1+\\alpha)$ | $O(n)$ |\n| Open Addressing · Search / Insert / Delete | $O(1)$ | $O(1)$* | $O(m)$ |\n\n- **Chaining 例外**：已知 Key 不存在、直接 Insert at Head（无需先 Search）→ Best / Expected / Worst 均 $O(1)$。\n- **Expected 的前提**：Chaining $O(1+\\alpha)$ 假设 [Uniform Hashing](nodal://note/quiz7-hash-tables/sec-hash-function)；若分布不均，则不保证这个 Expected Bound（最坏仍可能 $O(n)$）。若 $\\alpha=O(1)$，均匀散列下 Expected 为 $O(1)$。Open Addressing Expected $O(1)$ 也需合适 Probe / 受控负载等条件；大量 Tombstones 可能增加 Search 探测次数。\n- 跨章节易错点：[Shared Pitfalls](nodal://note/algorithms-shared-pitfalls/sec-index-vs-value)\n\n**课程依据**：CIS 223 0701 / 0702；Homework 7（最多 $m$ 次 Probe）；指定教材 *Introduction to Algorithms* 第 4 版 Ch. 11。\n\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz7-hash-tables.md",
-  "noteContentSha256": "a0f5c1a2c2c8300f73232b5eb50193c7990bdce5ba0b08c7339fce05ae565a27",
+  "noteContentSha256": "c84fd66e5e9eb4870c56960983192a2e8835be86a8d2dfa3d7651c38ff45d67a",
   "contentSha256": "e483d38b8ca422f9439d1e7cc65d5369f7fab21380f5a1bfe137c64c787dc3d2",
-  "publishedAt": "2026-10-28T07:24:23.642Z",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-hash-complexity"
 }

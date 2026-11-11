@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "binary-search-trees",
+  "noteTitle": "BST",
+  "id": "sec-bst-isbst-source",
+  "title": "Prompt / Code",
+  "parentId": "sec-bst-isbst-interactive",
+  "hidden": false,
+  "markdown": "\n### Prompt / Code\n\n[JavaScript + SVG 完整源码](https://github.com/Yajing5027/Nodal-source/blob/main/content/interactive/bst-isbst-recursion.html)\n\n`steps → currentStep → render(SVG)`　｜　`Previous / Next / Reset / Slider`\n\n**复用要求**：三层 BST `20, 10, 30, 5, 15, 25, 35` · 当前 Node 高亮 · Call / Return 弯箭头一次只显示一条 · `low/high` 竖虚线 · Java 代码单独显示 · 22 步可回放 · 不把 Return 当 Output\n\n交互源码保存在本节，可在阅读模式点击运行；也可下载独立 HTML 文件\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/binary-search-trees.md",
+  "noteContentSha256": "0aba4c9f5dadfa66a6ac19fdddb6f667ac5901976f15d99317311d64aff13429",
+  "contentSha256": "9c50d1a83356ac9679feb1a59f89ac7de9b1cc0467618b6c84343edbf5c66d49",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-bst-isbst-source"
+}

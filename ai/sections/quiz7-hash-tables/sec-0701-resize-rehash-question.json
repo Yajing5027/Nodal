@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-0701-resize-rehash-question",
+  "title": "0701 · Class Question Q2 — Resize and Rehash",
+  "parentId": "sec-hash-model",
+  "hidden": false,
+  "markdown": "### 0701 · Class Question Q2 — Resize and Rehash\n\n**老师原题**：*If a hashtable's array is resized to reduce collisions, what must be done to the elements that have already been inserted?*\n\n- **A.** All items must be copied over to the same indices in the new array.\n- **B.** Items must be rehashed and reinserted in the new array.\n- **C.** The existing items can be placed anywhere in the new array.\n- **D.** The hash function must be updated.\n\n**正确答案：B。** 容量从 `m` 改变后，原 Key 的初始 Hash Index 和 Collision Resolution 结果可能改变；必须基于新表参数重新计算位置并重新插入，而不是直接把旧 Array 下标复制过去。\n\n**易错点**：D 不是所问的必需操作。如果 Hash Function 本身写成可接收新容量参数 `h_m(k)`，调整 `m` 后不一定要重写函数代码；但旧 Entries 仍必须重新 Hash / Reinsert。**Key、Value、Note/Question ID 与 ReviewEvent 均不应因为表的理论 Resize 示例而变化。**\n\n**来源**：CIS 223 0701 Poll Everywhere Q2；[Class Questions 原题](https://docs.google.com/document/d/1UyDQRbvoQQqbPMaakmcLbr_WwHBQcTKG4PFEReUqn8E/edit)。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "c84fd66e5e9eb4870c56960983192a2e8835be86a8d2dfa3d7651c38ff45d67a",
+  "contentSha256": "ab09374d8a453b84178ccdf4b04b1441468a5648588776dbf61f48def329cafc",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-0701-resize-rehash-question"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-0702-chaining-vs-probing-probability",
+  "title": "0702 · Class Question Q2 — Chaining vs Linear Probing Probability",
+  "parentId": "sec-open-addressing",
+  "hidden": false,
+  "markdown": "### 0702 · Class Question Q2 — Chaining vs Linear Probing Probability\n\n**老师原题**：*Consider a hash table built on an array of size 100, where buckets 21 through 29 are already filled. What are the odds of the next key being placed in bucket 30 if we use chaining, and if we use linear probing?*\n\n- **A.** 1/90 and 1/90\n- **B.** 1/90 and 1/10\n- **C.** 1/10 and 1/90\n- **D.** 1/10 and 1/10\n\n**课堂结论：A–D 都不正确。** 在 Uniform Initial Hashing、Buckets 21–29 已占用且 Bucket 30 为空的题设下：\n\n| Strategy | Initial Hash Indices leading to Bucket 30 | Probability |\n|---|---|---|\n| Chaining | Only 30 | $1/100$ |\n| Linear Probing (+1, wraparound) | 21, 22, …, 29, 30 (10 indices) | $10/100=1/10$ |\n\n**易错点**：Chaining 的最终 Bucket 仍由原 Hash Index 定位；Linear Probing 可以越过一段连续已占用 Slots。两种方法不能共用一个落点概率，也不能因为已占用九格就把 Hash 输出样本空间从 100 改为 91。\n\n**来源**：CIS 223 0702 Poll Everywhere Q2；[Class Questions 原题与老师答案](https://docs.google.com/document/d/1UyDQRbvoQQqbPMaakmcLbr_WwHBQcTKG4PFEReUqn8E/edit)。原题提供的四个选项均未列出正确组合，不能任意挑一个当正确答案。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "c84fd66e5e9eb4870c56960983192a2e8835be86a8d2dfa3d7651c38ff45d67a",
+  "contentSha256": "e15a30fd627a58294e2522120e6ff06c86093ac04776a20ce83d4889b1d41c4e",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-0702-chaining-vs-probing-probability"
+}

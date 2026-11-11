@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "parallel-performance-scalability",
+  "title": "Parallel Performance & Scalability",
+  "markdown": "\n<!-- nodal-panel:sec-pp-work:visible -->\n\n### Work Decomposition\n\n<!-- nodal-panel:sec-pp-serial:visible:parent=sec-pp-work -->\n\n#### Serial vs Parallel\n\nProgram → 多项 Work；存在前后 Dependency 的操作 → 按依赖顺序执行（Serial）；Independent Work → Parallelizable（可并行）≠ Parallel Execution（实际并行）；真正使用多个 Core 并行，还要看硬件资源和 Overhead 是否值得\n\n<!-- nodal-panel:sec-pp-fraction:visible:parent=sec-pp-work -->\n\n#### Parallel Fraction & Serial Bottleneck\n\n<!-- nodal-panel:sec-pp-overhead:visible:parent=sec-pp-work -->\n\n#### Execution Overhead\n\n<!-- nodal-panel:sec-pp-models:visible -->\n\n### Speedup Models\n\n<!-- nodal-panel:sec-pp-speedup:visible:parent=sec-pp-models -->\n\n#### Speedup & Baseline\n\n<!-- nodal-panel:sec-pp-amdahl:visible:parent=sec-pp-models -->\n\n#### Amdahl's Law\n\n<!-- nodal-panel:sec-pp-formula:visible:parent=sec-pp-amdahl -->\n\n##### Formula, Variables & Assumptions\n\n<!-- nodal-panel:sec-pp-upper:visible:parent=sec-pp-amdahl -->\n\n##### Upper Bound & Diminishing Returns\n\n<!-- nodal-panel:sec-pp-inverse:visible:parent=sec-pp-amdahl -->\n\n##### Inverse Amdahl Problems\n\n<!-- nodal-panel:sec-pp-generalized:visible:parent=sec-pp-models -->\n\n#### Generalized Speedup\n\n<!-- nodal-panel:sec-pp-scaling:visible -->\n\n### Scaling Behavior\n\n<!-- nodal-panel:sec-pp-strong:visible:parent=sec-pp-scaling -->\n\n#### Strong Scaling\n\n<!-- nodal-panel:sec-pp-weak:visible:parent=sec-pp-scaling -->\n\n#### Weak Scaling\n\n<!-- nodal-panel:sec-pp-limits:visible:parent=sec-pp-scaling -->\n\n#### Scaling Limits & Interpretation\n\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-pp-work",
+      "title": "Work Decomposition",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-work",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-work.json"
+    },
+    {
+      "id": "sec-pp-serial",
+      "title": "Serial vs Parallel",
+      "parentId": "sec-pp-work",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-serial",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-serial.json"
+    },
+    {
+      "id": "sec-pp-fraction",
+      "title": "Parallel Fraction & Serial Bottleneck",
+      "parentId": "sec-pp-work",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-fraction",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-fraction.json"
+    },
+    {
+      "id": "sec-pp-overhead",
+      "title": "Execution Overhead",
+      "parentId": "sec-pp-work",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-overhead",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-overhead.json"
+    },
+    {
+      "id": "sec-pp-models",
+      "title": "Speedup Models",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-models",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-models.json"
+    },
+    {
+      "id": "sec-pp-speedup",
+      "title": "Speedup & Baseline",
+      "parentId": "sec-pp-models",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-speedup",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-speedup.json"
+    },
+    {
+      "id": "sec-pp-amdahl",
+      "title": "Amdahl's Law",
+      "parentId": "sec-pp-models",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-amdahl",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-amdahl.json"
+    },
+    {
+      "id": "sec-pp-formula",
+      "title": "Formula, Variables & Assumptions",
+      "parentId": "sec-pp-amdahl",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-formula",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-formula.json"
+    },
+    {
+      "id": "sec-pp-upper",
+      "title": "Upper Bound & Diminishing Returns",
+      "parentId": "sec-pp-amdahl",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-upper",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-upper.json"
+    },
+    {
+      "id": "sec-pp-inverse",
+      "title": "Inverse Amdahl Problems",
+      "parentId": "sec-pp-amdahl",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-inverse",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-inverse.json"
+    },
+    {
+      "id": "sec-pp-generalized",
+      "title": "Generalized Speedup",
+      "parentId": "sec-pp-models",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-generalized",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-generalized.json"
+    },
+    {
+      "id": "sec-pp-scaling",
+      "title": "Scaling Behavior",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-scaling",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-scaling.json"
+    },
+    {
+      "id": "sec-pp-strong",
+      "title": "Strong Scaling",
+      "parentId": "sec-pp-scaling",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-strong",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-strong.json"
+    },
+    {
+      "id": "sec-pp-weak",
+      "title": "Weak Scaling",
+      "parentId": "sec-pp-scaling",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-weak",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-weak.json"
+    },
+    {
+      "id": "sec-pp-limits",
+      "title": "Scaling Limits & Interpretation",
+      "parentId": "sec-pp-scaling",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-limits",
+      "resource": "ai/sections/parallel-performance-scalability/sec-pp-limits.json"
+    }
+  ],
+  "sourcePath": "content/notes/parallel-performance-scalability.md",
+  "contentSha256": "17cb8a6f05a18ff004c0bd67303bcc085fcda1bb24f9d98127fac7667ea16d10",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability"
+}

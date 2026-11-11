@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cpu-cache-architecture",
+  "noteTitle": "CPU Cache Architecture",
+  "id": "sec-cc-plru",
+  "title": "Pseudo-LRU",
+  "parentId": "sec-cc-replacement",
+  "hidden": false,
+  "markdown": "##### Pseudo-LRU",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cpu-cache-architecture.md",
+  "noteContentSha256": "1525c674c68b6e52529c11f785c252bb0aa70a0b262d08f5afed6f100d6cd7e2",
+  "contentSha256": "65002f4b44195c2765b0ef5411fbb18ac6767c4be41da03c992ccc9e10d9965c",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-plru"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-cache-units",
+  "title": "0. Units / Notation",
+  "parentId": "sec-c224-q2-cache",
+  "hidden": false,
+  "markdown": "### 0. Units / Notation\n\n$$\n\\footnotesize 1\\text{ B}=8\\text{ bits}\\;;\\quad 1\\text{ KiB}=2^{10}\\text{ B}\\;;\\quad 1\\text{ MiB}=2^{20}\\text{ B}\\;;\\quad 1\\text{ GiB}=2^{30}\\text{ B}\n$$\n\n$$\n\\footnotesize 1\\text{ hex digit}=4\\text{ bits}\\;;\\quad 32\\text{ KiB}=32768\\text{ B}\\;;\\quad 64\\text{ B}=512\\text{ bits}\n$$\n\n*B = Byte；b = bit；KiB / MiB / GiB 按 1024 换算；计算 Cache Geometry 时先统一为 Bytes。*",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "ebb13b64edea191e62d6be83c86d89867d8aa992ba6791cb58e27242f68110c6",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-units"
+}

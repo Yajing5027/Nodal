@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cpu-cache-architecture",
+  "noteTitle": "CPU Cache Architecture",
+  "id": "sec-cc-hits",
+  "title": "Hits & Misses",
+  "parentId": "sec-cc-fundamentals",
+  "hidden": false,
+  "markdown": "#### Hits & Misses",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cpu-cache-architecture.md",
+  "noteContentSha256": "1525c674c68b6e52529c11f785c252bb0aa70a0b262d08f5afed6f100d6cd7e2",
+  "contentSha256": "b879b677cae624cff424e74f28d92f82c16d4562f0f257abd05591d54da4d9d7",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-hits"
+}

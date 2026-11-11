@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cpu-cache-architecture",
+  "noteTitle": "CPU Cache Architecture",
+  "id": "sec-cc-set",
+  "title": "Set-Associative",
+  "parentId": "sec-cc-placement",
+  "hidden": false,
+  "markdown": "##### Set-Associative",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cpu-cache-architecture.md",
+  "noteContentSha256": "1525c674c68b6e52529c11f785c252bb0aa70a0b262d08f5afed6f100d6cd7e2",
+  "contentSha256": "5aea824b07a3efe679171d420968bb091bcfdbfd6790154b9b3a077f695df53d",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-set"
+}

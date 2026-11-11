@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "memory-hierarchy-locality",
+  "noteTitle": "Memory Hierarchy & Locality",
+  "id": "sec-mh-access",
+  "title": "Access Characteristics",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Access Characteristics",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/memory-hierarchy-locality.md",
+  "noteContentSha256": "d413eafd1e6640191ec1a780be87e89fec010ae2053be4ed562684ae3ba0ffbc",
+  "contentSha256": "49a2764268817aae4c4912756c00aa4fa7e74ea149003aebcda74c82516563a1",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-access"
+}

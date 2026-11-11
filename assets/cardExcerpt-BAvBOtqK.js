@@ -1,1 +1,0 @@
-import{Ct as e}from"./index-B0R62c4y.js";function t(t,n){return e(t,n,220)}export{t};

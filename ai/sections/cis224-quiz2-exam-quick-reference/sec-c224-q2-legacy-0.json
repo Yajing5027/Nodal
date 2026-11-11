@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-legacy-0",
+  "title": "00 — 五秒定位题型",
+  "parentId": "sec-c224-q2-legacy",
+  "hidden": false,
+  "markdown": "### 00 — 五秒定位题型\n\n**Quiz 2：2026-11-09｜Unit 5/6｜50 points｜约 10–12 MC｜Open Notes（仅自己的 Notes）**。1102 明确排除新学的 RISC-V Assembly。A=老师 1102 明确列出/课堂活动；B=Lab L6/L7 变式，不保证每类单独出题。\n\n| 英文题干关键词 | 对应 |\n|---|---|\n| speedup / parallelizable / sequential fraction / target speedup | §01 Amdahl |\n| strong scaling / weak scaling / load imbalance | §01 Scaling |\n| temporal / spatial / registers / L1 / L2 / L3 | §02 Hierarchy |\n| cache size / line size / ways / sets / index / tag / offset | §02 Geometry |\n| address / set index / same set / conflict | §02 Address |\n| hit / cold miss / conflict miss / capacity miss / LRU | §02 Trace |\n| hit time / miss rate / miss penalty / local miss rate | §03 AMAT |\n| base CPI / accesses per instruction / stalls | §03 CPI |\n| page size / virtual address / PTE bytes / flat page table | §04 Table |\n| VPN / PFN / offset / physical address | §04 Translation |\n| TLB hit rate / page walk / translation cost | §04 TLB |\n\n**单位**：1 KiB = 1024 B；1 MiB = 2²⁰ B；每个 hex digit = 4 bits；百分比先转小数。**Hit Rate + Miss Rate = 1**。题目若要求 hexadecimal，不能直接填十进制。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "b74eb3d4c246b414832ab8aaadae131ecb2b6f0f4271d574de50ec945968c9b1",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-0"
+}

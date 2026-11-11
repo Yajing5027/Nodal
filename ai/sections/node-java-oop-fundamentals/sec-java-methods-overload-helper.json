@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "node-java-oop-fundamentals",
+  "noteTitle": "Java & Object-Oriented Programming",
+  "id": "sec-java-methods-overload-helper",
+  "title": "Methods · moved to Data Structures",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Methods · moved to Data Structures\n\n这部分关于 Method Overloading、Wrapper、Helper、Parameters / Arguments 与 Recursion 的详细笔记已迁入独立 Note [Data Structures · Java Methods](nodal://note/data-structures-review/sec-java-method-overloading)，配套代码在可折叠的 Java Implementation 中\n\n旧 Section ID 保留作为兼容跳转入口，不重建历史链接",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/node-java-oop-fundamentals.md",
+  "noteContentSha256": "e13f5ea3b97754cd0ef172ae3b154e12728609fc1c459f2fc8b4755d1477e1b8",
+  "contentSha256": "339665e841b522a0713a9f9de7d53fdf98a726cb524a0ec669219b744a3dbf28",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals&section=sec-java-methods-overload-helper"
+}

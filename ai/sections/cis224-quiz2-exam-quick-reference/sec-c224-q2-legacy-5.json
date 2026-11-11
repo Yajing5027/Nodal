@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-legacy-5",
+  "title": "05 — 防错清单 / 考场路由",
+  "parentId": "sec-c224-q2-legacy",
+  "hidden": false,
+  "markdown": "### 05 — 防错清单 / 考场路由\n\n**每题 15 秒定位**：读最后一句问什么 → 查 §00 英文关键词 → 找本节公式 → 转单位/百分比 → 代数计算 → 检查输出格式与单位 → 选最贴近的正确 MC。\n\n**四大陷阱**：\n\n1. **Parallelizable ≠ 已经 Parallel；Serial Fraction ≠ f**。给 Serial=20% → f=0.80；Speedup 不等于 processor 个数。\n2. **Cache Lines ≠ Sets；Set Index ≠ Offset；0x17 hex ≠ 17 decimal**。Tag+Index+Offset 的 bit 数总和 = 地址位宽。\n3. **L2 local miss rate ≠ global miss rate；AMAT ≠ CPI**；TLB hit time 与 walk cost 不可重复累计。\n4. **VPN ≠ PFN；VA→PA 保留 Page Offset；Page Table ≠ TLB；PTE Bytes 别漏乘**。\n\n**公式口袋版**：\n\n- Amdahl S=1/[(1−f)+f/P]；Smax=1/(1−f)；q=(1/S−1/P)/(1−1/P)\n- Cache Lines=C/B；Sets=C/(B×W)；o=log₂B；i=log₂Sets；t=A−o−i\n- Set=floor(Address/B) mod Sets；Tag=floor(Address/(B×Sets))\n- AMAT=L1 Hit Time+m1×(L2 Hit Time+m2×DRAM Penalty)（本次 L2 local miss 模型）\n- CPI=Base+Accesses/Inst×Miss Rate×Miss Penalty\n- Flat PT Bytes=2^(VA Bits−log₂Page Bytes)×PTE Bytes\n- PA=[PFN | unchanged Offset]；TLB Avg=Hit Time+Miss Rate×Extra Walk Cost\n\n**考试证据边界**：此笔记覆盖老师 1102 的明确 Topic List、两组课堂 Review 题型、Lab L6/L7 相关变式，但**无法保证未知题干全部出现或全部覆盖**。正式 D2L Study Sheet 若发布，应以那份为最终范围。RISC-V Assembly 为这次明确排除。\n\n**学习来源**：1102 完整字幕 1:22–1:26 与 1:49–2:07；CIS 224 Labs L6/L7 与 11/04 Review；Quizzes & Exams Quiz 1/Midterm 题型记录。\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "ec73c398c5064a0c4d0bdfcd821eef50c5f15d96f35bd7164d37a182c4e87683",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-5"
+}

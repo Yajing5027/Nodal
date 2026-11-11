@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "parallel-performance-scalability",
+  "noteTitle": "Parallel Performance & Scalability",
+  "id": "sec-pp-formula",
+  "title": "Formula, Variables & Assumptions",
+  "parentId": "sec-pp-amdahl",
+  "hidden": false,
+  "markdown": "##### Formula, Variables & Assumptions",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/parallel-performance-scalability.md",
+  "noteContentSha256": "17cb8a6f05a18ff004c0bd67303bcc085fcda1bb24f9d98127fac7667ea16d10",
+  "contentSha256": "5683232bc3a8ce2040cd375fe8af4a5d569660028c4ebb8ff9331a783fee9205",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-formula"
+}

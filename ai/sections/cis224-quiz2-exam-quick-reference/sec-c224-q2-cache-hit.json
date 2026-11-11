@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-cache-hit",
+  "title": "5. Hit / Miss & Replacement",
+  "parentId": "sec-c224-q2-cache",
+  "hidden": false,
+  "markdown": "### 5. Hit / Miss & Replacement\n\n<div class=\"nodal-cols nodal-cols-2\">\n\n<div class=\"nodal-col\">\n\n**Cache Hit**\n\nRequested Block found in the current Cache level\n\n</div>\n\n<div class=\"nodal-col\">\n\n**Cache Miss**\n\nRequested Block absent from the current Cache level\n\n</div>\n\n</div>\n\n#### Miss\n\n##### Type\n\n**Cold / Compulsory**：首次访问此 Memory Block\n\n**Conflict**：曾访问过；整个 Cache 未满，但目标 Set 已满\n\n**Capacity**：曾访问过；整个 Cache 已满\n\n<small style=\"color:var(--nodal-svg-muted);font-size:0.85em\">以上为直观情形：整个 Cache 已满时也可能是 Conflict；严格区分 Conflict / Capacity 需对照同容量 Fully Associative LRU</small>\n\n**Operation**：(Evict) → Fetch → Fill\n\n<small style=\"color:var(--nodal-svg-muted);font-size:0.85em\">仅当目标 Set 已满时 Evict；这里的 CPU READ Miss 均需 Fetch / Fill</small>\n\n#### Replacement Policy\n\n##### True LRU · Least Recently Used\n\n淘汰最长时间未访问的 Line；每次 Hit / Fill 都更新最近使用状态\n\n##### Tree Pseudo-LRU\n\n以较少硬件位**近似**维护使用历史；8-way 可用 7-bit Tree 决定替换方向，不保证总选出精确 LRU 的同一条 Line\n\n<small style=\"color:var(--nodal-svg-muted);font-size:0.85em\">交互示例以 True LRU 标注 Miss 类型；Fully Associative LRU 仅作 Miss 分类参考，不是第三种执行策略</small>",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "1a33577adc39a4a717f8362857a086878802855b18faad5fb7165bd062483f1a",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-hit"
+}

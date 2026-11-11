@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-final",
+  "title": "05 — 学习进度 — 第一轮扫盲 / 第二轮复练",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### 05 — 学习进度 — 第一轮扫盲 / 第二轮复练\n\n**第一轮 ; 当前阶段**：每种题型先做/读一道代表题 → 理解题干、概念和公式用途 → 共同整理正式笔记 → 转下一题型。**完成首轮不要求机械算出每个数值或提交最终选项**；未做的算术不等于概念未过。正式整理过的概念视作本轮已覆盖，**不等于考试中已熟练或所有变式都会做**。\n\n**已完成首轮概念整理**：Serial vs Parallelizable Work；Amdahl Forward / Inverse；Strong vs Weak Scaling；Flynn's Taxonomy / SPMD。Strong/Weak 练习已提取 $a=12,\\ b=48,\\ P=4$ 并讨论公式，未继续纯代数计算；Inverse Amdahl 已通过题目讨论反向求 Serial Fraction，**两者都不因未提交算术结果而倒退进度**。Flynn 已核对老师 SPMD 与 SIMD 题目，完成分类与紧凑 SVG 笔记；MIMD 变式曾误选 SIMD，留待第二轮复练，**不等于第一轮未完成**。\n\n**已接触，待后续处理**：Load Imbalance 已读题并得到解释，因题型识别困难，按用户要求**留到第二轮重新独立练一次**；通用 $S=T_{\\mathrm{serial}}/T_{\\mathrm{parallel}}$ 的两个时间含义尚未专门讲解，不冒充已学过。\n\n**其他题型**：Cache 在另一对话逐项重建；AMAT/CPI、Paging/TLB 等以各自实际学习记录为准，不能因为 Legacy Draft 有公式就标成第一轮完成。\n\n**第二轮 ; 完成全部题型后**：统一复练、辨认混淆条件、检查独立作答与运算细节；**第一轮已覆盖的题型不因第二轮尚未开始而被标记未完成**。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "36fb49023f494ae67fc91f9c668ab1527e22f930bb476f7b082bfa60a82a65f5",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-final"
+}

@@ -6,11 +6,11 @@
   "title": "Special Cases 保留指数",
   "parentId": null,
   "hidden": false,
-  "markdown": "##### Special Cases 保留指数\n\n• E=00000：F=0 → ±0（+0 == −0 为 True）；F≠0 → Subnormal 非规格化\n\n  ◦ Value = (−1)S × 0.F₂ × 2−14（无 Hidden 1）\n\n• E=11111：F=0 → ±Infinity；F≠0 → NaN（Not a Number）\n\n  ◦ NaN Comparison（Quiz 1 Q12）：x != x 为 True → x 是 NaN（NaN != NaN）；−0.0 == +0.0 为 True\n",
+  "markdown": "##### Special Cases 保留指数\n\n• E=00000：F=0 → ±0（+0 == −0 为 True）；F≠0 → Subnormal 非规格化\n\n  ◦ Value = (−1)ˢ × 0.F₂ × 2⁻¹⁴（无 Hidden 1）\n\n• E=11111：F=0 → ±Infinity；F≠0 → NaN（Not a Number）\n\n  ◦ NaN Comparison（Quiz 1 Q12）：x != x 为 True → x 是 NaN（NaN != NaN）；−0.0 == +0.0 为 True\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-ieee754-floating-point.md",
-  "noteContentSha256": "7232673d96ecaa6f5b080c04a095ed746b99598c96bd182a3fcafd9dd7149d7a",
-  "contentSha256": "7d5c1fd68628a6890e01a64c5f51ff13eb3d1eb910e277de74fa392a3bb09b9c",
-  "publishedAt": "2026-10-28T07:24:23.642Z",
+  "noteContentSha256": "bd395a2c1b97deb6156201386c37de5a820e7240ac47a51529dbd07f48fadc7a",
+  "contentSha256": "a1273452537895c500d1d0c58b149f259e7bbbb6b2f387aad7962075f12e20dc",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point&section=sec-special-cases-bec141"
 }

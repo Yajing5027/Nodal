@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "memory-hierarchy-locality",
+  "noteTitle": "Memory Hierarchy & Locality",
+  "id": "sec-mh-design",
+  "title": "Hierarchy Design",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Hierarchy Design",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/memory-hierarchy-locality.md",
+  "noteContentSha256": "d413eafd1e6640191ec1a780be87e89fec010ae2053be4ed562684ae3ba0ffbc",
+  "contentSha256": "cb23e452fe4dfd09c67d3c6956fe0cf59c8d14fa3864c894986ad4a4b346f881",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-design"
+}

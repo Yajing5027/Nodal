@@ -1,1 +1,0 @@
-import{Pt as e}from"./index-6CLbDQ5G.js";function t(t,n){return e(t,n,220)}export{t};

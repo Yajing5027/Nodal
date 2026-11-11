@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "parallel-execution-models-gpu",
+  "noteTitle": "Parallel Execution Models & GPU",
+  "id": "sec-pe-misd",
+  "title": "MISD",
+  "parentId": "sec-pe-flynn",
+  "hidden": false,
+  "markdown": "##### MISD",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/parallel-execution-models-gpu.md",
+  "noteContentSha256": "4f404e5b6ac58a5dc7560703e6a0b04365b6d0c839bd94a1a2d81cea9e4cbcb9",
+  "contentSha256": "61e6d899db1d925b59e0db39aa8e39256e0a3ae49d223ab729217ecbfd3eed28",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-misd"
+}

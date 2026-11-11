@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "data-structures-review",
+  "noteTitle": "Data Structure",
+  "id": "sec-java-helper-recursion",
+  "title": "Wrapper / Helper / Recursion（入口、辅助方法与递归）",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Wrapper / Helper / Recursion（入口、辅助方法与递归）\n\n- **Helper ≠ Call**：Helper Method = 辅助方法（负责完成任务的一个方法）；Call / Invoke = 调用方法（一次执行动作）。实际执行的不一定就是 Helper；Wrapper 也会执行\n- **Method Overloading = 方法重载**（不是通常语境里的过载）：方法名相同但形参列表不同，属于 Java 语言特性；递归与重载不是一回事\n- **Return scope**：每次递归调用各有自己的 Call Frame；当前 Helper 遇到 `return true/false`，仅结束这一层调用并把值交回调用者，调用者随后继续或短路\n- **Wrapper**：面向外界的入口 Method，例如 `public boolean isBST()`；用户不需要自行提供 Root 或 Bounds\n- **Helper**：辅助实际计算的 Method；可以是重载，也可以取完全不同的名称\n- **Recursion**：某个 Method 在执行时再次调用自己（或递归调用另一个方法）；每次调用有独立的局部参数\n- **Base Case**：递归终止条件，`x == null` 的空子树返回 true\n- **Return**：结果回到调用点；`&&` 会先算左边，左边 false 时短路，不执行右边\n- **Bounds**：进入左子树保留下界并收紧上界；进入右子树保留上界并收紧下界。该算法属于 BST 作业知识，与 Java 语言机制分开理解\n\n**Java Implementation · Homework 8 的有效 Range-Checking Helper**\n\n```java-fold\n// @explanation Integer 可为 null：表示缺少某一方向边界；不排除任何合法 int 极值\npublic boolean isBST() {\n    return isBST(root, null, null);\n}\n\nprivate static boolean isBST(Node x, Integer low, Integer high) {\n    if (x == null) return true;\n\n    if (low != null && x.key <= low) return false;\n    if (high != null && x.key >= high) return false;\n\n    return isBST(x.left, low, x.key)\n        && isBST(x.right, x.key, high);\n}\n```\n\n[回到 BST 的数学规则与 Range](nodal://note/quiz8-study-notes/sec-bst-invariant-bounds)",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/data-structures-review.md",
+  "noteContentSha256": "32c51303483e61a98c5a079e6d7e6c04b2317305ae7be21589a7516ae1d7c7f7",
+  "contentSha256": "93aa30b6caf485addeedd908cd969610dcabf52115bed61a8728578713bf2407",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-review&section=sec-java-helper-recursion"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cpu-cache-architecture",
+  "noteTitle": "CPU Cache Architecture",
+  "id": "sec-cc-multi",
+  "title": "Multilevel Design: L1 / L2 / L3",
+  "parentId": "sec-cc-perf",
+  "hidden": false,
+  "markdown": "#### Multilevel Design: L1 / L2 / L3",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cpu-cache-architecture.md",
+  "noteContentSha256": "1525c674c68b6e52529c11f785c252bb0aa70a0b262d08f5afed6f100d6cd7e2",
+  "contentSha256": "21ae85abae64c4b32c781d6b48b972d24c7346f89fcde42721fc594d74b036e3",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-multi"
+}

@@ -6,11 +6,11 @@
   "title": "Binary & Hex",
   "parentId": null,
   "hidden": false,
-  "markdown": "#### Binary & Hex\n\n• 1 Hex Digit = 4 bits - Nibble；2 Hex Digits = 8 bits - Byte\n\n  ◦ Binary ↔ Hex：每 4 bits 一组\n\n• Number Prefix：0x - Hex (16)；0b - Binary (2)；Decimal (10) - No Prefix\n\n• Decimal → Binary：优先用 2 的次幂组合；也可连续除以 2 取余，倒序读余数\n\n• Parity：Even - LSB=0；Odd - LSB=1\n",
+  "markdown": "#### Binary & Hex\n\n• 1 Hex Digit = 4 bits - Nibble；2 Hex Digits = 8 bits - Byte\n\n  ◦ Binary ↔ Hex：每 4 bits 一组\n\n  ◦ 前导 0：非负二进制数左侧补 0，不改变数值；转换成 Hex 可补到 4 bits 的倍数，但字段本身仍保留题目规定的位宽\n\n  ◦ [Quiz 2 · Cache Address Mapping 应用与速算](nodal://note/cis224-quiz2-exam-quick-reference/sec-c224-q2-cache-address)；同一分组技巧也用于 Quiz 2 的 Virtual / Physical Address 字段\n\n• Number Prefix：0x - Hex (16)；0b - Binary (2)；Decimal (10) - No Prefix\n\n• Decimal → Binary：优先用 2 的次幂组合；也可连续除以 2 取余，倒序读余数\n\n• Parity：Even - LSB=0；Odd - LSB=1\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-bits-integers-bitwise.md",
-  "noteContentSha256": "542a64d8c97f1ab8ef7d1f9d7ae854de404b3869a25831c5872d25717e236946",
-  "contentSha256": "a328585e412f7c7c4fbf0568128f9926d40ea97c3665577653ee573236ff21ff",
-  "publishedAt": "2026-10-28T07:24:23.642Z",
+  "noteContentSha256": "10c8fc34c42aa7b497100191f363b5d197a764934eabe3edc8a3a64109524da6",
+  "contentSha256": "20f0d938c6ba7134c0777b0fc447dab24a757f3b0e8088c85f998789c019a06f",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise&section=sec-binary-hex-5c22cc"
 }

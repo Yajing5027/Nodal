@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cpu-cache-architecture",
+  "noteTitle": "CPU Cache Architecture",
+  "id": "sec-cc-geometry",
+  "title": "Geometry: Size, Lines, Sets & Ways",
+  "parentId": "sec-cc-organization",
+  "hidden": false,
+  "markdown": "#### Geometry: Size, Lines, Sets & Ways",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cpu-cache-architecture.md",
+  "noteContentSha256": "1525c674c68b6e52529c11f785c252bb0aa70a0b262d08f5afed6f100d6cd7e2",
+  "contentSha256": "a79beba5fc2de4145f50b3caa399011a9c2590130e76b29f9b24ef9777039bf5",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-geometry"
+}

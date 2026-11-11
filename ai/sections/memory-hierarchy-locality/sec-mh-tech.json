@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "memory-hierarchy-locality",
+  "noteTitle": "Memory Hierarchy & Locality",
+  "id": "sec-mh-tech",
+  "title": "Technologies",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Technologies",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/memory-hierarchy-locality.md",
+  "noteContentSha256": "d413eafd1e6640191ec1a780be87e89fec010ae2053be4ed562684ae3ba0ffbc",
+  "contentSha256": "1e26c3e47fcb02e91d52ab93c352933163dbb8c81ea6ca9b5284530ab105d572",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-tech"
+}

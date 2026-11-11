@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "parallel-performance-scalability",
+  "noteTitle": "Parallel Performance & Scalability",
+  "id": "sec-pp-fraction",
+  "title": "Parallel Fraction & Serial Bottleneck",
+  "parentId": "sec-pp-work",
+  "hidden": false,
+  "markdown": "#### Parallel Fraction & Serial Bottleneck",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/parallel-performance-scalability.md",
+  "noteContentSha256": "17cb8a6f05a18ff004c0bd67303bcc085fcda1bb24f9d98127fac7667ea16d10",
+  "contentSha256": "9fec178cf0c82a0a4a710a8bb1d8d7ff2e90620b4189aaf31c10a9bb2ff1730a",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-fraction"
+}

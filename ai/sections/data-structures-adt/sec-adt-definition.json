@@ -6,11 +6,11 @@
   "title": "ADT — Abstract Data Type",
   "parentId": null,
   "hidden": false,
-  "markdown": "### ADT — Abstract Data Type\n\n**ADT = Operations + Behavior Rules ≠ Implementation**\n\n$\\text{ADT}\\xrightarrow{\\text{Implemented by}}\\text{Data Structure}$\n\n- **ADT（抽象数据类型）**：描述一类数据及其允许的操作、行为规则；**不规定底层 Memory Layout**\n- **Implementation（具体实现）**：实际用 Array、Linked List、Hash Table、Tree 等组织与访问数据\n- **区分**：ADT 描述逻辑上能存/查什么；实现负责真正完成存取。二者不是必须分别创建的两个运行时容器",
+  "markdown": "### ADT — Abstract Data Type\n\n**ADT = Operations + Behavior Rules ≠ Implementation**\n\n$\\text{ADT}\\xrightarrow{\\text{Implemented by}}\\text{Data Structure}$\n\n- **ADT（抽象数据类型）**：描述一类数据及其允许的操作、行为规则；**不规定底层 Memory Layout**\n- **Implementation（具体实现）**：实际用 Array、Linked List、Hash Table、Tree 等组织与访问数据\n- **区分**：ADT 描述逻辑上能存/查什么；实现负责真正完成存取。二者不是必须分别创建的两个运行时容器\n\n**盒子类比**：ADT 定义对外的操作与行为规则（如 put/get/remove 或 add/contains/remove）；Implementation 同时决定**数据如何存储与连接**、以及**实现这些操作的算法**，不只是每格放什么\n\n- **Set / Key Membership**：只管理 Key 是否存在，无需 Value；**Dictionary / Map** 管理 Key → Value\n- Heap/BST 的 Node 可以用对象引用连接；Hash Table 常以 Array 存 Buckets；数据结构名称不等同于某个 ADT\n- Homework 8 的 `BST.java`：每个 Node 保存 `int key` + `left/right/p` 引用，适合实现 Key-only Set / Dynamic Set；**不是 Array，也不是存 (Key, Value) 的 Map**\n- [BST · distinct Keys 与检查规则](nodal://note/binary-search-trees/sec-bst-invariant-bounds)",
   "svgBlocks": [],
   "sourcePath": "content/notes/data-structures-adt.md",
-  "noteContentSha256": "ef2bf5fff7adc0961a0eb1475412b7cf25c94cdf0f7dbe4aedee4f83d79c6066",
-  "contentSha256": "7064dd4fb4fbf5e5bfeb216649d9565b5ee306ec8ea76ad91dda8c459d5cc040",
-  "publishedAt": "2026-10-28T07:24:23.642Z",
+  "noteContentSha256": "b0d87cb5e068c72ffa9d193c19136b577f31dcb0a32a76babd4b451454c05faa",
+  "contentSha256": "89a43cfbbbae3a7202360014d415926bd303bd3b6f3955138e7cfac4683b3849",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-adt&section=sec-adt-definition"
 }

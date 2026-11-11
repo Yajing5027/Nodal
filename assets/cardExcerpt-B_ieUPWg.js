@@ -1,1 +1,0 @@
-import{kt as e}from"./index-Cbq2ixv9.js";function t(t,n){return e(t,n,220)}export{t};

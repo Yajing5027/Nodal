@@ -1,1 +1,0 @@
-import{Pt as e}from"./index-CIt3yHBB.js";function t(t,n){return e(t,n,220)}export{t};

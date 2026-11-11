@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-cache-geometry",
+  "title": "3. Cache Geometry",
+  "parentId": "sec-c224-q2-cache",
+  "hidden": false,
+  "markdown": "### 3. Cache Geometry\n\n<div class=\"nodal-cols nodal-cols-2\">\n\n<div class=\"nodal-col\">\n\n**Total Lines**\n\n$$\nL=\\frac{C}{B}\n$$\n\n</div>\n\n<div class=\"nodal-col\">\n\n**Number of Sets**\n\n$$\nS=\\frac{C}{B\\cdot W}\n$$\n\n</div>\n\n</div>\n\n<div class=\"nodal-cols nodal-cols-2\">\n\n<div class=\"nodal-col\">\n\n**Offset Bits**\n\n$$\no=\\log_2 B\n$$\n\n</div>\n\n<div class=\"nodal-col\">\n\n**Index Bits**\n\n$$\ni=\\log_2 S\n$$\n\n</div>\n\n</div>\n\n**Tag Bits**\n\n$$\nt=A-i-o\n$$\n\n$$\n\\footnotesize\\begin{gathered}\nC=\\text{Cache Bytes};\\quad B=\\text{Line Bytes};\\quad W=\\text{Ways};\\quad L=\\text{Total Lines}\\\\\nS=\\text{Sets};\\quad A=\\text{Address Bits};\\quad o=\\text{Offset Bits};\\quad i=\\text{Index Bits};\\quad t=\\text{Tag Bits}\n\\end{gathered}\n$$\n\n**Cache Design Trade-offs**\n\n| Change | Typical Benefit | Typical Trade-off |\n| --- | --- | --- |\n| Cache Size ↑ | Miss Rate ↓ | Chip Area ↑；Hit Time 可能 ↑ |\n| Ways ↑ | Conflict Miss ↓ | Tag Comparators 增多；Hit Time / Area 可能 ↑ |\n| Line Size ↑ | 利用 Spatial Locality；Cold Miss 可能 ↓ | Miss Penalty ↑ |\n| Add L2 Cache | L1 Miss Penalty ↓（减少直接访问 RAM 的次数） | 额外的 Cache 硬件成本 |\n\n<small style=\"color:var(--nodal-svg-muted);font-size:0.85em\">老师课堂总结的典型 Design Trade-offs，不是所有 Access Patterns 的必然结果；增加 L2 不等于降低 L1 Miss Rate</small>",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "a9fd5f485e70da86899600f78fc249329ae3399a41b3ba661522f3de0389b13d",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-geometry"
+}

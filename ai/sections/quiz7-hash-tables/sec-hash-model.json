@@ -6,11 +6,11 @@
   "title": "1. Structure",
   "parentId": null,
   "hidden": false,
-  "markdown": "### 1. Structure\n\n**Hash Table = Array + Hash Function + Collision Resolution**\n\n- [Storage Structure & Stored Data](nodal://note/quiz7-hash-tables/sec-array-entry)；[Collision Resolution](nodal://note/quiz7-hash-tables/sec-collision-notes)\n- **Hash Table**：具体 Data Structure，可实现 [Dictionary / Map 等 ADT](nodal://note/data-structures-adt/sec-adt-definition)，也可用于 Key-only Collection\n- **Hash Function → Initial Index**；**Collision Resolution + Table State → Final Storage Location**",
+  "markdown": "### 1. Structure\n\n**Hash Table = Array + Hash Function + Collision Resolution**\n\n- [Storage Structure & Stored Data](nodal://note/quiz7-hash-tables/sec-array-entry)；[Collision Resolution](nodal://note/quiz7-hash-tables/sec-collision-notes)\n- **Hash Table**：具体 Data Structure，可实现 [Dictionary / Map 等 ADT](nodal://note/data-structures-adt/sec-adt-definition)，也可用于 Key-only Collection\n- **Hash Function → Initial Index**；**Collision Resolution + Table State → Final Storage Location**\n\n**Two-layer placement · 0701 classroom explanation**\n\n1. **Layer 1 — Hash Function**: compute the initial bucket/slot index first. For example, with `m = 7`, `k = 16` and `h₁(k) = k mod m`, the initial index is `T[2]`.\n2. **Layer 2 — Collision Resolution**: when different keys share the same initial index, Chaining places entries in that bucket's linked list; Open Addressing searches its defined probe sequence (see [Linear Probing](nodal://note/quiz7-hash-tables/sec-linear-probing) and [Double Hashing](nodal://note/quiz7-hash-tables/sec-double-hashing)) for the first valid storage slot.\n\n**Mistake cue:** Probing handles a collision; it does not prevent two keys from hashing to the same initial index. In Double Hashing, `h₁(k)` selects the initial index while `h₂(k)` selects the probing step size. Final placement depends on both the strategy and occupied slots.\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz7-hash-tables.md",
-  "noteContentSha256": "a0f5c1a2c2c8300f73232b5eb50193c7990bdce5ba0b08c7339fce05ae565a27",
-  "contentSha256": "6d8f0f4a648209ecd875bce37466da00bea0e8321fac678542a77ec2d113fe7d",
-  "publishedAt": "2026-10-28T07:24:23.642Z",
+  "noteContentSha256": "c84fd66e5e9eb4870c56960983192a2e8835be86a8d2dfa3d7651c38ff45d67a",
+  "contentSha256": "6ec57cf3ead557e1d8b382ff3273ae633243bd8ce6725aa125dc5ecb1edc091a",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-hash-model"
 }

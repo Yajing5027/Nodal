@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-legacy-4",
+  "title": "04 — Paging / Page Table / TLB",
+  "parentId": "sec-c224-q2-legacy",
+  "hidden": false,
+  "markdown": "### 04 — Paging / Page Table / TLB\n\n#### K. Virtual Memory / Paging [课堂 A]\n\nVA（Virtual Address）=程序使用的虚拟地址；PA（Physical Address）=RAM 中的物理地址。Page=虚拟页；Frame=物理页框（大小相同）。**Page Table 存 VPN→PFN 映射；MMU 处理地址转换；TLB 缓存转换结果，不是数据。**\n\nPage Size=2^k Bytes → **Page Offset=k bits**。常见 4 KiB → 12 bits，但题目可指定 256 B / 1 KiB。**TLB Miss ≠ Page Fault**：TLB 未命中可查有效 Page Table；Page Fault 涉及无效或不在内存等映射情况，可能需要操作系统处理。\n\n#### L. Flat Page Table Size [课堂 A]\n\n题干 virtual address bits / page size / PTE bytes / flat page table / size for one process：\n\n① Offset bits = log₂(Page Bytes)；② VPN bits = VA bits − Offset bits；③ Flat entries = 2^(VPN bits)；④ **Table Bytes = Entries × PTE Bytes**；最后换算 KiB/MiB。\n\n课堂活动：32-bit VA、1 KiB Page、4-B PTE → Offset=10 bits，VPN=22 bits，Entries=2²²，Size=2²²×4=2²⁴B = **16 MiB**。\n\n易错：每个 PTE 占用 4B **不能漏乘**；多级 Page Table 的实际分配方式不同，不能把单级满表大小直接当成实际多级空间。\n\n拓展识别：48-bit VA、4 KiB Page、8B PTE 的单级满表是 2³⁶×8 = **512 GiB**，也是为什么会采用 Multi-level Page Tables。\n\n#### M. Virtual → Physical Address [课堂 A]\n\n题干 VPN / offset / PFN / translate to physical address：\n\n**VA = [VPN | Offset] → Page Table 把 VPN 映射到 PFN → PA = [PFN | 同一个 Offset]**。\n\n老师活动：Page=256 B → Offset=8 bits；VA=**0x76AB** → VPN=0x76，Offset=0xAB；给定 VPN 0x76→PFN 0x18 → **PA=0x18AB**。\n\n注意每个 Hex Digit=4 Bits；物理地址可能与虚拟地址的位宽不同；VPN 不是网络代理 VPN。\n\n#### N. TLB Average Translation Cost [老师特别强调 A]\n\n题干 TLB hit rate / hit time / page walk / average translation cost：\n\n**Average = TLB Hit Time + TLB Miss Rate × Extra Page Table Walk Cost**；Miss Rate=1−Hit Rate；若每层 cost 一样，Walk Cost=Levels×Cycles/Level。\n\n课堂活动：Hit=98%，Hit Time=1 cycle，3 Levels×12 cycles → Miss=2%，Extra Walk=36 cycles →\n\n**Average = 1 + 0.02×36 = 1.72 cycles**。\n\n**课堂异常提示**：老师口头曾计算 1.74，网站一度接受 1.73，实际公式结果应为 1.72；老师说正式选择题选项不至于只差 0.01。**不能把 1.73 当标准答案**。\n\n**防 Double Counting**：如果 Miss 的 total time=1+36=37，正确概率式为 **0.98×1 + 0.02×37 = 1.72**，不能再写成 1+0.02×37。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "5486d35143261183b791c30c2264f9e0a9be9ed8131e60bf146343cdeca69034",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-4"
+}

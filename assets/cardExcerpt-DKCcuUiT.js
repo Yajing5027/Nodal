@@ -1,1 +1,0 @@
-import{pt as e}from"./index-CDndCdWD.js";function t(t,n){return e(t,n,220)}export{t};

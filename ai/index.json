@@ -1,13 +1,13 @@
 {
   "schemaVersion": "nodal.ai.index.v1",
-  "publishedAt": "2026-10-28T07:24:23.642Z",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
   "notes": [
     {
       "id": "heuer-2010",
       "title": "Jerry Heuer MAA-NCS Team Contest 2010",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2010",
       "resource": "ai/notes/heuer-2010.json",
-      "contentSha256": "cab7fa6fd0c564e1697603a8ce92483f6bd9b98c78f8a360ef860b45c05a822b",
+      "contentSha256": "63d21b6751bbd4578a6485e6f41984b56a1132a22238ed30f08a731bb73138c7",
       "sections": [
         {
           "id": "heuer-2010-p01",
@@ -96,7 +96,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2011",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2011",
       "resource": "ai/notes/heuer-2011.json",
-      "contentSha256": "e9539f6bec4ea6e32e144833350bfeda629a4c90bc9901edfd5c5426cc144a28",
+      "contentSha256": "99f15b829dfafa94557743fad1ba0681cbbfbb491543785724e6e620017f6f50",
       "sections": [
         {
           "id": "heuer-2011-p01",
@@ -185,7 +185,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2012",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2012",
       "resource": "ai/notes/heuer-2012.json",
-      "contentSha256": "9a59af5593090c6ab2c439d4c2dffb373cedf4da7c5f0f8c684c9e1ebe593efc",
+      "contentSha256": "30317e55c304f6dd8a521979e96990ae200d26b083dda6a537699675b5e1561c",
       "sections": [
         {
           "id": "heuer-2012-p01",
@@ -274,7 +274,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2013",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2013",
       "resource": "ai/notes/heuer-2013.json",
-      "contentSha256": "f19f84ceece5bd463f44a2826a1238fc67d2ce8e4ef783fa153a09fe613a7144",
+      "contentSha256": "77ee1018f968fda37883b81288966c5d6c1f1f21abb521716d4a1763892bb000",
       "sections": [
         {
           "id": "heuer-2013-p01",
@@ -363,7 +363,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2014",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2014",
       "resource": "ai/notes/heuer-2014.json",
-      "contentSha256": "118cea4cea5540cf37bd721754553d7f864ce04569d19ee0fa86eaa1fbeb3645",
+      "contentSha256": "1e85c331d3373a146be5756cd9f6cf3247c011e727f24f6e8f0b3e31ebb5edd7",
       "sections": [
         {
           "id": "heuer-2014-p01",
@@ -452,7 +452,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2015",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2015",
       "resource": "ai/notes/heuer-2015.json",
-      "contentSha256": "f2d210b110059d4fef75fb85dc872d0f9f765e4df59dc80e09b9fd8e0ed32094",
+      "contentSha256": "861ebee08e1ef02bdd48ade45491fe23c358549fc7a6eb6ec90403254345f095",
       "sections": [
         {
           "id": "heuer-2015-p01",
@@ -541,7 +541,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2016",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2016",
       "resource": "ai/notes/heuer-2016.json",
-      "contentSha256": "19f89a1b367c46df3d36283e5cca91840fc8df8fdda21e5217d69c1f8a4e1865",
+      "contentSha256": "fd676a19efac8e1c6bb7a82992869201dabd093cb166db183c631b0001403d55",
       "sections": [
         {
           "id": "heuer-2016-p01",
@@ -630,7 +630,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2017",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2017",
       "resource": "ai/notes/heuer-2017.json",
-      "contentSha256": "19e19b1156e9b2062a8ffcc4c6e5ad7b2129fbf3094dcbde25fa4c9b5dca05a2",
+      "contentSha256": "05bce07e137c2b560ba13acedf3b438a9c1b31a36097ce606d0464618c40d0ad",
       "sections": [
         {
           "id": "heuer-2017-p01",
@@ -719,7 +719,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2018",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2018",
       "resource": "ai/notes/heuer-2018.json",
-      "contentSha256": "0f2cc0d9ae134fedaafa05f0a70ce7cb38d3a310a83f0a2ad57635d6c6d93a63",
+      "contentSha256": "3ee425196c8ddf65a13bf3eede250047cebd7e4016f5f7f6a8b4fedbcfab0cc6",
       "sections": [
         {
           "id": "heuer-2018-p01",
@@ -808,7 +808,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2019",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2019",
       "resource": "ai/notes/heuer-2019.json",
-      "contentSha256": "4fd75dde60bd10d07300e2d321eea2d6a12b2f8d6229d63c74fd236178e4f34c",
+      "contentSha256": "434af81eed049c91dce73370a1cf3241bbe9390a789887289f5183bc6e68b86e",
       "sections": [
         {
           "id": "heuer-2019-p01",
@@ -897,7 +897,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2022",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2022",
       "resource": "ai/notes/heuer-2022.json",
-      "contentSha256": "c51158c85a113668d97a7df370000e94300c60fddae4d4a5634880639e2d03f9",
+      "contentSha256": "d96949835acd0b2686e1dfd78ba45c426fc8a4247a8a3686d1accc119476e9c5",
       "sections": [
         {
           "id": "heuer-2022-p01",
@@ -986,7 +986,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2023",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2023",
       "resource": "ai/notes/heuer-2023.json",
-      "contentSha256": "40d2fb14b7c41e6452bbb3e6778267cbdf44942441f62c560e10fdaae7544f1b",
+      "contentSha256": "4e8689cb5fbecc74d2ddd981501d204498c6e2ad78dd25f66fb8f72cab05c4d6",
       "sections": [
         {
           "id": "heuer-2023-p01",
@@ -1075,7 +1075,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2024",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2024",
       "resource": "ai/notes/heuer-2024.json",
-      "contentSha256": "b7cc95592e52b8f6e3681b44204ab916db6da8a7813d58f52dc80be5456d286b",
+      "contentSha256": "739e8d2db480dfc8a589518ca25fced22baa55456b174c95c4c6708e94996167",
       "sections": [
         {
           "id": "heuer-2024-p01",
@@ -1164,7 +1164,7 @@
       "title": "Jerry Heuer MAA-NCS Team Contest 2025",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=heuer-2025",
       "resource": "ai/notes/heuer-2025.json",
-      "contentSha256": "0fa4f5721f773e5db5bad08a5d4560216816adff75ec42433f4d9245ae50b036",
+      "contentSha256": "12a9f2b2695e0153c2aef5f2d3014ca43583a284b741999ce060e5c2dc4e4f34",
       "sections": [
         {
           "id": "heuer-2025-p01",
@@ -1359,7 +1359,7 @@
       "title": "Q1 · Computer Architecture & Number Representation",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes",
       "resource": "ai/notes/node-computer-architecture-study-notes.json",
-      "contentSha256": "22eb09a2c05fdcaeb0232cd13e7ae902bac98344b42c8b730258fe3daa83884e",
+      "contentSha256": "3b33459dae2c38d7205d72418738c9c89c64d909a17400dd10f5fba4a73e2925",
       "sections": [
         {
           "id": "sec-system-architecture",
@@ -1459,7 +1459,7 @@
       "title": "Q3 · Trees & Heaps",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3",
       "resource": "ai/notes/node-trees-heaps-q3.json",
-      "contentSha256": "1181d6350d734724d4adda58118772c6e7f226861a2eaa55f9a99ed83049bfb0",
+      "contentSha256": "ff06049d27889f0f78f48ce8674ddd75f99f3fa16b21e7c79e54efa6cda2488b",
       "sections": [
         {
           "id": "sec-q3-vocab",
@@ -1558,7 +1558,7 @@
       "title": "Quiz 6 · Linked List",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list",
       "resource": "ai/notes/quiz6-linked-list.json",
-      "contentSha256": "7461a26bb4228a7236cb06426c0f150fe6ab53541d5acc70213af04aeb297212",
+      "contentSha256": "14ddd5e20e6135d671454c946b25419f997929fc8ca876f9bef157e16622b643",
       "sections": [
         {
           "id": "sec-structure",
@@ -1607,7 +1607,7 @@
       "title": "Architecture, Datapath & Instructions",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-architecture-datapath-instructions",
       "resource": "ai/notes/cis224-midterm-architecture-datapath-instructions.json",
-      "contentSha256": "99d6a2a5b04799c6d8a6a25d2d812fdef5e2bd6988e016bd0c8a2145daf5c20a",
+      "contentSha256": "64671d6dadc89b1d79c287b8893ef3ae6c7f44f5d5cee0b181e7184c944548ee",
       "sections": [
         {
           "id": "sec-04-original-content",
@@ -1672,7 +1672,7 @@
       "title": "Binary, Integers & Bitwise Operations",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-bits-integers-bitwise",
       "resource": "ai/notes/cis224-midterm-bits-integers-bitwise.json",
-      "contentSha256": "542a64d8c97f1ab8ef7d1f9d7ae854de404b3869a25831c5872d25717e236946",
+      "contentSha256": "10c8fc34c42aa7b497100191f363b5d197a764934eabe3edc8a3a64109524da6",
       "sections": [
         {
           "id": "sec-01-original-content",
@@ -1761,7 +1761,7 @@
       "title": "CPU Performance, Pipeline & Prediction",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline",
       "resource": "ai/notes/cis224-midterm-cpu-performance-pipeline.json",
-      "contentSha256": "e2f1deceafd5a7dd0336688b89b37a9d4d9824dcd234b921b1c39748284e31e4",
+      "contentSha256": "d86a9acd3cee4afc36e23c74fd276215868a27bfd8c3eb3d55347d9b8ce5c19e",
       "sections": [
         {
           "id": "sec-05-original-content",
@@ -1898,7 +1898,7 @@
       "title": "IEEE 754 Floating Point & Precision",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-ieee754-floating-point",
       "resource": "ai/notes/cis224-midterm-ieee754-floating-point.json",
-      "contentSha256": "7232673d96ecaa6f5b080c04a095ed746b99598c96bd182a3fcafd9dd7149d7a",
+      "contentSha256": "bd395a2c1b97deb6156201386c37de5a820e7240ac47a51529dbd07f48fadc7a",
       "sections": [
         {
           "id": "sec-02-original-content",
@@ -1979,7 +1979,7 @@
       "title": "Logic Gates, Adders & ALU",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-logic-circuits-alu",
       "resource": "ai/notes/cis224-midterm-logic-circuits-alu.json",
-      "contentSha256": "7a08b60dc30c0986ac38987253cf29abbc414381d122a33ef5ab6e354a24fbbe",
+      "contentSha256": "c3b058edb2dbe764672833898203d07d324e78a8770201cff68e08c40f1d777a",
       "sections": [
         {
           "id": "sec-03-original-content",
@@ -2487,7 +2487,7 @@
       "title": "Data Structures · ADT vs Implementation",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-adt",
       "resource": "ai/notes/data-structures-adt.json",
-      "contentSha256": "ef2bf5fff7adc0961a0eb1475412b7cf25c94cdf0f7dbe4aedee4f83d79c6066",
+      "contentSha256": "b0d87cb5e068c72ffa9d193c19136b577f31dcb0a32a76babd4b451454c05faa",
       "sections": [
         {
           "id": "sec-adt-definition",
@@ -2504,6 +2504,14 @@
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-adt&section=sec-adt-examples",
           "resource": "ai/sections/data-structures-adt/sec-adt-examples.json"
+        },
+        {
+          "id": "sec-adt-set-vs-array",
+          "title": "Set vs Array · ADT vs Implementation",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-adt&section=sec-adt-set-vs-array",
+          "resource": "ai/sections/data-structures-adt/sec-adt-set-vs-array.json"
         },
         {
           "id": "sec-adt-java",
@@ -2676,7 +2684,7 @@
       "title": "Java & Object-Oriented Programming",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals",
       "resource": "ai/notes/node-java-oop-fundamentals.json",
-      "contentSha256": "157e6d2a1029fd8a318f3703c2c7592dcbd6a278b6451e7a91cc9c2a96160212",
+      "contentSha256": "e13f5ea3b97754cd0ef172ae3b154e12728609fc1c459f2fc8b4755d1477e1b8",
       "sections": [
         {
           "id": "sec-java-oop-core-principles",
@@ -2693,6 +2701,14 @@
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals&section=sec-java-class-memory-model",
           "resource": "ai/sections/node-java-oop-fundamentals/sec-java-class-memory-model.json"
+        },
+        {
+          "id": "sec-java-methods-overload-helper",
+          "title": "Methods · moved to Data Structures",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-java-oop-fundamentals&section=sec-java-methods-overload-helper",
+          "resource": "ai/sections/node-java-oop-fundamentals/sec-java-methods-overload-helper.json"
         },
         {
           "id": "sec-java-collections-operators",
@@ -2750,7 +2766,7 @@
       "title": "Quiz 7 · Hash Tables",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables",
       "resource": "ai/notes/quiz7-hash-tables.json",
-      "contentSha256": "a0f5c1a2c2c8300f73232b5eb50193c7990bdce5ba0b08c7339fce05ae565a27",
+      "contentSha256": "c84fd66e5e9eb4870c56960983192a2e8835be86a8d2dfa3d7651c38ff45d67a",
       "sections": [
         {
           "id": "sec-hash-model",
@@ -2775,6 +2791,22 @@
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-hash-function",
           "resource": "ai/sections/quiz7-hash-tables/sec-hash-function.json"
+        },
+        {
+          "id": "sec-0701-resize-rehash-question",
+          "title": "0701 · Class Question Q2 — Resize and Rehash",
+          "parentId": "sec-hash-model",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-0701-resize-rehash-question",
+          "resource": "ai/sections/quiz7-hash-tables/sec-0701-resize-rehash-question.json"
+        },
+        {
+          "id": "sec-0701-good-hash-question",
+          "title": "0701 · Class Question Q3 — Good Hash Function",
+          "parentId": "sec-hash-model",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-0701-good-hash-question",
+          "resource": "ai/sections/quiz7-hash-tables/sec-0701-good-hash-question.json"
         },
         {
           "id": "sec-lookup-flow",
@@ -2809,6 +2841,22 @@
           "resource": "ai/sections/quiz7-hash-tables/sec-open-addressing.json"
         },
         {
+          "id": "sec-0702-open-addressing-question",
+          "title": "0702 · Class Question Q1 — Where Can a Colliding Key Go?",
+          "parentId": "sec-open-addressing",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-0702-open-addressing-question",
+          "resource": "ai/sections/quiz7-hash-tables/sec-0702-open-addressing-question.json"
+        },
+        {
+          "id": "sec-0702-chaining-vs-probing-probability",
+          "title": "0702 · Class Question Q2 — Chaining vs Linear Probing Probability",
+          "parentId": "sec-open-addressing",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-0702-chaining-vs-probing-probability",
+          "resource": "ai/sections/quiz7-hash-tables/sec-0702-chaining-vs-probing-probability.json"
+        },
+        {
           "id": "sec-linear-probing",
           "title": "Linear Probing",
           "parentId": "sec-open-addressing",
@@ -2841,6 +2889,14 @@
           "resource": "ai/sections/quiz7-hash-tables/sec-double-hashing.json"
         },
         {
+          "id": "sec-cpu-cache-locality",
+          "title": "Double Hashing vs Linear Probing — CPU Cache",
+          "parentId": "sec-open-addressing",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-cpu-cache-locality",
+          "resource": "ai/sections/quiz7-hash-tables/sec-cpu-cache-locality.json"
+        },
+        {
           "id": "sec-dictionary-operations",
           "title": "3. Operations & Complexity (Application)",
           "parentId": null,
@@ -2863,7 +2919,7 @@
       "title": "Quiz 8 · Study Notes",
       "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz8-study-notes",
       "resource": "ai/notes/quiz8-study-notes.json",
-      "contentSha256": "2c6cb861359f65a00ca7a3328ce3bbf77dbf2ca3470164e46beb3386a14f1433",
+      "contentSha256": "3881d08ec430c74eb65879d075e56a13706fa26af65fcb07e6731615210aac0f",
       "sections": [
         {
           "id": "sec-quiz8-overview",
@@ -2880,6 +2936,38 @@
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz8-study-notes&section=sec-binary-search-trees",
           "resource": "ai/sections/quiz8-study-notes/sec-binary-search-trees.json"
+        },
+        {
+          "id": "sec-bst-invariant-bounds",
+          "title": "BST Property · Duplicates & Range Validation",
+          "parentId": "sec-binary-search-trees",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz8-study-notes&section=sec-bst-invariant-bounds",
+          "resource": "ai/sections/quiz8-study-notes/sec-bst-invariant-bounds.json"
+        },
+        {
+          "id": "sec-bst-time-complexity",
+          "title": "BST · Time Complexity & Height (Exam)",
+          "parentId": "sec-binary-search-trees",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz8-study-notes&section=sec-bst-time-complexity",
+          "resource": "ai/sections/quiz8-study-notes/sec-bst-time-complexity.json"
+        },
+        {
+          "id": "sec-bst-inorder-traversal",
+          "title": "BST · Inorder & Reverse Inorder Traversal",
+          "parentId": "sec-binary-search-trees",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz8-study-notes&section=sec-bst-inorder-traversal",
+          "resource": "ai/sections/quiz8-study-notes/sec-bst-inorder-traversal.json"
+        },
+        {
+          "id": "sec-bst-delete-transplant",
+          "title": "BST · Delete, Successor, Predecessor & Transplant",
+          "parentId": "sec-binary-search-trees",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz8-study-notes&section=sec-bst-delete-transplant",
+          "resource": "ai/sections/quiz8-study-notes/sec-bst-delete-transplant.json"
         },
         {
           "id": "sec-balanced-bst",
@@ -2920,6 +3008,965 @@
           "hidden": false,
           "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz8-study-notes&section=sec-two-four-trees",
           "resource": "ai/sections/quiz8-study-notes/sec-two-four-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "binary-search-trees",
+      "title": "BST",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees",
+      "resource": "ai/notes/binary-search-trees.json",
+      "contentSha256": "0aba4c9f5dadfa66a6ac19fdddb6f667ac5901976f15d99317311d64aff13429",
+      "sections": [
+        {
+          "id": "sec-bst-invariant-bounds",
+          "title": "Property",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-bst-invariant-bounds",
+          "resource": "ai/sections/binary-search-trees/sec-bst-invariant-bounds.json"
+        },
+        {
+          "id": "sec-bst-isbst-interactive",
+          "title": "Interactive · isBST",
+          "parentId": "sec-bst-invariant-bounds",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-bst-isbst-interactive",
+          "resource": "ai/sections/binary-search-trees/sec-bst-isbst-interactive.json"
+        },
+        {
+          "id": "sec-bst-isbst-source",
+          "title": "Prompt / Code",
+          "parentId": "sec-bst-isbst-interactive",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-bst-isbst-source",
+          "resource": "ai/sections/binary-search-trees/sec-bst-isbst-source.json"
+        },
+        {
+          "id": "sec-bst-inorder-traversal",
+          "title": "Tree Walk & Output",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-bst-inorder-traversal",
+          "resource": "ai/sections/binary-search-trees/sec-bst-inorder-traversal.json"
+        },
+        {
+          "id": "sec-bst-operations",
+          "title": "Basic Operations",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-bst-operations",
+          "resource": "ai/sections/binary-search-trees/sec-bst-operations.json"
+        },
+        {
+          "id": "sec-bst-delete-transplant",
+          "title": "Delete & Transplant",
+          "parentId": "sec-bst-operations",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-bst-delete-transplant",
+          "resource": "ai/sections/binary-search-trees/sec-bst-delete-transplant.json"
+        },
+        {
+          "id": "sec-bst-delete-deep-interactive",
+          "title": "Delete · Direct / Deep Successor · 交互式 Java Trace",
+          "parentId": "sec-bst-delete-transplant",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-bst-delete-deep-interactive",
+          "resource": "ai/sections/binary-search-trees/sec-bst-delete-deep-interactive.json"
+        },
+        {
+          "id": "sec-bst-time-complexity",
+          "title": "Complexity",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-bst-time-complexity",
+          "resource": "ai/sections/binary-search-trees/sec-bst-time-complexity.json"
+        },
+        {
+          "id": "sec-bst-build-balanced",
+          "title": "buildBalanced",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-bst-build-balanced",
+          "resource": "ai/sections/binary-search-trees/sec-bst-build-balanced.json"
+        },
+        {
+          "id": "sec-balanced-bst",
+          "title": "Balanced BST",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-balanced-bst",
+          "resource": "ai/sections/binary-search-trees/sec-balanced-bst.json"
+        },
+        {
+          "id": "sec-avl-trees",
+          "title": "AVL Trees & Rotations",
+          "parentId": "sec-balanced-bst",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-avl-trees",
+          "resource": "ai/sections/binary-search-trees/sec-avl-trees.json"
+        },
+        {
+          "id": "sec-red-black-trees",
+          "title": "Red-Black Trees",
+          "parentId": "sec-balanced-bst",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-red-black-trees",
+          "resource": "ai/sections/binary-search-trees/sec-red-black-trees.json"
+        },
+        {
+          "id": "sec-multi-way-search-trees",
+          "title": "Multi-way Search Trees",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-multi-way-search-trees",
+          "resource": "ai/sections/binary-search-trees/sec-multi-way-search-trees.json"
+        },
+        {
+          "id": "sec-two-four-trees",
+          "title": "2-4 Trees",
+          "parentId": "sec-multi-way-search-trees",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=binary-search-trees&section=sec-two-four-trees",
+          "resource": "ai/sections/binary-search-trees/sec-two-four-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "cis224-quiz2-exam-quick-reference",
+      "title": "CIS 224 — Quiz 2 Exam Quick Reference",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference",
+      "resource": "ai/notes/cis224-quiz2-exam-quick-reference.json",
+      "contentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+      "sections": [
+        {
+          "id": "sec-c224-q2-router",
+          "title": "00 — 正式笔记 — 逐项重建",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-router",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-router.json"
+        },
+        {
+          "id": "sec-c224-q2-parallel",
+          "title": "01 — Parallel Performance — 正式整理",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-parallel",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-parallel.json"
+        },
+        {
+          "id": "sec-c224-q2-cache",
+          "title": "02 · Cache",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-cache.json"
+        },
+        {
+          "id": "sec-c224-q2-cache-units",
+          "title": "0. Units / Notation",
+          "parentId": "sec-c224-q2-cache",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-units",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-cache-units.json"
+        },
+        {
+          "id": "sec-c224-q2-cache-structure",
+          "title": "1. Structure / Hierarchy",
+          "parentId": "sec-c224-q2-cache",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-structure",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-cache-structure.json"
+        },
+        {
+          "id": "sec-c224-q2-cache-locality",
+          "title": "2. Locality",
+          "parentId": "sec-c224-q2-cache",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-locality",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-cache-locality.json"
+        },
+        {
+          "id": "sec-c224-q2-cache-geometry",
+          "title": "3. Cache Geometry",
+          "parentId": "sec-c224-q2-cache",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-geometry",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-cache-geometry.json"
+        },
+        {
+          "id": "sec-c224-q2-cache-address",
+          "title": "4. Address Mapping",
+          "parentId": "sec-c224-q2-cache",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-address",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-cache-address.json"
+        },
+        {
+          "id": "sec-c224-q2-cache-hit",
+          "title": "5. Hit / Miss & Replacement",
+          "parentId": "sec-c224-q2-cache",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-hit",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-cache-hit.json"
+        },
+        {
+          "id": "sec-c224-q2-cache-interactive",
+          "title": "6. Cache Read Trace · Hit / Miss / True LRU / Tree Pseudo-LRU",
+          "parentId": "sec-c224-q2-cache",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-interactive",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-cache-interactive.json"
+        },
+        {
+          "id": "sec-c224-q2-performance",
+          "title": "03 — AMAT / CPI — 正式整理中",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-performance",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-performance.json"
+        },
+        {
+          "id": "sec-c224-q2-virtual",
+          "title": "04 — Paging / Page Table / TLB — 计算公式参考",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-virtual",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-virtual.json"
+        },
+        {
+          "id": "sec-c224-q2-final",
+          "title": "05 — 学习进度 — 第一轮扫盲 / 第二轮复练",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-final",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-final.json"
+        },
+        {
+          "id": "sec-c224-q2-legacy",
+          "title": "Legacy Draft — Unverified Reference",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-legacy.json"
+        },
+        {
+          "id": "sec-c224-q2-legacy-0",
+          "title": "00 — 五秒定位题型",
+          "parentId": "sec-c224-q2-legacy",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-0",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-legacy-0.json"
+        },
+        {
+          "id": "sec-c224-q2-legacy-1",
+          "title": "01 — Amdahl / Scaling",
+          "parentId": "sec-c224-q2-legacy",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-1",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-legacy-1.json"
+        },
+        {
+          "id": "sec-c224-q2-legacy-2",
+          "title": "02 — Hierarchy / Cache",
+          "parentId": "sec-c224-q2-legacy",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-2",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-legacy-2.json"
+        },
+        {
+          "id": "sec-c224-q2-legacy-3",
+          "title": "03 — AMAT / CPI",
+          "parentId": "sec-c224-q2-legacy",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-3",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-legacy-3.json"
+        },
+        {
+          "id": "sec-c224-q2-legacy-4",
+          "title": "04 — Paging / Page Table / TLB",
+          "parentId": "sec-c224-q2-legacy",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-4",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-legacy-4.json"
+        },
+        {
+          "id": "sec-c224-q2-legacy-5",
+          "title": "05 — 防错清单 / 考场路由",
+          "parentId": "sec-c224-q2-legacy",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-5",
+          "resource": "ai/sections/cis224-quiz2-exam-quick-reference/sec-c224-q2-legacy-5.json"
+        }
+      ]
+    },
+    {
+      "id": "cpu-cache-architecture",
+      "title": "CPU Cache Architecture",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture",
+      "resource": "ai/notes/cpu-cache-architecture.json",
+      "contentSha256": "1525c674c68b6e52529c11f785c252bb0aa70a0b262d08f5afed6f100d6cd7e2",
+      "sections": [
+        {
+          "id": "sec-cc-fundamentals",
+          "title": "Fundamentals",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-fundamentals",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-fundamentals.json"
+        },
+        {
+          "id": "sec-cc-lines",
+          "title": "Lines & Blocks",
+          "parentId": "sec-cc-fundamentals",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-lines",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-lines.json"
+        },
+        {
+          "id": "sec-cc-hits",
+          "title": "Hits & Misses",
+          "parentId": "sec-cc-fundamentals",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-hits",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-hits.json"
+        },
+        {
+          "id": "sec-cc-organization",
+          "title": "Organization & Mapping",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-organization",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-organization.json"
+        },
+        {
+          "id": "sec-cc-geometry",
+          "title": "Geometry: Size, Lines, Sets & Ways",
+          "parentId": "sec-cc-organization",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-geometry",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-geometry.json"
+        },
+        {
+          "id": "sec-cc-address",
+          "title": "Address Decomposition",
+          "parentId": "sec-cc-organization",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-address",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-address.json"
+        },
+        {
+          "id": "sec-cc-fields",
+          "title": "Tag / Index / Offset",
+          "parentId": "sec-cc-address",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-fields",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-fields.json"
+        },
+        {
+          "id": "sec-cc-placement",
+          "title": "Placement & Associativity",
+          "parentId": "sec-cc-organization",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-placement",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-placement.json"
+        },
+        {
+          "id": "sec-cc-direct",
+          "title": "Direct-Mapped",
+          "parentId": "sec-cc-placement",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-direct",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-direct.json"
+        },
+        {
+          "id": "sec-cc-set",
+          "title": "Set-Associative",
+          "parentId": "sec-cc-placement",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-set",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-set.json"
+        },
+        {
+          "id": "sec-cc-fully",
+          "title": "Fully Associative",
+          "parentId": "sec-cc-placement",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-fully",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-fully.json"
+        },
+        {
+          "id": "sec-cc-misses-repl",
+          "title": "Misses & Replacement",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-misses-repl",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-misses-repl.json"
+        },
+        {
+          "id": "sec-cc-miss-types",
+          "title": "Miss Classification",
+          "parentId": "sec-cc-misses-repl",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-miss-types",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-miss-types.json"
+        },
+        {
+          "id": "sec-cc-cold",
+          "title": "Compulsory / Cold Miss",
+          "parentId": "sec-cc-miss-types",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-cold",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-cold.json"
+        },
+        {
+          "id": "sec-cc-capacity",
+          "title": "Capacity Miss",
+          "parentId": "sec-cc-miss-types",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-capacity",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-capacity.json"
+        },
+        {
+          "id": "sec-cc-conflict",
+          "title": "Conflict Miss",
+          "parentId": "sec-cc-miss-types",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-conflict",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-conflict.json"
+        },
+        {
+          "id": "sec-cc-replacement",
+          "title": "Replacement Policies",
+          "parentId": "sec-cc-misses-repl",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-replacement",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-replacement.json"
+        },
+        {
+          "id": "sec-cc-lru",
+          "title": "LRU",
+          "parentId": "sec-cc-replacement",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-lru",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-lru.json"
+        },
+        {
+          "id": "sec-cc-plru",
+          "title": "Pseudo-LRU",
+          "parentId": "sec-cc-replacement",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-plru",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-plru.json"
+        },
+        {
+          "id": "sec-cc-write",
+          "title": "Write Policies",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-write",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-write.json"
+        },
+        {
+          "id": "sec-cc-write-hit",
+          "title": "Write-Through vs Write-Back",
+          "parentId": "sec-cc-write",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-write-hit",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-write-hit.json"
+        },
+        {
+          "id": "sec-cc-write-miss",
+          "title": "Write-Allocate vs No-Write-Allocate",
+          "parentId": "sec-cc-write",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-write-miss",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-write-miss.json"
+        },
+        {
+          "id": "sec-cc-perf",
+          "title": "Performance",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-perf",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-perf.json"
+        },
+        {
+          "id": "sec-cc-amat",
+          "title": "Average Memory Access Time (AMAT)",
+          "parentId": "sec-cc-perf",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-amat",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-amat.json"
+        },
+        {
+          "id": "sec-cc-terms",
+          "title": "Hit Time, Miss Rate & Miss Penalty",
+          "parentId": "sec-cc-amat",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-terms",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-terms.json"
+        },
+        {
+          "id": "sec-cc-multi",
+          "title": "Multilevel Design: L1 / L2 / L3",
+          "parentId": "sec-cc-perf",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-multi",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-multi.json"
+        },
+        {
+          "id": "sec-cc-cpi",
+          "title": "Memory Stalls & CPI",
+          "parentId": "sec-cc-perf",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-cpi",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-cpi.json"
+        },
+        {
+          "id": "sec-cc-perftrade",
+          "title": "Performance Trade-offs",
+          "parentId": "sec-cc-perf",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-perftrade",
+          "resource": "ai/sections/cpu-cache-architecture/sec-cc-perftrade.json"
+        }
+      ]
+    },
+    {
+      "id": "data-structures-review",
+      "title": "Data Structure",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-review",
+      "resource": "ai/notes/data-structures-review.json",
+      "contentSha256": "32c51303483e61a98c5a079e6d7e6c04b2317305ae7be21589a7516ae1d7c7f7",
+      "sections": [
+        {
+          "id": "sec-ds-review-index",
+          "title": "Data Structure · 复习总入口",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-review&section=sec-ds-review-index",
+          "resource": "ai/sections/data-structures-review/sec-ds-review-index.json"
+        },
+        {
+          "id": "sec-java-method-overloading",
+          "title": "Java Method Overloading（方法重载）",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-review&section=sec-java-method-overloading",
+          "resource": "ai/sections/data-structures-review/sec-java-method-overloading.json"
+        },
+        {
+          "id": "sec-java-helper-recursion",
+          "title": "Wrapper / Helper / Recursion（入口、辅助方法与递归）",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-review&section=sec-java-helper-recursion",
+          "resource": "ai/sections/data-structures-review/sec-java-helper-recursion.json"
+        },
+        {
+          "id": "sec-static-dynamic-set-array",
+          "title": "Dynamic / Static Set vs Fixed-size / Dynamic Array",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-review&section=sec-static-dynamic-set-array",
+          "resource": "ai/sections/data-structures-review/sec-static-dynamic-set-array.json"
+        }
+      ]
+    },
+    {
+      "id": "memory-hierarchy-locality",
+      "title": "Memory Hierarchy & Locality",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality",
+      "resource": "ai/notes/memory-hierarchy-locality.json",
+      "contentSha256": "d413eafd1e6640191ec1a780be87e89fec010ae2053be4ed562684ae3ba0ffbc",
+      "sections": [
+        {
+          "id": "sec-mh-design",
+          "title": "Hierarchy Design",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-design",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-design.json"
+        },
+        {
+          "id": "sec-mh-levels",
+          "title": "Storage Levels & Roles",
+          "parentId": "sec-mh-design",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-levels",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-levels.json"
+        },
+        {
+          "id": "sec-physical-hardware-memory-hierarchy",
+          "title": "Physical Hardware View — Memory Hierarchy · 物理存储层级",
+          "parentId": "sec-mh-levels",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-physical-hardware-memory-hierarchy",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-physical-hardware-memory-hierarchy.json"
+        },
+        {
+          "id": "sec-mh-tradeoffs",
+          "title": "Capacity, Speed & Cost Trade-offs",
+          "parentId": "sec-mh-design",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-tradeoffs",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-tradeoffs.json"
+        },
+        {
+          "id": "sec-mh-tech",
+          "title": "Technologies",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-tech",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-tech.json"
+        },
+        {
+          "id": "sec-mh-sram",
+          "title": "SRAM",
+          "parentId": "sec-mh-tech",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-sram",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-sram.json"
+        },
+        {
+          "id": "sec-mh-dram",
+          "title": "DRAM",
+          "parentId": "sec-mh-tech",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-dram",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-dram.json"
+        },
+        {
+          "id": "sec-mh-flash",
+          "title": "Flash",
+          "parentId": "sec-mh-tech",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-flash",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-flash.json"
+        },
+        {
+          "id": "sec-mh-access",
+          "title": "Access Characteristics",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-access",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-access.json"
+        },
+        {
+          "id": "sec-mh-latency",
+          "title": "Latency",
+          "parentId": "sec-mh-access",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-latency",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-latency.json"
+        },
+        {
+          "id": "sec-mh-bandwidth",
+          "title": "Bandwidth",
+          "parentId": "sec-mh-access",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-bandwidth",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-bandwidth.json"
+        },
+        {
+          "id": "sec-mh-contrast",
+          "title": "Latency vs Bandwidth",
+          "parentId": "sec-mh-access",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-contrast",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-contrast.json"
+        },
+        {
+          "id": "sec-mh-locality",
+          "title": "Locality of Reference",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-locality",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-locality.json"
+        },
+        {
+          "id": "sec-mh-temporal",
+          "title": "Temporal Locality",
+          "parentId": "sec-mh-locality",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-temporal",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-temporal.json"
+        },
+        {
+          "id": "sec-mh-spatial",
+          "title": "Spatial Locality",
+          "parentId": "sec-mh-locality",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-spatial",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-spatial.json"
+        },
+        {
+          "id": "sec-mh-traversal",
+          "title": "Array Traversal & Access Patterns",
+          "parentId": "sec-mh-locality",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-traversal",
+          "resource": "ai/sections/memory-hierarchy-locality/sec-mh-traversal.json"
+        }
+      ]
+    },
+    {
+      "id": "parallel-execution-models-gpu",
+      "title": "Parallel Execution Models & GPU",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu",
+      "resource": "ai/notes/parallel-execution-models-gpu.json",
+      "contentSha256": "4f404e5b6ac58a5dc7560703e6a0b04365b6d0c839bd94a1a2d81cea9e4cbcb9",
+      "sections": [
+        {
+          "id": "sec-pe-taxonomy",
+          "title": "Architecture Classification",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-taxonomy",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-taxonomy.json"
+        },
+        {
+          "id": "sec-pe-flynn",
+          "title": "Flynn's Taxonomy",
+          "parentId": "sec-pe-taxonomy",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-flynn",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-flynn.json"
+        },
+        {
+          "id": "sec-pe-sisd",
+          "title": "SISD",
+          "parentId": "sec-pe-flynn",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-sisd",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-sisd.json"
+        },
+        {
+          "id": "sec-pe-simd",
+          "title": "SIMD",
+          "parentId": "sec-pe-flynn",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-simd",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-simd.json"
+        },
+        {
+          "id": "sec-pe-misd",
+          "title": "MISD",
+          "parentId": "sec-pe-flynn",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-misd",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-misd.json"
+        },
+        {
+          "id": "sec-pe-mimd",
+          "title": "MIMD",
+          "parentId": "sec-pe-flynn",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-mimd",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-mimd.json"
+        },
+        {
+          "id": "sec-pe-models",
+          "title": "Execution & Programming Models",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-models",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-models.json"
+        },
+        {
+          "id": "sec-pe-simd-mimd",
+          "title": "SIMD vs MIMD",
+          "parentId": "sec-pe-models",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-simd-mimd",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-simd-mimd.json"
+        },
+        {
+          "id": "sec-pe-simd-spmd",
+          "title": "SIMD vs SPMD",
+          "parentId": "sec-pe-models",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-simd-spmd",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-simd-spmd.json"
+        },
+        {
+          "id": "sec-pe-gpu",
+          "title": "GPU Computing",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-gpu",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-gpu.json"
+        },
+        {
+          "id": "sec-pe-gpu-exec",
+          "title": "Execution Model",
+          "parentId": "sec-pe-gpu",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-gpu-exec",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-gpu-exec.json"
+        },
+        {
+          "id": "sec-pe-host-device",
+          "title": "Host vs Device",
+          "parentId": "sec-pe-gpu",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-host-device",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-host-device.json"
+        },
+        {
+          "id": "sec-pe-transfer",
+          "title": "Data Movement & Bottlenecks",
+          "parentId": "sec-pe-gpu",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-transfer",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-transfer.json"
+        },
+        {
+          "id": "sec-pe-pcie",
+          "title": "PCIe Transfer",
+          "parentId": "sec-pe-transfer",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-pcie",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-pcie.json"
+        },
+        {
+          "id": "sec-pe-comm",
+          "title": "Communication Overhead",
+          "parentId": "sec-pe-transfer",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-comm",
+          "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-comm.json"
+        }
+      ]
+    },
+    {
+      "id": "parallel-performance-scalability",
+      "title": "Parallel Performance & Scalability",
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability",
+      "resource": "ai/notes/parallel-performance-scalability.json",
+      "contentSha256": "17cb8a6f05a18ff004c0bd67303bcc085fcda1bb24f9d98127fac7667ea16d10",
+      "sections": [
+        {
+          "id": "sec-pp-work",
+          "title": "Work Decomposition",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-work",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-work.json"
+        },
+        {
+          "id": "sec-pp-serial",
+          "title": "Serial vs Parallel",
+          "parentId": "sec-pp-work",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-serial",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-serial.json"
+        },
+        {
+          "id": "sec-pp-fraction",
+          "title": "Parallel Fraction & Serial Bottleneck",
+          "parentId": "sec-pp-work",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-fraction",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-fraction.json"
+        },
+        {
+          "id": "sec-pp-overhead",
+          "title": "Execution Overhead",
+          "parentId": "sec-pp-work",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-overhead",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-overhead.json"
+        },
+        {
+          "id": "sec-pp-models",
+          "title": "Speedup Models",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-models",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-models.json"
+        },
+        {
+          "id": "sec-pp-speedup",
+          "title": "Speedup & Baseline",
+          "parentId": "sec-pp-models",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-speedup",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-speedup.json"
+        },
+        {
+          "id": "sec-pp-amdahl",
+          "title": "Amdahl's Law",
+          "parentId": "sec-pp-models",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-amdahl",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-amdahl.json"
+        },
+        {
+          "id": "sec-pp-formula",
+          "title": "Formula, Variables & Assumptions",
+          "parentId": "sec-pp-amdahl",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-formula",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-formula.json"
+        },
+        {
+          "id": "sec-pp-upper",
+          "title": "Upper Bound & Diminishing Returns",
+          "parentId": "sec-pp-amdahl",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-upper",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-upper.json"
+        },
+        {
+          "id": "sec-pp-inverse",
+          "title": "Inverse Amdahl Problems",
+          "parentId": "sec-pp-amdahl",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-inverse",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-inverse.json"
+        },
+        {
+          "id": "sec-pp-generalized",
+          "title": "Generalized Speedup",
+          "parentId": "sec-pp-models",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-generalized",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-generalized.json"
+        },
+        {
+          "id": "sec-pp-scaling",
+          "title": "Scaling Behavior",
+          "parentId": null,
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-scaling",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-scaling.json"
+        },
+        {
+          "id": "sec-pp-strong",
+          "title": "Strong Scaling",
+          "parentId": "sec-pp-scaling",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-strong",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-strong.json"
+        },
+        {
+          "id": "sec-pp-weak",
+          "title": "Weak Scaling",
+          "parentId": "sec-pp-scaling",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-weak",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-weak.json"
+        },
+        {
+          "id": "sec-pp-limits",
+          "title": "Scaling Limits & Interpretation",
+          "parentId": "sec-pp-scaling",
+          "hidden": false,
+          "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-limits",
+          "resource": "ai/sections/parallel-performance-scalability/sec-pp-limits.json"
         }
       ]
     }

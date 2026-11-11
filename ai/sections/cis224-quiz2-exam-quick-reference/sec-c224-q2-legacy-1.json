@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-legacy-1",
+  "title": "01 — Amdahl / Scaling",
+  "parentId": "sec-c224-q2-legacy",
+  "hidden": false,
+  "markdown": "### 01 — Amdahl / Scaling\n\n#### A. Amdahl's Law — Forward / Inverse [课堂 A — Lab L6 B]\n\n<div class=\"nodal-cols nodal-cols-2\">\n\n<div class=\"nodal-col\">\n\n**正向 — Forward**\n\n已知 $f,P$ → 求 $S$\n\n$$\n\\displaystyle S=\\frac{1}{(1-f)+\\frac{f}{P}}\n$$\n\n</div>\n\n<div class=\"nodal-col\">\n\n**反向 — Inverse**\n\n已知 $S,P$ → 求 $q$\n\n$$\n\\displaystyle q=\\frac{\\frac{1}{S}-\\frac{1}{P}}{1-\\frac{1}{P}}\n$$\n\n</div>\n\n</div>\n\n$$\n\\underbrace{q+f=1}_{\\text{Complementary}}\n$$\n\n$q=1-f$ = Serial Fraction；$f$ = Parallelizable Fraction；$P$ = Number of Processors；$S$ = Speedup\n\n#### B. Amdahl — Examples & Limit [Lab L6 B]\n\n**Forward**：80% Parallelizable、P=16 → $S=\\frac{1}{0.20+0.80/16}=\\mathbf{4\\times}$；95%、P=19 → $\\mathbf{10\\times}$\n\n**Inverse**：Target S=50×、P=100 → $q=\\frac{1/50-1/100}{1-1/100}=\\frac{1}{99}\\approx 0.0101=\\mathbf{1.0\\%}$（一位小数）\n\n**Maximum serial fraction** + **at least S** → 用目标 $S$ 的边界计算最大 $q$；若求百分比，乘 100%。反向公式要求 $P>1$\n\n**Maximum Speedup**（$P\\rightarrow\\infty$，$f<1$）：$S_{\\max}=\\frac{1}{1-f}$；例如 $f=0.8$ → 5×（有限 $P$ 无法达到）\n\n**注意**：Serial Fraction = 20% → $q=0.20,\\ f=0.80$；$P=1$ 时 $S=1$；Parallelizable ≠ 已实际并行\n\n#### C. Strong vs Weak Scaling — Load Imbalance [Lab L6 B]\n\n**两种不同的 Parallel Performance 实验方式（非硬件类型）**\n\n**Strong Scaling**：Core ↑；Total Work = Fixed → Solution Time ↓ / **Speedup ↑**\n\n**Weak Scaling**：Core ↑；Work per Core ≈ Fixed → Total Work ↑ → **Solution Time ≈ Fixed?**\n\n<div class=\"nodal-cols nodal-cols-2\">\n\n<div class=\"nodal-col\">\n\n**Strong Scaling — Total Work Fixed**\n\n$$\nS_{\\mathrm{strong}}(P)=\\frac{a+b}{a+\\frac{b}{P}}\n$$\n\n</div>\n\n<div class=\"nodal-col\">\n\n**Weak Scaling — Lab L6 Model**\n\n$$\nS_{\\mathrm{weak}}(P)=\\frac{a+bP}{a+b}\n$$\n\n</div>\n\n</div>\n\n$$\n\\footnotesize a=\\text{Sequential Operations};\\quad b=\\text{Base Parallel Operations};\\quad P=\\text{Processors}\n$$\n\n**Lab L6 模型**：Sequential Work $a$ 固定、Parallel Work $bP$ 随 $P$ 增加；因此 Parallel Work per Core $=b$（固定），而 Total Work per Core $=b+a/P$（近似固定）。\n\n**Base** 只用于明确 $b$ 的参考工作量；英文题干也可能只写 Parallel Operations，按题目给定的基础规模与增长条件判断。**Operations 是题目抽象工作量，不必等同于机器指令条数。**\n\n**Lab L6 例**：$a=16$，$b=60$ → Strong：$P=8$ 时 **3.2×**，$P=32$ 时 **4.3×**；Weak：$P=8$ 时 **6.5×**，$P=32$ 时 **25.5×**。\n\n**Load Imbalance**：Tparallel=serial work+max(one processor's parallel work)；S=Tserial/Tparallel。L6 例 P=32，parallel=1920，serial=16，一台分到平均工作量 3 倍：平均 1920/32=60，最慢 180 → S=1936/(16+180)=**9.9×**。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "a9bc82d67634e76e59756e17663b984dc0c32df84b89b11321f392cef8a7d891",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-1"
+}

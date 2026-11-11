@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "data-structures-adt",
+  "noteTitle": "Data Structures · ADT vs Implementation",
+  "id": "sec-adt-set-vs-array",
+  "title": "Set vs Array · ADT vs Implementation",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Set vs Array · ADT vs Implementation\n\n**ADT = 逻辑上存什么类型的元素 + 允许什么操作 + 操作应遵守什么规则；不是存储布局，也不是只有字段类型。** 可以将它理解为功能契约（Contract）；`interface` 常能表达一部分契约，`abstract class` 还可以提供部分实现，但 **ADT 是抽象概念，不等于某一个 Java 关键字**。\n\n| | Array（Java 的 `int[]`） | Set（集合 ADT） |\n|---|---|---|\n| 关注点 | 按 Index 排列、访问元素 | 元素是否属于集合（Membership） |\n| 重复值 | 可以，`[5,5,10]` | 不重复，`{5,10}` |\n| 顺序与访问 | `arr[0]` 按位置访问 | 一般 Set 不保证有 Index 或插入顺序 |\n| 操作 | `arr[i]`、`length` | `add`、`contains`、`remove` |\n| 抽象/实现层次 | 具体的索引式存储容器 | 逻辑 ADT；可由 Hash Table、BST 等实现 |\n\n- 数学集合中的元素是无序且不重复的；某些 Java Set 实现可以提供遍历顺序，但**不改变 Set 的唯一性规则**\n- **Set 也可以用 Array 实现**（自行维护唯一性）；HashSet、TreeSet 是 Java 的不同实现类\n- Homework 8 的 `BST.java` 保存 Key-only `int`，概念上可充当 Dynamic Set；它**并没有**声明 `implements Set`，也不是 `int[]`\n- 不能说 ADT 只规定存什么：定义集合要同时规定 *不能重复*、以及 `contains`、`add`、`remove` 的行为\n\n**Java Implementation · Array 与 Set 的实际运行区别**\n\n```java-fold\n// @explanation int[] 可以保留重复值，Set<Integer> 的 add 则执行唯一性约束\nimport java.util.HashSet;\nimport java.util.Set;\n\npublic class Demo {\n    public static void main(String[] args) {\n        int[] array = {5, 5, 10}; // index 0、1 都是 5\n        System.out.println(array.length); // 3\n\n        Set<Integer> set = new HashSet<>();\n        set.add(5);  // true\n        set.add(5);  // false：已存在\n        set.add(10); // true\n        System.out.println(set.size());     // 2\n        System.out.println(set.contains(5)); // true\n    }\n}\n```\n\n**关联**：[Data Structures · Java Methods](nodal://note/data-structures-review/sec-java-method-overloading)；[BST · Key-only Dynamic Set](nodal://note/binary-search-trees/sec-bst-invariant-bounds)\n\n*Set 与 Java Array/HashSet 的实例属于 Java/API 概念解释；Homework 8 只要求实现原始 BST.java 的五个方法。*",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/data-structures-adt.md",
+  "noteContentSha256": "b0d87cb5e068c72ffa9d193c19136b577f31dcb0a32a76babd4b451454c05faa",
+  "contentSha256": "2c22586e89e2cf96b720f394f91b5fdedc24bfb8d204771b78664e9935ba40b9",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-adt&section=sec-adt-set-vs-array"
+}

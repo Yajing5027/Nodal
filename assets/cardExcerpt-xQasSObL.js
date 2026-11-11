@@ -1,1 +1,0 @@
-import{wt as e}from"./index-C-tvUB5O.js";function t(t,n){return e(t,n,220)}export{t};

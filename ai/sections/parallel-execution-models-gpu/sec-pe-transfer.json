@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "parallel-execution-models-gpu",
+  "noteTitle": "Parallel Execution Models & GPU",
+  "id": "sec-pe-transfer",
+  "title": "Data Movement & Bottlenecks",
+  "parentId": "sec-pe-gpu",
+  "hidden": false,
+  "markdown": "#### Data Movement & Bottlenecks",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/parallel-execution-models-gpu.md",
+  "noteContentSha256": "4f404e5b6ac58a5dc7560703e6a0b04365b6d0c839bd94a1a2d81cea9e4cbcb9",
+  "contentSha256": "d8eac4b12f480355b7174124d758ed54453b196dfa8bd6411ff773f4c1573c2e",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-transfer"
+}

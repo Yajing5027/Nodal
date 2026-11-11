@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "cpu-cache-architecture",
+  "title": "CPU Cache Architecture",
+  "markdown": "\n<!-- nodal-panel:sec-cc-fundamentals:visible -->\n\n### Fundamentals\n\n<!-- nodal-panel:sec-cc-lines:visible:parent=sec-cc-fundamentals -->\n\n#### Lines & Blocks\n\n<!-- nodal-panel:sec-cc-hits:visible:parent=sec-cc-fundamentals -->\n\n#### Hits & Misses\n\n<!-- nodal-panel:sec-cc-organization:visible -->\n\n### Organization & Mapping\n\n<!-- nodal-panel:sec-cc-geometry:visible:parent=sec-cc-organization -->\n\n#### Geometry: Size, Lines, Sets & Ways\n\n<!-- nodal-panel:sec-cc-address:visible:parent=sec-cc-organization -->\n\n#### Address Decomposition\n\n<!-- nodal-panel:sec-cc-fields:visible:parent=sec-cc-address -->\n\n##### Tag / Index / Offset\n\n<!-- nodal-panel:sec-cc-placement:visible:parent=sec-cc-organization -->\n\n#### Placement & Associativity\n\n<!-- nodal-panel:sec-cc-direct:visible:parent=sec-cc-placement -->\n\n##### Direct-Mapped\n\n<!-- nodal-panel:sec-cc-set:visible:parent=sec-cc-placement -->\n\n##### Set-Associative\n\n<!-- nodal-panel:sec-cc-fully:visible:parent=sec-cc-placement -->\n\n##### Fully Associative\n\n<!-- nodal-panel:sec-cc-misses-repl:visible -->\n\n### Misses & Replacement\n\n<!-- nodal-panel:sec-cc-miss-types:visible:parent=sec-cc-misses-repl -->\n\n#### Miss Classification\n\n<!-- nodal-panel:sec-cc-cold:visible:parent=sec-cc-miss-types -->\n\n##### Compulsory / Cold Miss\n\n<!-- nodal-panel:sec-cc-capacity:visible:parent=sec-cc-miss-types -->\n\n##### Capacity Miss\n\n<!-- nodal-panel:sec-cc-conflict:visible:parent=sec-cc-miss-types -->\n\n##### Conflict Miss\n\n<!-- nodal-panel:sec-cc-replacement:visible:parent=sec-cc-misses-repl -->\n\n#### Replacement Policies\n\n<!-- nodal-panel:sec-cc-lru:visible:parent=sec-cc-replacement -->\n\n##### LRU\n\n<!-- nodal-panel:sec-cc-plru:visible:parent=sec-cc-replacement -->\n\n##### Pseudo-LRU\n\n<!-- nodal-panel:sec-cc-write:visible -->\n\n### Write Policies\n\n<!-- nodal-panel:sec-cc-write-hit:visible:parent=sec-cc-write -->\n\n#### Write-Through vs Write-Back\n\n<!-- nodal-panel:sec-cc-write-miss:visible:parent=sec-cc-write -->\n\n#### Write-Allocate vs No-Write-Allocate\n\n<!-- nodal-panel:sec-cc-perf:visible -->\n\n### Performance\n\n<!-- nodal-panel:sec-cc-amat:visible:parent=sec-cc-perf -->\n\n#### Average Memory Access Time (AMAT)\n\n<!-- nodal-panel:sec-cc-terms:visible:parent=sec-cc-amat -->\n\n##### Hit Time, Miss Rate & Miss Penalty\n\n<!-- nodal-panel:sec-cc-multi:visible:parent=sec-cc-perf -->\n\n#### Multilevel Design: L1 / L2 / L3\n\n<!-- nodal-panel:sec-cc-cpi:visible:parent=sec-cc-perf -->\n\n#### Memory Stalls & CPI\n\n<!-- nodal-panel:sec-cc-perftrade:visible:parent=sec-cc-perf -->\n\n#### Performance Trade-offs\n\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-cc-fundamentals",
+      "title": "Fundamentals",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-fundamentals",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-fundamentals.json"
+    },
+    {
+      "id": "sec-cc-lines",
+      "title": "Lines & Blocks",
+      "parentId": "sec-cc-fundamentals",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-lines",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-lines.json"
+    },
+    {
+      "id": "sec-cc-hits",
+      "title": "Hits & Misses",
+      "parentId": "sec-cc-fundamentals",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-hits",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-hits.json"
+    },
+    {
+      "id": "sec-cc-organization",
+      "title": "Organization & Mapping",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-organization",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-organization.json"
+    },
+    {
+      "id": "sec-cc-geometry",
+      "title": "Geometry: Size, Lines, Sets & Ways",
+      "parentId": "sec-cc-organization",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-geometry",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-geometry.json"
+    },
+    {
+      "id": "sec-cc-address",
+      "title": "Address Decomposition",
+      "parentId": "sec-cc-organization",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-address",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-address.json"
+    },
+    {
+      "id": "sec-cc-fields",
+      "title": "Tag / Index / Offset",
+      "parentId": "sec-cc-address",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-fields",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-fields.json"
+    },
+    {
+      "id": "sec-cc-placement",
+      "title": "Placement & Associativity",
+      "parentId": "sec-cc-organization",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-placement",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-placement.json"
+    },
+    {
+      "id": "sec-cc-direct",
+      "title": "Direct-Mapped",
+      "parentId": "sec-cc-placement",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-direct",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-direct.json"
+    },
+    {
+      "id": "sec-cc-set",
+      "title": "Set-Associative",
+      "parentId": "sec-cc-placement",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-set",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-set.json"
+    },
+    {
+      "id": "sec-cc-fully",
+      "title": "Fully Associative",
+      "parentId": "sec-cc-placement",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-fully",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-fully.json"
+    },
+    {
+      "id": "sec-cc-misses-repl",
+      "title": "Misses & Replacement",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-misses-repl",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-misses-repl.json"
+    },
+    {
+      "id": "sec-cc-miss-types",
+      "title": "Miss Classification",
+      "parentId": "sec-cc-misses-repl",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-miss-types",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-miss-types.json"
+    },
+    {
+      "id": "sec-cc-cold",
+      "title": "Compulsory / Cold Miss",
+      "parentId": "sec-cc-miss-types",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-cold",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-cold.json"
+    },
+    {
+      "id": "sec-cc-capacity",
+      "title": "Capacity Miss",
+      "parentId": "sec-cc-miss-types",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-capacity",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-capacity.json"
+    },
+    {
+      "id": "sec-cc-conflict",
+      "title": "Conflict Miss",
+      "parentId": "sec-cc-miss-types",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-conflict",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-conflict.json"
+    },
+    {
+      "id": "sec-cc-replacement",
+      "title": "Replacement Policies",
+      "parentId": "sec-cc-misses-repl",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-replacement",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-replacement.json"
+    },
+    {
+      "id": "sec-cc-lru",
+      "title": "LRU",
+      "parentId": "sec-cc-replacement",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-lru",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-lru.json"
+    },
+    {
+      "id": "sec-cc-plru",
+      "title": "Pseudo-LRU",
+      "parentId": "sec-cc-replacement",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-plru",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-plru.json"
+    },
+    {
+      "id": "sec-cc-write",
+      "title": "Write Policies",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-write",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-write.json"
+    },
+    {
+      "id": "sec-cc-write-hit",
+      "title": "Write-Through vs Write-Back",
+      "parentId": "sec-cc-write",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-write-hit",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-write-hit.json"
+    },
+    {
+      "id": "sec-cc-write-miss",
+      "title": "Write-Allocate vs No-Write-Allocate",
+      "parentId": "sec-cc-write",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-write-miss",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-write-miss.json"
+    },
+    {
+      "id": "sec-cc-perf",
+      "title": "Performance",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-perf",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-perf.json"
+    },
+    {
+      "id": "sec-cc-amat",
+      "title": "Average Memory Access Time (AMAT)",
+      "parentId": "sec-cc-perf",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-amat",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-amat.json"
+    },
+    {
+      "id": "sec-cc-terms",
+      "title": "Hit Time, Miss Rate & Miss Penalty",
+      "parentId": "sec-cc-amat",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-terms",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-terms.json"
+    },
+    {
+      "id": "sec-cc-multi",
+      "title": "Multilevel Design: L1 / L2 / L3",
+      "parentId": "sec-cc-perf",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-multi",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-multi.json"
+    },
+    {
+      "id": "sec-cc-cpi",
+      "title": "Memory Stalls & CPI",
+      "parentId": "sec-cc-perf",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-cpi",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-cpi.json"
+    },
+    {
+      "id": "sec-cc-perftrade",
+      "title": "Performance Trade-offs",
+      "parentId": "sec-cc-perf",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-perftrade",
+      "resource": "ai/sections/cpu-cache-architecture/sec-cc-perftrade.json"
+    }
+  ],
+  "sourcePath": "content/notes/cpu-cache-architecture.md",
+  "contentSha256": "1525c674c68b6e52529c11f785c252bb0aa70a0b262d08f5afed6f100d6cd7e2",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture"
+}

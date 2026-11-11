@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cpu-cache-architecture",
+  "noteTitle": "CPU Cache Architecture",
+  "id": "sec-cc-cold",
+  "title": "Compulsory / Cold Miss",
+  "parentId": "sec-cc-miss-types",
+  "hidden": false,
+  "markdown": "##### Compulsory / Cold Miss",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cpu-cache-architecture.md",
+  "noteContentSha256": "1525c674c68b6e52529c11f785c252bb0aa70a0b262d08f5afed6f100d6cd7e2",
+  "contentSha256": "7a5d832fb79360371c9d11e2b226f88d34111fbb6071225f4ad7a04ec60698e3",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cpu-cache-architecture&section=sec-cc-cold"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-0702-open-addressing-question",
+  "title": "0702 · Class Question Q1 — Where Can a Colliding Key Go?",
+  "parentId": "sec-open-addressing",
+  "hidden": false,
+  "markdown": "### 0702 · Class Question Q1 — Where Can a Colliding Key Go?\n\n**老师原题**：*If we're using open addressing and a collision occurs at index h, where could the colliding key-value pair end up being placed?*\n\n- **A.** anywhere in the array except h\n- **B.** in a list stored at index h\n- **C.** after index h\n- **D.** before index h\n\n**正确答案：A。**\n\n**陷阱：Anywhere ≠ 随便挑 Slot。** Open Addressing 会依所选 **Probing Strategy** 及现有占用情况沿着 **Probe Sequence** 查找，而不是只能找比原 Index 大的位置；它必须放在沿该 Probe Sequence 遇到的第一个允许插入的 Slot。\n\n**自编数字示例（不是老师原题数字）**：m = 7，初始 Index = 5。\n\n| Strategy | Probe Sequence | 注意 |\n|---|---|---|\n| Linear Probing | 5 → 6 → 0 → 1 → 2 → 3 → 4 | 走到末尾 **Wrap Around**，例如 5、6 已占用时尝试 0 |\n| Double Hashing，step = 3 | 5 → 1 → 4 → 0 → 3 → 6 → 2 | 第二次直接检查 (5+3) mod 7 = 1 |\n\nB 是 **Chaining**（Linked List），不属于 Open Addressing；C、D 都错误地限制了最终位置的方向。**Key 实际会落在哪里，取决于 Probe Sequence 和哪些 Slots 已被占用。**\n\n**来源**：CIS 223 0702 Poll Everywhere Q1；[Class Questions 原题](https://docs.google.com/document/d/1UyDQRbvoQQqbPMaakmcLbr_WwHBQcTKG4PFEReUqn8E/edit)。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "c84fd66e5e9eb4870c56960983192a2e8835be86a8d2dfa3d7651c38ff45d67a",
+  "contentSha256": "662ead22f60cc4d28b7ae6893045e974fe28c55b9e0f336c65e34ec67268d521",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-0702-open-addressing-question"
+}

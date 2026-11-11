@@ -9,8 +9,8 @@
   "markdown": "## 考试前检查\n\n□ A2 Q1–13 可按编号查出步骤   □ Practice 可换数字复做   □ IEEE 754 双向   □ SOP/NAND   □ ALU Flags   □ Forwarding/Load-use   □ Flush/2-bit Counter\n\n注意：删除卡片仅为腾出打印空间，不代表老师不考不要拿其他版本直接替换此母版；每次使用同一 Google Doc 原地局部修改，并保存版本记录\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/cis224-midterm-cpu-performance-pipeline.md",
-  "noteContentSha256": "e2f1deceafd5a7dd0336688b89b37a9d4d9824dcd234b921b1c39748284e31e4",
+  "noteContentSha256": "d86a9acd3cee4afc36e23c74fd276215868a27bfd8c3eb3d55347d9b8ce5c19e",
   "contentSha256": "1d4affc4e53935e8e9fa928ebbab383adf9731bb1a7116a40376d03f3ca3d205",
-  "publishedAt": "2026-10-28T07:24:23.642Z",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-midterm-cpu-performance-pipeline&section=sec-topic-4c3f56"
 }

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-cpu-cache-locality",
+  "title": "Double Hashing vs Linear Probing — CPU Cache",
+  "parentId": "sec-open-addressing",
+  "hidden": false,
+  "markdown": "#### Double Hashing vs Linear Probing — CPU Cache\n\n- **理论层面**：Double Hashing 改变 Probe Step，通常能减少 Linear Probing 的 Primary Clustering；在某些散列假设下可减少所需的探测次数\n- **实际硬件**：Linear Probing 顺序访问相邻的 Array Slots，具有较好的 Spatial Locality。CPU Cache 可能一次加载相邻多个位置，因此连续探测未必昂贵\n- **Double Hashing 的权衡**：探测位置跳跃较大，可能需要访问更多不同的 Cache Lines。即使 Probe 次数较少，实际 Wall-clock Time 也**不保证**更短\n- **结论**：更好的理论 Probe 分布 ≠ 在所有真实 CPU 上更快。比较运行性能时，既要看 Probe 次数和 Load Factor，也要看 Memory Access 与 Cache Locality\n\n- **0702 Poll 原题的关键表述**：Double Hashing is less vulnerable to clustering than Linear Probing。比较 Primary Clustering 与 CPU Cache Locality 时必须区分理论探测次数和实际 Wall-clock 性能。\n\n**课程依据**：CIS 223 Week 7 / 0702 老师关于 Linear Probing 与 Double Hashing 的 CPU Cache 说明；指定教材 CLRS 第 11 章（尤其 11.4–11.5）。以上硬件解释是对课堂观点的展开，非 Homework 7 新要求",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "c84fd66e5e9eb4870c56960983192a2e8835be86a8d2dfa3d7651c38ff45d67a",
+  "contentSha256": "1438cd9e55feab9e2f8cbf11c4e80f53acbd0009229aa8a4e1b23dab4c64d493",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-cpu-cache-locality"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-cache-locality",
+  "title": "2. Locality",
+  "parentId": "sec-c224-q2-cache",
+  "hidden": false,
+  "markdown": "### 2. Locality\n\n**Locality = 程序访问 Memory 的规律**，不是一个硬件部件\n\n<div class=\"nodal-cols nodal-cols-2\">\n\n<div class=\"nodal-col\">\n\n**Temporal Locality · 时间局部性**\n\nSame data/address reused soon\n\n`x → x → x` · 循环反复使用同一变量\n\n</div>\n\n<div class=\"nodal-col\">\n\n**Spatial Locality · 空间局部性**\n\nNearby addresses accessed soon\n\n`arr[0] → arr[1] → arr[2]` · 顺序访问相邻数组元素\n\n</div>\n\n</div>\n\n**Cache Line 的意义**：第一次访问某个 Block 时加载连续的 Bytes；后续访问同一 Line 内相邻数据，可能直接 Hit",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "93ebebacc7a51ea7646b6a5ee83911858981b74ac172d29024c4f8012afa32f6",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-cache-locality"
+}

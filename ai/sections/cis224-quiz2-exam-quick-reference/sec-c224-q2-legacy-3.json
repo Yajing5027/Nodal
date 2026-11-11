@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-legacy-3",
+  "title": "03 — AMAT / CPI",
+  "parentId": "sec-c224-q2-legacy",
+  "hidden": false,
+  "markdown": "### 03 — AMAT / CPI\n\n#### I. AMAT [课堂 A]\n\nAMAT = Average Memory Access Time，平均一次访问时间；**Hit Rate + Miss Rate = 1**。\n\n**单层**：AMAT = Hit Time + Miss Rate × Miss Penalty。\n\n**L1→L2→DRAM 两层公式（L2 miss rate 为到达 L2 访问中的 local miss rate）**：\n\n**AMAT = L1 hit time + L1 miss rate × (L2 hit time + L2 local miss rate × DRAM penalty)**。\n\n课堂活动：L1 1 cycle、L1 miss 4%、L2 10 cycles、L2 local miss 50%、DRAM 100 cycles →\n\n**1 + 0.04 × (10 + 0.50 × 100) = 3.4 cycles**。\n\n易错：**of accesses reaching L2** 表示 local miss，不能当作所有访问的 global miss；区别题目给的是 extra penalty 还是包含 hit time 的 total miss cost，防止重复加。\n\n#### J. CPI with Memory Stalls [课堂 A]\n\nCPI = Cycles Per Instruction；**CPI = Base CPI + Stall Cycles Per Instruction**。\n\n课堂活动模型：**CPI = Base CPI + Memory Accesses Per Instruction × L1 Miss Rate × Miss Penalty**。\n\n例：Base CPI=1.0、Memory Accesses/Instruction=1.5、Miss=1%、Penalty=200 cycles →\n\n**CPI = 1 + 1.5 × 0.01 × 200 = 4.0**。\n\n易错：Accesses/Instruction 包含 instruction fetch 和 data access（看题目如何定义）；**AMAT 单位 cycles/access，CPI 单位 cycles/instruction**，不能直接替换。\n\nPipeline 衔接（老师总体回顾涉及）：IF→ID→EX→MEM→WB；等待 Memory 可能引起 Stall 并提高 CPI。1102 Quiz Topics 未把完整 Pipeline Hazard 计算作为单独重点。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "ecaa604a29887babba2bffa0c75ade62a11ad37548a1976b305c58139fc21067",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-3"
+}

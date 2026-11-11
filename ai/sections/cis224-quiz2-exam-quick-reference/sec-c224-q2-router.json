@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-router",
+  "title": "00 — 正式笔记 — 逐项重建",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### 00 — 正式笔记 — 逐项重建\n\n**原则**：仅将我们逐项讨论、确认过的知识放入正式区；**共同整理 ≠ 已练熟**。AI 旧汇总放在独立的 Legacy Draft 中，原题和 Labs 是证据，不自动等于已掌握。\n\n**Quiz 2**：2026-11-09；Unit 5/6；Open Notes；课堂明确排除本次新学的 RISC-V Assembly。\n\n**当前进度**：§01 Serial/Parallelizable、Amdahl、Strong/Weak、Flynn/SPMD 已完成第一轮正式整理；§02 Cache 正在另一对话逐项重建；§03 AMAT/CPI、§04 Paging/TLB 待核验。旧版索引和题型清单见 Legacy Draft。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "a00bda2917eb10280accb5f318e5e43f4c59f47b93df43ad73a022939f6d2cb1",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-router"
+}

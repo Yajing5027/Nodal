@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-legacy",
+  "title": "Legacy Draft — Unverified Reference",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Legacy Draft — Unverified Reference\n\n此区保存尚未被正式笔记替代的 **AI 旧稿**，供查证和逐项迁移。内容存在于旧稿 **≠ 已学习、已核验或一定正确**；正式区只保留我们已共同整理的部分。\n\n**证据与来源**：[CIS 224 Labs L6/L7](https://docs.google.com/document/d/1dGnNZGDW2FG9jeVo1RlY5XDLTvK04Yfc5CsMkT5AaLo)；[课程 Notes](https://docs.google.com/document/d/17MII0YV6j9WptFWDtQ9gnDnQhZVEsl1UQDCm98OSoyk)；[Quizzes & Exams](https://docs.google.com/document/d/1O5hGNn8vfpkZgKQ6qGDhqpkhIpLt99H_7-nVejEP7H4)。老师原题和 Lab 原文以这些 source materials 为准；旧稿中的例题解释与数值尚需逐项复核。\n\n**历史版本参考**：GitHub Git 历史保留迁移前的完整旧稿；Flynn 分类旧稿已在正式区覆盖并删除，其余子章节尚待逐项清理。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "4c4090e6ee30b8adfda85b6548ea4c948d243ec49f9f2e16e9361da74bfafc93",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy"
+}

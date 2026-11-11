@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz8-study-notes",
+  "noteTitle": "Quiz 8 · Study Notes",
+  "id": "sec-bst-delete-transplant",
+  "title": "BST · Delete, Successor, Predecessor & Transplant",
+  "parentId": "sec-binary-search-trees",
+  "hidden": false,
+  "markdown": "### BST · Delete, Successor, Predecessor & Transplant\n\n- **Successor**：一个 Node 的 Inorder 中下一个、更大的 Key。若 `z.right != null`，则 `successor(z) = minimum(z.right)`，即 Right Subtree 内的最小 Node；无 Right Subtree 时沿 Parent 链找合适 Ancestor。\n- **Predecessor**：Inorder 中前一个、更小的 Key。若 `z.left != null`，则 `predecessor(z) = maximum(z.left)`；无 Left Subtree 时向上找合适 Ancestor。\n- **`z.right` 的类型是 Node Reference**：指向 z 的**直接右孩子**。传给 `minimum(z.right)` 后，算法会沿这个 Node 的 Left 指针继续深入其整棵子树；不是把 z.right 当成一个 Array 或 Set。\n- **Transplant = 移植 / 子树替换**：`TRANSPLANT(T, u, v)` 将 Parent 原来连向 `u` 的位置改连 `v`，并在 v 非空时设置 `v.p = u.p`。若 u 为 Root，则设 `root = v`。它**不自动选择**要替换的 Node，不自动连接 v 的左右 Child，也不负责修改所有删除情形所需的指针。\n- **Delete Case**：无 Child、一个 Child、两个 Children。两个 Children 时 Homework 8 指定 `y = minimum(z.right)` 并**移动 y 这个 Node** 到 z 的位置；若 y 正好是 `z.right`，处理比 y 在右子树更深处时简单。删除过程中要保持 Root 与所有 Child 的 Parent Pointers 正确。\n- **不同算法的选择**（补充，非本作业规定）：两个 Children 的删除也可以构造选择 Predecessor 的版本，例如 `maximum(z.left)`；但本课 Homework 8 明确以 Successor 实现。复制 Key 有可能维持 BST 排序性质，但 Homework 8 要求移动 Node，保留其他节点身份，因此**不能**只复制 Successor.key。\n\n**关联**：[BST · Range Validation](nodal://note/quiz8-study-notes/sec-bst-invariant-bounds) · [BST · Inorder Traversal](nodal://note/quiz8-study-notes/sec-bst-inorder-traversal)。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz8-study-notes.md",
+  "noteContentSha256": "3881d08ec430c74eb65879d075e56a13706fa26af65fcb07e6731615210aac0f",
+  "contentSha256": "01573fbf565de2577c700543defca77012565176f27ec09b740c1e71a4430378",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz8-study-notes&section=sec-bst-delete-transplant"
+}

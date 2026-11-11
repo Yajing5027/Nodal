@@ -9,8 +9,8 @@
   "markdown": "\n## IEEE 754 Floating Point\n### Half Precision\n- 16 bits = 1 sign bit + 5 exponent bits + 10 fraction bits.\n- Sign: 0 means positive; 1 means negative.\n- Exponent bias = 15.\n- For normalized values, the significand is the stored fraction after an implicit leading 1.\n\n$$\n\\text{Value}=(-1)^S\\times 1.F\\times 2^{E-15}\n$$\n\n- Normalization example: $1100.11_2 = 1.10011_2 \\times 2^3$.\n- Move the binary point left: exponent increases; move it right: exponent decreases.\n- Stored exponent = real exponent + bias; for half precision, $E=e+15$.\n- Binary fractional places have weights $2^{-1}, 2^{-2}, 2^{-3}, \\ldots$.\n\n$$\n.11_2=\\frac{1}{2}+\\frac{1}{4}=\\frac{3}{4}=0.75\n$$\n",
   "svgBlocks": [],
   "sourcePath": "content/notes/node-computer-architecture-study-notes.md",
-  "noteContentSha256": "22eb09a2c05fdcaeb0232cd13e7ae902bac98344b42c8b730258fe3daa83884e",
+  "noteContentSha256": "3b33459dae2c38d7205d72418738c9c89c64d909a17400dd10f5fba4a73e2925",
   "contentSha256": "e0b3d1f89db4885d1be33fbf561ea3f190012c02102ac1323af0e88a1279f5ea",
-  "publishedAt": "2026-10-28T07:24:23.642Z",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-computer-architecture-study-notes&section=sec-ieee-754"
 }

@@ -1,0 +1,1 @@
+import{Pt as e}from"./index-Bi-wJA45.js";function t(t,n){return e(t,n,220)}export{t};

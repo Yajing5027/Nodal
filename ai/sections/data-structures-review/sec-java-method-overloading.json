@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "data-structures-review",
+  "noteTitle": "Data Structure",
+  "id": "sec-java-method-overloading",
+  "title": "Java Method Overloading（方法重载）",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Java Method Overloading（方法重载）\n\n- **Method** 是具有名字、返回类型、参数列表和方法体的可调用代码；调用 = **call / invoke**\n- **Overloading**：在同一类中，同名 Method 可以有**不同的参数列表**（数量、类型或顺序）；**只改 return type 不构成重载**\n- `isBST()` 与 `isBST(Node x)` 是两个重载 Method；不是 Constructor，也不是 Java 自动提供默认参数\n- **Constructor** 负责对象初始化，如 `BST()`，没有返回类型；与普通 Method 不同\n- **Parameter（形参）**是声明时的 `Node x`；**Argument（实参）**是调用 `isBST(root)` 时传入的 `root`\n\n**Java Implementation · 重载和参数的最小例子**\n\n```java-fold\n// @explanation 同名 isBST，参数列表不同；这只是调用方式示意，不是 BST 的完整验证算法\npublic boolean isBST() {\n    return isBST(root); // call 重载方法，传入 argument root\n}\n\nprivate static boolean isBST(Node x) {\n    // x 是 parameter：每次调用都接收一个 Node 引用\n    if (x == null) return true;\n    return isBST(x.left) && isBST(x.right);\n}\n```\n\n注意：上面的示例只演示方法重载/递归，不具备合法 BST 的完整检查规则；正确版本见下一 Section",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/data-structures-review.md",
+  "noteContentSha256": "32c51303483e61a98c5a079e6d7e6c04b2317305ae7be21589a7516ae1d7c7f7",
+  "contentSha256": "99541cc46869523e7be79ec9333ee51f98434be74e75dccab980e126461dee3d",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-review&section=sec-java-method-overloading"
+}

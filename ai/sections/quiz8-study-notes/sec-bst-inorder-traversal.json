@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz8-study-notes",
+  "noteTitle": "Quiz 8 · Study Notes",
+  "id": "sec-bst-inorder-traversal",
+  "title": "BST · Inorder & Reverse Inorder Traversal",
+  "parentId": "sec-binary-search-trees",
+  "hidden": false,
+  "markdown": "### BST · Inorder & Reverse Inorder Traversal\n\n- **Inorder**：递归顺序是 `Left Subtree → Node → Right Subtree`，而不是简单“先左孩子、再父亲、再右孩子”就结束。每个 Subtree 都重复这同一规则。\n- **Reverse Inorder**：`Right Subtree → Node → Left Subtree`。BST（Keys distinct）上 Inorder 输出严格递增，Reverse Inorder 严格递减。\n- **Call order ≠ Output order**：调用从 `root` 开始，先深入多层 Left；遇 `null` 时当前递归返回上一层；最左 Leaf 才是第一个被**输出**的 Node。一个 Node 输出以后，再进入该 Node 的整个 Right Subtree；该子树完成后回到最近尚未处理完的 Ancestor，继续向上回溯。\n- **输出类型没有固定要求**：Inorder 只定义 *visit/order*。它可逐项 print、append 到 List、写入 Array，或调用访问函数；打印在一行的数字顺序并不意味着 BST 内部一定存为这个数组。\n- **Time Complexity**：访问每个 Node 一次，Θ(n)；递归 Call Stack 使用 O(h+1) 额外空间。\n\n**Java Implementation · 递归动作与输出时机**\n\n```java\n// @explanation 仅示范 Inorder 输出顺序；本例将 Key 打印出来，不要求 BST 必须以数组存储\nstatic void inorder(Node x) {\n    if (x == null) return;\n    inorder(x.left);                 // 先完整处理左子树\n    System.out.print(x.key + \" \");  // 然后输出当前 Node\n    inorder(x.right);               // 最后完整处理右子树\n}\n```",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz8-study-notes.md",
+  "noteContentSha256": "3881d08ec430c74eb65879d075e56a13706fa26af65fcb07e6731615210aac0f",
+  "contentSha256": "6dbe172c6b67fc8c0074c5e25211e17f9e6eec67adab07a085ede697eff0805b",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz8-study-notes&section=sec-bst-inorder-traversal"
+}

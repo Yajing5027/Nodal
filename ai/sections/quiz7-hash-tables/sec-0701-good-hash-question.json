@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "quiz7-hash-tables",
+  "noteTitle": "Quiz 7 · Hash Tables",
+  "id": "sec-0701-good-hash-question",
+  "title": "0701 · Class Question Q3 — Good Hash Function",
+  "parentId": "sec-hash-model",
+  "hidden": false,
+  "markdown": "### 0701 · Class Question Q3 — Good Hash Function\n\n**老师原题**：*Which of the following is NOT a property that you expect a well-designed hash function to have?*\n\n- **A.** The hash function should \"spread out\" most (i.e., \"non-pathological\") data sets (across the buckets/slots of the hash table).\n- **B.** The hash function should be easy to compute (constant time or close to it).\n- **C.** The hash function should be easy to store (constant space or close to it).\n- **D.** The hash function should \"spread out\" every data set (across the buckets/slots of the hash table).\n\n**正确答案：D。**\n\n**陷阱：most vs every。** Hash Function 的目标是将 **Hash Outputs / Keys 尽量均匀分散到 Buckets**；不是说“均匀分布不好”，也不是要求 Keys 本身预先均匀分布。A 的“most 正常数据集”是好的目标；D 的“every 任意可能的数据集均保证均匀”是过度的绝对保证。对于固定的通用函数，可以构造让大量 Keys 撞到同一 Bucket 的输入；好的 Hash Function 仍不能保证不发生 Collision。针对事先已知的静态 Key 集合单独设计无冲突映射，不等于此题的通用保证。\n\n**来源**：CIS 223 0701 Poll Everywhere Q3（课堂约 1:47–1:50）；[Class Questions 原题](https://docs.google.com/document/d/1UyDQRbvoQQqbPMaakmcLbr_WwHBQcTKG4PFEReUqn8E/edit)。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/quiz7-hash-tables.md",
+  "noteContentSha256": "c84fd66e5e9eb4870c56960983192a2e8835be86a8d2dfa3d7651c38ff45d67a",
+  "contentSha256": "e24c39aad58024ccd352ffe9b8de2dc2b48b50b8d368858155a3d02eb01a5dd3",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz7-hash-tables&section=sec-0701-good-hash-question"
+}

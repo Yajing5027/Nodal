@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "memory-hierarchy-locality",
+  "noteTitle": "Memory Hierarchy & Locality",
+  "id": "sec-mh-bandwidth",
+  "title": "Bandwidth",
+  "parentId": "sec-mh-access",
+  "hidden": false,
+  "markdown": "#### Bandwidth",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/memory-hierarchy-locality.md",
+  "noteContentSha256": "d413eafd1e6640191ec1a780be87e89fec010ae2053be4ed562684ae3ba0ffbc",
+  "contentSha256": "2a417796e1a27b65653835481b2de899916a8ff55831682d4ad53d950e9fb51f",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=memory-hierarchy-locality&section=sec-mh-bandwidth"
+}

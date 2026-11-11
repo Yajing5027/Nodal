@@ -9,8 +9,8 @@
   "markdown": "\n### 高度与索引\n- Complete Binary Tree 的 height 为 O(log n)。\n- 若高度 h 按 edge 数计算，n ≥ 2^h，因此 h ≤ log₂n。\n- 对 0-based 数组索引 i：parent = ⌊(i−1)/2⌋，left = 2i+1，right = 2i+2。\n- value = array[index]；⌊ ⌋ 表示向下取整。\n- index < n 才存在；index ≥ n 不存在。\n- size = n；最后一个节点索引是 n−1；下一个空槽索引是 n。",
   "svgBlocks": [],
   "sourcePath": "content/notes/node-trees-heaps-q3.md",
-  "noteContentSha256": "1181d6350d734724d4adda58118772c6e7f226861a2eaa55f9a99ed83049bfb0",
+  "noteContentSha256": "ff06049d27889f0f78f48ce8674ddd75f99f3fa16b21e7c79e54efa6cda2488b",
   "contentSha256": "1a465657e8493275f58d8e85aecd9371b983562af83906a043d9cb8a0cf42462",
-  "publishedAt": "2026-10-28T07:24:23.642Z",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=node-trees-heaps-q3&section=sec-height-index"
 }

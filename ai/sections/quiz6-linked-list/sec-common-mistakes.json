@@ -6,11 +6,11 @@
   "title": "4. Practice",
   "parentId": null,
   "hidden": false,
-  "markdown": "### 4. Practice\n\n[打开 Linked List Practice](https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&mode=practice&section=sec-common-mistakes)",
+  "markdown": "### 4. Practice\n\n[打开 Linked List Practice](https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&mode=practice&section=sec-common-mistakes)\n\n**易错点 · Delete a specific node ≠ delete after a known predecessor.** 对 Singly Linked List，只知道目标 Node `C` 的 Reference，若要求删除 **C 本身**且必须保留其余 Node 的身份，通常需要从 Head 找前驱 `B`，Worst Case **O(n)**；若已经持有 `B` 的 Reference，改 `B.next` 是 **O(1)**。Doubly Linked List 已知 `C` 时可通过 `C.prev` 直接调整相邻 Links，通常为 **O(1)**（不含其他结构维护）。\n[Practice · Delete C and predecessor references](https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&mode=practice&section=sec-common-mistakes&question=cis223-q6-linked-delete-c-refs-v1)\n\n**易错点 · Reference-based links do not make Value Search constant-time.** 无索引的无序 Linked List 依然必须顺序比较 Node Values，Worst Case **O(n)**；Array 根据已知 Index 随机访问为 **O(1)**，但无序 Array 按 Value 搜索通常也是 **O(n)**。Linked List 的优势取决于已知 Node / 前驱位置时的局部插入删除，而非 Value Lookup。\n[Practice · Unsorted Value Search](https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&mode=practice&section=sec-common-mistakes&question=cis223-q6-linked-value-search-v1)",
   "svgBlocks": [],
   "sourcePath": "content/notes/quiz6-linked-list.md",
-  "noteContentSha256": "7461a26bb4228a7236cb06426c0f150fe6ab53541d5acc70213af04aeb297212",
-  "contentSha256": "307bb2a4efc5d2c5a37bb95e18e5df6d575186b7be2c61e2c4b3332cbbae2e45",
-  "publishedAt": "2026-10-28T07:24:23.642Z",
+  "noteContentSha256": "14ddd5e20e6135d671454c946b25419f997929fc8ca876f9bef157e16622b643",
+  "contentSha256": "14ffbc0c5657d80c191de613f298060136cfce495a2697b8f514635ead37b536",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
   "url": "https://yajing5027.github.io/Nodal/?view=note&id=quiz6-linked-list&section=sec-common-mistakes"
 }

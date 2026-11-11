@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "parallel-performance-scalability",
+  "noteTitle": "Parallel Performance & Scalability",
+  "id": "sec-pp-serial",
+  "title": "Serial vs Parallel",
+  "parentId": "sec-pp-work",
+  "hidden": false,
+  "markdown": "#### Serial vs Parallel\n\nProgram → 多项 Work；存在前后 Dependency 的操作 → 按依赖顺序执行（Serial）；Independent Work → Parallelizable（可并行）≠ Parallel Execution（实际并行）；真正使用多个 Core 并行，还要看硬件资源和 Overhead 是否值得",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/parallel-performance-scalability.md",
+  "noteContentSha256": "17cb8a6f05a18ff004c0bd67303bcc085fcda1bb24f9d98127fac7667ea16d10",
+  "contentSha256": "b279ac0e0af33f30777d8a186a97848690547c7ba99248d6aeb3b0f0cf439471",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-performance-scalability&section=sec-pp-serial"
+}

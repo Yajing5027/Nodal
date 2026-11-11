@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "data-structures-review",
+  "noteTitle": "Data Structure",
+  "id": "sec-ds-review-index",
+  "title": "Data Structure · 复习总入口",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Data Structure · 复习总入口\n\n整理之前 Data Structures（Java）课程中需要重新捡起来的知识；之后再按照主题逐步拆分 Section，避免与 CIS 223 Algorithms 的 BST 概念笔记混在一起。\n\n- 当前主题：Java Methods、Method Overloading、Wrapper / Helper、Parameter / Argument、Recursion；Dynamic / Static Set；Fixed-size / Dynamic Array\n- 关联：[Algorithms · BST Range Validation](nodal://note/quiz8-study-notes/sec-bst-invariant-bounds)\n- 另见：[ADT vs Implementation（概念归档）](nodal://note/data-structures-adt/sec-adt-definition)\n- 代码使用 ```java-fold 语法：正文优先解释，具体代码需要时展开，不把整段 Java 铺满页面",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/data-structures-review.md",
+  "noteContentSha256": "32c51303483e61a98c5a079e6d7e6c04b2317305ae7be21589a7516ae1d7c7f7",
+  "contentSha256": "d3c2cba4eda77eac285375534654a74ca43b58017d8b27bcf45d56e8d55ccdc5",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-review&section=sec-ds-review-index"
+}

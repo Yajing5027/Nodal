@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "nodal.ai.note.v1",
+  "id": "parallel-execution-models-gpu",
+  "title": "Parallel Execution Models & GPU",
+  "markdown": "\n<!-- nodal-panel:sec-pe-taxonomy:visible -->\n\n### Architecture Classification\n\n<!-- nodal-panel:sec-pe-flynn:visible:parent=sec-pe-taxonomy -->\n\n#### Flynn's Taxonomy\n\n<!-- nodal-panel:sec-pe-sisd:visible:parent=sec-pe-flynn -->\n\n##### SISD\n\n<!-- nodal-panel:sec-pe-simd:visible:parent=sec-pe-flynn -->\n\n##### SIMD\n\n<!-- nodal-panel:sec-pe-misd:visible:parent=sec-pe-flynn -->\n\n##### MISD\n\n<!-- nodal-panel:sec-pe-mimd:visible:parent=sec-pe-flynn -->\n\n##### MIMD\n\n<!-- nodal-panel:sec-pe-models:visible -->\n\n### Execution & Programming Models\n\n<!-- nodal-panel:sec-pe-simd-mimd:visible:parent=sec-pe-models -->\n\n#### SIMD vs MIMD\n\n<!-- nodal-panel:sec-pe-simd-spmd:visible:parent=sec-pe-models -->\n\n#### SIMD vs SPMD\n\n<!-- nodal-panel:sec-pe-gpu:visible -->\n\n### GPU Computing\n\n<!-- nodal-panel:sec-pe-gpu-exec:visible:parent=sec-pe-gpu -->\n\n#### Execution Model\n\n<!-- nodal-panel:sec-pe-host-device:visible:parent=sec-pe-gpu -->\n\n#### Host vs Device\n\n<!-- nodal-panel:sec-pe-transfer:visible:parent=sec-pe-gpu -->\n\n#### Data Movement & Bottlenecks\n\n<!-- nodal-panel:sec-pe-pcie:visible:parent=sec-pe-transfer -->\n\n##### PCIe Transfer\n\n<!-- nodal-panel:sec-pe-comm:visible:parent=sec-pe-transfer -->\n\n##### Communication Overhead\n\n",
+  "svgBlocks": [],
+  "sections": [
+    {
+      "id": "sec-pe-taxonomy",
+      "title": "Architecture Classification",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-taxonomy",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-taxonomy.json"
+    },
+    {
+      "id": "sec-pe-flynn",
+      "title": "Flynn's Taxonomy",
+      "parentId": "sec-pe-taxonomy",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-flynn",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-flynn.json"
+    },
+    {
+      "id": "sec-pe-sisd",
+      "title": "SISD",
+      "parentId": "sec-pe-flynn",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-sisd",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-sisd.json"
+    },
+    {
+      "id": "sec-pe-simd",
+      "title": "SIMD",
+      "parentId": "sec-pe-flynn",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-simd",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-simd.json"
+    },
+    {
+      "id": "sec-pe-misd",
+      "title": "MISD",
+      "parentId": "sec-pe-flynn",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-misd",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-misd.json"
+    },
+    {
+      "id": "sec-pe-mimd",
+      "title": "MIMD",
+      "parentId": "sec-pe-flynn",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-mimd",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-mimd.json"
+    },
+    {
+      "id": "sec-pe-models",
+      "title": "Execution & Programming Models",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-models",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-models.json"
+    },
+    {
+      "id": "sec-pe-simd-mimd",
+      "title": "SIMD vs MIMD",
+      "parentId": "sec-pe-models",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-simd-mimd",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-simd-mimd.json"
+    },
+    {
+      "id": "sec-pe-simd-spmd",
+      "title": "SIMD vs SPMD",
+      "parentId": "sec-pe-models",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-simd-spmd",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-simd-spmd.json"
+    },
+    {
+      "id": "sec-pe-gpu",
+      "title": "GPU Computing",
+      "parentId": null,
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-gpu",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-gpu.json"
+    },
+    {
+      "id": "sec-pe-gpu-exec",
+      "title": "Execution Model",
+      "parentId": "sec-pe-gpu",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-gpu-exec",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-gpu-exec.json"
+    },
+    {
+      "id": "sec-pe-host-device",
+      "title": "Host vs Device",
+      "parentId": "sec-pe-gpu",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-host-device",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-host-device.json"
+    },
+    {
+      "id": "sec-pe-transfer",
+      "title": "Data Movement & Bottlenecks",
+      "parentId": "sec-pe-gpu",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-transfer",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-transfer.json"
+    },
+    {
+      "id": "sec-pe-pcie",
+      "title": "PCIe Transfer",
+      "parentId": "sec-pe-transfer",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-pcie",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-pcie.json"
+    },
+    {
+      "id": "sec-pe-comm",
+      "title": "Communication Overhead",
+      "parentId": "sec-pe-transfer",
+      "hidden": false,
+      "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu&section=sec-pe-comm",
+      "resource": "ai/sections/parallel-execution-models-gpu/sec-pe-comm.json"
+    }
+  ],
+  "sourcePath": "content/notes/parallel-execution-models-gpu.md",
+  "contentSha256": "4f404e5b6ac58a5dc7560703e6a0b04365b6d0c839bd94a1a2d81cea9e4cbcb9",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=parallel-execution-models-gpu"
+}

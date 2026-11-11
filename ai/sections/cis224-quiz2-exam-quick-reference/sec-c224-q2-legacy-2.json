@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "cis224-quiz2-exam-quick-reference",
+  "noteTitle": "CIS 224 — Quiz 2 Exam Quick Reference",
+  "id": "sec-c224-q2-legacy-2",
+  "title": "02 — Hierarchy / Cache",
+  "parentId": "sec-c224-q2-legacy",
+  "hidden": false,
+  "markdown": "### 02 — Hierarchy / Cache\n\n#### E. Hierarchy / Locality [课堂 A]\n\n**Registers → L1 → L2 → L3 → RAM → SSD/HDD**；通常向右容量↑、访问速度↓，但具体 Cache 共享方式因 CPU 而异。\n\nTemporal Locality = recently used data reused soon（同一数据再次用）；Spatial Locality = nearby addresses accessed soon（相邻数据）。Cache Line/Block = 一次搬运的一块连续数据；Hit=命中，Miss=未命中。\n\n#### F. Cache Geometry（位数）[课堂 A]\n\n设 C=Cache Bytes，B=Line Bytes，W=Ways，A=Address Bits：\n\n**Lines = C/B → Sets = Lines/W = C/(B×W) → Offset bits o=log₂B → Index bits i=log₂Sets → Tag bits t=A−i−o**。\n\nDirect-Mapped=1 Way；N-Way Set-Associative=每组 N Lines；Fully Associative=1 Set、**Index=0 bits**。**不要把 Lines 当 Sets**。\n\n**例**：32 KiB、8-way、64-B line → 512 lines / 64 sets → o=6、i=6；若 32-bit address 则 tag=20 bits。\n\n**课堂活动变式**：64 KiB、8-way、64-B line、32-bit address → 1024 lines / 128 sets → **o=6、i=7、t=19**。\n\n#### G. Address / Set Index / Tag [课堂 A、L7 B]\n\n地址字段从高到低：**[ Tag | Index | Offset ]**。\n\n- Offset = address mod B\n- Set Index = floor(address/B) mod Sets；若 Sets 为 2 的幂，可用 (address >> o) & (Sets−1)\n- Tag = floor(address/(B×Sets))；即 address >> (o+i)\n- Block Base = floor(address/B)×B\n\n**课堂活动**：64 KiB/8-way/64-B → o=6、i=7，address **0x1BD6A5DB** → set=(addr>>6)&0x7F=**0x17（hex）=23（decimal）**。网页按 hexadecimal 收答案时填 17 或 0x17，不是填十进制 23。\n\n**Lab L7**：128-B direct-mapped、16-B line、16-bit address → o=4、i=3、t=9。地址 0x5DC0 → Tag=187、Index=4、Offset=0。\n\n**构造 Conflict**：同一个 Set Index，不同 Tag（不能仅改变 Offset，否则仍是同一条 Line）。128-B direct-mapped、16-B line：0x2810 与 **0x2890** 相差 8×16=128B，落入同组但不同块。\n\n#### H. Hit / Miss / LRU Trace [Lab L7 B]\n\n步骤：①地址求 block / set / tag → ②仅在选中 Set 的 Ways 中找 valid tag match → ③Hit，更新最近使用 → ④Miss，先填 empty way；Set 已满才淘汰 **LRU = Least Recently Used，最久未用**。\n\nCold/Compulsory Miss = 首次访问该 Block；Conflict Miss = 映射冲突导致先前 Block 被踢出后再次 miss（Lab L7 的 trace 不超过 cache 总 lines）；Capacity Miss = 工作集超过缓存总容量导致 miss。**同一 Line 中不同 Offset 可能 Hit；每次访问后必须更新缓存状态**。\n\n**Lab L7 反直觉题**：9 条 Line 循环两轮，Cache 容量 8 Lines；在所给映射下 Direct-Mapped 可能比 Fully-Associative LRU **更少 Miss**。Associativity 越高不保证每个具体 Trace 都更优。",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/cis224-quiz2-exam-quick-reference.md",
+  "noteContentSha256": "3ffe6c3c1d13162658f3eec51c8664a87d9ca496e3ad8ed4d6e2527c01914672",
+  "contentSha256": "b1dc8b99ae5d0699c8a4023c2810eee694a589937e3feb4b5cebe533badb00b7",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=cis224-quiz2-exam-quick-reference&section=sec-c224-q2-legacy-2"
+}

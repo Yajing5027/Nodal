@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "nodal.ai.section.v1",
+  "noteId": "data-structures-review",
+  "noteTitle": "Data Structure",
+  "id": "sec-static-dynamic-set-array",
+  "title": "Dynamic / Static Set vs Fixed-size / Dynamic Array",
+  "parentId": null,
+  "hidden": false,
+  "markdown": "### Dynamic / Static Set vs Fixed-size / Dynamic Array\n\n**先区分两个维度：Set 的成员能否更新；Array 的长度 / 底层容量能否改变。它们并不是同一组反义词。**\n\n| 概念 | 关键含义 | Search / Read | Insert | Delete |\n|---|---|---|---|---|\n| **Static Set（静态集合）** | 建好后成员固定 | ✓ 可查询（也可能支持 Min/Max 等查询） | ✗ 不支持更新成员 | ✗ 不支持更新成员 |\n| **Dynamic Set（动态集合）** | 运行时支持改变成员 | ✓ | ✓ | ✓ |\n| **Java fixed-size array `int[]`（固定长度数组）** | `length` 固定；元素可以改写 | ✓ 按 Index 访问、修改值 | 没有内建的加长数组操作；若自管逻辑 `size` 且有空容量，可手动插入 / 挪动元素 | 没有内建的缩短数组操作；若自管 `size`，可以手动删除 / 挪动元素 |\n| **Dynamic Array，如 Java `ArrayList`** | 逻辑元素数 `size` 可增减；底层数组按需扩容 | ✓ | ✓ `add` | ✓ `remove` |\n\n- **Set vs Array**：Set 关注成员资格与是否重复，是抽象的数据集合；Array 关注按 Index 存储，是一种具体结构。Set 可由 Array、Hash Table、BST 等实现；若用 Array 实现 Set，需要自行保证不重复。**Set 在脑海里画成一排格子只是示意，不代表实际内存布局。**\n- **Static Set ≠ Fixed-size Array**：前者不支持修改集合成员；后者只保证物理数组的 `length` 不变，已有位置仍可赋值。固定容量的 Array 可以实现一个**有容量上限的 Dynamic Set**，但满了之后若不重新分配更大数组，就无法继续添加成员。\n- **Logical size vs capacity**：`size` = 当前有效元素数；`capacity` = 已分配的槽位数。若 `capacity=4, size=3`，删掉一个成员后 `size=2`，不代表自动归还底层数组内存，`capacity` 可仍为 4。动态数组扩容通常是分配新数组、复制旧元素；删除后不一定收缩底层容量。\n- **Static Array 这个叫法有歧义**：在一些材料里泛指 Fixed-size Array；但 Java 的 `static int[] arr` 中 `static` 表示类字段，而**不是**数组固定长度的原因。Java 数组本来就是定长的。\n- **BST 的用途（CIS 223）**：普通 BST 可以实现 Dynamic Set，支持 Search / Insert / Delete；它**不会自动 Self-balance**。AVL / Red-Black Tree 才是自平衡 BST 的例子（本轮普通 BST 考试不展开）。\n\n**Java Example · 逻辑删除不等于释放容量**\n\n```java-fold\n// @explanation 固定长度数组也能管理可变数量的有效元素，但容量上限不变\nint[] storage = {10, 20, 30, 0}; // capacity = 4\nint size = 3;                      // only indices [0, size) are valid elements\n\n// Logically delete 20 by shifting the following element left\nstorage[1] = storage[2];\nsize--;\n// size = 2; valid members: 10, 30\n// storage may still hold [10, 30, 30, 0]; length is still 4\n```\n\n**关联**：[ADT vs Implementation](nodal://note/data-structures-adt/sec-adt-definition)；[CIS 223 BST Property](nodal://note/quiz8-study-notes/sec-binary-search-trees)\n",
+  "svgBlocks": [],
+  "sourcePath": "content/notes/data-structures-review.md",
+  "noteContentSha256": "32c51303483e61a98c5a079e6d7e6c04b2317305ae7be21589a7516ae1d7c7f7",
+  "contentSha256": "949e56b7a5d26e287da5b7470b73c41437465af3994fca68c300571353d3c9db",
+  "publishedAt": "2026-11-11T08:27:11.632Z",
+  "url": "https://yajing5027.github.io/Nodal/?view=note&id=data-structures-review&section=sec-static-dynamic-set-array"
+}
